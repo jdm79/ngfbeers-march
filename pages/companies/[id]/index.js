@@ -4,7 +4,9 @@ const CompanyPage = () => {
     const router = useRouter();
     
     return (
-        <div>Company Page</div>
+        <div>
+            <h1>Company Page</h1>
+        </div>
     )
 }
 

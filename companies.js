@@ -1,4 +1,4 @@
-export const companies = [
+const companies = [
     {
       id: 'e1',
       title: 'AltgrainCo',
@@ -141,3 +141,11 @@ export const companies = [
     },
     
   ];
+
+  export function getCompanyById(id) {
+    return companies.find((company) => company.id == id);
+  };
+
+  export function getAllCompanies() {
+    return companies;
+  }

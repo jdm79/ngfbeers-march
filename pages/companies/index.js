@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { companies } from "@/companies";
+import { getAllCompanies } from "../../companies";
 
 const CompaniesPage = () => {
+    const companies = getAllCompanies();
     
     return (
         <div>
@@ -9,7 +10,12 @@ const CompaniesPage = () => {
             <ul>
                {companies.map((company) => (
                 <li key={company.id}>
-                    <Link href="/companies/id">{company.title}</Link>
+                    <Link 
+                        href={{
+                            pathname: '/companies/[id]',
+                            query: {id: company.id}
+                        }}>{company.title}
+                    </Link>
                 </li>
                ))}
             </ul>
