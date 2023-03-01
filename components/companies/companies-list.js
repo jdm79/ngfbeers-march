@@ -8,6 +8,7 @@ function CompaniesList(props) {
             <ul>
                 {items.map((company) => (
                     <CompanyItem 
+                        key={company.id}
                         id={company.id}
                         image={company.image}
                         title={company.title}

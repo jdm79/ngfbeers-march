@@ -1,6 +1,10 @@
 import Link from "next/link";
+import { getAllCompanies } from "../companies";
+import CompaniesList from "@/components/companies/companies-list";
 
 const HomePage = () => {
+  const companies = getAllCompanies();
+
   return (
     <div>
         <h1>Home Page</h1>
@@ -18,6 +22,9 @@ const HomePage = () => {
             <Link href="/contact">Contact</Link>
           </li>
         </ul>
+        <div>
+          <CompaniesList items={companies} />
+        </div>
     </div>
   )
 }

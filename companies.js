@@ -117,29 +117,6 @@ const companies = [
       image: 'images/stirone-logo.png',
       isFeatured: true,
     },
-    {
-      id: 'e7',
-      title: 'Stirone Barley Free',
-      website_url: "https://altgrain.co.uk/",
-      insta_url: "https://www.instagram.com/altgrainco/",
-      description:
-        'You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.',
-      location: 'Italy',
-      image: 'images/stirone-logo.png',
-      isFeatured: true,
-    },
-    {
-      id: 'e8',
-      title: 'Stirone Barley Free',
-      website_url: "https://altgrain.co.uk/",
-      insta_url: "https://www.instagram.com/altgrainco/",
-      description:
-        'You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.',
-      location: 'Italy',
-      image: 'images/stirone-logo.png',
-      isFeatured: true,
-    },
-    
   ];
 
   export function getCompanyById(id) {
