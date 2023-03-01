@@ -13,7 +13,9 @@ function CompanyDetailPage() {
 
   return (
     <div>
+      <img src={`/${company.image}`} alt={company.title}/>
       <h1>{company.title}</h1>
+      <p>{company.description}</p>
     </div>
   )
 }
