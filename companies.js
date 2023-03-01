@@ -54,8 +54,7 @@ const companies = [
       title: 'Stirone Barley Free',
       website_url: "https://altgrain.co.uk/",
       insta_url: "https://www.instagram.com/altgrainco/",
-      description:
-        'You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.',
+      description: `Inspired by the Blanche style, it is characterized by continental hops, orange peel and spices, excellent for a refreshing break or to accompany delicate dishes. Yellow-orange color, citrus and spicy aroma, sweet taste. It is enriched with spices and orange peels`,
       location: 'Italy',
       image: 'images/stirone-logo.png',
       isFeatured: true,
@@ -73,8 +72,7 @@ const companies = [
       title: 'Suspect Brewing',
       website_url: "https://altgrain.co.uk/",
       insta_url: "https://www.instagram.com/altgrainco/",
-      description:
-        'You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.',
+      description: `Circuit breaker: our bricks and mortar. Built differently using millet and buckwheat instead of conventional barley malt. `,
       location: 'UK',
       image: 'images/suspect-logo.jpeg',
       isFeatured: true,
@@ -93,7 +91,12 @@ const companies = [
       website_url: "https://shop.riedenburger.de/RIEDENBURGER-Hirse-Bier-Glutenfrei",
       insta_url: "https://www.instagram.com/altgrainco/",
       description:
-        'You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.',
+        `Brewed exclusively from millet malt. The first "gluten-free" beer from Bavaria.
+        
+        Finest ecological specialty brewed only with organic millet malt and organic hops.
+        
+        Thanks to our long brewing experience, we have succeeded in brewing a very tasty, beery drink from exclusively natural, ecological and GMO-free raw materials.
+        Guaranteed gluten-free. Guaranteed organic. Guaranteed good taste.`,
       location: 'Germany',
       image: 'images/rieden-logo.png',
       isFeatured: true,
@@ -105,17 +108,6 @@ const companies = [
           beer_description: "A pleasant, craft-brewed blonde ale with a biscuit, malt forward flavour. Brewed with non gluten-containing ingredients (NGCI) to be 100% safe for coeliacs and those with intolerances to gluten. This beer is also vegan friendly." 
         }
       ]
-    },
-    {
-      id: 'e6',
-      title: 'Stirone Barley Free',
-      website_url: "https://altgrain.co.uk/",
-      insta_url: "https://www.instagram.com/altgrainco/",
-      description:
-        'You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.',
-      location: 'Italy',
-      image: 'images/stirone-logo.png',
-      isFeatured: true,
     },
   ];
 
