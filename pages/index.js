@@ -7,7 +7,7 @@ const HomePage = () => {
 
   return (
     <div>
-        <h1>Home Page</h1>
+        <h1>Home Page (THIS SITE IS UNDER HEAVY CONSTRUCTION!)</h1>
         <ul>
           <li>
             <Link href="/companies">Companies</Link>
