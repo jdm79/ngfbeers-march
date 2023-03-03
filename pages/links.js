@@ -9,7 +9,7 @@ function Links() {
             <h1>Links</h1>
             <ul>
                 {links.map((link) => (
-                    <LinkItem />
+                    <h1>{link.title}</h1>
                 ))}
             </ul>
         </div>

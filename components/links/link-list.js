@@ -6,13 +6,13 @@ function LinkList(props) {
     return (
         <div className="w-screen flex justify-center">
             <ul>
-                {items.map((faq) => (
+                {items.map((link) => (
                     <LinkItem 
-                        key={faq.id}
-                        id={faq.id}
-                        title={faq.title}
-                        subheading={faq.subheading}
-                        body={faq.body}
+                        key={link.id}
+                        id={link.id}
+                        title={link.title}
+                        subheading={link.subheading}
+                        body={link.body}
                     />
                 ))}
             </ul>
