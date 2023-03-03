@@ -6,7 +6,7 @@ function ThumbnailRow() {
 
     return (
         <div >
-            <ul  className="grid grid-cols-6 gap-2 p-2">
+            <ul  className="grid grid-cols-6 gap-2 p-2 mt-8 mb-8">
                 {companies.map((company) => (
                     <CompanyThumbnail 
                         key={company.id}

@@ -4,15 +4,18 @@ import Hero from "@/components/Hero";
 import DefaultLayout from "@/components/DefaultLayout";
 import Banner from "@/components/Banner";
 import ThumbnailRow from "@/components/ThumbnailRow";
+import Links from "./links";
 
 const HomePage = () => {
   const companies = getAllCompanies();
 
   return (
     <DefaultLayout>
+        <Banner />
         <ThumbnailRow items={companies} />
         <Hero />
-        <h1 className="w-screen flex p-5 justify-center bg-black text-white">Latest Blog Post</h1>        
+        <h1 className="w-screen flex p-10 justify-center bg-white text-black">Latest blog post here</h1>
+        <h1 className="w-screen flex p-10 justify-center bg-white text-black">Links to go here</h1>
     </DefaultLayout>
        
 

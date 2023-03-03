@@ -4,7 +4,7 @@ function Banner() {
   return (
     <div >
         <h1 className="w-screen flex p-5 justify-center bg-black text-white">
-          A showcase of naturally gluten-free beers - beers made without barley 
+          A showcase of naturally gluten-free (NGCI) beers - beers made without barley or any other gluten-containing ingredients
         </h1>
     </div>
   )

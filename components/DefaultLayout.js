@@ -11,7 +11,6 @@ const DefaultLayout = ({ children }) => {
         <>
             <Header />
             <Nav />
-            <Banner />
             {children}
             <Footer />
         </>
