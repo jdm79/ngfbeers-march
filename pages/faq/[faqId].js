@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 function FaqDetailPage() {
   const router = useRouter();
 
-  const blogId = router.query.blogId;
+  const faqId = router.query.faqId;
   const faq = getFaqById(faqId);
 
   if(!faq) {
