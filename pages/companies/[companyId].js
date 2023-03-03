@@ -1,5 +1,6 @@
 import { getCompanyById } from "@/companies";
 import { useRouter } from "next/router";
+import DefaultLayout from "@/components/DefaultLayout";
 
 function CompanyDetailPage() {
   const router = useRouter();
@@ -12,11 +13,14 @@ function CompanyDetailPage() {
   }
 
   return (
-    <div>
-      <img src={`/${company.image}`} alt={company.title}/>
-      <h1>{company.title}</h1>
-      <p>{company.description}</p>
-    </div>
+    <DefaultLayout>
+      <div>
+        <img src={`/${company.image}`} alt={company.title}/>
+        <h1>{company.title}</h1>
+        <p>{company.description}</p>
+      </div>
+    </DefaultLayout>
+
   )
 }
 
