@@ -3,8 +3,8 @@ import DefaultLayout from '@/components/DefaultLayout';
 const aboutPage = () => {
   return (
     <DefaultLayout>
-        <div className="w-screen  p-5 bg-gray-200 text-black ">
-          <h1 className="p-5" >About Page</h1>
+        <div className="w-screen  bg-gray-200 text-black ">
+          <h1 className="w-screen flex p-5 justify-center border-b-2 border-black bg-white" >About Page</h1>
           <p className="p-5">The standard Lorem Ipsum passage, used since the 1500s
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

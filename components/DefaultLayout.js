@@ -3,6 +3,7 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import ThumbnailRow from "./ThumbnailRow";
 import { getAllCompanies } from "@/companies";
+import Banner from "./Banner";
 
 const DefaultLayout = ({ children }) => {
     const companies = getAllCompanies();
@@ -10,7 +11,7 @@ const DefaultLayout = ({ children }) => {
         <>
             <Header />
             <Nav />
-            <ThumbnailRow items={companies} />
+            <Banner />
             {children}
             <Footer />
         </>
