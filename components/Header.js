@@ -5,10 +5,10 @@ const Header = () => {
     <div>
       <Head>
         <title>ngfbeers | naturally gluten-free beers</title>
-        <meta property="og:title" content="Sepono Properties" key="title" />
+        <meta property="og:title" content="ngfbeers | beers made without gluten" key="title" />
         <meta
           name="description"
-          content="Naturally gluten-free beers. ngci beers. made without barley."
+          content="Naturally gluten-free beers. ngci beers. made without barley or any other gluten containing ingredients."
           key="desc"
         />
          <meta

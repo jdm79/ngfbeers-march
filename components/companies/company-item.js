@@ -3,8 +3,11 @@ import Link from "next/link";
 function CompanyItem(props) {
     const { id, title, image, location } = props;
     const companyLink = `/companies/${id}`;
+    
     return (
             <li>
+                <Link href={companyLink}>
+
                 <img src={image} alt={title}/>
                 <div>
                     <div>
@@ -13,10 +16,8 @@ function CompanyItem(props) {
                     <div>
                         <p>{location}</p>
                     </div>
-                    <div>
-                        <Link href={companyLink}>See company detail</Link>
-                    </div>
                 </div>
+                </Link>
             </li>
     )
 }

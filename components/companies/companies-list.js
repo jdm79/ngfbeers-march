@@ -4,7 +4,7 @@ function CompaniesList(props) {
     const { items } = props;
 
     return (
-        <div>
+        <div className="w-screen flex justify-center">
             <ul>
                 {items.map((company) => (
                     <CompanyItem 
