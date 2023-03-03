@@ -1,16 +1,15 @@
-import Link from "next/link";
 import { getAllCompanies } from "../../companies";
 import CompaniesList from "@/components/companies/companies-list";
+import DefaultLayout from "@/components/DefaultLayout";
 
 const CompaniesPage = () => {
     const companies = getAllCompanies();
     
     return (
-        <div>
+        <DefaultLayout>
             <h1>Companies Page</h1>
             <CompaniesList items={companies}/>
-        </div>
-        
+        </DefaultLayout>                
     )
 }
 

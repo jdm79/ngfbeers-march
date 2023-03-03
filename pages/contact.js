@@ -1,9 +1,10 @@
-import React from 'react'
+import DefaultLayout from "@/components/DefaultLayout";
 
 const contactPage = () => {
   return (
-    <div>contact Page</div>
-  )
+    <DefaultLayout>
+      <div>Contact Page</div>
+    </DefaultLayout>  )
 }
 
 export default contactPage

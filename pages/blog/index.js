@@ -1,8 +1,10 @@
-import React from 'react'
+import DefaultLayout from "@/components/DefaultLayout";
 
 const BlogListPage = () => {
   return (
-    <div>BlogListPage</div>
+    <DefaultLayout>
+     <div>Blog Page</div>
+    </DefaultLayout>
   )
 }
 
