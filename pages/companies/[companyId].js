@@ -4,7 +4,6 @@ import DefaultLayout from "@/components/DefaultLayout";
 
 function CompanyDetailPage() {
   const router = useRouter();
-
   const companyId = router.query.companyId;
   const company = getCompanyById(companyId);
 
@@ -17,6 +16,14 @@ function CompanyDetailPage() {
       <div>
         <img src={`/${company.image}`} alt={company.title}/>
         <h1>{company.title}</h1>
+        <p>{company.description}</p>
+        <p>{company.description}</p>
+        <p>{company.description}</p>
+        <p>{company.description}</p>
+        <p>{company.description}</p>
+        <p>{company.description}</p>
+        <p>{company.description}</p>
+        <p>{company.description}</p>
         <p>{company.description}</p>
       </div>
     </DefaultLayout>

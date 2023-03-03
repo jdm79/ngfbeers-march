@@ -51,42 +51,25 @@ const companies = [
     },
     {
       id: 'e3',
-      title: 'Stirone Barley Free',
-      website_url: "https://altgrain.co.uk/",
-      insta_url: "https://www.instagram.com/altgrainco/",
-      description: `Inspired by the Blanche style, it is characterized by continental hops, orange peel and spices, excellent for a refreshing break or to accompany delicate dishes. Yellow-orange color, citrus and spicy aroma, sweet taste. It is enriched with spices and orange peels`,
-      location: 'Italy',
-      image: 'images/stirone-logo.png',
+      title: "JimBrew Brewing Company",
+      website_url: "https://www.jimbrew.co.uk/",
+      insta_url: "https://www.instagram.com/jimbrew_brewing/",
+      fb_url: "https://www.facebook.com/jimbrewbrewing",
+      description: "JimBrew Brewing is the first NGCI taproom in the UK. Based up near Preston, they use only sustainable brewing methods to produce beers that are not only vegan, but naturally gluten-free as well. ",
+      location: 'UK',
+      image: 'images/jimbrew.jpeg',
       isFeatured: true,
-      beers: [
-        {
-          beer_name: "Blonde Ale",
-          image_url: "https://res.cloudinary.com/dlrwbckxi/image/upload/v1661194972/blonde-slide_1024x1024_2x_dzwtjh.jpg",
-          beer_url: "https://altgrain.co.uk/collections/beer/products/blonde-ale-330ml-cans-naturally-gluten-free-pale-ale",
-          beer_description: "A pleasant, craft-brewed blonde ale with a biscuit, malt forward flavour. Brewed with non gluten-containing ingredients (NGCI) to be 100% safe for coeliacs and those with intolerances to gluten. This beer is also vegan friendly." 
-        }
-      ]
+      // beers: [
+      //   {
+      //     beer_name: "Blonde Ale",
+      //     image_url: "https://res.cloudinary.com/dlrwbckxi/image/upload/v1661194972/blonde-slide_1024x1024_2x_dzwtjh.jpg",
+      //     beer_url: "https://altgrain.co.uk/collections/beer/products/blonde-ale-330ml-cans-naturally-gluten-free-pale-ale",
+      //     beer_description: "A pleasant, craft-brewed blonde ale with a biscuit, malt forward flavour. Brewed with non gluten-containing ingredients (NGCI) to be 100% safe for coeliacs and those with intolerances to gluten. This beer is also vegan friendly." 
+      //   }
+      // ]
     },
     {
       id: 'e4',
-      title: 'Suspect Brewing',
-      website_url: "https://altgrain.co.uk/",
-      insta_url: "https://www.instagram.com/altgrainco/",
-      description: `Circuit breaker: our bricks and mortar. Built differently using millet and buckwheat instead of conventional barley malt. `,
-      location: 'UK',
-      image: 'images/suspect-logo.jpeg',
-      isFeatured: true,
-      beers: [
-        {
-          beer_name: "Blonde Ale",
-          image_url: "https://res.cloudinary.com/dlrwbckxi/image/upload/v1661194972/blonde-slide_1024x1024_2x_dzwtjh.jpg",
-          beer_url: "https://altgrain.co.uk/collections/beer/products/blonde-ale-330ml-cans-naturally-gluten-free-pale-ale",
-          beer_description: "A pleasant, craft-brewed blonde ale with a biscuit, malt forward flavour. Brewed with non gluten-containing ingredients (NGCI) to be 100% safe for coeliacs and those with intolerances to gluten. This beer is also vegan friendly." 
-        }
-      ]
-    },
-    {
-      id: 'e5',
       title: 'Riedenberger',
       website_url: "https://shop.riedenburger.de/RIEDENBURGER-Hirse-Bier-Glutenfrei",
       insta_url: "https://www.instagram.com/altgrainco/",
@@ -110,23 +93,40 @@ const companies = [
       ]
     },
     {
-      id: 'e6',
-      title: "JimBrew Brewing Company",
-      website_url: "https://www.jimbrew.co.uk/",
-      insta_url: "https://www.instagram.com/jimbrew_brewing/",
-      fb_url: "https://www.facebook.com/jimbrewbrewing",
-      description: "JimBrew Brewing is the first NGCI taproom in the UK. Based up near Preston, they use only sustainable brewing methods to produce beers that are not only vegan, but naturally gluten-free as well. ",
-      location: 'UK',
-      image: 'images/jimbrew.jpeg',
+      id: 'e5',
+      title: 'Stirone Barley Free',
+      website_url: "https://altgrain.co.uk/",
+      insta_url: "https://www.instagram.com/altgrainco/",
+      description: `Inspired by the Blanche style, it is characterized by continental hops, orange peel and spices, excellent for a refreshing break or to accompany delicate dishes. Yellow-orange color, citrus and spicy aroma, sweet taste. It is enriched with spices and orange peels`,
+      location: 'Italy',
+      image: 'images/stirone-logo.png',
       isFeatured: true,
-      // beers: [
-      //   {
-      //     beer_name: "Blonde Ale",
-      //     image_url: "https://res.cloudinary.com/dlrwbckxi/image/upload/v1661194972/blonde-slide_1024x1024_2x_dzwtjh.jpg",
-      //     beer_url: "https://altgrain.co.uk/collections/beer/products/blonde-ale-330ml-cans-naturally-gluten-free-pale-ale",
-      //     beer_description: "A pleasant, craft-brewed blonde ale with a biscuit, malt forward flavour. Brewed with non gluten-containing ingredients (NGCI) to be 100% safe for coeliacs and those with intolerances to gluten. This beer is also vegan friendly." 
-      //   }
-      // ]
+      beers: [
+        {
+          beer_name: "Blonde Ale",
+          image_url: "https://res.cloudinary.com/dlrwbckxi/image/upload/v1661194972/blonde-slide_1024x1024_2x_dzwtjh.jpg",
+          beer_url: "https://altgrain.co.uk/collections/beer/products/blonde-ale-330ml-cans-naturally-gluten-free-pale-ale",
+          beer_description: "A pleasant, craft-brewed blonde ale with a biscuit, malt forward flavour. Brewed with non gluten-containing ingredients (NGCI) to be 100% safe for coeliacs and those with intolerances to gluten. This beer is also vegan friendly." 
+        }
+      ]
+    },
+    {
+      id: 'e6',
+      title: 'Suspect Brewing',
+      website_url: "https://altgrain.co.uk/",
+      insta_url: "https://www.instagram.com/altgrainco/",
+      description: `Circuit breaker: our bricks and mortar. Built differently using millet and buckwheat instead of conventional barley malt. `,
+      location: 'UK',
+      image: 'images/suspect-logo.jpeg',
+      isFeatured: true,
+      beers: [
+        {
+          beer_name: "Blonde Ale",
+          image_url: "https://res.cloudinary.com/dlrwbckxi/image/upload/v1661194972/blonde-slide_1024x1024_2x_dzwtjh.jpg",
+          beer_url: "https://altgrain.co.uk/collections/beer/products/blonde-ale-330ml-cans-naturally-gluten-free-pale-ale",
+          beer_description: "A pleasant, craft-brewed blonde ale with a biscuit, malt forward flavour. Brewed with non gluten-containing ingredients (NGCI) to be 100% safe for coeliacs and those with intolerances to gluten. This beer is also vegan friendly." 
+        }
+      ]
     },
   ];
 

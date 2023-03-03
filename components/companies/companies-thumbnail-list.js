@@ -1,18 +1,17 @@
-import CompanyItem from "./company-item";
+import CompanyThumbnail from "./company-thumbnail";
 
-function CompaniesList(props) {
+function CompaniesThumbList(props) {
     const { items } = props;
 
     return (
         <div className="w-screen flex justify-center">
-            <ul className="p-2 bg-gray-200 w-full border-b-2 border-black content-center" >
+            <ul>
                 {items.map((company) => (
-                    <CompanyItem 
+                    <CompanyThumbnail
                         key={company.id}
                         id={company.id}
                         image={company.image}
                         title={company.title}
-                        location={company.location}
                     />
                 ))}
             </ul>
@@ -20,4 +19,4 @@ function CompaniesList(props) {
     )
 }
 
-export default CompaniesList
+export default CompaniesThumbnailList;

@@ -5,13 +5,15 @@ function CompanyItem(props) {
     const companyLink = `/companies/${id}`;
     
     return (
-            <li>
+            <li className="p-2 bg-gray-200 w-full border-b-2 border-black">
                 <Link href={companyLink}>
-
-                <img src={image} alt={title}/>
+                
                 <div>
                     <div>
-                        <h2>{title}</h2>
+                        <h1 className="text-5xl p-2">{title}</h1>
+                    </div>
+                    <div className="w-auto">               
+                        <img src={image} alt={title}/>
                     </div>
                     <div>
                         <p>{location}</p>

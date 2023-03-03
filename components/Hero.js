@@ -2,15 +2,23 @@ import Carousel from "./Carousel";
 
 function Hero() {
   return (
-    <div className=''>
-        <h1 className="w-screen flex justify-center p-5">
-          Naturally gluten-free beers - 
-          a showcase of beers made without barley or any other gluten-containing ingredients
-        </h1>
+    <div className="w-screen bg-gray-200 text-black p-10">
+        <div>
+          <p className="p-2 text-sm">
+            Unlike pretty much all "gluten-free beer" on the UK (and rest of the European) market, 
+            the companies listed here do not use barley or wheat in any of their beers. 
+            In Australia, Canada and the United States, gluten-free beers are those beers made without gluten-containing ingredients.
+            Those beers made with barley and then "deglutenised" are called gluten-reduced beers. 
+       
+            In Europe we call these beers gluten-free, even though the latest scientific research shows that 
+            the deglutenisation process does not work and that testing beer for gluten with the ELISA5 
+            test is inaccurate.
 
-        <div className="w-screen flex justify-center">
-            <Carousel />
+            We have listed the European companies, but will be adding the rest of the world
+
+          </p>
         </div>
+       
     </div>
 
   )

@@ -3,6 +3,8 @@ import CompaniesList from "@/components/companies/companies-list";
 import Hero from "@/components/Hero";
 import DefaultLayout from "@/components/DefaultLayout";
 import Banner from "@/components/Banner";
+import ThumbnailRow from "@/components/ThumbnailRow";
+import Links from "./links";
 
 const HomePage = () => {
   const companies = getAllCompanies();
@@ -10,9 +12,10 @@ const HomePage = () => {
   return (
     <DefaultLayout>
         <Banner />
+        <ThumbnailRow items={companies} />
         <Hero />
-        {/* <CompaniesList items={companies} /> */}
-        <h1 className="w-screen flex justify-center p-5">Latest Blog Post</h1>        
+        <h1 className="w-screen flex p-10 justify-center bg-white text-black">Latest blog post here</h1>
+        <h1 className="w-screen flex p-10 justify-center bg-white text-black">Links to go here</h1>
     </DefaultLayout>
        
 
