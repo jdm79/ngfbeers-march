@@ -44,11 +44,59 @@ const companies = [
       isFeatured: true,
       beers: [
         {
-          beer_name: "Blonde Ale",
-          image_url: "/https://res.cloudinary.com/dlrwbckxi/image/upload/v1661194972/blonde-slide_1024x1024_2x_dzwtjh.jpg",
-          beer_url: "https://altgrain.co.uk/collections/beer/products/blonde-ale-330ml-cans-naturally-gluten-free-pale-ale",
-          beer_description: "A pleasant, craft-brewed blonde ale with a biscuit, malt forward flavour. Brewed with non gluten-containing ingredients (NGCI) to be 100% safe for coeliacs and those with intolerances to gluten. This beer is also vegan friendly." 
-        }
+          beer_name: "Dry Hopped Lager",
+          strength: "ABV 4.0% (1.3 UNITS OF ALCOHOL PER 330ML)",
+          image_url: "dry_hopped_lager.png",
+          beer_url: "https://www.glutenfreebeers.co.uk/shop/product/dry-hopped-lager/",
+          beer_description: `A unique bottle re-fermented naturally gluten free lager, lower in carbohydrates. Best served cold. Available in Ocado, selected retailers or buy on-line now.
+
+          Tasting Notes
+          Golden pale in colour, the nose is a mix of citrus-floral aroma sensations, clean with a light malt taste, but with hoppy aftertaste. A short clean mouth feel typical for a beer reduced in calories and carbohydrates
+          
+          `,
+          ingredients: `Ingredients: Naturally gluten free; water, buckwheat, millet, sorghum, hops, brown rice and yeast.`
+        },
+        {
+          beer_name: "India Pale Ale",
+          strength: "ABV 5.0% (1.65 UNITS OF ALCOHOL PER 330ML)",
+          image_url: "ipa.png",
+          beer_url: "https://www.glutenfreebeers.co.uk/shop/product/india-pale-ale/",
+          beer_description: `Bottle re-fermented and naturally gluten free, this is an elegant and classic IPA. Serve at cellar temperature. Available at Ocado, selected retailers or buy online.
+
+          Tasting Notes
+          Amber red in colour with a mix of herbal and pine aroma, a full mouth feel of the special hopping is unique for this IPA.
+          
+          `,
+          ingredients: `Ingredients: Naturally gluten free; water, buckwheat, millet, sorghum, hops, brown rice and yeast.`
+        },
+        {
+          beer_name: "Tripel Ale",
+          strength: "ABV 8.5% (2.81 UNITS OF ALCOHOL PER 330ML)",
+          image_url: "tripel_ale.png",
+          beer_url: "https://www.glutenfreebeers.co.uk/shop/product/tripel-ale/",
+          beer_description: `Bottle re-fermented and naturally gluten free, Triple Ale is the latest edition to our range of beers from ancient grains.
+
+          “Tripel” is a style that was originated by Westmalle Trappist Brewery in the 1930s. Rich and full-flavoured, these are satisfying beers beloved by beer aficionados. Many breweries now produce a tripel, but a tripel made from ancient grains, without barley, is a particular accomplishment.
+          
+          Tasting Notes
+          Light body for beer of this strength; spice and herb nose with flavours of candied fruit. Aromatic, long finish.
+          
+          `,
+          ingredients: `Ingredients: Water, naturally gluten free ancient grains; buckwheat, millet, brown rice, sorghum, hops, yeast.`
+        },
+        {
+          beer_name: "Dubbel Ale",
+          strength: "(ABV 7.0% (2.31 UNITS OF ALCOHOL PER 330ML)",
+          image_url: "dubbel_ale.png",
+          beer_url: "https://www.glutenfreebeers.co.uk/shop/product/dubbel-ale/",
+          beer_description: `Bottle re-fermented and naturally gluten free. The latest edition to our range of beers from ancient grains. The dubbel style originated in Belgium, possibly as a “second style” offered for sale by monastic breweries. Green’s Dubbel is the world’s first version of this style produced from ancient grains, all gluten-free ingredients.
+
+          Tasting Notes
+          In the classic dubbel fashion, a hint of dark-sugar and toffee flavour; and a traditional Belgian yeast bouquet.
+          
+          `,
+          ingredients: `Ingredients: Water, naturally gluten free ancient grains; buckwheat, millet, brown rice, sorghum, hops, yeast.`
+        },
       ]
     },
     {
@@ -64,11 +112,11 @@ const companies = [
       isFeatured: true,
       beers: [
         {
-          beer_name: "Blonde Ale",
-          image_url: "https://res.cloudinary.com/dlrwbckxi/image/upload/v1661194972/blonde-slide_1024x1024_2x_dzwtjh.jpg",
-          beer_url: "https://altgrain.co.uk/collections/beer/products/blonde-ale-330ml-cans-naturally-gluten-free-pale-ale",
-          beer_description: "A pleasant, craft-brewed blonde ale with a biscuit, malt forward flavour. Brewed with non gluten-containing ingredients (NGCI) to be 100% safe for coeliacs and those with intolerances to gluten. This beer is also vegan friendly." 
-        }
+          beer_name: "",
+          image_url: "",
+          beer_url: "",
+          beer_description: "" 
+        },
       ]
     },
     {
@@ -90,11 +138,11 @@ const companies = [
       isFeatured: true,
       beers: [
         {
-          beer_name: "Blonde Ale",
-          image_url: "https://res.cloudinary.com/dlrwbckxi/image/upload/v1661194972/blonde-slide_1024x1024_2x_dzwtjh.jpg",
-          beer_url: "https://altgrain.co.uk/collections/beer/products/blonde-ale-330ml-cans-naturally-gluten-free-pale-ale",
-          beer_description: "A pleasant, craft-brewed blonde ale with a biscuit, malt forward flavour. Brewed with non gluten-containing ingredients (NGCI) to be 100% safe for coeliacs and those with intolerances to gluten. This beer is also vegan friendly." 
-        }
+          beer_name: "",
+          image_url: "",
+          beer_url: "",
+          beer_description: "" 
+        },
       ]
     },
     {
@@ -130,11 +178,11 @@ const companies = [
       isFeatured: true,
       beers: [
         {
-          beer_name: "Blonde Ale",
-          image_url: "https://res.cloudinary.com/dlrwbckxi/image/upload/v1661194972/blonde-slide_1024x1024_2x_dzwtjh.jpg",
+          beer_name: "Circuit Breaker",
+          image_url: "",
           beer_url: "",
-          beer_description: "A pleasant, craft-brewed blonde ale with a biscuit, malt forward flavour. Brewed with non gluten-containing ingredients (NGCI) to be 100% safe for coeliacs and those with intolerances to gluten. This beer is also vegan friendly." 
-        }
+          beer_description: "Circuit breaker: our bricks and mortar. Built differently using millet and buckwheat instead of conventional barley malt. " 
+        },
       ]
     },
   ];
