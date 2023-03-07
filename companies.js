@@ -4,6 +4,7 @@ const companies = [
       title: 'AltgrainCo',
       website_url: "https://altgrain.co.uk/",
       insta_url: "https://www.instagram.com/altgrainco/",
+      fb_url: "https://www.facebook.com/profile.php?id=100076147206544",
       description: 'AltGrainCo brew and supply alternative, NGCI craft-beer and beer brewing ingredients to customers wishing to avoid gluten altogether.',
       location: 'UK',
       image: 'images/altgrain-logo.jpg',
@@ -69,9 +70,10 @@ const companies = [
     },
     {
       id: 'e4',
-      title: 'Riedenberger',
+      title: 'Riedenburger',
       website_url: "https://shop.riedenburger.de/RIEDENBURGER-Hirse-Bier-Glutenfrei",
       insta_url: "https://www.instagram.com/riedenburgerbrauhaus/",
+      fb_url: "https://www.facebook.com/people/Riedenburger-Brauerei-Biergarten/100057273797653",
       description:
         `Brewed exclusively from millet malt. The first "gluten-free" beer from Bavaria.
         
@@ -96,6 +98,7 @@ const companies = [
       title: 'Stirone Barley Free',
       website_url: "https://www.stirone.com/",
       insta_url: "https://www.instagram.com/stironebarleyfree/",
+      fb_url: "https://www.facebook.com/Stironebarleyfree/",
       description: `Inspired by the Blanche style, it is characterized by continental hops, orange peel and spices, excellent for a refreshing break or to accompany delicate dishes. Yellow-orange color, citrus and spicy aroma, sweet taste. It is enriched with spices and orange peels`,
       location: 'Italy',
       image: 'images/stirone-logo.png',
@@ -114,6 +117,7 @@ const companies = [
       title: 'Suspect Brewing',
       website_url: "https://suspectbrewing.co.uk/",
       insta_url: "https://www.instagram.com/suspect_brewing/",
+      fb_url: "https://www.facebook.com/SUSBREWING/",
       description: `Circuit breaker: our bricks and mortar. Built differently using millet and buckwheat instead of conventional barley malt. `,
       location: 'UK',
       image: 'images/suspect-logo.jpg',
