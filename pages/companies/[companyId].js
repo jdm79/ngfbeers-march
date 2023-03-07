@@ -17,14 +17,17 @@ function CompanyDetailPage() {
         <img src={`/${company.image}`} alt={company.title}/>
         <h1>{company.title}</h1>
         <p>{company.description}</p>
-        <p>{company.description}</p>
-        <p>{company.description}</p>
-        <p>{company.description}</p>
-        <p>{company.description}</p>
-        <p>{company.description}</p>
-        <p>{company.description}</p>
-        <p>{company.description}</p>
-        <p>{company.description}</p>
+        <ul>
+        {company.beers.map((item) => (
+          <div>
+            <li>{item.beer_name}</li>
+            <li><img src={item.image_url} /></li>
+            <li>{item.beer_description}</li>
+          </div>
+         
+        ))}
+        </ul>
+
       </div>
     </DefaultLayout>
 

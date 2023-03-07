@@ -5,22 +5,15 @@ function CompanyItem(props) {
     const companyLink = `/companies/${id}`;
     
     return (
-            <li className="p-2 bg-gray-200 w-full border-b-2 border-black">
+            // <li classNameName="p-2 bg-gray-200 w-full border-b-2 border-black">
                 <Link href={companyLink}>
-                
-                <div>
-                    <div>
-                        <h1 className="text-5xl p-2">{title}</h1>
+                    <div className="w-full ">
+                        <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600"></div>
+                        <h1 className="w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700">{title}</h1>
+                        <p className="w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></p>
                     </div>
-                    <div className="w-auto">               
-                        <img src={image} alt={title}/>
-                    </div>
-                    <div>
-                        <p>{location}</p>
-                    </div>
-                </div>
                 </Link>
-            </li>
+            // </li>
     )
 }
 
