@@ -116,7 +116,7 @@ const companies = [
       insta_url: "https://www.instagram.com/suspect_brewing/",
       description: `Circuit breaker: our bricks and mortar. Built differently using millet and buckwheat instead of conventional barley malt. `,
       location: 'UK',
-      image: 'images/suspect-logo.jpeg',
+      image: 'images/suspect-logo.jpg',
       isFeatured: true,
       beers: [
         {

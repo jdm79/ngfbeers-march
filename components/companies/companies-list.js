@@ -4,9 +4,9 @@ function CompaniesList(props) {
     const { items } = props;
 
     return (
-        <section className="bg-white dark:bg-gray-900">
+        <section className="bg-gray-200 ">
             <div className="container px-6 py-10 mx-auto">
-                <h1 className="w-48 h-6 mx-auto rounded-lg">
+                <h1 className="w-auto h-6 mx-auto rounded-lg">
                     Click on the companies below to find out more
                 </h1>
                
