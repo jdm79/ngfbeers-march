@@ -11,8 +11,8 @@ const HomePage = () => {
 
   return (
     <DefaultLayout>
-        <Banner />
         <ThumbnailRow items={companies} />
+        <Banner />
         <Hero />
         <h1 className="w-screen flex p-10 justify-center bg-white text-black">Latest blog post here</h1>
         <h1 className="w-screen flex p-10 justify-center bg-white text-black">Links to go here</h1>
