@@ -95,50 +95,16 @@ function CompanyDetailPage() {
                                 <span className="mx-2">{item.beer_description}</span>
                               </p>
                             </div>
-                          
                           ))}
                         </ul>
                     </div>
                 </div>
             </div>
-    
-            {/* <div className="flex items-center justify-center w-200 h-96 lg:w-200">
-              <ul className="flex items-center justify-center w-200 h-96 lg:w-200">
-                {company.beers.map((item) => (
-                  <div>
-                    <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
-                            <span className="mx-2">{item.beer_name}</span>
-                    </p>
-                    <img className="w-10 rounded-full border-4 border-black" src={item.image_url} />
-                    <li>{item.beer_description}</li>
-                  </div>
-                
-                ))}
-              </ul>
-            </div>  */}
-        </div>
-    </section>
+          </div>
+      </section>
     </DefaultLayout>
 
   )
 }
 
 export default CompanyDetailPage;
-
-{/* <div>
-        <img />
-        <h1>{company.title}</h1>
-        <p>{company.description}</p>
-        <ul>
-        {company.beers.map((item) => (
-          <div>
-            <li>{item.beer_name}</li>
-            <li><img src={item.image_url} /></li>
-            <li>{item.beer_description}</li>
-          </div>
-         
-        ))}
-        </ul>
-
-      </div> */}
-
