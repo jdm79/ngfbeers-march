@@ -2,7 +2,6 @@ const companies = [
     {
       id: 'e1',
       title: 'AltgrainCo',
-      beers: [],
       website_url: "https://altgrain.co.uk/",
       insta_url: "https://www.instagram.com/altgrainco/",
       description: 'AltGrainCo brew and supply alternative, NGCI craft-beer and beer brewing ingredients to customers wishing to avoid gluten altogether.',
