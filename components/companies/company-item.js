@@ -7,7 +7,7 @@ function CompanyItem(props) {
     return (
             // <li classNameName="p-2 bg-gray-200 w-full border-b-2 border-black">
                 <Link href={companyLink}>
-                    <div className="w-full bg-gray-200 rounded-lg lg:mb-2 mb-10">
+                    <div className="w-full bg-white dark:bg-gray-800 rounded-lg lg:mb-2 mb-10">
                         <div className="w-full h-64">
                         <img className="w-full rounded-full" src={`/${image}`} alt={title} />
                         </div>
