@@ -46,7 +46,6 @@ function CompanyDetailPage() {
                         < svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mx-2 text-yellow-400">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
                           </svg>
-
                             <a href={company.website_url}>Website Link<span className="mx-2"></span></a>
                         </p>
 
@@ -62,6 +61,31 @@ function CompanyDetailPage() {
                         </svg>
                             <a href={company.insta_url}>Instagram<span className="mx-2"></span></a>
                         </p>
+
+
+                        {/* fb  */}
+                        <div>
+                        {company.fb_url ? (
+                          <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="w-6 h-6 mx-2 text-yellow-400"
+                            // style="color: #1769ff"
+                            fill="currentColor"
+                            viewBox="0 0 24 24">
+                             <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                              <a href={company.fb_url}>Facebook<span className="mx-2"></span></a>
+                          </p>
+                        ) : (
+                          <div></div>
+                        )}
+                        </div>
+
+
+
+
                         <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
                             <span className="mx-2">{company.description}</span>
                         </p>
