@@ -7,6 +7,7 @@ const companies = [
       fb_url: "https://www.facebook.com/profile.php?id=100076147206544",
       description: 'AltGrainCo brew and supply alternative, NGCI craft-beer and beer brewing ingredients to customers wishing to avoid gluten altogether.',
       location: 'UK',
+      region: "EU",
       image: 'images/altgrain-logo.jpg',
       isFeatured: true,
       beers: [
@@ -38,6 +39,7 @@ const companies = [
       description:
         "One of the original gluten-free brewers, with a mix of gluten-reduced and gluten-free beers in their range. Although a British company, the beers themselves are brewed in Belgium, and their IPA is an award-winning favourite in the naturally gluten-free beer community here in Europe (and elsewhere).",
       location: 'UK',
+      region: "EU",
       image: 'images/greens-logo.png',
       isFeatured: true,
       beers: [
@@ -57,6 +59,7 @@ const companies = [
       fb_url: "https://www.facebook.com/jimbrewbrewing",
       description: "JimBrew Brewing is the first NGCI taproom in the UK. Based up near Preston, they use only sustainable brewing methods to produce beers that are not only vegan, but naturally gluten-free as well. ",
       location: 'UK',
+      region: "EU",
       image: 'images/jimbrew.jpeg',
       isFeatured: true,
       beers: [
@@ -82,6 +85,7 @@ const companies = [
         Thanks to our long brewing experience, we have succeeded in brewing a very tasty, beery drink from exclusively natural, ecological and GMO-free raw materials.
         Guaranteed gluten-free. Guaranteed organic. Guaranteed good taste.`,
       location: 'Germany',
+      region: "EU",
       image: 'images/rieden-logo.png',
       isFeatured: true,
       beers: [
@@ -101,6 +105,7 @@ const companies = [
       fb_url: "https://www.facebook.com/Stironebarleyfree/",
       description: `Inspired by the Blanche style, it is characterized by continental hops, orange peel and spices, excellent for a refreshing break or to accompany delicate dishes. Yellow-orange color, citrus and spicy aroma, sweet taste. It is enriched with spices and orange peels`,
       location: 'Italy',
+      region: "EU",
       image: 'images/stirone-logo.png',
       isFeatured: true,
       beers: [
@@ -120,6 +125,7 @@ const companies = [
       fb_url: "https://www.facebook.com/SUSBREWING/",
       description: `Circuit breaker: our bricks and mortar. Built differently using millet and buckwheat instead of conventional barley malt. `,
       location: 'UK',
+      region: "EU",
       image: 'images/suspect-logo.jpg',
       isFeatured: true,
       beers: [
