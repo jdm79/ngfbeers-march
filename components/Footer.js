@@ -7,9 +7,8 @@ function Footer() {
         <div className="container mx-auto flex justify-center py-12">
             <div className="py-5">
                 <div className="flex gap-6 justify-center">
-                    <Link href={'/'}><ImFacebook /></Link>
+                    <Link href={'https://www.facebook.com/profile.php?id=100082957466636'}><ImFacebook /></Link>
                     <Link href={'https://www.instagram.com/ngfbeers_europe/'}  target="_blank"><ImInstagram /></Link>
-                    <Link href={'/'}><ImInstagram /></Link>
                 </div>
                 <p className="py-5 text-gray-800">Copyright ngfbeers ©2023 All rights reserved</p>
                 <p className="text-gray-600 text-center">Terms & conditions GDPR analytics</p>
