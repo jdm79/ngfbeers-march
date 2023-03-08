@@ -2,51 +2,40 @@ const links = [
    
     {
       id: 'l1',
-      image: '/images/links/zero-tolerance.jpg',
-      link_url: 'https://www.facebook.com/groups/179311875956380/',
-      title: 'Zero Tolerance Gluten Free Homebrew Club',
-      link_type: "Facebook Group for naturally gluten-free brewers",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      link_url: 'https://www.nhs.uk/conditions/coeliac-disease/complications/',
+      title: 'Coeliac Disease Potential Complications',
+      link_type: "National Health Service UK",
+      body: ""
     },
     {
       id: 'l2',
-      image: '/images/links/zero-tolerance.jpg',
       link_url: 'https://www.facebook.com/groups/179311875956380/',
       title: 'Zero Tolerance Gluten Free Homebrew Club',
       link_type: "Facebook Group for naturally gluten-free brewers",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
       id: 'l3',
-      image: '/images/links/zero-tolerance.jpg',
-      link_url: 'https://www.facebook.com/groups/179311875956380/',
-      title: 'Zero Tolerance Gluten Free Homebrew Club',
-      link_type: "Facebook Group for naturally gluten-free brewers",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      link_url: 'https://missmuru.wordpress.com/2019/04/11/safety-of-gluten-free-beer-aoecs-response-to-my-open-letter/',
+      title: 'Open Letter to the Association of European Coeliac Societies (AOECS)',
+      link_type: "Blog campaigning for gluten-free beer to be gluten-free",
     },
     {
       id: 'l4',
-      image: '/images/links/zero-tolerance.jpg',
-      link_url: 'https://www.facebook.com/groups/179311875956380/',
-      title: 'Zero Tolerance Gluten Free Homebrew Club',
-      link_type: "Facebook Group for naturally gluten-free brewers",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      link_url: 'https://zerotolerancegf.podbean.com/',
+      title: 'Zero Tolerance Podcast',
+      link_type: "Podcast on all things naturally gluten-free beer",
     },
     {
       id: 'l5',
-      image: '/images/links/zero-tolerance.jpg',
-      link_url: 'https://www.facebook.com/groups/179311875956380/',
-      title: 'Zero Tolerance Gluten Free Homebrew Club',
-      link_type: "Facebook Group for naturally gluten-free brewers",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      link_url: 'https://www.forbes.com/sites/samlemonick/2017/11/01/a-new-test-to-make-sure-your-beer-is-gluten-free/',
+      title: 'A New Test To Make Sure Your Beer Is Gluten Free',
+      link_type: "Forbes article by Sam Lemonick",
     },
     {
       id: 'l6',
-      image: '/images/links/zero-tolerance.jpg',
-      link_url: 'https://www.facebook.com/groups/179311875956380/',
-      title: 'Zero Tolerance Gluten Free Homebrew Club',
-      link_type: "Facebook Group for naturally gluten-free brewers",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      link_url: 'https://www.abc.net.au/news/science/2018-12-15/looking-for-a-low-gluten-beer-heres-what-you-need-to-know/10562248',
+      title: "Looking for a low-gluten beer? Here's what you need to know",
+      link_type: "ABC article on the inaccuracy of current gluten-free beer testing",
     },
   
   ]
