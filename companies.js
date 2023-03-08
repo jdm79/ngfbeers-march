@@ -254,7 +254,7 @@ const companies = [
       website_url: "https://suspectbrewing.co.uk/",
       insta_url: "https://www.instagram.com/suspect_brewing/",
       fb_url: "https://www.facebook.com/SUSBREWING/",
-      description: `Circuit breaker: our bricks and mortar. Built differently using millet and buckwheat instead of conventional barley malt. `,
+      description: `A dedicated naturally gluten-free micro brewery in Edinburgh, producing Circuit Breaker, a clean and crisp lager.`,
       location: 'UK',
       region: "EU",
       image: 'images/companies/suspect-logo.jpg',
@@ -262,7 +262,7 @@ const companies = [
       beers: [
         {
           beer_name: "Circuit Breaker",
-          image_url: "",
+          image_url: "circuit-breaker.png",
           beer_url: "",
           beer_description: "Circuit breaker: our bricks and mortar. Built differently using millet and buckwheat instead of conventional barley malt. " 
         },
