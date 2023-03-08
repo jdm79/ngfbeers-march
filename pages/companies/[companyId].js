@@ -95,7 +95,7 @@ function CompanyDetailPage() {
                                   <div></div>
                                 )}
                                 </div>
-                              <img className="w-auto rounded-full border-4 mb-2 border-black" src={`/images/beers/${item.image_url}`} />
+                              <img className="w-auto rounded-full border-4 mb-2 m-auto border-black" src={`/images/beers/${item.image_url}`} />
                               <p className="flex items-center -mx-2 mb-4 text-gray-700 dark:text-gray-200">
                                <a className="mx-2" href={item.beer_url} target="_blank hover:underline">{`Click here to see beer on ${company.title}`}</a>
                               </p>
