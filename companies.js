@@ -111,12 +111,7 @@ const companies = [
       image: 'images/companies/jimbrew-logo.jpeg',
       isFeatured: true,
       beers: [
-        {
-          beer_name: "",
-          image_url: "",
-          beer_url: "",
-          beer_description: "" 
-        },
+    
       ]
     },
     {
