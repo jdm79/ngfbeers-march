@@ -6,8 +6,8 @@ function CompaniesList(props) {
     return (
         <section className="bg-white dark:bg-gray-800">
             <div className="container px-6 py-10 mx-auto">
-                <h1 className="w-auto h-6 mx-auto rounded-lg text-black dark:text-white">
-                    Click on the companies below to find out more
+                <h1 className="w-auto h-6 mx-auto rounded-lg text-center text-black dark:text-white">
+                    Click/tap on the companies below to find out more
                 </h1>
                
                 <ul className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3">
