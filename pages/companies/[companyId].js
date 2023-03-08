@@ -44,7 +44,7 @@ function CompanyDetailPage() {
                           </svg>
                           <a href={company.website_url} target="_blank">Website Link<span className="mx-2"></span></a>
                         </p>
-
+                        {company.insta_url ? (
                         <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -57,6 +57,9 @@ function CompanyDetailPage() {
                           </svg>
                           <a href={company.insta_url} target="_blank">Instagram<span className="mx-2"></span></a>
                         </p>
+                          ) : (
+                            <div></div>
+                          )}
 
                         {/* fb  */}
                         <div>

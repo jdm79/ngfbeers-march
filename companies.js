@@ -147,6 +147,26 @@ const companies = [
     },
     {
       id: 'e5',
+      title: 'Schnitzer Bräu',
+      website_url: "https://www.schnitzer.eu/",
+      fb_url: "https://www.facebook.com/SchnitzerBraeu/",
+      description:
+        `Schnitzer Bräu is gluten-free. We only use naturally gluten-free raw materials.`,
+      location: 'Germany',
+      region: "EU",
+      image: 'images/companies/schnitz-logo.png',
+      isFeatured: true,
+      beers: [
+        {
+          beer_name: "Schnitzer Bräu",
+          image_url: "schnitz.png",
+          beer_url: "https://www.facebook.com/SchnitzerBraeu/",
+          beer_description: "Schnitzer Bräu's organic, gluten-free beer is made from millet malt and brewed in Offenburg in the Black Forest. Classically malt-driven with a persistent refreshing palate and a fresh, clean finish." 
+        },
+      ]
+    },
+    {
+      id: 'e6',
       title: 'Stirone Barley Free',
       website_url: "https://www.stirone.com/",
       insta_url: "https://www.instagram.com/stironebarleyfree/",
@@ -166,7 +186,7 @@ const companies = [
       ]
     },
     {
-      id: 'e6',
+      id: 'e7',
       title: 'Suspect Brewing',
       website_url: "https://suspectbrewing.co.uk/",
       insta_url: "https://www.instagram.com/suspect_brewing/",
