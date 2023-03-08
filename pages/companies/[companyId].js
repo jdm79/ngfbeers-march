@@ -113,7 +113,7 @@ function CompanyDetailPage() {
                           ))}
                         </ul>
                         ) : (
-                          <div>No beers listed yet</div>
+                          <div></div>
                         )}
                     </div>
                 </div>

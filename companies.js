@@ -105,7 +105,11 @@ const companies = [
       website_url: "https://www.jimbrew.co.uk/",
       insta_url: "https://www.instagram.com/jimbrew_brewing/",
       fb_url: "https://www.facebook.com/jimbrewbrewing",
-      description: "JimBrew Brewing is the first NGCI taproom in the UK. Based up near Preston, they use only sustainable brewing methods to produce beers that are not only vegan, but naturally gluten-free as well. ",
+      description: `JimBrew Brewing is a new brewery - and the first NGCI taproom in the UK. 
+                    Based in Preston, they use only sustainable brewing methods to produce beers 
+                    that are not only vegan, but naturally gluten-free as well. 
+                    They follow the philosophy of targeting a non-coeliac audience as well as coeliacs,
+                    as gluten-free beer should indeed be good enough for anyone to drink!`,
       location: 'UK',
       region: "EU",
       image: 'images/companies/jimbrew-logo.jpeg',
@@ -258,7 +262,7 @@ const companies = [
         {
           beer_name: "Circuit Breaker",
           image_url: "circuit-breaker.png",
-          beer_url: "",
+          beer_url: "https://www.facebook.com/SUSBREWING/",
           beer_description: "Circuit breaker: our bricks and mortar. Built differently using millet and buckwheat instead of conventional barley malt. " 
         },
       ]
