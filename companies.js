@@ -108,7 +108,7 @@ const companies = [
       description: "JimBrew Brewing is the first NGCI taproom in the UK. Based up near Preston, they use only sustainable brewing methods to produce beers that are not only vegan, but naturally gluten-free as well. ",
       location: 'UK',
       region: "EU",
-      image: 'images/companies/jimbrew.jpeg',
+      image: 'images/companies/jimbrew-logo.jpeg',
       isFeatured: true,
       beers: [
         {
@@ -121,6 +121,27 @@ const companies = [
     },
     {
       id: 'e4',
+      title: "Moulin des Moines",
+      website_url: "https://www.naturline.fr/boutique/Boissons/Bieres-cidres-panaches-bieres-sans-alcool/Biere-gluten-free-33cl-bio-3791.html",
+      insta_url: "",
+      fb_url: "https://www.facebook.com/moulindesmoines67",
+      description: "JimBrew Brewing is the first NGCI taproom in the UK. Based up near Preston, they use only sustainable brewing methods to produce beers that are not only vegan, but naturally gluten-free as well. ",
+      location: 'France',
+      region: "EU",
+      image: 'images/companies/moulin-logo.png',
+      isFeatured: true,
+      beers: [
+        {
+          beer_name: "Bière Blonde",
+          image_url: "moulin-des-moines.png",
+          beer_url: "",
+          beer_description: `
+          Gluten-free fruity taste. This recipe has been specially developed for people intolerant to gluten. It offers a drink that complements a supervised diet and allows you to share pleasant moments of tasting.`
+        },
+      ]
+    },
+    {
+      id: 'e5',
       title: 'Riedenburger',
       website_url: "https://shop.riedenburger.de/RIEDENBURGER-Hirse-Bier-Glutenfrei",
       insta_url: "https://www.instagram.com/riedenburgerbrauhaus/",
@@ -146,7 +167,7 @@ const companies = [
       ]
     },
     {
-      id: 'e5',
+      id: 'e6',
       title: 'Schnitzer Bräu',
       website_url: "https://www.schnitzer.eu/",
       fb_url: "https://www.facebook.com/SchnitzerBraeu/",
@@ -166,7 +187,7 @@ const companies = [
       ]
     },
     {
-      id: 'e6',
+      id: 'e7',
       title: 'Stirone Barley Free',
       website_url: "https://www.stirone.com/",
       insta_url: "https://www.instagram.com/stironebarleyfree/",
@@ -186,7 +207,7 @@ const companies = [
       ]
     },
     {
-      id: 'e7',
+      id: 'e8',
       title: 'Suspect Brewing',
       website_url: "https://suspectbrewing.co.uk/",
       insta_url: "https://www.instagram.com/suspect_brewing/",
