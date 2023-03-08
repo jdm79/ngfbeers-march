@@ -125,7 +125,8 @@ const companies = [
       website_url: "https://www.naturline.fr/boutique/Boissons/Bieres-cidres-panaches-bieres-sans-alcool/Biere-gluten-free-33cl-bio-3791.html",
       insta_url: "",
       fb_url: "https://www.facebook.com/moulindesmoines67",
-      description: "JimBrew Brewing is the first NGCI taproom in the UK. Based up near Preston, they use only sustainable brewing methods to produce beers that are not only vegan, but naturally gluten-free as well. ",
+      description: `
+      The Moulin des Moines brand was created in 1970 on the very site of a 13th century mill founded by Cistercian monks, in the heart of the Alsatian countryside, on the banks of the Zorn river. Today, Nicolas and Pascal Meckert continue their parents' commitment by guiding the new generations towards an ever more organic world with ever more vitality!`,
       location: 'France',
       region: "EU",
       image: 'images/companies/moulin-logo.png',
@@ -143,7 +144,7 @@ const companies = [
     {
       id: 'e5',
       title: 'Riedenburger',
-      website_url: "https://shop.riedenburger.de/RIEDENBURGER-Hirse-Bier-Glutenfrei",
+      website_url: "https://shop.riedenburger.de/",
       insta_url: "https://www.instagram.com/riedenburgerbrauhaus/",
       fb_url: "https://www.facebook.com/people/Riedenburger-Brauerei-Biergarten/100057273797653",
       description:
@@ -159,10 +160,14 @@ const companies = [
       isFeatured: true,
       beers: [
         {
-          beer_name: "",
-          image_url: "",
-          beer_url: "",
-          beer_description: "" 
+          beer_name: "Riedenburger Hirse-Bier Glutenfrei",
+          image_url: "riedenburger.png",
+          beer_url: "https://shop.riedenburger.de/RIEDENBURGER-Hirse-Bier-Glutenfrei",
+          beer_description: `
+          Grain-mild gluten-free millet beer, naturally cloudy.
+          
+          
+          This gluten-free millet beer in the glass is light yellow and covered with a fine foam. It smells of grain and tastes sweet and sour. Regional organic hops give this millet beer a delicate bitterness.` 
         },
       ]
     },
@@ -192,18 +197,55 @@ const companies = [
       website_url: "https://www.stirone.com/",
       insta_url: "https://www.instagram.com/stironebarleyfree/",
       fb_url: "https://www.facebook.com/Stironebarleyfree/",
-      description: `Inspired by the Blanche style, it is characterized by continental hops, orange peel and spices, excellent for a refreshing break or to accompany delicate dishes. Yellow-orange color, citrus and spicy aroma, sweet taste. It is enriched with spices and orange peels`,
+      description: `
+      The legal definition of beer in Italy, unlike many other countries, provides that it is made exclusively from barley or wheat. With the transformation of sorghum we can produce a "fermented drink". Our choice is demanding and particularly courageous, but the qualities and advantages of our product have led us to accept the challenge. It is a drink with a great personality that is appreciated by enthusiasts, who discover a new taste to compare with those already known. It is an allergen-free drink that can be consumed by everyone (who can consume alcoholic beverages).`,
       location: 'Italy',
       region: "EU",
       image: 'images/companies/stirone-logo.png',
       isFeatured: true,
       beers: [
         {
-          beer_name: "Blonde Ale",
-          image_url: "https://res.cloudinary.com/dlrwbckxi/image/upload/v1661194972/blonde-slide_1024x1024_2x_dzwtjh.jpg",
+          beer_name: "Blonde LaGaia",
+          image_url: "lablonda.png",
           beer_url: "",
-          beer_description: "A pleasant, craft-brewed blonde ale with a biscuit, malt forward flavour. Brewed with non gluten-containing ingredients (NGCI) to be 100% safe for coeliacs and those with intolerances to gluten. This beer is also vegan friendly." 
-        }
+          beer_description: `Inspired by the Blanche style, it is characterized by continental hops, orange peel and spices, excellent for a refreshing break or to accompany delicate dishes. Yellow-orange color, citrus and spicy aroma, sweet taste. It is enriched with spices and orange peels.`,
+          ingredients: `Water, white sorghum (20%), orange peel, hops, yeast, spices, stabilizer: E405`
+        },
+        {
+          beer_name: "LaGaia Amber",
+          image_url: "amber.png",
+          beer_url: "",
+          beer_description: ``,
+          ingredients: ``
+        },
+        {
+          beer_name: "LaGaia Summer Brau",
+          image_url: "",
+          beer_url: "",
+          beer_description: ``,
+          ingredients: ``
+        },
+        {
+          beer_name: "Flanders Plot",
+          image_url: "",
+          beer_url: "",
+          beer_description: ``,
+          ingredients: ``
+        },
+        {
+          beer_name: "Pumpkin Heart",
+          image_url: "",
+          beer_url: "",
+          beer_description: ``,
+          ingredients: ``
+        },
+        {
+          beer_name: "Ginger Beer",
+          image_url: "",
+          beer_url: "",
+          beer_description: ``,
+          ingredients: ``
+        },
       ]
     },
     {

@@ -14,7 +14,7 @@ function Hero() {
             the deglutenisation process does not work and that testing beer for gluten with the ELISA5 
             test is inaccurate.
 
-            We have listed the European companies, but will be adding the rest of the world
+            We have listed the European companies, but will be adding the rest of the world soon.
 
           </p>
         </div>
