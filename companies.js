@@ -135,7 +135,7 @@ const companies = [
         {
           beer_name: "Bière Blonde",
           image_url: "moulin-des-moines.png",
-          beer_url: "",
+          beer_url: "https://www.naturline.fr/boutique/Boissons/Bieres-cidres-panaches-bieres-sans-alcool/Biere-gluten-free-33cl-bio-3791.html",
           beer_description: `
           Gluten-free fruity taste. This recipe has been specially developed for people intolerant to gluten. It offers a drink that complements a supervised diet and allows you to share pleasant moments of tasting.`
         },
@@ -214,37 +214,37 @@ const companies = [
         {
           beer_name: "LaGaia Amber",
           image_url: "amber.png",
-          beer_url: "",
-          beer_description: ``,
-          ingredients: ``
+          beer_url: "https://www.stirone.com/lagaia-ambra/",
+          beer_description: `The aroma and its taste are given by the use of different American hops in boiling and Dry-Hopping, as in the style of inspiration, the American Pale Ale. Excellent to accompany grilled meat and not too structured dishes; or simply drunk alone, to be able to enjoy the fresh notes of the hops to the fullest.`,
+          ingredients: `Water, white sorghum (20%), hops, yeast, caramelized sugar, flavourings, stabilizer: E405.`
         },
         {
           beer_name: "LaGaia Summer Brau",
-          image_url: "",
-          beer_url: "",
-          beer_description: ``,
-          ingredients: ``
+          image_url: "summer.png",
+          beer_url: "https://www.stirone.com/lagaia-summer-brau/",
+          beer_description: `The brewer completed the bitterness of Tettnanang hops with notes of Bergamot and Bitter Orange. A distinctive taste and aroma, an original and unique drink. Excellent in summer as an aperitif or to accompany fresh dishes.`,
+          ingredients: `white sorghum water (20%) orange peel, hops, yeast, spices, natural flavourings, stabilizer: E405`
         },
         {
           beer_name: "Flanders Plot",
-          image_url: "",
-          beer_url: "",
-          beer_description: ``,
-          ingredients: ``
+          image_url: "flanders.png",
+          beer_url: "https://www.stirone.com/trama-di-fiandra/",
+          beer_description: `Stirone brewer Stephen was inspired by the Flemish Flemish ale sour beers. With white sorghum he has prepared a drink with vinous and acetic notes typical of the style. The acetic (and lactic) nature that characterizes the style is not too pungent. Hop bitterness and a slight astringency complete the sip. Particularly versatile in pairing with food, both the world of cheese and seafood dishes.`,
+          ingredients: `Water, white sorghum (20%), hops, yeast.`
         },
         {
           beer_name: "Pumpkin Heart",
-          image_url: "",
-          beer_url: "",
-          beer_description: ``,
-          ingredients: ``
+          image_url: "pumpkin.png",
+          beer_url: "https://www.stirone.com/cuore-di-zucca/",
+          beer_description: ` Its sugars are perfect for completing the fermentation of sorghum. The bitterness of the hops, the notes of Peruvian cocoa, bourbon vanilla and Belgian yeast make it a sofa drink.`,
+          ingredients: `Water, white sorghum (15%), pumpkin puree (4%), orange peel, hops, yeast, spices, flavourings, caramelised sugar, stabilizer: E405.`
         },
         {
           beer_name: "Ginger Beer",
-          image_url: "",
-          beer_url: "",
-          beer_description: ``,
-          ingredients: ``
+          image_url: "ginger.png",
+          beer_url: "https://www.stirone.com/ginger-beer/",
+          beer_description: `The origins of the original Ginger Beer are in 16th century Great Britain where, with the alcoholic fermentation of ginger rhizome, this alcoholic drink was created which has achieved success all over the world even in a non-alcoholic version. With its spicy, robust and aromatic flavour, it is excellent to drink alone, appreciating the properties of gingerol or mixed to create cocktails such as the famous Moskow Mule. Stirone only use Italian ginger, a supply chain guaranteed by the Italian Ginger Consortium.`,
+          ingredients: `Water, infusion of Italian ginger (30%), lemon, lime, pear juice and pulp, yeast, spices, acidity regulator: E336(i).`
         },
       ]
     },
