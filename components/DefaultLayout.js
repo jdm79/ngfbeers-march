@@ -8,12 +8,12 @@ import Banner from "./Banner";
 const DefaultLayout = ({ children }) => {
     const companies = getAllCompanies();
     return (
-        <>
+        <div className="font-courier">
             <Header />
             <Nav />
             {children}
             <Footer />
-        </>
+        </div>
     )
 };
 

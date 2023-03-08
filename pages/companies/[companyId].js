@@ -15,7 +15,7 @@ function CompanyDetailPage() {
 
   return (
     <DefaultLayout>
-      <section className="bg-white dark:bg-gray-800">
+      <section className="bg-white dark:bg-gray-800 font-courier">
         <Link href="/companies" >
           <button className="bg-yellow-400 hover:bg-black text-black font-bold py-2 px-4 rounded my-1 ml-1">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mx-2">
@@ -26,10 +26,9 @@ function CompanyDetailPage() {
         <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center">
             <div >
                 <div >
-                    <h1 className="text-3xl font-bold tracking-wide text-gray-800 dark:text-white lg:text-5xl">
+                    <h1 className="font-bold tracking-wide text-gray-800 dark:text-white text-5xl md:text-7xl">
                         {company.title}
                     </h1>
-                    
                     <div className="mt-8 space-y-5">
                         <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mx-2 text-yellow-400">
@@ -84,12 +83,21 @@ function CompanyDetailPage() {
                         <ul className="grid gap-x-3 row-auto w-200 lg:w-200">
                           {company.beers.map((item) => (
                             <div className="p-5 mt-10  border border-gray-900">
-                              <p className="flex -mx-2 text-gray-700 dark:text-gray-200 text-center">
+                              <h1 className="flex -mx-2 text-gray-700 dark:text-gray-200 text-center text-4xl">
                                 <span className="mx-2 mb-2">{item.beer_name}</span>
-                              </p>
+                              </h1>
+                              <div>
+                                {item.strength ? (
+                                  <h4 className="flex text-xs items-center -mx-2 mb-4 text-gray-700 dark:text-gray-200">
+                                    <span className="mx-2">{item.strength}</span>
+                                  </h4>
+                                ) : (
+                                  <div></div>
+                                )}
+                                </div>
                               <img className="w-auto rounded-full border-4 mb-2 border-black" src={`/images/beers/${item.image_url}`} />
                               <p className="flex items-center -mx-2 mb-4 text-gray-700 dark:text-gray-200">
-                               <a className="mx-2" href={item.beer_url} target="_blank">{`Click here to see beer on ${company.title}`}</a>
+                               <a className="mx-2" href={item.beer_url} target="_blank hover:underline">{`Click here to see beer on ${company.title}`}</a>
                               </p>
                               <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
                                 <span className="mx-2">{item.beer_description}</span>
