@@ -2,3 +2,8 @@
 @import 'tailwindcss/components';
 /* @import './base.css'; */
 @import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: "courier";
+    src:url('../public/assets/courier.ttf');
+   }
