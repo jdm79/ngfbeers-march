@@ -1,6 +1,6 @@
 import CompanyThumbnail from "./company-thumbnail";
 
-function CompaniesThumbList(props) {
+function CompaniesThumbnailList(props) {
     const { items } = props;
 
     return (
