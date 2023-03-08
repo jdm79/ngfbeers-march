@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useRouter } from 'next/router'
 
 const navigation = [
   { name: 'Home', href: '/', current: false },
@@ -17,6 +18,8 @@ function classNames(...classes) {
 }
 
 export default function Nav() {
+  const router = useRouter();
+
   return (
     <Disclosure as="nav" className="bg-yellow-400">
       {({ open }) => (
@@ -49,19 +52,26 @@ export default function Nav() {
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current ? 'bg-blue-300 text-black' : 'text-black hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
+                    {navigation.map((item) => {
+                      const isActive = router.asPath === item.href;
+                      return (
+                        <a
+                          key={item.name}
+                          href={item.href}
+                          className={classNames(
+                            isActive
+                              ? "text-black font-bold bg-gradient-to-r bg-yellow-400 border-solid border-black border-2"
+                              : "text-gray-700 hover:bg-gray-200 hover:text-gray-500 hover:underline hover:underline-offset-2",
+                            "px-3 py-2 rounded-md text-sm font-medium font-mono"
+                          )}
+                        >
+                          {item.name}
+                        </a>
+                      )
+                     
+                    })
+                  }
+                    
                   </div>
                 </div>
               </div>
