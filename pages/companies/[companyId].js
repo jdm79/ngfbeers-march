@@ -15,7 +15,7 @@ function CompanyDetailPage() {
 
   return (
     <DefaultLayout>
-      <section className="bg-white dark:bg-gray-800 font-courier">
+      <section className="bg-white dark:bg-gray-800">
         <Link href="/companies" >
           <button className="bg-yellow-400 hover:bg-black text-black font-bold py-2 px-4 rounded my-1 ml-1">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mx-2">
@@ -97,8 +97,18 @@ function CompanyDetailPage() {
                                 </div>
                               <img className="w-auto rounded-full border-4 mb-2 m-auto border-black" src={`/images/beers/${item.image_url}`} />
                               <p className="flex items-center -mx-2 mb-4 text-gray-700 dark:text-gray-200">
-                               <a className="mx-2" href={item.beer_url} target="_blank hover:underline">{`Click here to see beer on ${company.title}`}</a>
+                               <a className="mx-2 text-blue-600 dark:text-yellow-400 hover:underline" href={item.beer_url} target="_blank">
+                                 {`Click here to see beer on ${company.title}`}
+                                 <svg aria-hidden="true" class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                              </a>
                               </p>
+
+                              
+                             
+                             
+
+
+
                               <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
                                 <span className="mx-2">{item.beer_description}</span>
                               </p>
