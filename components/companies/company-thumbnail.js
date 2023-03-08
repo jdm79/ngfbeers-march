@@ -6,7 +6,9 @@ function CompanyThumbnail(props) {
     return (
             <li>
                 <Link href={companyLink}>
-                    <img src={image} alt={title} />
+                    <div className="p-1 text-sm w-20" >
+                        <img src={image} alt={title} />
+                    </div>
                 </Link>
             </li>
     )
