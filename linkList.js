@@ -72,6 +72,20 @@ const links = [
       link_type: "ABC article on the inaccuracy of current gluten-free beer testing",
       body: ""
     },
+    {
+      id: 'l7',
+      link_url: 'https://www.coeliac.org.uk/frequently-asked-questions/gfbeer/',
+      title: "Coeliac UK's most recent explanation on testing gluten levels in beer",
+      blurb: `By law, manufacturers can only label their beer gluten free if it contains 20 ppm or less
+              of gluten. Laboratory testing is the best way to assess the amount of gluten in a product,
+              but there can be difficulties when testing beer using the usual R5 ELISA Sandwich method
+              (commonly used for foods), due to the gluten being broken down. 
+              An alternative method is available (R5 ELISA Competitive)
+              which is a more effective way to measure the gluten in beer and other hydrolysed
+              or fermented products.`,
+      link_type: `'How is gluten free beer made?' Coeliac UK website`,
+      body: ""
+    },
   
   ]
 

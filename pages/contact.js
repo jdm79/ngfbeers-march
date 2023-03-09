@@ -1,9 +1,17 @@
+import { getAllCompanies } from "../companies";
 import DefaultLayout from "@/components/DefaultLayout";
+import ThumbnailRow from "@/components/ThumbnailRow";
 
 const contactPage = () => {
+  const companies = getAllCompanies();
+
   return (
     <DefaultLayout>
-      <div className="w-screen flex p-5 justify-center border-b-2 border-black">Contact Page</div>
+        <h1 className="w-screen flex p-5 justify-center border-b-2 border-black" >Contact Page</h1>
+        <ThumbnailRow items={companies} />
+        <h1 className="flex justify-center pt-10  pb-10">Contact form to go here</h1>
+        <p className="w-screen flex justify-center pt-10 pb-20 bg-white text-black">Email us at ngfbeers@gmail.com</p>
+
     </DefaultLayout>  )
 }
 

@@ -6,7 +6,7 @@ function FaqItem(props) {
     
     return (
             <li>
-                <Link href={faqLink} className="w-screen flex p-5 bg-gray-200 border-gray-900 border-b-2">
+                <Link href={faqLink} className="w-screen flex p-5 border-gray-900 dark:bg-black dark:text-white border-b-2">
                 <div>
                     <div>
                         <h2>{title}</h2>
