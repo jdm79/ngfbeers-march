@@ -1,15 +1,16 @@
 import Link from "next/link";
 
 function LinkItem(props) {
-    const { id, image, title, subheading, body } = props;
-    const linkLink = `/link/${id}`;
+    const { id, type, title  } = props;
+    const linkLink = `/links/${id}`;
     
     return (
             <li>
-                <Link href={linkLink} className="w-screen flex p-5 bg-gray-200 border-gray-900 border-b-2">
+                <Link href={linkLink} className="w-screen flex p-5 bg-gray-200 dark:bg-black dark:text-white border-gray-900 border-b-2">
                 <div>
                     <div>
-                        <h2>{title}</h2>
+                        <h1 className="text-weight-bold text-xl">{title}</h1>
+                        <p className="text-sm">({type})</p>
                     </div>
                 </div>
                 </Link>

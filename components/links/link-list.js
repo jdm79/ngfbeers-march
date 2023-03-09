@@ -1,6 +1,6 @@
 import LinkItem from "./link-item";
 
-function LinkList(props) {
+function LinksList(props) {
     const { items } = props;
 
     return (
@@ -11,8 +11,10 @@ function LinkList(props) {
                         key={link.id}
                         id={link.id}
                         title={link.title}
-                        subheading={link.subheading}
-                        body={link.body}
+                        blurb={link.blurb}
+                        link={link.link_url}
+                        type={link.link_type}
+                        body={link.link_type}
                     />
                 ))}
             </ul>
@@ -20,4 +22,4 @@ function LinkList(props) {
     )
 }
 
-export default LinkList;
+export default LinksList;
