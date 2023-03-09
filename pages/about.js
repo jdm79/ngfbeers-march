@@ -1,81 +1,43 @@
 import DefaultLayout from '@/components/DefaultLayout';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const aboutPage = () => {
+  const router = useRouter()
+
   return (
     <DefaultLayout>
-        <div className="w-screen  bg-gray-200 text-black ">
+        <div className="w-screen text-black  dark:bg-black dark:text-white">
           <h1 className="w-screen flex p-5 justify-center border-b-2 border-black bg-white" >About Page</h1>
-          <p className="p-5 font-courier">The standard Lorem Ipsum passage, used since the 1500s
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam, 
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
-            consectetur, adipisci velit, 
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat 
-            voluptatem. Ut enim ad minima veniam, 
-            quis nostrum exercitationem ullam corporis suscipit laboriosam, 
-            nisi ut aliquid ex ea commodi consequatur? 
-            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae 
-            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+          <p className="p-5 font-courier">
+            This website is a showcase of naturally gluten-free (or ngci) beer companies.
+            We want to celebrate beer that coeliacs can drink!
           </p>
-          <p className="p-5">The standard Lorem Ipsum passage, used since the 1500s
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam, 
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
-            consectetur, adipisci velit, 
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat 
-            voluptatem. Ut enim ad minima veniam, 
-            quis nostrum exercitationem ullam corporis suscipit laboriosam, 
-            nisi ut aliquid ex ea commodi consequatur? 
-            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae 
-            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+          <p className="p-5">
+            We also want to shine a light on these companies and to educate consumers about the risks
+            of drinking what is currently labelled as ‘gluten-free’ beer in Europe (and elsewhere).
           </p>
-          <p className="p-5">The standard Lorem Ipsum passage, used since the 1500s
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam, 
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
-            consectetur, adipisci velit, 
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat 
-            voluptatem. Ut enim ad minima veniam, 
-            quis nostrum exercitationem ullam corporis suscipit laboriosam, 
-            nisi ut aliquid ex ea commodi consequatur? 
-            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae 
-            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+          <p className="p-5">
+            For more information about this topic, 
+            please go to the <Link href="/links" className='underline'>Links section</Link> for 
+            explanations on why most  ‘gluten-free beer’
+            is not fit for consumption by coeliacs. 
+            There is also a 
+            great <Link href="https://zerotolerance.mywikis.wiki/wiki/Gluten_Reduced_vs_Gluten_Free" target="_blank" className='underline'>resource here</Link> from
+            the people at <Link href="https://zerotolerance.mywikis.wiki/wiki/Main_Page" className='underline' target="_blank">Zero Tolerance Gluten Free Brewing Wiki</Link>
+          </p>
+          <p className="p-5">
+            At the moment, we only list European companies, 
+            but we will be adding companies from around the world.
+          </p>
+          <p className="p-5">
+            If you are a ngci beer brewer/company - 
+            or know of one we have missed out, 
+            contact us 
+            at <button type="button" onClick={() => router.push("mailto:ngfbeers@gmail.com")} className='underline'>ngfbeers@gmail.com</button>.
+          </p>
+          <p className="p-5">
+            
           </p>
         </div>
     </DefaultLayout>

@@ -2,7 +2,7 @@ import Carousel from "./Carousel";
 
 function Hero() {
   return (
-    <div className="w-screen bg-gray-200 text-black p-10">
+    <div className="w-screen bg-white text-black p-10">
         <div>
           <p className="p-2 text-sm">
             
