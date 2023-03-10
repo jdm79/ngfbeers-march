@@ -1,4 +1,5 @@
 import DefaultLayout from '@/components/DefaultLayout';
+import ThumbnailRow from '@/components/ThumbnailRow';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -9,6 +10,8 @@ const aboutPage = () => {
     <DefaultLayout>
         <div className="w-screen text-black bg-white dark:bg-black dark:text-white">
           <h1 className="w-screen flex p-5 justify-center border-b-2 border-black bg-white" >About Page</h1>
+          <ThumbnailRow />
+
           <p className="p-5 font-courier">
             This website is a showcase of naturally gluten-free (or ngci) beer companies.
             We want to celebrate beer that coeliacs can drink!
@@ -31,7 +34,7 @@ const aboutPage = () => {
             but we will be adding companies from around the world.
           </p>
           <p className="p-5">
-            If you are a ngci beer brewer/company - 
+            If you are an ngci beer brewer/company - 
             or know of one we have missed out, 
             contact us 
             at <button type="button" onClick={() => router.push("mailto:ngfbeers@gmail.com")} className='underline'>ngfbeers@gmail.com</button>.
