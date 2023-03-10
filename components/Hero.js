@@ -2,7 +2,7 @@ import Carousel from "./Carousel";
 
 function Hero() {
   return (
-    <div className="w-screen bg-white text-black p-10">
+    <div className="w-screen bg-gray-200 text-black p-10">
         <div>
           <p className="p-2 text-sm">
             
@@ -12,8 +12,7 @@ function Hero() {
           </p>
           <p className="p-2 text-sm">
             This is a health risk, as coeliacs consuming gluten run the risk of infertility, ataxia, 
-            osteoporosis, malnutrition and bowel cancer, to name just a few. 
-            <a href="Potential long-term complications include" className="underline">(source: nhs.uk)</a>
+            osteoporosis, malnutrition and bowel cancer, to name just a few. <a href="Potential long-term complications include"></a>(source: NHS)
           </p>
         </div>
        

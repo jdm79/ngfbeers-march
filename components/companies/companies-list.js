@@ -4,13 +4,9 @@ function CompaniesList(props) {
     const { items } = props;
 
     return (
-        <section className="bg-white dark:bg-gray-800">
-            <div className="container px-6 py-6 mx-auto">
-                <h1 className="w-auto h-6 mx-auto rounded-lg text-center text-black dark:text-white">
-                    Click/tap on the companies below to find out more
-                </h1>
-               
-                <ul className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-6 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3">
+        <section className="bg-white dark:bg-black mb-10">
+            <div>
+                <ul className="grid grid-cols-2 gap-1 mt-12 xl:mt-12 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3">
                 {items.map((company) => (
                     <CompanyItem 
                         key={company.id}
