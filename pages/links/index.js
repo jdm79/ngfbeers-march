@@ -7,7 +7,7 @@ const LinksPage = () => {
     
     return (
         <DefaultLayout>
-            <h1 className="w-screen flex p-5 justify-center border-b-2 border-black" >Links Page</h1>
+            <h1 className="w-screen flex p-5 justify-center border-b-2 border-black bg-white" >Links Page</h1>
             <LinksList items={links}/>
         </DefaultLayout>                
     )
