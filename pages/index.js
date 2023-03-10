@@ -13,7 +13,6 @@ const HomePage = () => {
     <DefaultLayout>
         <Banner message="Campaigning to make gluten-free beer gluten-free!"/>
         <ThumbnailRow items={companies} />
-        <Banner message="UNDER CONSTRUCTION!"/>
         <Hero />
         <h1 className="w-screen flex p-10 justify-center bg-white text-black">Latest news to go here</h1>
         <h1 className="w-screen flex p-10 justify-center bg-white text-black">Latest blog post here</h1>
