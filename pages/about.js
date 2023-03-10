@@ -9,7 +9,7 @@ const aboutPage = () => {
   return (
     <DefaultLayout>
         <div className="w-screen text-black bg-white dark:bg-black dark:text-white">
-          <h1 className="w-screen flex p-5 justify-center border-b-2 border-black bg-white" >About Page</h1>
+          <h1 className="w-screen flex p-5 justify-center border-b-2 border-black bg-white dark:text-black" >About Page</h1>
           <ThumbnailRow />
 
           <p className="p-5 font-courier">
