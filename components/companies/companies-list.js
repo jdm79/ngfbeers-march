@@ -6,7 +6,7 @@ function CompaniesList(props) {
     return (
         <section className="bg-white dark:bg-black mb-10">
             <div>
-                <ul className="grid grid-cols-2 gap-1 mt-12 xl:mt-12 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3">
+                <ul className="grid grid-cols-2 gap-1 mt-12 xl:mt-12 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400">
                 {items.map((company) => (
                     <CompanyItem 
                         key={company.id}

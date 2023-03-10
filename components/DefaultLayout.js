@@ -8,7 +8,7 @@ import Banner from "./Banner";
 const DefaultLayout = ({ children }) => {
     const companies = getAllCompanies();
     return (
-        <div className="font-courier">
+        <div className="font-courier bg-yellow-400">
             <Header />
             <Nav />
             {children}

@@ -7,7 +7,7 @@ const CompaniesPage = () => {
     
     return (
         <DefaultLayout>
-            <h1 className="w-screen flex p-5 justify-center border-b-2 border-black">Companies Page</h1>
+            <h1 className="w-screen flex p-5 justify-center border-b-2 border-black bg-white">Companies Page</h1>
             <CompaniesList items={companies}/>
         </DefaultLayout>                
     )

@@ -4,7 +4,7 @@ function LinksList(props) {
     const { items } = props;
 
     return (
-        <div className="w-screen flex justify-center">
+        <div className="w-screen flex justify-center bg-white">
             <ul>
                 {items.map((link) => (
                     <LinkItem 

@@ -1,20 +1,17 @@
 import Carousel from "./Carousel";
+import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="w-screen bg-gray-200 text-black p-10">
-        <div>
-          <p className="p-2 text-sm">
-            
-            Unfortunately, in Europe most gluten-free beers are not actually safe for coeliacs to consume. 
-            Scientific research has shown for a long time that the deglutenisation process does not work 
-            <span className="font-bold"> AND</span> that testing levels of gluten in beer with the ELISA5 test is inaccurate.
-          </p>
-          <p className="p-2 text-sm">
-            This is a health risk, as coeliacs consuming gluten run the risk of infertility, ataxia, 
-            osteoporosis, malnutrition and bowel cancer, to name just a few. <a href="Potential long-term complications include"></a>(source: NHS)
-          </p>
+    <div className="w-screen bg-yellow-400 min-h-screen text-black">
+      <div className="mt-10 relative">
+        <div className="text-center text-5xl ml-3 mr-3 mt-10 lg:text-8xl w-auto md:ml-20 md:mr-20 md:mt-20">
+          <h1 >Naturally  </h1>
+            <h1>gluten-free beers</h1>
+          <img src="/logo-ngfbeers.png" className="m-auto mt-10 lg:w-1/4"/>
         </div>
+      </div>
+   
        
     </div>
 
