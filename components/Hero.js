@@ -11,10 +11,7 @@ function Hero() {
           <img src="/logo-ngfbeers.png" className="m-auto mt-10 w-3/4 lg:w-1/4"/>
         </div>
       </div>
-   
-       
     </div>
-
   )
 }
 
