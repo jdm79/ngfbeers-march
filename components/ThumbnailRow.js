@@ -5,8 +5,8 @@ function ThumbnailRow() {
     const companies = getAllCompanies();
 
     return (
-        <div >
-            <ul  className="grid grid-cols-8 gap-1 p-1 mt-8 mb-8">
+        <div className="bg-white">
+            <ul className="grid grid-cols-8 gap-1 p-1 mt-8 mb-8 ">
                 {companies.map((company) => (
                     <CompanyThumbnail 
                         key={company.id}
