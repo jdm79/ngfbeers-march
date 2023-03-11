@@ -28,7 +28,7 @@ export default function Nav() {
             <div className="relative flex h-20 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-700 hover:text-blue focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -61,7 +61,7 @@ export default function Nav() {
                           className={classNames(
                             isActive
                               ? "text-black font-bold bg-gradient-to-r bg-yellow-400 border-solid border-black border-2"
-                              : "text-gray-700 hover:bg-gray-800 hover:text-gray-500 hover:underline hover:underline-offset-2",
+                              : "text-gray-700 hover:bg-gray-800 hover:text-white hover:underline hover:underline-offset-2",
                             "px-3 py-2 rounded-md text-sm font-medium font-mono"
                           )}
                         >
