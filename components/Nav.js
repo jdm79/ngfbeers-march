@@ -61,7 +61,7 @@ export default function Nav() {
                           className={classNames(
                             isActive
                               ? "text-black font-bold bg-gradient-to-r bg-yellow-400 border-solid border-black border-2"
-                              : "text-gray-700 hover:bg-gray-800 hover:text-white hover:underline hover:underline-offset-2",
+                              : "text-gray-700 hover:bg-gray-800 hover:text-white hover:no-underline hover:underline-offset-2",
                             "px-3 py-2 rounded-md text-sm font-medium font-mono"
                           )}
                         >
