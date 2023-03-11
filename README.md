@@ -1,38 +1,18 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## What is ngfbeers all about?
 
-First, run the development server:
+Below is a great explanation of the gluten-free labelling saga, from the awesome people who contribute to [Zero Tolerance Gluten-Free Brewing Wiki](https://zerotolerance.mywikis.wiki/wiki/Gluten_Reduced_vs_Gluten_Free):
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+"TLDR - Note Note to consumers, distributors, retailers and hospitality managers:
+Gluten reduced beer made from barley, wheat, and/or rye is not gluten free. Misrepresenting the two as equivalent puts the health of celiac consumers at risk and potentially violates labeling and advertising laws in your country. Gluten reduced (aka gluten "removed") beers can still cause short and long term damage for people with celiac disease. Further scientific review indicates that testing for residual gluten in these beers (the <20ppm reference) looks at a narrow band of proteins and is an inaccurate and unreliable indicator of their actual gluten content. The types and amount of remaining intact protein chains can vary widely between barley lots and individual beers. Individuals respond uniquely to those remaining protein chains. Gluten free beer sold in the US, Canada, Australia, New Zealand and Argentina can only be made from naturally gluten free grains and celiac societies in those countries have made clear that individuals with celiac disease should avoid gluten reduced beers made from barley and other gluten containing grains. See List of GF breweries for beers in your region that are safe for those with medical reasons to avoid gluten. Shelf and menu labeling that equates gluten reduced with gluten free is false advertising that puts the health of your customers at risk." 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+([Source: Zero Tolerance Gluten Free Brewing Wiki](https://zerotolerance.mywikis.wiki/wiki/Gluten_Reduced_vs_Gluten_Free)).
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+You can join the Zero Tolerance Gluten-Free Brewing FB group [here](https://www.facebook.com/groups/179311875956380/).
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+You can visit the ngfbeers website [here](https://ngfbeers.com).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
