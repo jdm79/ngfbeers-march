@@ -23,5 +23,4 @@ function CompaniesList(props) {
     )
 }
 
-export default CompaniesList
-
+export default CompaniesList;
