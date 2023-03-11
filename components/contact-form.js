@@ -129,6 +129,7 @@ const ContactForm = () => {
           { isError === true && (<div>Something went wrong! Message not sent.</div>) }
           { isError === false && (<div>Message sent!</div>) }
         </form>
+        <h1>Contact us at ngfbeers@gmail.com</h1>
       </div>
     </div>
   );
