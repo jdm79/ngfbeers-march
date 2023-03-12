@@ -14,7 +14,7 @@ function LinkDetailPage() {
 
   return (
     <DefaultLayout>
-      <section className="bg-white dark:bg-gray-800 ">
+      <section className="bg-yellow-400 dark:text-gray-700 ">
         <Link href="/links" >
           <button className="bg-yellow-400 hover:bg-black border-solid border-black border-2 text-black font-bold py-2 px-4 rounded my-1 ml-1">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mx-2">
@@ -25,21 +25,21 @@ function LinkDetailPage() {
         <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center">
             <div >
                 <div >
-                    <h1 className="font-bold tracking-wide text-gray-800 dark:text-white text-xl md:text-5xl">
+                    <h1 className="font-bold tracking-wide text-gray-800 text-xl md:text-5xl">
                         {link.title}
                     </h1>
                     <div className="mt-8 space-y-5">
-                        <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200 ">
+                        <p className="flex items-center -mx-2">
                           <span>"{link.blurb}"</span>
                         </p>
 
-                        <div className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mx-2 text-yellow-400">
+                        <div className="flex items-center -mx-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ">
                              <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
                           </svg>
                           <a href={link.link_url} target="_blank" className="underline">Click to read more</a>
                         </div>
-                        <div className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
+                        <div className="flex items-center -mx-2 ">
                        
                           <p>Source: <span className="mx-2">{link.link_type}</span></p>
 
