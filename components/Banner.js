@@ -3,7 +3,7 @@ import React from 'react';
 function Banner(props) {
   return (
     <div >
-        <h1 className="w-screen flex p-5 justify-center bg-white text-black text-center">
+        <h1 className="w-screen flex p-5 justify-center bg-white text-black text-center border-black border-t-2">
           {props.message}
         </h1>
     </div>
