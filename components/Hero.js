@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="w-screen bg-yellow-400 min-h-screen text-black border-b-2 border-black">
+    <div className="w-screen bg-yellow-400 min-h-screen text-black">
       <div className="mt-10 relative">
         <div className="text-center text-5xl ml-3 mr-3 mt-10 lg:text-8xl w-auto md:ml-20 md:mr-20 md:mt-20">
           <h1 >Naturally  </h1>
