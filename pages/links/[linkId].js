@@ -14,7 +14,7 @@ function LinkDetailPage() {
 
   return (
     <DefaultLayout>
-      <section className="bg-yellow-400 dark:text-gray-700 ">
+      <section className="bg-white dark:text-gray-700 ">
         <Link href="/links" >
           <button className="bg-yellow-400 hover:bg-black border-solid border-black border-2 text-black font-bold py-2 px-4 rounded my-1 ml-1">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mx-2">
