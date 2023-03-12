@@ -4,16 +4,20 @@ const Header = () => {
   return (
     <div>
       <Head>
-        <title>ngfbeers | naturally gluten-free beers</title>
+        <title>ngfbeers | naturally gluten-free beers | ngci no barley</title>
         <meta property="og:title" content="ngfbeers | beers made without gluten" key="title" />
         <meta
           name="description"
-          content="Naturally gluten-free beers. ngci beers. made without barley or any other gluten containing ingredients."
+          content="A showcase of naturally gluten-free beer companies. ngci beers. made without barley or any other gluten containing ingredients"
           key="desc"
         />
          <meta
           property="og:image"
           content="https://res.cloudinary.com/dlrwbckxi/image/upload/v1677762451/logo-ngfbeers_bdw7s1.jpg"
+        />
+        <meta
+          property="og:description"
+          content="A showcase of naturally gluten-free beer companies. ngci beers. made without barley or any other gluten containing ingredients"
         />
       </Head>
     </div>

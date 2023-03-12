@@ -11,7 +11,11 @@ function Footer() {
                     <Link href={'https://www.instagram.com/ngfbeers_europe/'}  target="_blank"><ImInstagram /></Link>
                 </div>
                 <p className="py-5 text-gray-800 text-center">Copyright © 2023 ngfbeers. All rights reserved.</p>
-                {/* <p className="text-gray-600 text-center">Terms & conditions GDPR analytics</p> */}
+                <p className="text-gray-600 text-center">
+                  <Link href='/tocs'>
+                     Terms & conditions GDPR analytics
+                  </Link>
+                </p>
             </div>
         </div>
     </footer>
