@@ -60,8 +60,8 @@ export default function Nav() {
                           href={item.href}
                           className={classNames(
                             isActive
-                              ? "text-black font-bold bg-gradient-to-r bg-yellow-400 border-solid border-black border-2"
-                              : "text-gray-700 hover:bg-gray-800 hover:text-white hover:no-underline hover:underline-offset-2",
+                              ? "text-black font-bold bg-gradient-to-r bg-yellow-400 border-solid border-black border-2 hover:bg-white"
+                              : "text-gray-700 hover:bg-white hover:text-black hover:no-underline hover:border-2 hover:border-black  hover:underline-offset-2",
                             "px-3 py-2 rounded-md text-sm font-medium font-mono"
                           )}
                         >
