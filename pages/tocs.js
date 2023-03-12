@@ -19,6 +19,10 @@ const tocsPage = () => {
             <p className="p-5">
             We use Your Personal data to provide and improve the Service.
             By using the Service,</p>
+            <p className="p-5"> 
+            You agree to the collection and use of information in accordance with this Privacy Policy. 
+            This Privacy Policy has been created with the help of the Free Privacy Policy Generator.
+            </p>
             <p className="p-5">
             We only use Google Analytics to see how many visitors we get, which country they are from,
             and which pages are most popular. The only personal information we would ever have is
@@ -33,10 +37,6 @@ const tocsPage = () => {
             At this time, we do not have user accounts on this website, and so we don't use cookies.
             If we do add user accounts, we will update this document and cookies will be used to 
             automatically log in.
-            </p>
-            <p className="p-5"> 
-            You agree to the collection and use of information in accordance with this Privacy Policy. 
-            This Privacy Policy has been created with the help of the Free Privacy Policy Generator.
             </p>
             <h1 className="p-5 font-black">Interpretation and Definitions</h1>
             <h2 className="p-5 font-black">Interpretation</h2>
