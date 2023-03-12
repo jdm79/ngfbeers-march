@@ -12,6 +12,7 @@ const DefaultLayout = ({ children }) => {
             <Header />
             <Nav />
             {children}
+            <Banner message="Campaigning to make gluten-free beer gluten-free!"/>
             <Footer />
         </div>
     )
