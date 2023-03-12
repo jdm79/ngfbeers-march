@@ -23,6 +23,7 @@ const ContactForm = () => {
       },
       body: JSON.stringify(form)
     })
+
     const content = await rawResponse.json();
 
     setName('')
@@ -33,10 +34,10 @@ const ContactForm = () => {
 
 
   return (
-    <div className="w-full md:w-96 md:max-w-full mx-auto mt-10 mb-10">
-      <h1 className="bg-white text-black border-2 border-black p-2 mb-5">
-        If you have any feedback or queries, or would like to let us know about any ngci news,
-        please use the contact form below. Any advice or help is much appreciated!
+    <div className="w-full md:w-96 md:max-w-full mx-auto mt-5 mb-20">
+      <h1 className="bg-white text-black border-2 border-black sm:rounded-md p-5 mb-5">
+        If you have any feedback or queries, or have any NGCI beer-related news,
+        please contact us using the form below. Any advice or help is much appreciated!
       </h1>
       <div className="p-12 border-black border-2 sm:rounded-md bg-white">
         <form onSubmit={handleSubmit}>
@@ -58,7 +59,8 @@ const ContactForm = () => {
                 focus:ring
                 focus:ring-black
               "
-              placeholder=""
+              placeholder="Type your name here"
+              required
             />
           </label>
           <label className="block mb-6">
@@ -79,7 +81,7 @@ const ContactForm = () => {
                 focus:ring
                 focus:ring-opacity-50
               "
-              placeholder=""
+              placeholder="Type your email address here"
               required
             />
           </label>
@@ -102,7 +104,8 @@ const ContactForm = () => {
                 focus:ring-opacity-50
               "
               rows="3"
-              placeholder=""
+              placeholder="Type your message here"
+              required
             ></textarea>
           </label>
           <div className="mb-6">
@@ -123,11 +126,11 @@ const ContactForm = () => {
                 hover:text-white
               "
             >
-              Contact Us
+              Send Message
             </button>
           </div>
           { isError === true && (<div>Something went wrong! Message not sent.</div>) }
-          { isError === false && (<div>Message sent!</div>) }
+          { isError === false && (<div className="font-weight-extrabold">Message sent! Thank you</div>) }
         </form>
       </div>
     </div>
