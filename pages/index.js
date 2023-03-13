@@ -12,6 +12,7 @@ const HomePage = () => {
   return (
     <DefaultLayout>
         <Hero />
+        <Banner message="Campaigning to make gluten-free beer gluten-free!" />
     </DefaultLayout>
        
 
