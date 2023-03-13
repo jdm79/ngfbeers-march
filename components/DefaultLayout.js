@@ -8,12 +8,11 @@ import Banner from "./Banner";
 const DefaultLayout = ({ children }) => {
     const companies = getAllCompanies();
     return (
-        <div className="font-courier bg-yellow-400">
+        <div className="flex flex-col font-courier bg-yellow-400 min-h-screen">
             <Header />
             <Nav />
             {children}
-            {/* <Banner message="Campaigning to make gluten-free beer gluten-free!" /> */}
-
+            <Banner message="Campaigning to make gluten-free beer gluten-free!" />
             <Footer />
         </div>
     )
