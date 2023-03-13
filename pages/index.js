@@ -1,5 +1,4 @@
 import { getAllCompanies } from "../companies";
-import CompaniesList from "@/components/companies/companies-list";
 import Hero from "@/components/Hero";
 import DefaultLayout from "@/components/DefaultLayout";
 import Banner from "@/components/Banner";
@@ -12,7 +11,7 @@ const HomePage = () => {
   return (
     <DefaultLayout>
         <Hero />
-        <Banner message="Campaigning to make gluten-free beer gluten-free!" />
+        <ThumbnailRow />
     </DefaultLayout>
        
 

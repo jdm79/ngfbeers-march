@@ -2,8 +2,8 @@ import React from 'react';
 
 function Banner(props) {
   return (
-    <div >
-        <h1 className="w-screen flex p-5 justify-center sticky-0 bg-white text-black text-center border-black border-t-2 border-b-2">
+    <div>
+        <h1 className="p-5 bg-white text-black text-center border-black border-t-2 border-b-2">
           {props.message}
         </h1>
     </div>

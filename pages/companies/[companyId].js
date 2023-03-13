@@ -49,7 +49,6 @@ function CompanyDetailPage() {
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="w-6 h-6 mx-2 text-yellow-400"
-                            // style="color: #1769ff"
                             fill="currentColor"
                             viewBox="0 0 24 24">
                             <path
@@ -60,7 +59,6 @@ function CompanyDetailPage() {
                           ) : (
                             <div></div>
                           )}
-
                         {/* fb  */}
                         <div>
                         {company.fb_url ? (
@@ -99,7 +97,7 @@ function CompanyDetailPage() {
                                   <div></div>
                                 )}
                                 </div>
-                              <img className="w-auto rounded-full border-4 mb-2 m-auto border-black" src={`/images/beers/${item.image_url}`} />
+                              <img className="w-auto rounded-full border-4 mb-2 m-auto border-black" src={`/images/beers/${item.image_url}`} alt={item.beer_name}/>
                               <p className="flex items-center -mx-2 mb-4 text-gray-700 dark:text-gray-200">
                                <a className="mx-2 text-blue-600 dark:text-yellow-400 hover:underline" href={item.beer_url} target="_blank">
                                  {`Click here to see beer on ${company.title}`}
