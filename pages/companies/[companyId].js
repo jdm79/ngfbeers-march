@@ -47,6 +47,7 @@ function CompanyDetailPage() {
             </svg>
           </button>
         </Link>
+        
         <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center">
           <div>
             <h1 className="font-bold tracking-wide text-gray-800 dark:text-white text-3xl md:text-8xl mb-10">

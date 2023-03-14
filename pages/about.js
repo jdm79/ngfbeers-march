@@ -11,7 +11,7 @@ const aboutPage = () => {
         <div className="w-screen text-black bg-yellow-400">
           <h1 className="w-screen flex p-5 justify-center border-b-2 border-black bg-white dark:text-black" >About Page</h1>
           <ThumbnailRow />
-          <div className="p-5 justify-center border-2 border-black ml-5 mr-5 bg-white mb-10">
+          <div className="p-5 justify-center border-2 border-black ml-5 mr-5 bg-white mb-10 shadow-md shadow-black">
             <p className="p-5 font-courier">
               This website is a showcase of naturally gluten-free (or ngci) beer companies.
               We do not make our own beer unfortunately!
