@@ -13,37 +13,26 @@ const aboutPage = () => {
           <ThumbnailRow />
           <div className="p-5 justify-center border-2 border-black ml-5 mr-5 bg-white mb-10 shadow-md shadow-black">
             <p className="p-5 font-courier">
-              This website is a showcase of naturally gluten-free (or ngci) beer companies.
-              We do not make our own beer unfortunately!
+              This website is a showcase of naturally gluten-free (ngci) beer brewers (Europe so far).
             </p>
             <p className="p-5">
-              We also want to help educate consumers about the risks
+              We also want to help educate consumers about the health risks
               of drinking what is currently labelled as ‘gluten-free’ beer in Europe (and elsewhere).
             </p>
             <p className="p-5">
               There is a 
-              great <Link href="https://zerotolerance.mywikis.wiki/wiki/Gluten_Reduced_vs_Gluten_Free" target="_blank" className='underline'>resource here</Link> from
-              the people at <Link href="https://zerotolerance.mywikis.wiki/wiki/Main_Page" className='underline' target="_blank">Zero Tolerance Gluten Free Brewing Wiki</Link>.
+              great resource <Link href="https://zerotolerance.mywikis.wiki/wiki/Gluten_Reduced_vs_Gluten_Free" target="_blank" className='border-2 border-black bg-yellow-400 px-1'> here</Link> from
+              the people at <Link href="https://zerotolerance.mywikis.wiki/wiki/Main_Page" className='border-2 border-black bg-yellow-400 px-1' target="_blank">Zero Tolerance Gluten Free Brewing Wiki</Link>.
             </p>
             <p className='p-5'>
               For more information about this topic, 
-              please go to the <Link href="/links" className='underline'>Links section</Link>. 
-            </p>
-            <p className="p-5">
-              At the moment, we only list European companies, 
-              but we will be adding companies from around the world.
+              please go to the <Link href="/links" className='border-2 border-black bg-yellow-400 px-1'>Links section</Link>. 
             </p>
             <p className="p-5">
               If you are an ngci beer brewer/company - 
               or know of one we have missed out, 
               contact us 
-              at: <span>
-                <button type="button" 
-                  onClick={() => router.push("mailto:ngfbeers@gmail.com")} 
-                  className='underline'>
-                    ngfbeers@gmail.com
-                </button>
-              </span> or use our <Link href='/contact' className="underline">Contact Form</Link>.
+              using our <Link href='/contact' className="border-2 border-black bg-yellow-400 px-1">Contact Form</Link>.
             </p>
 
                 
