@@ -6,7 +6,7 @@ function LinkItem(props) {
     
     return (
             <li>
-                <Link href={linkLink} className="w-screen flex p-5 bg-white border-gray-900 border-t-2">
+                <Link href={linkLink} className="w-screen flex p-5 bg-white hover:bg-yellow-100 border-gray-900 border-t-2">
                 <div>
                     <div>
                         <h1 className="text-weight-bold text-xl">{title}</h1>
