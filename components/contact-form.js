@@ -35,11 +35,11 @@ const ContactForm = () => {
 
   return (
     <div className="w-full md:w-96 md:max-w-full mx-auto mt-12 mb-20">
-      <h1 className="bg-white text-black border-2 border-black sm:rounded-md p-5 mb-5 ml-2 mr-2">
+      <h1 className="bg-white text-black border-2 border-black sm:rounded-md p-5 mb-5 ml-2 mr-2 shadow-md shadow-black">
         If you have any feedback or queries, or have any NGCI beer-related news,
         please contact us using the form below. Any advice or help is much appreciated!
       </h1>
-      <div className="p-12 border-black border-2 sm:rounded-md bg-white ml-2 mr-2">
+      <div className="p-12 border-black border-2 sm:rounded-md bg-white ml-2 mr-2 shadow-md shadow-black">
         <form onSubmit={handleSubmit}>
           <label className="block mb-6">
             <span className="text-black">Your name</span>
