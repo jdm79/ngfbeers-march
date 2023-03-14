@@ -16,7 +16,21 @@ function CompanyDetailPage() {
     <DefaultLayout>
       <section className="bg-white dark:bg-gray-800">
         <Link href="/companies">
-          <button className="bg-yellow-400 border-solid border-black border-2 hover:bg-black hover:text-yellow-400 text-black font-bold py-2 px-4 rounded my-1 ml-1">
+          <button
+            className="bg-yellow-400
+                border-solid 
+              border-black 
+                border-2
+              text-black 
+                font-bold 
+                py-2 
+                px-4 
+                rounded 
+                my-1 
+                ml-1
+                transition ease-in-out delay-150  hover:-translate-x-1 hover:scale-110 hover:bg-yellow-500 duration-300
+                "
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
