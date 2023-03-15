@@ -8,7 +8,7 @@ function Footer() {
             <div className="py-5">
                 <div className="flex gap-6 justify-center">
                     <Link href={'https://www.facebook.com/profile.php?id=100082957466636'} target="_blank"><ImFacebook /></Link>
-                    <Link href={'https://www.instagram.com/ngfbeers_europe/'}  target="_blank" className='text-blue'><ImInstagram /></Link>
+                    <Link href={'https://www.instagram.com/ngfbeers/'}  target="_blank" className='text-blue'><ImInstagram /></Link>
                 </div>
                 <p className="py-5 text-gray-800 text-center">Copyright © 2023 ngfbeers. All rights reserved.</p>
                 <p className="text-gray-800 text-center underline">

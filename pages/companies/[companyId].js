@@ -52,7 +52,7 @@ function CompanyDetailPage() {
         {/* beer company section here */}
         <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center">
           <div>
-            <div className="border-gray-900 border p-5">
+            <div className="border-gray-900 bg:white border p-5">
               <h1 className="font-bold tracking-wide text-gray-800 dark:text-white text-3xl md:text-7xl mb-10">
                 {company.title}
               </h1>
