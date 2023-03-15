@@ -5,8 +5,6 @@ import {
   TwitterIcon,
   WhatsappShareButton,
   WhatsappIcon,
-  FacebookMessengerShareButton,
-  FacebookMessengerIcon,
   EmailShareButton,
   EmailIcon,
   TelegramShareButton,
