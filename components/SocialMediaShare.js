@@ -15,9 +15,10 @@ import {
   RedditIcon,
 } from "next-share";
 
-function SocialMediaShare({ title }) {
+function SocialMediaShare({ title, id }) {
   const blurb = `${title} are on ngfbeers.com, a showcase of gluten-free beer companies who make their beer without barley or any other gluten containing ingredients. Gluten-free beer that is actually gluten-free!`;
   const link = `https://ngfbeers.com`;
+  const beerLink = `https://ngfbeers.com/companies/${id}`
 
   const hashtags = ["glutenfree", "glutenfreebeer"]; 
 
@@ -29,7 +30,7 @@ function SocialMediaShare({ title }) {
       <TwitterShareButton url={link} title={blurb} hashtags={hashtags}>
         <TwitterIcon size={32} round />
       </TwitterShareButton>
-      <WhatsappShareButton url={link} title={blurb} separator="  ">
+      <WhatsappShareButton url={beerLink} title={blurb} separator="  ">
         <WhatsappIcon size={32} round />
       </WhatsappShareButton>
       <EmailShareButton url={link} subject={blurb} body={blurb}>
@@ -38,10 +39,7 @@ function SocialMediaShare({ title }) {
       <TelegramShareButton url={link} title={blurb}>
         <TelegramIcon size={32} round />
       </TelegramShareButton>
-      <RedditShareButton
-        url={link}
-        title={blurb}
-      >
+      <RedditShareButton url={link} title={blurb}>
         <RedditIcon size={32} round />
       </RedditShareButton>
     </div>
