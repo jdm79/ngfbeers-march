@@ -30,7 +30,7 @@ function SocialMediaShare({ title, id }) {
       <TwitterShareButton url={link} title={blurb} hashtags={hashtags}>
         <TwitterIcon size={32} round />
       </TwitterShareButton>
-      <WhatsappShareButton url={beerLink} title={blurb} separator="  ">
+      <WhatsappShareButton url={link} title={blurb} separator="  ">
         <WhatsappIcon size={32} round />
       </WhatsappShareButton>
       <EmailShareButton url={link} subject={blurb} body={blurb}>

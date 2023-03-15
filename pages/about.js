@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 const aboutPage = () => {
   const router = useRouter();
   const title = "Coeliac-safe beers";
-
+ 
   return (
     <DefaultLayout>
       <div className="w-screen text-black bg-yellow-400">
