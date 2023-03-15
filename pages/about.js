@@ -1,5 +1,5 @@
 import DefaultLayout from "@/components/DefaultLayout";
-import SocialMediaShare from "@/components/socialMediaShare";
+import SocialMediaShare from "@/components/SocialMediaShare";
 import ThumbnailRow from "@/components/ThumbnailRow";
 import Link from "next/link";
 import { useRouter } from "next/router";

@@ -2,7 +2,7 @@ import { getCompanyById } from "@/companies";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import DefaultLayout from "@/components/DefaultLayout";
-import SocialMediaShare from "@/components/socialMediaShare";
+import SocialMediaShare from "@/components/SocialMediaShare";
 
 function CompanyDetailPage() {
   const router = useRouter();

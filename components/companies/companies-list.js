@@ -1,5 +1,5 @@
 import CompanyItem from "./company-item";
-import SocialMediaShare from "../socialMediaShare";
+import SocialMediaShare from "../../components/SocialMediaShare"
 
 function CompaniesList(props) {
   const { items } = props;
