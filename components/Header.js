@@ -13,7 +13,7 @@ const Header = () => {
         />
          <meta
           property="og:image"
-          content="/images/ngfbeers-meta-image.png"
+          content="https://res.cloudinary.com/dlrwbckxi/image/upload/v1678833616/social-media-logo_fahafl.jpg"
         />
         <meta
           property="og:description"
