@@ -12,18 +12,21 @@ const companies = [
       isFeatured: true,
       beers: [
         {
+          title: 'AltgrainCo',
           beer_name: "Random Pale Ale",
           image_url: "random_pale_ale.jpg",
           beer_url: "https://altgrain.co.uk/collections/beer/products/random-pale-ale-330ml-cans-naturally-gluten-free-pale-ale",
           beer_description: "Our SILVER award winning (Free From Food Awards 2022), deliciously subtle, citra hops-forward pale ale, with a light-to-medium body and malt profile. Inspired by our American friends but demonstrating some British reserve when it comes to hops! Fermented using Norwegian yeast Kviek, achieving a very clean beer with mellow fruity esters."
         },
         {
+          title: 'AltgrainCo',
           beer_name: "Bird Brain Session IPA",
           image_url: "birdbrain.jpg",
           beer_url: "https://altgrain.co.uk/collections/beer/products/bird-brain-session-ipa-330ml-cans-naturally-gluten-free-pale-ale",
           beer_description: "A low-haze hops-forward session IPA, providing spicy notes and a tangy bitter profile. Incredibly more-ish, so do grab a few if you're planning a session!"
         },
         {
+          title: 'AltgrainCo',
           beer_name: "Blonde Ale",
           image_url: "blonde.jpg",
           beer_url: "https://altgrain.co.uk/collections/beer/products/blonde-ale-330ml-cans-naturally-gluten-free-pale-ale",
@@ -33,7 +36,7 @@ const companies = [
     },
     {
       id: 'e2',
-      title: "Green's Beers",
+      title: "Green's",
       website_url: "https://www.glutenfreebeers.co.uk/",
       insta_url: "https://www.instagram.com/greensbeers/",
       description:
@@ -44,6 +47,7 @@ const companies = [
       isFeatured: true,
       beers: [
         {
+          title: "Green's",
           beer_name: "Dry Hopped Lager",
           strength: "ABV 4.0% (1.3 UNITS OF ALCOHOL PER 330ML)",
           image_url: "dry_hopped_lager.png",
@@ -57,6 +61,7 @@ const companies = [
           ingredients: `Ingredients: Naturally gluten free; water, buckwheat, millet, sorghum, hops, brown rice and yeast.`
         },
         {
+          title: "Green's",
           beer_name: "India Pale Ale",
           strength: "ABV 5.0% (1.65 UNITS OF ALCOHOL PER 330ML)",
           image_url: "ipa.png",
@@ -70,6 +75,7 @@ const companies = [
           ingredients: `Ingredients: Naturally gluten free; water, buckwheat, millet, sorghum, hops, brown rice and yeast.`
         },
         {
+          title: "Green's",
           beer_name: "Tripel Ale",
           strength: "ABV 8.5% (2.81 UNITS OF ALCOHOL PER 330ML)",
           image_url: "tripel_ale.png",
@@ -85,6 +91,7 @@ const companies = [
           ingredients: `Ingredients: Water, naturally gluten free ancient grains; buckwheat, millet, brown rice, sorghum, hops, yeast.`
         },
         {
+          title: "Green's",
           beer_name: "Dubbel Ale",
           strength: "(ABV 7.0% (2.31 UNITS OF ALCOHOL PER 330ML)",
           image_url: "dubbel_ale.png",
@@ -132,6 +139,7 @@ const companies = [
       isFeatured: true,
       beers: [
         {
+          title: "Moulin des Moines",
           beer_name: "Bière Blonde",
           image_url: "moulin-des-moines.png",
           beer_url: "https://www.naturline.fr/boutique/Boissons/Bieres-cidres-panaches-bieres-sans-alcool/Biere-gluten-free-33cl-bio-3791.html",
@@ -159,6 +167,7 @@ const companies = [
       isFeatured: true,
       beers: [
         {
+          title: 'Riedenburger',
           beer_name: "Riedenburger Hirse-Bier Glutenfrei",
           image_url: "riedenburger.png",
           beer_url: "https://shop.riedenburger.de/RIEDENBURGER-Hirse-Bier-Glutenfrei",
@@ -183,6 +192,7 @@ const companies = [
       isFeatured: true,
       beers: [
         {
+          title: 'Schnitzer Bräu',
           beer_name: "Schnitzer Bräu",
           image_url: "schnitz.png",
           beer_url: "https://www.facebook.com/SchnitzerBraeu/",
@@ -204,6 +214,7 @@ const companies = [
       isFeatured: true,
       beers: [
         {
+          title: 'Stirone Barley Free',
           beer_name: "Blonde LaGaia",
           image_url: "lablonda.png",
           beer_url: "",
@@ -211,6 +222,7 @@ const companies = [
           ingredients: `Water, white sorghum (20%), orange peel, hops, yeast, spices, stabilizer: E405`
         },
         {
+          title: 'Stirone Barley Free',
           beer_name: "LaGaia Amber",
           image_url: "amber.png",
           beer_url: "https://www.stirone.com/lagaia-ambra/",
@@ -218,6 +230,7 @@ const companies = [
           ingredients: `Water, white sorghum (20%), hops, yeast, caramelized sugar, flavourings, stabilizer: E405.`
         },
         {
+          title: 'Stirone Barley Free',
           beer_name: "LaGaia Summer Brau",
           image_url: "summer.png",
           beer_url: "https://www.stirone.com/lagaia-summer-brau/",
@@ -225,6 +238,7 @@ const companies = [
           ingredients: `white sorghum water (20%) orange peel, hops, yeast, spices, natural flavourings, stabilizer: E405`
         },
         {
+          title: 'Stirone Barley Free',
           beer_name: "Flanders Plot",
           image_url: "flanders.png",
           beer_url: "https://www.stirone.com/trama-di-fiandra/",
@@ -232,6 +246,7 @@ const companies = [
           ingredients: `Water, white sorghum (20%), hops, yeast.`
         },
         {
+          title: 'Stirone Barley Free',
           beer_name: "Pumpkin Heart",
           image_url: "pumpkin.png",
           beer_url: "https://www.stirone.com/cuore-di-zucca/",
@@ -239,6 +254,7 @@ const companies = [
           ingredients: `Water, white sorghum (15%), pumpkin puree (4%), orange peel, hops, yeast, spices, flavourings, caramelised sugar, stabilizer: E405.`
         },
         {
+          title: 'Stirone Barley Free',
           beer_name: "Ginger Beer",
           image_url: "ginger.png",
           beer_url: "https://www.stirone.com/ginger-beer/",
@@ -260,6 +276,7 @@ const companies = [
       isFeatured: true,
       beers: [
         {
+          title: 'Suspect Brewing',
           beer_name: "Circuit Breaker",
           image_url: "circuit-breaker.png",
           beer_url: "https://www.facebook.com/SUSBREWING/",
