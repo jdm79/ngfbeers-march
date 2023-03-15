@@ -52,11 +52,11 @@ function CompanyDetailPage() {
         {/* beer company section here */}
         <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center">
           <div>
-            <div className="border-gray-900 bg:white border p-5">
+            <div className="border-gray-900 bg:white border p-5 dark:border-white">
               <h1 className="font-bold tracking-wide text-gray-800 dark:text-white text-3xl md:text-7xl mb-10">
                 {company.title}
               </h1>
-              <h1 className="mb-4">Share this:</h1>
+              <h1 className="mb-4 dark:text-white">Share this:</h1>
               <SocialMediaShare id={company.id} title={company.title} />
 
               <div class="flex mb-4 mt-10">
