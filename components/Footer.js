@@ -16,6 +16,10 @@ function Footer() {
                      Terms & conditions
                   </Link>
                 </p>
+                <p className="text-gray-800 text-center mt-5">Created by <Link href='https://jamesmalvern.com' className='underline' target="_blank">
+                     James Malvern
+                  </Link>
+                </p>
             </div>
         </div>
     </footer>
