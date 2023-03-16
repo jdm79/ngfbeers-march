@@ -15,7 +15,7 @@ function CompanyDetailPage() {
 
   return (
     <DefaultLayout>
-      <section className="bg-gradient-to-r from-yellow-400 via-yellow-400 to-gray-900 dark:bg-gray-800">
+      <section className="bg-gradient-to-r from-yellow-400 via-yellow-400 to-gray-900">
         <Link href="/companies">
           <button
             className="bg-yellow-400
