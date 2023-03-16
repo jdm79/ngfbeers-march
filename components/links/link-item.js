@@ -5,7 +5,7 @@ function LinkItem(props) {
     const linkLink = `/links/${id}`;
     
     return (
-            <li>
+            <li className="">
                 <Link href={linkLink} className="w-screen flex p-5 bg-white hover:bg-yellow-100 border-gray-900 border-t-2">
                 <div>
                     <div>
