@@ -15,7 +15,7 @@ function CompanyDetailPage() {
 
   return (
     <DefaultLayout>
-      <section className="bg-white dark:bg-gray-800">
+      <section className="bg-gradient-to-r from-yellow-400 via-yellow-400 to-gray-900 dark:bg-gray-800">
         <Link href="/companies">
           <button
             className="bg-yellow-400
@@ -50,9 +50,9 @@ function CompanyDetailPage() {
         </Link>
 
         {/* beer company section here */}
-        <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center">
+        <div className="container  flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center">
           <div>
-            <div className="border-gray-900 bg:white border p-5 dark:border-white">
+            <div className="border-gray-900 bg:white border p-5 dark:border-white bg-white">
               <h1 className="font-bold tracking-wide text-gray-800 dark:text-white text-3xl md:text-7xl mb-10">
                 {company.title}
               </h1>
@@ -164,17 +164,17 @@ function CompanyDetailPage() {
             </div>
 
             {/* list of beers section below */}
-            <div>
+            <div className="bg:white">
               <div className="mt-10 md:mt-20 space-y-5">
                 {company.beers ? (
                   <div>
                     <h1 className=" tracking-wide text-gray-800 dark:text-white text-md md:text-xl">
                      {company.beers.length > 0 ? `${company.beers[0].title} beers:` : null }
                     </h1>
-                    <ul className="grid gap-x-3 row-auto w-200 lg:w-200">
+                    <ul className="grid gap-x-3 row-auto w-200 lg:w-200 ">
                       {company.beers.map((item) => (
                         <div>
-                          <div className="p-5 mt-5  border border-gray-900 dark:border-white">
+                          <div className="p-5 mt-5 bg-white border border-gray-900 dark:border-white">
                             <h1 className="flex -mx-2 text-gray-700 dark:text-gray-200 text-4xl">
                               <span className="mx-2 mb-2">
                                 {item.beer_name}

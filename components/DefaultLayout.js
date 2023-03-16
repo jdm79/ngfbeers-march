@@ -8,7 +8,7 @@ import Banner from "./Banner";
 const DefaultLayout = ({ children }) => {
     const companies = getAllCompanies();
     return (
-        <div className="flex flex-col font-courier bg-gradient-to-r from-yellow-400 via-yellow-400 to-gray-900 min-h-screen">
+        <div className="flex flex-col font-courier bg-yellow-400 min-h-screen">
             <Header />
             <Nav />
             {children}
