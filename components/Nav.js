@@ -21,7 +21,7 @@ export default function Nav() {
   const router = useRouter();
 
   return (
-    <Disclosure as="nav" className="bg-gradient-to-r from-yellow-400 via-yellow-400 to-gray-800 border-black border-b-2 ">
+    <Disclosure as="nav" className="bg-gradient-to-r from-yellow-400 via-yellow-400 to-gray-900 border-black border-b-2 ">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 font-courier font-extrabold text-2xl">

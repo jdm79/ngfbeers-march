@@ -52,21 +52,21 @@ function CompanyDetailPage() {
         {/* beer company section here */}
         <div className="container  flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center">
           <div>
-            <div className="border-gray-900 bg:white border p-5 dark:border-white bg-white">
-              <h1 className="font-bold tracking-wide text-gray-800 dark:text-white text-3xl md:text-7xl mb-10">
+            <div className="border-gray-900 bg:white border p-5 bg-white">
+              <h1 className="font-bold tracking-wide text-gray-800 text-3xl md:text-7xl mb-10">
                 {company.title}
               </h1>
-              <h1 className="mb-4 dark:text-white">Share this:</h1>
+              <h1 className="mb-4">Share this:</h1>
               <SocialMediaShare id={company.id} title={company.title} />
 
               <div class="flex mb-4 mt-10">
                 <div class="w-1/2">
                   <ul className="space-y-4 md:space-y-14">
-                    <li className="flex items-center -mx-2 text-gray-700 dark:text-gray-200 mt-4">
+                    <li className="flex items-center -mx-2 text-gray-700 mt-4">
                       {/* put social media share here */}
                       {/* <SocialMediaShare id={company.id} title={company.title} /> */}
                     </li>
-                    <li className="flex items-center -mx-2 text-gray-700 dark:text-gray-200 mt-4">
+                    <li className="flex items-center -mx-2 text-gray-700 mt-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -89,7 +89,7 @@ function CompanyDetailPage() {
                       <span>{company.location}</span>
                     </li>
 
-                    <li className="flex items-center -mx-2 text-gray-700 dark:text-gray-200 mt-4">
+                    <li className="flex items-center -mx-2 text-gray-700 mt-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -110,7 +110,7 @@ function CompanyDetailPage() {
                     </li>
 
                     {company.insta_url ? (
-                      <li className="flex items-center -mx-2 text-gray-700 dark:text-gray-200 mt-4">
+                      <li className="flex items-center -mx-2 text-gray-700 mt-4">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="w-6 h-6 mx-2 text-yellow-400"
@@ -129,7 +129,7 @@ function CompanyDetailPage() {
 
                     {/* fb  */}
                     {company.fb_url ? (
-                      <li className="flex items-center -mx-2 text-gray-700 dark:text-gray-200 mt-4">
+                      <li className="flex items-center -mx-2 text-gray-700 mt-4">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="w-6 h-6 mx-2 text-yellow-400"
@@ -157,7 +157,7 @@ function CompanyDetailPage() {
                 </div>
               </div>
               <div className="mt-10">
-                <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
+                <p className="flex items-center -mx-2 text-gray-700">
                   <span className="mx-2">{company.description}</span>
                 </p>
               </div>
@@ -174,15 +174,15 @@ function CompanyDetailPage() {
                     <ul className="grid gap-x-3 row-auto w-200 lg:w-200 ">
                       {company.beers.map((item) => (
                         <div>
-                          <div className="p-5 mt-5 bg-white border border-gray-900 dark:border-white">
-                            <h1 className="flex -mx-2 text-gray-700 dark:text-gray-200 text-4xl">
+                          <div className="p-5 mt-5 bg-white border border-gray-900">
+                            <h1 className="flex -mx-2 text-gray-700 text-4xl">
                               <span className="mx-2 mb-2">
                                 {item.beer_name}
                               </span>
                             </h1>
                             <div>
                               {item.strength ? (
-                                <h4 className="flex text-xs items-center -mx-2 mb-4 text-gray-700 dark:text-gray-200">
+                                <h4 className="flex text-xs items-center -mx-2 mb-4 text-gray-700">
                                   <span className="mx-2">{item.strength}</span>
                                 </h4>
                               ) : (
@@ -194,7 +194,7 @@ function CompanyDetailPage() {
                               src={`/images/beers/${item.image_url}`}
                               alt={item.beer_name}
                             />
-                            <p className="flex items-center -mx-2 mb-4 text-gray-700 dark:text-gray-200">
+                            <p className="flex items-center -mx-2 mb-4 text-gray-700">
                               <a
                                 className="mx-2 text-blue-600 dark:text-yellow-400 hover:underline"
                                 href={item.beer_url}
@@ -216,7 +216,7 @@ function CompanyDetailPage() {
                                 </svg>
                               </a>
                             </p>
-                            <p className="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
+                            <p className="flex items-center -mx-2 text-gray-700">
                               <span className="mx-2">
                                 {item.beer_description}
                               </span>
