@@ -29,7 +29,7 @@ function CompanyDetailPage() {
                 rounded 
                 my-1 
                 ml-1
-                transition ease-in-out delay-150  hover:-translate-x-1 hover:scale-110 hover:bg-yellow-500 duration-300
+                transition ease-in-out delay-150  hover:-translate-x-1 hover:scale-110 hover:bg-white duration-300
                 "
           >
             <svg
@@ -168,9 +168,7 @@ function CompanyDetailPage() {
               <div className="mt-10 md:mt-20 space-y-5">
                 {company.beers ? (
                   <div>
-                    <h1 className=" tracking-wide text-gray-800 w-fit text-md md:text-xl p-5 mt-5 bg-white border border-gray-900">
-                     {company.beers.length > 0 ? `${company.beers[0].title} beers: ${company.beers.length}` : null }
-                    </h1>
+                     {company.beers.length > 0 ? <h1 className="tracking-wide text-gray-800 bg-white w-fit text-md md:text-xl p-5 mt-5 border border-black">{company.beers[0].title} have {company.beers.length} beer(s)</h1> : null }
                     <ul className="grid gap-x-3 row-auto w-200 lg:w-200 ">
                       {company.beers.map((item) => (
                         <div>
@@ -196,11 +194,11 @@ function CompanyDetailPage() {
                             />
                             <p className="flex items-center -mx-2 mb-4 text-gray-700">
                               <a
-                                className="mx-2 text-blue-600 dark:text-yellow-400 hover:underline"
+                                className="mx-2 text-black bg-yellow-400 p-5 border border-black hover:underline md:m-auto mt-4 mb-4 "
                                 href={item.beer_url}
                                 target="_blank"
                               >
-                                {`Click here to see beer on ${company.title}`}
+                                {`Click here to see beer on the ${company.title} website`}
                                 <svg
                                   aria-hidden="true"
                                   class="w-5 h-5 ml-1"
