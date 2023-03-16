@@ -198,7 +198,7 @@ function CompanyDetailPage() {
                                 href={item.beer_url}
                                 target="_blank"
                               >
-                                {`Click here to see beer on the ${company.title} website`}
+                                {`Click here to see this beer on the ${company.title} website`}
                                 <svg
                                   aria-hidden="true"
                                   class="w-5 h-5 ml-1"
