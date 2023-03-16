@@ -168,8 +168,8 @@ function CompanyDetailPage() {
               <div className="mt-10 md:mt-20 space-y-5">
                 {company.beers ? (
                   <div>
-                    <h1 className=" tracking-wide text-gray-800 dark:text-white text-md md:text-xl">
-                     {company.beers.length > 0 ? `${company.beers[0].title} beers:` : null }
+                    <h1 className=" tracking-wide text-gray-800 w-fit text-md md:text-xl p-5 mt-5 bg-white border border-gray-900">
+                     {company.beers.length > 0 ? `${company.beers[0].title} beers: ${company.beers.length}` : null }
                     </h1>
                     <ul className="grid gap-x-3 row-auto w-200 lg:w-200 ">
                       {company.beers.map((item) => (

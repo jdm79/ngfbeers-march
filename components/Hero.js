@@ -4,7 +4,7 @@ import Banner from "./Banner";
 
 function Hero() {
   return (
-    <div className="w-screen bg-gradient-to-r from-yellow-400 via-yellow-400 to-gray-900 text-black min-h-screen ">
+    <div className="w-screen bg-gradient-to-r from-yellow-400 via-yellow-400 to-gray-800 text-black min-h-screen ">
       <div className="mt-10 relative">
         <div className="text-center text-5xl ml-3 mr-3 mt-10 lg:text-8xl w-auto md:ml-20 md:mr-20 md:mt-20">
           <h1 >Naturally  </h1>
