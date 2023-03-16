@@ -6,10 +6,10 @@ import { useRouter } from 'next/router'
 const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'Companies', href: '/companies', current: false },
-  { name: 'About', href: '/about', current: false },
   // { name: 'FAQ', href: '/faq', current: false },
   // { name: 'Blog', href: '/blog', current: false },
   { name: 'Links', href: '/links', current: false },
+  { name: 'About', href: '/about', current: false },
   { name: 'Contact', href: '/contact', current: false },
 ]
 
@@ -21,7 +21,7 @@ export default function Nav() {
   const router = useRouter();
 
   return (
-    <Disclosure as="nav" className="bg-yellow-400 border-black border-b-2 ">
+    <Disclosure as="nav" className="bg-gradient-to-r from-yellow-400 via-yellow-400 to-gray-900 border-black border-b-2 ">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 font-courier font-extrabold text-2xl">
@@ -41,12 +41,12 @@ export default function Nav() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="block h-8 w-auto lg:hidden"
-                    src="/wide-simple.jpg"
+                    src="/images/wide.svg"
                     alt="Your Company"
                   />
                   <img
                     className="hidden h-8 w-auto lg:block"
-                    src="/wide-simple.jpg"
+                    src="/images/wide.svg"
                     alt="Your Company"
                   />
                 </div>
@@ -60,7 +60,7 @@ export default function Nav() {
                           href={item.href}
                           className={classNames(
                             isActive
-                              ? "text-black font-bold bg-gradient-to-r bg-yellow-400 border-solid border-black border-2 hover:bg-white"
+                              ? "text-black font-bold  bg-yellow-400 border-solid border-black border-2 hover:bg-white"
                               : "text-gray-700 hover:bg-white hover:text-black hover:no-underline hover:border-2 hover:border-black  hover:underline-offset-2",
                             "px-3 py-2 rounded-md text-sm font-medium font-mono"
                           )}
