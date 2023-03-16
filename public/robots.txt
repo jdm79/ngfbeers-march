@@ -1,3 +1,9 @@
+# *
 User-agent: *
-Disallow: 
-Disallow: /cgi-bin/
+Allow: /
+
+# Host
+Host: https://ngfbeers.com
+
+# Sitemaps
+Sitemap: https://ngfbeers.com/sitemap.xml
