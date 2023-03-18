@@ -26,11 +26,11 @@ const aboutPage = () => {
             (and elsewhere).
           </p>
           <p className="p-5">
-            There is a great resource{" "}
+            There's a great resource{" "}
             <Link
               href="https://zerotolerance.mywikis.wiki/wiki/Gluten_Reduced_vs_Gluten_Free"
               target="_blank"
-              className="border-2 border-black bg-yellow-400 px-1"
+              className="border-2 border-black bg-yellow-400 rounded-lg px-1"
             >
               {" "}
               here
@@ -38,7 +38,7 @@ const aboutPage = () => {
             from the people at{" "}
             <Link
               href="https://zerotolerance.mywikis.wiki/wiki/Main_Page"
-              className="border-2 border-black bg-yellow-400 px-1"
+              className="border-2 border-black bg-yellow-400 rounded-lg px-1"
               target="_blank"
             >
               Zero Tolerance Gluten Free Brewing Wiki
@@ -49,18 +49,18 @@ const aboutPage = () => {
             For more information about this topic, please go to the{" "}
             <Link
               href="/links"
-              className="border-2 border-black bg-yellow-400 px-1"
+              className="border-2 border-black bg-yellow-400 rounded-lg px-1"
             >
               Links section
             </Link>
             .
           </p>
           <p className="p-5">
-            If you are an ngci beer brewer/company - or know of one we have
+            If you are an ngci beer brewer/company - or know of one we
             missed out, contact us using our{" "}
             <Link
               href="/contact"
-              className="border-2 border-black bg-yellow-400 px-1"
+              className="border-2 border-black bg-yellow-400 rounded-lg px-1"
             >
               Contact Form
             </Link>
