@@ -27,7 +27,7 @@ const links = [
               and family who fall into that category,
               or simply have an interest in using alternative grains to brew delicious beer.`,
       link_description: "Zero Tolerance Gluten Free Homebrew Club Facebook Group",
-      link_type: 'Facebook',
+      link_type: 'Facebook group',
       body: "body"
     },
     {
