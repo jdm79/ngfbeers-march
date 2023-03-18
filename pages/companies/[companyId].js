@@ -53,13 +53,10 @@ function CompanyDetailPage() {
         <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center">
           <div>
             <div className="border-gray-900 bg:white border p-5 bg-white rounded-lg">
-              <h1 className="font-bold tracking-wide text-gray-800 text-3xl md:text-7xl mb-10 bg-yellow-400 border p-5 border-black w-fit rounded-lg">
+              <h1 className="font-bold tracking-wide text-gray-800 text-3xl md:text-7xl mb-4 bg-yellow-400 border p-5 border-black md:w-fit rounded-lg ">
                 {company.title}
               </h1>
-              <h1 className="mb-4">Share this:</h1>
-              <SocialMediaShare id={company.id} title={company.title} />
-
-              <div class="flex mb-4 mt-2 border border-black p-5 rounded-lg">
+              <div class="flex mb-4 mt-4 border border-black p-5 rounded-lg">
                 <div class="w-1/2">
                   <ul className="space-y-4 md:space-y-4">
                     <li className="flex items-center -mx-2 text-gray-700 mt-4">
@@ -156,10 +153,14 @@ function CompanyDetailPage() {
                   />
                 </div>
               </div>
-              <div className="mt-10">
-                <p className="flex items-center text-gray-700 border border-black p-5 rounded-lg">
+              <div className="mt-4">
+                <p className="flex items-center text-gray-700 border border-black p-5 rounded-lg mb-4">
                   <span className="mx-2">{company.description}</span>
                 </p>
+              </div>
+              <div className="border border-black p-5 mt-4 rounded-lg sm:w-fit m-auto sm:m-0">
+                <h1 className="mb-4">Share this:</h1>
+                <SocialMediaShare id={company.id} title={company.title} />
               </div>
             </div>
 
@@ -177,15 +178,15 @@ function CompanyDetailPage() {
                     <ul className="grid gap-x-3 row-auto w-200 lg:w-200 ">
                       {company.beers.map((item) => (
                         <div>
-                          <div className="p-5 mt-5 bg-white border border-gray-900 rounded-lg">
-                            <h1 className="flex -mx-2 text-gray-700 text-4xl">
-                              <span className="mx-2 mb-2">
+                          <div className="p-5 mt-4 bg-white border border-gray-900 rounded-lg">
+                            <h1 className="flex text-gray-700 -mx-2 text-2xl sm:text-6xl mb-4 border border-black bg-yellow-400 p-5 rounded-lg md:w-fit">
+                              <span className="mb-2">
                                 {item.beer_name}
                               </span>
                             </h1>
                             <div>
                               {item.strength ? (
-                                <h4 className="flex text-xs items-center -mx-2 mb-4 text-gray-700">
+                                <h4 className="flex text-xs items-center -mx-2 mb-4 text-gray-700 border border-black p-5 rounded-lg w-fit">
                                   <span className="mx-2">{item.strength}</span>
                                 </h4>
                               ) : (
@@ -193,13 +194,13 @@ function CompanyDetailPage() {
                               )}
                             </div>
                             <img
-                              className="w-auto rounded-full border-4 mb-2 m-auto border-black"
+                              className="w-auto rounded-full border-4 mb-2 m-auto sm:m-0 border-black"
                               src={`/images/beers/${item.image_url}`}
                               alt={item.beer_name}
                             />
-                            <p className="flex items-center -mx-2 mb-4 text-gray-700">
+                            <p className="flex items-center -mx-2 my-5 text-gray-700">
                               <a
-                                className="mx-2 text-black bg-yellow-400 p-5 border rounded-lg border-black hover:bg-yellow-100 md:mx-auto mt-4 mb-4 "
+                                className=" text-black bg-yellow-400 p-5 border rounded-lg border-black hover:bg-yellow-100 mt-4 "
                                 href={item.beer_url}
                                 target="_blank"
                               >
@@ -219,8 +220,8 @@ function CompanyDetailPage() {
                                 </svg>
                               </a>
                             </p>
-                            <p className="flex items-center -mx-2 text-gray-700">
-                              <span className="mx-2">
+                            <p className="flex items-center -mx-2 text-gray-700 border border-black p-5 rounded-lg">
+                              <span className="">
                                 {item.beer_description}
                               </span>
                             </p>
