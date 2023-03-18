@@ -41,7 +41,7 @@ function LinkDetailPage() {
                         </div>
                         <div className="flex items-center -mx-2">
                        
-                          <p >Source: <span className="mx-2">{link.link_type}</span></p>
+                          <p >Source: <span className="mx-2">{link.link_description}</span></p>
 
 
                         </div>
