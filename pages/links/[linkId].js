@@ -33,14 +33,14 @@ function LinkDetailPage() {
             </svg>
           </button>
         </Link>
-        <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center bg-white mt-10 mb-10 border border-black">
+        <div className="container flex flex-col px-6 py-6 mx-auto space-y-2 lg:py-4 lg:flex-row lg:items-center bg-white mt-10 mb-10 border border-black">
           <div>
             <div>
               <h1 className="font-bold tracking-wide text-gray-800 text-xl md:text-5xl">
                 {link.title}
               </h1>
               <div className="mt-8 space-y-5">
-                <p className="flex items-center -mx-2">
+                <p className="flex items-center -mx-2 border border-black p-5 rounded-lg">
                   <span>"{link.blurb}"</span>
                 </p>
 
@@ -63,14 +63,7 @@ function LinkDetailPage() {
                     Click to read more
                   </a>
                 </div>
-                <div className="flex items-center -mx-2">
-                  <p>
-                    Source:{" "}
-                    <span className="mx-2">{link.link_description}</span>
-                  </p>
-                </div>
               </div>
-               
             </div>
           </div>
         </div>
