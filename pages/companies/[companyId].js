@@ -50,23 +50,23 @@ function CompanyDetailPage() {
         </Link>
 
         {/* beer company section here */}
-        <div className="container  flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center">
+        <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center">
           <div>
-            <div className="border-gray-900 bg:white border p-5 bg-white">
-              <h1 className="font-bold tracking-wide text-gray-800 text-3xl md:text-7xl mb-10">
+            <div className="border-gray-900 bg:white border p-5 bg-white rounded-lg">
+              <h1 className="font-bold tracking-wide text-gray-800 text-3xl md:text-7xl mb-10 bg-yellow-400 border p-5 border-black w-fit rounded-lg">
                 {company.title}
               </h1>
               <h1 className="mb-4">Share this:</h1>
               <SocialMediaShare id={company.id} title={company.title} />
 
-              <div class="flex mb-4 mt-10">
+              <div class="flex mb-4 mt-2 border border-black p-5 rounded-lg">
                 <div class="w-1/2">
-                  <ul className="space-y-4 md:space-y-14">
+                  <ul className="space-y-4 md:space-y-4">
                     <li className="flex items-center -mx-2 text-gray-700 mt-4">
                       {/* put social media share here */}
                       {/* <SocialMediaShare id={company.id} title={company.title} /> */}
                     </li>
-                    <li className="flex items-center -mx-2 text-gray-700 mt-4">
+                    <li className="flex items-center -mx-2  mt-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -150,14 +150,14 @@ function CompanyDetailPage() {
                 </div>
                 <div class="w-1/2">
                   <img
-                    className="w-auto sm:w-1/2 rounded-full"
+                    className="w-auto rounded-full"
                     src={`/${company.image}`}
                     alt={company.title}
                   />
                 </div>
               </div>
               <div className="mt-10">
-                <p className="flex items-center -mx-2 text-gray-700">
+                <p className="flex items-center text-gray-700 border border-black p-5 rounded-lg">
                   <span className="mx-2">{company.description}</span>
                 </p>
               </div>
@@ -169,7 +169,7 @@ function CompanyDetailPage() {
                 {company.beers ? (
                   <div>
                     {company.beers.length > 0 ? (
-                      <h1 className="tracking-wide text-gray-800 bg-white w-fit text-md md:text-xl p-5 mt-5 mx-auto border border-black">
+                      <h1 className="tracking-wide text-gray-800 bg-white w-fit text-md md:text-xl p-5 mt-5 mx-auto border border-black rounded-lg">
                         {company.beers[0].title} have {company.beers.length}{" "}
                         naturally gluten-free beer(s)
                       </h1>
@@ -177,7 +177,7 @@ function CompanyDetailPage() {
                     <ul className="grid gap-x-3 row-auto w-200 lg:w-200 ">
                       {company.beers.map((item) => (
                         <div>
-                          <div className="p-5 mt-5 bg-white border border-gray-900">
+                          <div className="p-5 mt-5 bg-white border border-gray-900 rounded-lg">
                             <h1 className="flex -mx-2 text-gray-700 text-4xl">
                               <span className="mx-2 mb-2">
                                 {item.beer_name}
