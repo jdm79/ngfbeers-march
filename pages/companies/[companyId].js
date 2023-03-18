@@ -168,7 +168,12 @@ function CompanyDetailPage() {
               <div className="mt-10 md:mt-20 space-y-5">
                 {company.beers ? (
                   <div>
-                     {company.beers.length > 0 ? <h1 className="tracking-wide text-gray-800 bg-white w-fit text-md md:text-xl p-5 mt-5 border border-black">{company.beers[0].title} have {company.beers.length} beer(s)</h1> : null }
+                    {company.beers.length > 0 ? (
+                      <h1 className="tracking-wide text-gray-800 bg-white w-fit text-md md:text-xl p-5 mt-5 mx-auto border border-black">
+                        {company.beers[0].title} have {company.beers.length}{" "}
+                        naturally gluten-free beer(s)
+                      </h1>
+                    ) : null}
                     <ul className="grid gap-x-3 row-auto w-200 lg:w-200 ">
                       {company.beers.map((item) => (
                         <div>
@@ -194,7 +199,7 @@ function CompanyDetailPage() {
                             />
                             <p className="flex items-center -mx-2 mb-4 text-gray-700">
                               <a
-                                className="mx-2 text-black bg-yellow-400 p-5 border border-black hover:underline md:m-auto mt-4 mb-4 "
+                                className="mx-2 text-black bg-yellow-400 p-5 border border-black hover:underline md:mx-auto mt-4 mb-4 "
                                 href={item.beer_url}
                                 target="_blank"
                               >

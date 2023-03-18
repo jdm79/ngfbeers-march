@@ -21,7 +21,7 @@ function CompaniesList(props) {
           ))}
         </ul>
         <div>
-          <h1 className="text-center">Share this</h1>
+          <h1 className="text-center mb-4 mt-4">Share this</h1>
         </div>
         <div className="flex justify-center ">
           <SocialMediaShare title={title} />
