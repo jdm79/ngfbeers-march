@@ -20,13 +20,15 @@ function CompaniesList(props) {
             />
           ))}
         </ul>
-        <div>
-          <h1 className="text-center mb-4 mt-4">Share this</h1>
-        </div>
-        <div className="flex justify-center ">
-          <SocialMediaShare title={title} />
-        </div>
       </div>
+      <div className="w-fit px-5 m-auto">
+          <div className="bg-white border border-black px-5 mb-4">
+            <h1 className="text-center">Share this website</h1>
+          </div>
+          <div className="flex justify-center ">
+            <SocialMediaShare title={title} />
+          </div>
+        </div>
     </section>
   );
 }

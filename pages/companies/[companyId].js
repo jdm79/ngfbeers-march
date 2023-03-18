@@ -18,7 +18,7 @@ function CompanyDetailPage() {
       <section className=" bg-yellow-400">
         <Link href="/companies">
           <button
-            className="bg-yellow-400
+            className="bg-white
                 border-solid 
               border-black 
                 border-2

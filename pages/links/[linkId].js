@@ -15,45 +15,68 @@ function LinkDetailPage() {
   return (
     <DefaultLayout>
       <section className="bg-yellow-400 dark:text-gray-700">
-        <Link href="/links" >
-          <button className="bg-yellow-400 hover:bg-white border-solid border-black border-2 text-black font-bold py-2 px-4 rounded my-1 ml-1">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mx-2">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
-          </svg>
+        <Link href="/links">
+          <button className="bg-white hover:bg-white border-solid border-black border-2 text-black font-bold py-2 px-4 rounded my-1 ml-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6 mx-2"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+              />
+            </svg>
           </button>
         </Link>
         <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center bg-white mt-10 mb-10 border border-black">
-            <div >
-                <div >
-                    <h1 className="font-bold tracking-wide text-gray-800 text-xl md:text-5xl">
-                        {link.title}
-                    </h1>
-                    <div className="mt-8 space-y-5">
-                        <p className="flex items-center -mx-2">
-                          <span>"{link.blurb}"</span>
-                        </p>
+          <div>
+            <div>
+              <h1 className="font-bold tracking-wide text-gray-800 text-xl md:text-5xl">
+                {link.title}
+              </h1>
+              <div className="mt-8 space-y-5">
+                <p className="flex items-center -mx-2">
+                  <span>"{link.blurb}"</span>
+                </p>
 
-                        <div className="flex items-center -mx-2 bg-yellow-400 w-fit border border-black p-5 rounded-lg">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-2">
-                             <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
-                          </svg>
-                          <a href={link.link_url} target="_blank">Click to read more</a>
-                        </div>
-                        <div className="flex items-center -mx-2">
-                       
-                          <p >Source: <span className="mx-2">{link.link_description}</span></p>
-
-
-                        </div>
-
-                        </div> 
-                    </div>
+                <div className="flex items-center -mx-2 bg-yellow-400 w-fit border border-black p-5 rounded-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6 mr-2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+                    />
+                  </svg>
+                  <a href={link.link_url} target="_blank">
+                    Click to read more
+                  </a>
                 </div>
+                <div className="flex items-center -mx-2">
+                  <p>
+                    Source:{" "}
+                    <span className="mx-2">{link.link_description}</span>
+                  </p>
+                </div>
+              </div>
+               
             </div>
+          </div>
+        </div>
       </section>
     </DefaultLayout>
-
-  )
+  );
 }
  
 export default LinkDetailPage;
