@@ -9,8 +9,8 @@ function LinkItem(props) {
                 <Link href={linkLink} className="w-screen flex p-5 bg-white hover:bg-yellow-100 border-gray-900 border-t-2">
                 <div>
                     <div>
-                        <h1 className="text-weight-bold text-xl bg-yellow-400 border border-black p-2 rounded-lg mb-2">{title}</h1>
-                        <p className="text-sm">({type})</p>
+                        <h1 className="text-weight-bold text-xl bg-yellow-400 border border-black p-2 mb-2">{title}</h1>
+                        <p className="text-sm bg-black text-white p-4 w-fit m-auto sm:m-0">(Source: {type})</p>
                     </div>
                 </div>
                 </Link>

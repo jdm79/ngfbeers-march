@@ -33,15 +33,15 @@ function LinkDetailPage() {
                           <span>"{link.blurb}"</span>
                         </p>
 
-                        <div className="flex items-center -mx-2 bg-yellow-400 w-fit border border-black p-5">
+                        <div className="flex items-center -mx-2 bg-yellow-400 w-fit border border-black p-5 rounded-lg">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-2">
                              <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
                           </svg>
                           <a href={link.link_url} target="_blank">Click to read more</a>
                         </div>
-                        <div className="flex items-center -mx-2 ">
+                        <div className="flex items-center -mx-2">
                        
-                          <p>Source: <span className="mx-2">{link.link_type}</span></p>
+                          <p >Source: <span className="mx-2">{link.link_type}</span></p>
 
 
                         </div>
