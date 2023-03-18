@@ -8,6 +8,7 @@ const companies = [
       description: 'AltGrainCo brew and supply alternative, NGCI craft-beer and beer brewing ingredients to customers wishing to avoid gluten altogether.',
       location: 'UK',
       region: "EU",
+      status: "dedicated",
       image: 'images/companies/altgrain-logo.jpg',
       isFeatured: true,
       beers: [
@@ -43,6 +44,7 @@ const companies = [
         "One of the original gluten-free brewers, with a mix of gluten-reduced and gluten-free beers in their range. Although a British company, the beers themselves are brewed in Belgium, and their IPA is an award-winning favourite in the naturally gluten-free beer community here in Europe (and elsewhere).",
       location: 'UK',
       region: "EU",
+      status: "Mixed",
       image: 'images/companies/greens-logo.png',
       isFeatured: true,
       beers: [
@@ -119,6 +121,7 @@ const companies = [
                     as gluten-free beer should indeed be good enough for anyone to drink!`,
       location: 'UK',
       region: "EU",
+      status: "dedicated",
       image: 'images/companies/jimbrew-logo.jpeg',
       isFeatured: true,
       beers: [
@@ -135,6 +138,7 @@ const companies = [
       The Moulin des Moines brand was created in 1970 on the very site of a 13th century mill founded by Cistercian monks, in the heart of the Alsatian countryside, on the banks of the Zorn river. Today, Nicolas and Pascal Meckert continue their parents' commitment by guiding the new generations towards an ever more organic world with ever more vitality!`,
       location: 'France',
       region: "EU",
+      status: "Mixed",
       image: 'images/companies/moulin-logo.png',
       isFeatured: true,
       beers: [
@@ -163,6 +167,7 @@ const companies = [
         Guaranteed gluten-free. Guaranteed organic. Guaranteed good taste.`,
       location: 'Germany',
       region: "EU",
+      status: "Mixed",
       image: 'images/companies/rieden-logo.png',
       isFeatured: true,
       beers: [
@@ -188,6 +193,7 @@ const companies = [
         `Schnitzer Bräu is gluten-free. We only use naturally gluten-free raw materials.`,
       location: 'Germany',
       region: "EU",
+      status: "Mixed",
       image: 'images/companies/schnitz-logo.png',
       isFeatured: true,
       beers: [
@@ -210,6 +216,7 @@ const companies = [
       The legal definition of beer in Italy, unlike many other countries, provides that it is made exclusively from barley or wheat. With the transformation of sorghum we can produce a "fermented drink". Our choice is demanding and particularly courageous, but the qualities and advantages of our product have led us to accept the challenge. It is a drink with a great personality that is appreciated by enthusiasts, who discover a new taste to compare with those already known. It is an allergen-free drink that can be consumed by everyone (who can consume alcoholic beverages).`,
       location: 'Italy',
       region: "EU",
+      status: "dedicated",
       image: 'images/companies/stirone-logo.png',
       isFeatured: true,
       beers: [
@@ -272,6 +279,7 @@ const companies = [
       description: `A dedicated naturally gluten-free micro brewery in Edinburgh, producing Circuit Breaker, a clean and crisp lager.`,
       location: 'UK',
       region: "EU",
+      status: "dedicated",
       image: 'images/companies/suspect-logo.jpg',
       isFeatured: true,
       beers: [
