@@ -10,7 +10,7 @@ function LinkItem(props) {
                 <div>
                     <div>
                         <h1 className="text-weight-bold text-xl bg-yellow-400 border border-black p-2 mb-2">{title}</h1>
-                        <p className="text-sm bg-black text-white p-4 w-fit m-auto sm:m-0">(Source: {type})</p>
+                        <p className="text-sm bg-black text-white p-4 w-fit">(Source: {type})</p>
                     </div>
                 </div>
                 </Link>
