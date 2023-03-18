@@ -199,7 +199,7 @@ function CompanyDetailPage() {
                             />
                             <p className="flex items-center -mx-2 mb-4 text-gray-700">
                               <a
-                                className="mx-2 text-black bg-yellow-400 p-5 border border-black hover:underline md:mx-auto mt-4 mb-4 "
+                                className="mx-2 text-black bg-yellow-400 p-5 border rounded-lg border-black hover:bg-yellow-100 md:mx-auto mt-4 mb-4 "
                                 href={item.beer_url}
                                 target="_blank"
                               >
