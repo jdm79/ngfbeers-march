@@ -50,13 +50,13 @@ function CompanyDetailPage() {
         </Link>
 
         {/* beer company section here */}
-        <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:py-16 lg:flex-row lg:items-center">
+        <div className="container flex flex-col px-6 py-10 mx-auto sm:w-1/2 space-y-6 lg:py-16 lg:flex-row lg:items-center">
           <div>
             <div className="border-gray-900 bg:white border p-5 bg-white rounded-lg">
-              <h1 className="font-bold tracking-wide text-gray-800 text-3xl md:text-7xl mb-4 bg-yellow-400 border p-5 border-black md:w-fit rounded-lg ">
+              <h1 className="tracking-wide text-gray-800 text-3xl md:text-7xl mb-4 bg-yellow-400 border p-5 border-black rounded-lg ">
                 {company.title}
               </h1>
-              <div class="flex mb-4 mt-4 border border-black p-5 rounded-lg">
+              <div class="flex mb-4 mt-4 border border-black bg-white p-5 rounded-lg">
                 <div class="w-1/2">
                   <ul className="space-y-4 md:space-y-4">
                     <li className="flex items-center -mx-2 text-gray-700 mt-4">
@@ -158,7 +158,7 @@ function CompanyDetailPage() {
                   <span className="mx-2">{company.description}</span>
                 </p>
               </div>
-              <div className="border border-black p-5 mt-4 rounded-lg sm:w-fit m-auto sm:m-0">
+              <div className="border border-black p-5 mt-4 rounded-lg m-auto sm:m-0">
                 <h1 className="mb-4">Share this:</h1>
                 <SocialMediaShare id={company.id} title={company.title} />
               </div>
@@ -170,7 +170,7 @@ function CompanyDetailPage() {
                 {company.beers ? (
                   <div>
                     {company.beers.length > 0 ? (
-                      <h1 className="tracking-wide text-gray-800 bg-white w-fit text-md md:text-xl p-5 mt-5 mx-auto border border-black rounded-lg">
+                      <h1 className="tracking-wide text-gray-800 bg-white text-md md:text-xl p-5 mt-5 border border-black rounded-lg">
                         {company.beers[0].title} have {company.beers.length}{" "}
                         naturally gluten-free beer(s)
                       </h1>
@@ -179,14 +179,14 @@ function CompanyDetailPage() {
                       {company.beers.map((item) => (
                         <div>
                           <div className="p-5 mt-4 bg-white border border-gray-900 rounded-lg">
-                            <h1 className="flex text-gray-700 -mx-2 text-2xl sm:text-6xl mb-4 border border-black bg-yellow-400 p-5 rounded-lg md:w-fit">
+                            <h1 className="flex text-gray-700 -mx-2 text-2xl sm:text-6xl mb-4 border border-black bg-yellow-400 p-5 rounded-lg">
                               <span className="mb-2">
                                 {item.beer_name}
                               </span>
                             </h1>
                             <div>
                               {item.strength ? (
-                                <h4 className="flex text-xs items-center -mx-2 mb-4 text-gray-700 border border-black p-5 rounded-lg w-fit">
+                                <h4 className="flex text-xs items-center -mx-2 mb-4 text-gray-700 border border-black p-5 rounded-lg">
                                   <span className="mx-2">{item.strength}</span>
                                 </h4>
                               ) : (
@@ -200,7 +200,7 @@ function CompanyDetailPage() {
                             />
                             <p className="flex items-center -mx-2 my-5 text-gray-700">
                               <a
-                                className=" text-black bg-yellow-400 p-5 border rounded-lg border-black hover:bg-yellow-100 mt-4 "
+                                className=" text-black bg-yellow-400 p-5 border rounded-lg border-black hover:bg-yellow-100 mt-4 sm:w-1/2"
                                 href={item.beer_url}
                                 target="_blank"
                               >
