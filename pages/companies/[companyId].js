@@ -50,7 +50,7 @@ function CompanyDetailPage() {
         </Link>
 
         {/* beer company section here */}
-        <div className="container flex flex-col px-6 py-10 mx-auto sm:w-1/2 space-y-6 lg:py-16 lg:flex-row lg:items-center">
+        <div className="container flex flex-col px-6 py-10 mx-auto sm:w-3/4 space-y-6 lg:py-16 lg:flex-row lg:items-center">
           <div>
             <div className="border-gray-900 bg:white border p-3 bg-white rounded-lg">
               <h1 className="tracking-wide text-gray-800 text-3xl md:text-7xl mb-4 bg-yellow-400 border p-5 border-black rounded-lg ">
