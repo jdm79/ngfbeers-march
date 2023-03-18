@@ -14,7 +14,7 @@ function CompanyItem(props) {
               src={`/${image}`}
               alt={title}
             />
-            <div className="flex justify-center mt-4 border border-black py-3 pr-5 rounded-lg w-fit m-auto">
+            <div className="flex justify-center mt-4 border border-black py-0.5 pr-5 rounded-lg w-fit m-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
