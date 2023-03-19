@@ -11,8 +11,8 @@ const links = [
               It's a common misconception that eating a little gluten will not harm you. 
               Eating even tiny amounts can trigger symptoms of coeliac disease
                and increase your risk of developing the complications outlined below.`,
-    link_description: "National Health Service UK",
-    link_type: "website",
+    source: "National Health Service UK",
+    type: "website",
     body: "body",
   },
   {
@@ -25,8 +25,8 @@ const links = [
               Others are interested in learning how to brew beer for friends
               and family who fall into that category,
               or simply have an interest in using alternative grains to brew delicious beer.`,
-    link_description: "Zero Tolerance Gluten Free Homebrew Club Facebook Group",
-    link_type: "facebook",
+    source: "Zero Tolerance Gluten Free Homebrew Club Facebook Group",
+    type: "facebook",
     body: "body",
   },
   {
@@ -38,8 +38,8 @@ const links = [
               AOECS, Association of European Coeliac Societies, 
               to my open letter about safety of gluten free beer in Europe. 
               I have Scerri’s approval for publishing his full response.`,
-    link_description: "https://missmuru.wordpress.com/",
-    link_type: "website",
+    source: "https://missmuru.wordpress.com/",
+    type: "website",
     body: "",
   },
   {
@@ -49,8 +49,8 @@ const links = [
     blurb: `Co-hosted by Cale Baldwin and Stuart Cole. 
               The one and only dedicated gluten free brewing podcast. 
               Sponsored by Zero Tolerance Gluten Free Homebrewing.`,
-    link_description: `https://zerotolerancegf.podbean.com/`,
-    link_type: "podcast",
+    source: `https://zerotolerancegf.podbean.com/`,
+    type: "podcast",
     body: "",
   },
   {
@@ -64,8 +64,8 @@ const links = [
               and the test used to find gluten in beer is broken too. 
               Scientists in Australia are working on a new test to ensure these beers, 
               sometimes labelled “gluten reduced,” are safe for those with celiac disease.`,
-    link_description: "Forbes article by Sam Lemonick",
-    link_type: "article",
+    source: "Forbes article by Sam Lemonick",
+    type: "article",
     body: "",
   },
   {
@@ -76,9 +76,9 @@ const links = [
     blurb: `[But] when we looked at beers labelled low-gluten or reduced gluten, 
               there wasn't much difference in the level we saw in those and what we saw in just normal, 
               off-the-shelf beer.`,
-    link_description:
+    source:
       "ABC article on the inaccuracy of current gluten-free beer testing",
-    link_type: "article",
+    type: "article",
     body: "",
   },
   {
@@ -93,8 +93,8 @@ const links = [
               An alternative method is available (R5 ELISA Competitive)
               which is a more effective way to measure the gluten in beer and other hydrolysed
               or fermented products.`,
-    link_description: `'How is gluten free beer made?' Coeliac UK website`,
-    link_type: "website",
+    source: `'How is gluten free beer made?' Coeliac UK website`,
+    type: "website",
     body: "",
   },
 ];

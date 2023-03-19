@@ -13,8 +13,8 @@ function LinksList(props) {
             title={link.title}
             blurb={link.blurb}
             link={link.link_url}
-            type={link.link_type}
-            body={link.link_type}
+            type={link.type}
+            source={link.source}
           />
         ))}
       </ul>

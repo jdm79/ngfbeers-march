@@ -13,8 +13,8 @@ function BackButton({ href }) {
           py-2 
           px-4 
           rounded 
-          my-1 
-          ml-1
+          my-2
+          
           transition ease-in-out delay-150  hover:-translate-x-1 hover:scale-110 hover:bg-white duration-300
           "
       >
