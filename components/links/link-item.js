@@ -11,11 +11,13 @@ function LinkItem(props) {
         href={linkLink}
         className="w-screen flex py-0 bg-yellow-400 mx-auto px-2 sm:px-0"
       >
-        <div className="w-full sm:w-3/4 m-auto bg-white hover:bg-yellow-300 border-2 mb-2 border-black rounded-lg p-4">
+        <div className="w-full sm:w-3/4 m-auto bg-white hover:bg-yellow-300 border-2 mb-2 border-black rounded-lg p-4 hover:text-black">
           <div className="">
-            <h1 className="text-weight-bold text-md font-extrabold sm:text-xl">{title}</h1>
-            <p className="text-sm text-gray-400 flex">{source}</p>
-            <p className="text-sm text-gray-400 flex">
+            <h1 className="text-weight-bold text-md font-extrabold sm:text-xl">
+              {title}
+            </h1>
+            <p className="text-sm text-gray-500 flex">{source}</p>
+            <p className="text-sm text-gray-500 flex">
               Link type: {type}
               <span className="pl-2">
                 {type === "website" ? (
