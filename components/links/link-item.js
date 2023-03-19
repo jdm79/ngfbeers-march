@@ -13,7 +13,7 @@ function LinkItem(props) {
       >
         <div className="w-full sm:w-3/4 m-auto bg-white hover:bg-yellow-300 border-2 mb-2 border-black rounded-lg p-4 hover:text-black">
           <div className="">
-            <h1 className="text-weight-bold text-md font-extrabold sm:text-xl">
+            <h1 className="text-md font-semibold sm:text-xl">
               {title}
             </h1>
             <p className="text-sm text-gray-500 flex">{source}</p>

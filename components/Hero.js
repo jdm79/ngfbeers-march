@@ -10,6 +10,7 @@ function Hero() {
             className="m-auto mt-10 w-3/4 sm:w-1/5"
             alt="ngfbeers logo - a circle inside of which is a black beer glass with foam spilling over. the words ngfbeers outside the circle"
           />
+          <p className="text-sm mt-10">A showcase of gluten-free beers made without barley</p>
         </div>
       </div>
     </div>
