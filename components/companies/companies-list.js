@@ -1,5 +1,5 @@
 import CompanyItem from "./company-item";
-import SocialMediaShare from "../../components/SocialMediaShare"
+import SocialMediaShare from "../../components/SocialMediaShare";
 
 function CompaniesList(props) {
   const { items } = props;
@@ -22,13 +22,13 @@ function CompaniesList(props) {
         </ul>
       </div>
       <div className="w-fit px-5 m-auto">
-          <div className="px-5 mb-4 mt-5">
-            <h1 className="text-center">Share this website</h1>
-          </div>
-          <div className="flex justify-center ">
-            <SocialMediaShare title={title} />
-          </div>
+        <div className="px-5 mb-4 mt-5">
+          <h1 className="text-center">Share this website</h1>
         </div>
+        <div className="flex justify-center ">
+          <SocialMediaShare title={title} />
+        </div>
+      </div>
     </section>
   );
 }

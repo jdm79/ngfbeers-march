@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-function BackButton({ href}) {
+function BackButton({ href }) {
   return (
     <Link href={href}>
       <button
@@ -37,4 +37,4 @@ function BackButton({ href}) {
   );
 }
 
-export default BackButton
+export default BackButton;

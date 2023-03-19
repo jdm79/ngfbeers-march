@@ -10,9 +10,9 @@ const contactPage = () => {
   return (
     <DefaultLayout>
       <PageTitle title="Contact Page" />
-        <ContactForm />
+      <ContactForm />
+    </DefaultLayout>
+  );
+};
 
-    </DefaultLayout>  )
-}
-
-export default contactPage
+export default contactPage;

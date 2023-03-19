@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 const ContactForm = () => {
-  const [name, setName ] = useState("");
-  const [email, setEmail ] = useState("");
-  const [message, setMessage ] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [isError, setIsError] = useState(null);
 
   const handleSubmit = async (e) => {
@@ -12,32 +12,32 @@ const ContactForm = () => {
     const form = {
       name,
       email,
-      message
-    }
+      message,
+    };
     // submit via api
-    const rawResponse = await fetch('/api/submit', {
-      method: 'POST',
+    const rawResponse = await fetch("/api/submit", {
+      method: "POST",
       headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
+        Accept: "application/json",
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(form)
-    })
+      body: JSON.stringify(form),
+    });
 
     const content = await rawResponse.json();
 
-    setName('')
-    setEmail('')
-    setMessage('')
-    setIsError(false)
-  }
-
+    setName("");
+    setEmail("");
+    setMessage("");
+    setIsError(false);
+  };
 
   return (
-    <div className="w-full md:w-3/4 md:max-w-full mt-12 mb-20 mx-auto px-2 sm:px-0" >
+    <div className="w-full md:w-3/4 md:max-w-full mt-12 mb-20 mx-auto px-2 sm:px-0">
       <h1 className="bg-white text-black border-2 border-black sm:rounded-md p-5 mb-5 shadow-md shadow-black">
         If you have any feedback or queries, or have any NGCI beer-related news,
-        please contact us using the form below. Any advice or help is much appreciated!
+        please contact us using the form below. Any advice or help is much
+        appreciated!
       </h1>
       <div className="py-10 px-20 border-black border-2 sm:rounded-md bg-white shadow-md shadow-black">
         <form onSubmit={handleSubmit}>
@@ -47,7 +47,7 @@ const ContactForm = () => {
               type="text"
               name="name"
               value={name}
-              onChange={e => setName(e.target.value)}
+              onChange={(e) => setName(e.target.value)}
               className="
                 block
                 w-full
@@ -68,7 +68,7 @@ const ContactForm = () => {
             <input
               name="email"
               value={email}
-              onChange={e => setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
               type="email"
               className="
                 block
@@ -90,7 +90,7 @@ const ContactForm = () => {
             <textarea
               name="message"
               value={message}
-              onChange={e => setMessage(e.target.value)}
+              onChange={(e) => setMessage(e.target.value)}
               className="
                 block
                 w-full
@@ -129,12 +129,16 @@ const ContactForm = () => {
               Send Message
             </button>
           </div>
-          { isError === true && (<div>Something went wrong! Message not sent.</div>) }
-          { isError === false && (<div className="font-weight-extrabold">Message sent! Thank you</div>) }
+          {isError === true && (
+            <div>Something went wrong! Message not sent.</div>
+          )}
+          {isError === false && (
+            <div className="font-weight-extrabold">Message sent! Thank you</div>
+          )}
         </form>
       </div>
     </div>
   );
-}
+};
 
 export default ContactForm;
