@@ -147,7 +147,7 @@ function CompanyDetailPage() {
                     <ul className="grid gap-x-3 row-auto w-200 lg:w-200 ">
                       {company.beers.map((item) => (
                         <div>
-                          <div className="p-5 mt-4 bg-white border border-gray-900 rounded-lg">
+                          <div className="px-5 py-3 mt-4 bg-white border border-gray-900 rounded-lg">
                             <h1 className="flex text-gray-700 -mx-2 text-2xl sm:text-6xl mb-4 border border-black bg-yellow-400 p-5 rounded-lg">
                               <span className="mb-2">
                                 {item.beer_name}
