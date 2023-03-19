@@ -37,7 +37,7 @@ const aboutPage = () => {
             from the people at Zero Tolerance Gluten Free Brewing Wiki.
           </p>
           <p className="p-5">
-            For more information about this topic, please go to the{" "}
+            For more information, check out the{" "}
             <Link
               href="/links"
               className="border-2 border-black bg-yellow-400 rounded-lg px-1"
