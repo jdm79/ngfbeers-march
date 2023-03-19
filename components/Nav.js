@@ -1,27 +1,30 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import { useRouter } from 'next/router'
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useRouter } from "next/router";
 
 const navigation = [
-  { name: 'Home', href: '/', current: false },
-  { name: 'Companies', href: '/companies', current: false },
+  { name: "Home", href: "/", current: false },
+  { name: "Companies", href: "/companies", current: false },
   // { name: 'FAQ', href: '/faq', current: false },
   // { name: 'Blog', href: '/blog', current: false },
-  { name: 'Links', href: '/links', current: false },
-  { name: 'About', href: '/about', current: false },
-  { name: 'Contact', href: '/contact', current: false },
-]
+  { name: "Links", href: "/links", current: false },
+  { name: "About", href: "/about", current: false },
+  { name: "Contact", href: "/contact", current: false },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Nav() {
   const router = useRouter();
 
   return (
-    <Disclosure as="nav" className="bg-gradient-to-r from-yellow-400 via-yellow-400 to-gray-900 border-black border-b-2 ">
+    <Disclosure
+      as="nav"
+      className="bg-gradient-to-r from-yellow-400 via-yellow-400 to-gray-900 border-black border-b-2 "
+    >
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 font-courier font-extrabold text-2xl">
@@ -67,11 +70,8 @@ export default function Nav() {
                         >
                           {item.name}
                         </a>
-                      )
-                     
-                    })
-                  }
-                    
+                      );
+                    })}
                   </div>
                 </div>
               </div>
@@ -110,7 +110,10 @@ export default function Nav() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+                            )}
                           >
                             Your Profile
                           </a>
@@ -120,7 +123,10 @@ export default function Nav() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+                            )}
                           >
                             Settings
                           </a>
@@ -130,7 +136,10 @@ export default function Nav() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(
+                              active ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+                            )}
                           >
                             Sign out
                           </a>
@@ -151,10 +160,12 @@ export default function Nav() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-white text-black' : 'text-gray-800 hover:bg-gray-700 hover:text-black',
-                    'block rounded-md px-3 py-2 text-base font-medium'
+                    item.current
+                      ? "bg-white text-black"
+                      : "text-gray-800 hover:bg-gray-700 hover:text-black",
+                    "block rounded-md px-3 py-2 text-base font-medium"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
@@ -164,5 +175,5 @@ export default function Nav() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }

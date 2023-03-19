@@ -16,10 +16,10 @@ function CompanyDetailPage() {
   return (
     <DefaultLayout>
       <section className=" bg-yellow-400">
-        <BackButton href="/companies"/>
+        <BackButton href="/companies" />
 
         {/* beer company section here */}
-        <div className="container flex flex-col px-6 py-10 mx-auto sm:w-3/4 space-y-6 lg:py-16 lg:flex-row lg:items-center">
+        <div className="container flex flex-col px-2 py-10 mx-auto sm:w-3/4 space-y-6 lg:py-16 lg:flex-row lg:items-center">
           <div>
             <div className="border-gray-900 bg:white border p-3 bg-white rounded-lg">
               <h1 className="tracking-wide text-gray-800 text-3xl md:text-7xl mb-4 bg-yellow-400 border p-5 border-black rounded-lg ">
@@ -149,9 +149,7 @@ function CompanyDetailPage() {
                         <div>
                           <div className="px-5 py-3 mt-4 bg-white border border-gray-900 rounded-lg">
                             <h1 className="flex text-gray-700 -mx-2 text-2xl sm:text-6xl mb-4 border border-black bg-yellow-400 p-5 rounded-lg">
-                              <span className="mb-2">
-                                {item.beer_name}
-                              </span>
+                              <span className="mb-2">{item.beer_name}</span>
                             </h1>
                             <div>
                               {item.strength ? (
@@ -190,9 +188,7 @@ function CompanyDetailPage() {
                               </a>
                             </p>
                             <p className="flex items-center -mx-2 text-gray-700 border border-black p-5 rounded-lg">
-                              <span className="">
-                                {item.beer_description}
-                              </span>
+                              <span className="">{item.beer_description}</span>
                             </p>
                           </div>
                         </div>
