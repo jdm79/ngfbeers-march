@@ -1,8 +1,8 @@
 import { getCompanyById } from "@/companies";
 import { useRouter } from "next/router";
-import Link from "next/link";
 import DefaultLayout from "@/components/DefaultLayout";
 import SocialMediaShare from "@/components/SocialMediaShare";
+import BackButton from "@/components/BackButton";
 
 function CompanyDetailPage() {
   const router = useRouter();
@@ -16,38 +16,7 @@ function CompanyDetailPage() {
   return (
     <DefaultLayout>
       <section className=" bg-yellow-400">
-        <Link href="/companies">
-          <button
-            className="bg-white
-                border-solid 
-              border-black 
-                border-2
-              text-black 
-                font-bold 
-                py-2 
-                px-4 
-                rounded 
-                my-1 
-                ml-1
-                transition ease-in-out delay-150  hover:-translate-x-1 hover:scale-110 hover:bg-white duration-300
-                "
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6 mx-2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
-              />
-            </svg>
-          </button>
-        </Link>
+        <BackButton href="/companies"/>
 
         {/* beer company section here */}
         <div className="container flex flex-col px-6 py-10 mx-auto sm:w-3/4 space-y-6 lg:py-16 lg:flex-row lg:items-center">
