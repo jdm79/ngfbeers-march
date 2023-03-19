@@ -7,14 +7,14 @@ function CompanyItem(props) {
   return (
     // <li classNameName="p-2 bg-gray-200 w-full border-b-2 border-black">
     <Link href={companyLink}>
-      <div className="m-auto w-full mb-4">
-        <div className="border-black border-2 bg-white rounded-lg hover:border-4 active:bg-yellow-400 shadow-md shadow-black">
+      <div className="m-auto w-full mb-0">
+        <div className="border-black border-2 bg-white hover:border-4 active:bg-yellow-400">
           <img
             className="w-3/4 sm:w-1/2 m-auto rounded-full my-4"
             src={`/${image}`}
             alt={title}
           />
-          <div className="flex justify-center  bg-yellow-400 py-2 w-full m-auto border border-black">
+          <div className="flex justify-center  bg-yellow-400 py-2 w-full m-auto border border-t-black">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
