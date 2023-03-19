@@ -9,7 +9,7 @@ function LinkItem(props) {
       <li >
         <Link
           href={linkLink}
-          className="w-screen flex py-0 bg-yellow-400"
+          className="w-screen flex py-0 bg-yellow-400 mx-auto px-2 sm:px-0"
         >
           <div className="w-full sm:w-3/4 m-auto bg-white hover:bg-yellow-300 border border-black p-4 shadow-md shadow-black">
             <div className="">
