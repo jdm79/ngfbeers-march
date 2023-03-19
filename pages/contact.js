@@ -1,8 +1,7 @@
 import { getAllCompanies } from "../companies";
 import DefaultLayout from "@/components/DefaultLayout";
 import PageTitle from "@/components/PageTitle";
-import ThumbnailRow from "@/components/ThumbnailRow";
-import ContactForm from "@/components/contact-form";
+import ContactForm from "@/components/ContactForm";
 
 const contactPage = () => {
   const companies = getAllCompanies();
