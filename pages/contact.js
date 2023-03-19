@@ -8,7 +8,7 @@ const contactPage = () => {
 
   return (
     <DefaultLayout>
-        <h1 className="bg-white w-screen flex p-5 justify-center border-b-2 border-black " >Contact Page</h1>
+        <h1 className="bg-white w-screen flex p-5 justify-center border-b-2 border-black" >Contact Page</h1>
         <ContactForm />
 
     </DefaultLayout>  )
