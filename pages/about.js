@@ -14,14 +14,14 @@ const aboutPage = () => {
         <h1 className="w-screen flex p-5 justify-center border-b-2 border-black bg-white dark:text-black">
           About Page
         </h1>
-        <div className="p-5 justify-center border-2 border-black bg-white mt-12 mb-10 shadow-md shadow-black w-3/4 mx-auto">
+        <div className="p-5 ml-2 mr-2 justify-center border-2 border-black rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto">
           <p className="p-5 font-courier">
-            This website is a showcase of naturally gluten-free (ngci) beer
-            brewers (Europe so far).
+            This website is a showcase of naturally gluten-free (NGCI) beer
+            brewers (only Europe so far).
           </p>
           <p className="p-5">
             We also want to help educate consumers about the health risks of
-            drinking what is currently labelled as ‘gluten-free’ beer in Europe
+            drinking what is currently labelled as ‘gluten-free’ beer here in Europe
             (and elsewhere).
           </p>
           <p className="p-5">
@@ -34,15 +34,7 @@ const aboutPage = () => {
               {" "}
               here
             </Link>{" "}
-            from the people at{" "}
-            <Link
-              href="https://zerotolerance.mywikis.wiki/wiki/Main_Page"
-              className="border-2 border-black bg-yellow-400 rounded-lg px-1"
-              target="_blank"
-            >
-              Zero Tolerance Gluten Free Brewing Wiki
-            </Link>
-            .
+            from the people at Zero Tolerance Gluten Free Brewing Wiki.
           </p>
           <p className="p-5">
             For more information about this topic, please go to the{" "}
@@ -55,8 +47,8 @@ const aboutPage = () => {
             .
           </p>
           <p className="p-5">
-            If you are an ngci beer brewer/company - or know of one we
-            missed out, contact us using our{" "}
+            If you are an ngci beer brewer/company - or know of one, contact us
+            using our{" "}
             <Link
               href="/contact"
               className="border-2 border-black bg-yellow-400 rounded-lg px-1"
