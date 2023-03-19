@@ -1,5 +1,6 @@
 import { getAllCompanies } from "../companies";
 import DefaultLayout from "@/components/DefaultLayout";
+import PageTitle from "@/components/PageTitle";
 import ThumbnailRow from "@/components/ThumbnailRow";
 import ContactForm from "@/components/contact-form";
 
@@ -8,7 +9,7 @@ const contactPage = () => {
 
   return (
     <DefaultLayout>
-        <h1 className="bg-white w-screen flex p-5 justify-center border-b-2 border-black" >Contact Page</h1>
+      <PageTitle title="Contact Page" />
         <ContactForm />
 
     </DefaultLayout>  )

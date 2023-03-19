@@ -1,16 +1,17 @@
 import { getAllCompanies } from "../../companies";
 import CompaniesList from "@/components/companies/companies-list";
 import DefaultLayout from "@/components/DefaultLayout";
+import PageTitle from "@/components/PageTitle";
 
 const CompaniesPage = () => {
     const companies = getAllCompanies();
     
     return (
-        <DefaultLayout>
-            <h1 className="w-screen flex p-5 justify-center border-b-2 border-black bg-white shadow-md shadow-black">Companies Page</h1>
-            <CompaniesList items={companies}/>
-        </DefaultLayout>                
-    )
+      <DefaultLayout>
+        <PageTitle title="Companies Page" />
+        <CompaniesList items={companies} />
+      </DefaultLayout>
+    );
 }
 
 export default CompaniesPage;

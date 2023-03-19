@@ -1,4 +1,5 @@
 import DefaultLayout from "@/components/DefaultLayout";
+import PageTitle from "@/components/PageTitle";
 import SocialMediaShare from "@/components/SocialMediaShare";
 import ThumbnailRow from "@/components/ThumbnailRow";
 import Link from "next/link";
@@ -10,11 +11,10 @@ const aboutPage = () => {
  
   return (
     <DefaultLayout>
-      <div className="w-screen text-black bg-yellow-400">
-        <h1 className="w-screen flex p-5 justify-center border-b-2 border-black bg-white dark:text-black">
-          About Page
-        </h1>
-        <div className="p-5 justify-center border-2 border-black rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto">
+      <PageTitle title="About Page" />
+      <div className="w-screen text-black bg-yellow-400 mx-auto px-2 sm:px-0">
+
+        <div className="justify-center border-2 border-black rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto">
           <p className="p-5 font-courier">
             This website is a showcase of naturally gluten-free (NGCI) beer
             brewers (only Europe so far).
