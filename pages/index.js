@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <DefaultLayout>
         <Hero />
-        <ThumbnailRow />
+        {/* <ThumbnailRow /> */}
     </DefaultLayout>
        
 
