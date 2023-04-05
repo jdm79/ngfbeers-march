@@ -294,7 +294,7 @@ const companies = [
     location: "UK",
     region: "EU",
     status: "dedicated",
-    image: "images/companies/suspect-logo.jpg",
+    image: "images/companies/suspect-logo.png",
     isFeatured: true,
     beers: [
       {
