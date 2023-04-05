@@ -354,6 +354,43 @@ const companies = [
     taproom_blurb: "",
     taproom_url: "https://www.beliveaufarm.com/brewery"
   },
+  {
+    id: "e12",
+    title: "Bierly Brewing",
+    website_url: "https://www.bierlybrewing.com/",
+    insta_url: "https://www.instagram.com/bierlybrewing/",
+    fb_url: "https://www.facebook.com/bierlybrewing",
+    description: `
+      Bierly Brewing began brewing commercially in 2016 as Oregon’s second gluten-free brewery.
+      In their own words: "At Bierly Brewing, our passion is to provide great gluten-free craft beer and delicious food in a dedicated gluten-free facility while making positive connections with our community. We are proud to be an inclusive space, and we stand with our LGBTQIA+ and BIPOC community members."
+      `,
+    location: "USA",
+    region: "North America",
+    status: "dedicated",
+    image: "images/companies/bierly-logo.svg",
+    isFeatured: true,
+    taproom_blurb: "",
+    taproom_url: "https://www.bierlybrewing.com/our-beers/"
+  },
+  {
+    id: "e13",
+    title: "Brewery NYX",
+    website_url: "https://www.brewerynyx.com/",
+    insta_url: "https://www.instagram.com/brewerynyx/",
+    fb_url: "https://www.facebook.com/BreweryNyx",
+    description: `
+    Grand Rapids has no shortage of beer for enthusiasts, but for the gluten-free it can feel like wandering through a desert with nothing to drink. 
+    Brewery Nyx, Michigan’s first dedicated gluten-free brewery and facility, was created to bring taste, better ingredients, joy and comradery back to the beer experience for everyone.
+     From IPAs to lagers to barrel-aged stouts, Brewery Nyx brings those who love beer but can’t enjoy it, back into the fold.
+      `,
+    location: "USA",
+    region: "North America",
+    status: "dedicated",
+    image: "images/companies/nyx-logo.png",
+    isFeatured: true,
+    taproom_blurb: "",
+    taproom_url: "https://www.bierlybrewing.com/our-beers/"
+  },
 ];
 
   export function getCompanyById(id) {
