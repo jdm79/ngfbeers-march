@@ -480,6 +480,62 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
     taproom_blurb: "",
     taproom_url: "https://divinesciencebrewing.com/craft-beers/",
   },
+  {
+    id: "e18",
+    title: "Dos Luces",
+    website_url: "https://dosluces.com/",
+    insta_url: "https://www.instagram.com/doslucesbrewery/",
+    fb_url: "https://www.facebook.com/doslucesbrewery/",
+    description: `
+  
+    In their own words: "While barley is highly regarded in the world of beer, corn is often disregarded as a brewing grain and even, at times, treated with disdain. However, the history of brewing with corn goes back at least as far as that for barley, and is rooted right here in the Western Hemisphere. At Dos Luces Brewery, we have explored the history behind some of the many styles of beer traditionally brewed with corn, and have embraced corn as our core grain. The “Dos” Luces (Two Lights) represent our two core types of beer, a corn-based Chicha and a corn and maguey-based Pulque.
+
+    Dos Luces. The sun and the moon. Inti and Metztli. Chicha and Pulque. We chose the name Dos Luces because it represents the duality of light – While you might be tempted to imagine this as light and darkness, we prefer to consider the bright light of day in contrast to the brightest beacon of light at night. Call it divine inspiration or simply the accumulation of ideas within two swirling brains, Dos Luces represents the idea that there is always light when you look for it."
+    `,
+    location: "USA",
+    region: "North America",
+    status: "dedicated",
+    image: "images/companies/dos-logo.png",
+    isFeatured: true,
+    taproom_blurb: "",
+    taproom_url: "https://dosluces.com/brews/",
+  },
+  {
+    id: "e19",
+    title: "Eckert Malting & Brewing",
+    website_url: "https://eckertmaltingandbrewing.com/",
+    insta_url: "",
+    fb_url: "",
+    description: `
+    In their own words: 
+    "After more than four years of development and some pivotal advice along the way from a few people in the brewing and rice industry, I have created several styles of ales and lagers. The ales and beers I produce are naturally malted and brewed using California rice, hops, water and gluten-free yeast. I have established a gluten-free facility in order to eliminate any chance of cross-contamination. In contrast, many of the currently available gluten-free beers are produced in breweries that also brew traditional barley and wheat beers."
+    `,
+    location: "USA",
+    region: "North America",
+    status: "dedicated",
+    image: "images/companies/eckert-logo.png",
+    isFeatured: true,
+    taproom_blurb: "",
+    taproom_url: "https://eckertmaltingandbrewing.com/brewing/",
+  },
+  {
+    id: "e20",
+    title: "Evasion Brewing",
+    website_url: "https://evasionbrewing.com/home",
+    insta_url: "https://www.instagram.com/evasionbrewing/?hl=en",
+    fb_url: "https://www.facebook.com/EvasionBrewing/",
+    description: `
+    In their own words:
+    "Our brewery is a dedicated gluten free facility. That means no gluten passes through our doors. We source our ingredients from suppliers that sell certified gluten free ingredients, or (if not certified) can show us thier tests to prove their intensive cleaning and handling have resulted in no cross contamination. Even though we use all gluten free ingredients, we take our gluten free claim very seriously and test each and every batch we produce for gluten contamination, just to be triple sure. You may notice lot numbers printed on each of our cans, this is so we can track the batches tested for gluten. It is ultimately our responsibility to make sure we are producing a truly gluten free product for you to consume, that’s why we test all our beer before it leaves the brewery."
+    `,
+    location: "USA",
+    region: "North America",
+    status: "dedicated",
+    image: "images/companies/evasion-logo.png",
+    isFeatured: true,
+    taproom_blurb: "",
+    taproom_url: "https://evasionbrewing.com/store",
+  },
 ];
 
 export function getCompanyById(id) {
