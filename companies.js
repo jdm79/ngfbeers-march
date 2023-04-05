@@ -349,7 +349,7 @@ const companies = [
     location: "USA",
     region: "North America",
     status: "dedicated",
-    image: "images/companies/beliveau-logo.svg",
+    image: "images/companies/beliveau-logo.png",
     isFeatured: true,
     taproom_blurb: "",
     taproom_url: "https://www.beliveaufarm.com/brewery"
@@ -367,7 +367,7 @@ const companies = [
     location: "USA",
     region: "North America",
     status: "dedicated",
-    image: "images/companies/bierly-logo.svg",
+    image: "images/companies/bierly-logo.png",
     isFeatured: true,
     taproom_blurb: "",
     taproom_url: "https://www.bierlybrewing.com/our-beers/"
@@ -390,6 +390,27 @@ const companies = [
     isFeatured: true,
     taproom_blurb: "",
     taproom_url: "https://www.bierlybrewing.com/our-beers/"
+  },
+  {
+    id: "e14",
+    title: "Buck Wild",
+    website_url: "https://www.buckwildbrew.com/",
+    insta_url: "https://www.instagram.com/buckwildbrewing/",
+    fb_url: "https://www.facebook.com/buckwildbeer",
+    description: `
+    Nested in the scenic and lively Jack London Square district of Oakland, surrounded by diverse landscapes and culture in every direction, spoiled with adventure to California’s dynamic environment. 
+    In their own words: "Simply put, we believe in craft beer for all. With millions of Americans living with gluten intolerances, allergies, and gluten-free lifestyles, many are deprived from enjoying the simple pleasure of having a beer. We’re here to change that, and are uncomprimising on ingredients, flavor.
+
+    What ingredients do you use?
+    The ingredients we use have been found in beer recipes for thousands of years all around the world. Buckwheat, millet, and rice make up the majority of our malts, but we also use oats, maize, and other ingredients that do not contain any gluten."
+    `,
+    location: "USA",
+    region: "North America",
+    status: "dedicated",
+    image: "images/companies/buckwild-logo.png",
+    isFeatured: true,
+    taproom_blurb: "",
+    taproom_url: "https://www.buckwildbrew.com/our-beer"
   },
 ];
 
