@@ -39,7 +39,7 @@ const ContactForm = () => {
         please contact us using the form below. Any advice or help is much
         appreciated!
       </h1>
-      <div className="py-10 px-20 border-black border-2 rounded-lg bg-white shadow-md shadow-black">
+      <div className="py-10 px-10 border-black border-2 rounded-lg bg-white shadow-md shadow-black">
         <form onSubmit={handleSubmit}>
           <label className="block mb-6">
             <span className="text-black">Your name</span>
