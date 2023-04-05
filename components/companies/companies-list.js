@@ -18,14 +18,14 @@ function CompaniesList(props) {
               href='https://zerotolerance.mywikis.wiki/wiki/List_of_GF_breweries'
               className='border-2 border-black bg-yellow-400 rounded-lg px-1'
             >
-              website.
-            </Link>{" "}
-            If you have any feedback, please use our{" "}
+              website
+            </Link>.{" "}
+            If you have any feedback, please use our contact form{" "}
             <Link
               href='/contact'
               className='border-2 border-black bg-yellow-400 rounded-lg px-1'
             >
-              contact form
+              here
             </Link>
             .
           </h1>
