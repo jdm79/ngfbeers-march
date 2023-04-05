@@ -133,6 +133,8 @@ const companies = [
     status: "dedicated",
     image: "images/companies/jimbrew-logo.jpeg",
     isFeatured: true,
+    taproom_blurb: "JimBrew is the UK's first NGCI taproom in the UK. For a full list of their latest offerings, check their Instagram on the link below.",
+    taproom_url: "https://www.instagram.com/jimbrew_brewing/",
     beers: [],
   },
   {
@@ -300,6 +302,62 @@ const companies = [
         beer_url: "https://www.facebook.com/SUSBREWING/",
         beer_description:
           "Circuit breaker: our bricks and mortar. Built differently using millet and buckwheat instead of conventional barley malt. ",
+      },
+    ],
+  },
+  {
+    id: "e9",
+    title: "ALT Brew",
+    website_url: "https://www.altbrew.com/",
+    insta_url: "https://www.instagram.com/altbrew/",
+    fb_url: "https://www.facebook.com/altbrew",
+    description: `ALT Brew is a craft nanobrewery and taproom located on the east side of Madison, WI (USA). They take pride in designing and brewing a wide variety of beer styles all without using barley, wheat, or rye. From fresh double dry-hopped double IPAs to delightfully drinkable blonde ales to huge bourbon barrel aged stouts and everything in between, ALT Brew offer 100% gluten-free beer that all beer drinkers can enjoy.`,
+    location: "USA",
+    region: "North America",
+    status: "dedicated",
+    image: "images/companies/altbrew-logo.jpg",
+    isFeatured: true,
+    taproom_blurb: "Our current tap list. These varieties are available as full pours, half pours, or served in a flight. *Updated as frequently as possible, actual taplist may differ*",
+    taproom_url: `https://www.altbrew.com/taproom`,
+  },
+  {
+    id: "e10",
+    title: "Auroch's Brewing Co.",
+    website_url: "https://aurochsbrewing.com/",
+    insta_url: "https://www.instagram.com/aurochsbrewing/",
+    fb_url: "https://www.facebook.com/AurochsBrewing/",
+    description: `Naturally Gluten-Free Ingredients. Naturally Gluten-Free Beer. Dedicated Gluten-Free Facility. 
+
+    Auroch's believe everyone should be able to experience the memorable moments in life with friends and family - all while enjoying great beer. They want to bring people back to the table. Beer drinkers shouldn't have to choose between exceptional taste and a safe, gluten-free craft beer.
+    
+    Their founders are life-long friends who are both medically required to follow a gluten-free diet.  Aurochs Brewing Company was born out of necessity and is fueled by passion to drink, share and enjoy a craft beer, for any occasion, with the important people in your life. `,
+    location: "USA",
+    region: "North America",
+    status: "dedicated",
+    image: "images/companies/aurochs-logo.png",
+    isFeatured: true,
+    taproom_blurb: "",
+    taproom_url: "https://aurochsbrewing.com/beers/gluten-free-beers",
+  },
+  {
+    id: "e",
+    title: "",
+    website_url: "",
+    insta_url: "",
+    fb_url: "",
+    description: ``,
+    location: "",
+    region: "E",
+    status: "",
+    image: "images/companies/",
+    isFeatured: true,
+    beers: [
+      {
+        title: "",
+        beer_name: "",
+        image_url: "moulin-des-moines.png",
+        beer_url:"",
+        beer_description: ``
       },
     ],
   },
