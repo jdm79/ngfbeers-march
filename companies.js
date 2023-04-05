@@ -340,26 +340,19 @@ const companies = [
     taproom_url: "https://aurochsbrewing.com/beers/gluten-free-beers",
   },
   {
-    id: "e",
-    title: "",
-    website_url: "",
-    insta_url: "",
-    fb_url: "",
-    description: ``,
-    location: "",
-    region: "E",
-    status: "",
-    image: "images/companies/",
+    id: "e11",
+    title: "Beliveau Farm",
+    website_url: "https://www.beliveaufarm.com/brewery",
+    insta_url: "https://www.instagram.com/beliveaufarmwinery/",
+    fb_url: "https://www.facebook.com/BeliveauFarmWinery/",
+    description: `Beliveau Farm are passionate about brewing and their goal is to harness the power of ancient grains to produce beers in both classic and unique styles. Beliveau Brewery opened in September 2019 and currently stands as Virginia's only Gluten-Free brewery. Their beers are made from malted rice, millet and buckwheat, and their brewery is a completely GF facility. Come check out their seasonal rotating taps, enjoy a beer as you relax and savor their scenic property.`,
+    location: "USA",
+    region: "North America",
+    status: "dedicated",
+    image: "images/companies/beliveau-logo.svg",
     isFeatured: true,
-    beers: [
-      {
-        title: "",
-        beer_name: "",
-        image_url: "moulin-des-moines.png",
-        beer_url:"",
-        beer_description: ``
-      },
-    ],
+    taproom_blurb: "",
+    taproom_url: "https://www.beliveaufarm.com/brewery"
   },
 ];
 
