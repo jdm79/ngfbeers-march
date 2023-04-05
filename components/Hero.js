@@ -13,7 +13,7 @@ function Hero() {
             />
           </a>
 
-          <p className='text-sm mt-10'>
+          <p className='text-base mt-10 bg-white p-3 w-fit border-2 border-black m-auto rounded-full'>
             A showcase of gluten-free beers made without barley
           </p>
         </div>
