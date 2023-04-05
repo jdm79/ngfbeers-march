@@ -122,6 +122,7 @@ const companies = [
     title: "JimBrew Brewing Company",
     website_url: "https://www.jimbrew.co.uk/",
     insta_url: "https://www.instagram.com/jimbrew_brewing/",
+    untappd_url: "https://untappd.com/JimbrewBrewingCompany",
     fb_url: "https://www.facebook.com/jimbrewbrewing",
     description: `JimBrew Brewing is a new brewery - and the first NGCI taproom in the UK. 
                     Based in Preston, they use only sustainable brewing methods to produce beers 
@@ -133,7 +134,8 @@ const companies = [
     status: "dedicated",
     image: "images/companies/jimbrew-logo.jpeg",
     isFeatured: true,
-    taproom_blurb: "JimBrew is the UK's first NGCI taproom in the UK. For a full list of their latest offerings, check their Instagram on the link below.",
+    taproom_blurb:
+      "JimBrew is the UK's first NGCI taproom in the UK. For a full list of their latest offerings, check their Instagram on the link below.",
     taproom_url: "https://www.instagram.com/jimbrew_brewing/",
     beers: [],
   },
@@ -317,7 +319,8 @@ const companies = [
     status: "dedicated",
     image: "images/companies/altbrew-logo.jpg",
     isFeatured: true,
-    taproom_blurb: "Our current tap list. These varieties are available as full pours, half pours, or served in a flight. *Updated as frequently as possible, actual taplist may differ*",
+    taproom_blurb:
+      "Our current tap list. These varieties are available as full pours, half pours, or served in a flight. *Updated as frequently as possible, actual taplist may differ*",
     taproom_url: `https://www.altbrew.com/taproom`,
   },
   {
@@ -352,7 +355,7 @@ const companies = [
     image: "images/companies/beliveau-logo.png",
     isFeatured: true,
     taproom_blurb: "",
-    taproom_url: "https://www.beliveaufarm.com/brewery"
+    taproom_url: "https://www.beliveaufarm.com/brewery",
   },
   {
     id: "e12",
@@ -370,7 +373,7 @@ const companies = [
     image: "images/companies/bierly-logo.png",
     isFeatured: true,
     taproom_blurb: "",
-    taproom_url: "https://www.bierlybrewing.com/our-beers/"
+    taproom_url: "https://www.bierlybrewing.com/our-beers/",
   },
   {
     id: "e13",
@@ -389,7 +392,7 @@ const companies = [
     image: "images/companies/nyx-logo.png",
     isFeatured: true,
     taproom_blurb: "",
-    taproom_url: "https://www.bierlybrewing.com/our-beers/"
+    taproom_url: "https://www.bierlybrewing.com/our-beers/",
   },
   {
     id: "e14",
@@ -410,14 +413,79 @@ const companies = [
     image: "images/companies/buckwild-logo.png",
     isFeatured: true,
     taproom_blurb: "",
-    taproom_url: "https://www.buckwildbrew.com/our-beer"
+    taproom_url: "https://www.buckwildbrew.com/our-beer",
+  },
+  {
+    id: "e15",
+    title: "Burning Brothers",
+    website_url: "https://www.burnbrosbrew.com/",
+    insta_url: "https://www.instagram.com/burnbrosbrew/",
+    fb_url: "https://www.facebook.com/BurnBrosBrew",
+    description: `
+    In their own words: "At Burning Brothers, we believe the only way to brew great gluten-free beer is to make it in a dedicated gluten-free facility.  This means our beer is crafted using completely gluten-free grains, never containing wheat, barley or rye.  We don’t use special filters, enzymes or other gluten-free gimmicks.  Instead, we brew great-tasting beers that you KNOW are truly gluten-free.
+
+    Burning Brothers, gluten-free from grain to glass.
+    
+    Don’t fear the beer."
+    `,
+    location: "USA",
+    region: "North America",
+    status: "dedicated",
+    image: "images/companies/burning-logo.png",
+    isFeatured: true,
+    taproom_blurb: "",
+    taproom_url: "https://www.burnbrosbrew.com/beer/beer-styles/",
+  },
+  {
+    id: "e16",
+    title: "Dark Hills Brewery",
+    website_url: "https://www.darkhillsbrew.com/",
+    insta_url: "",
+    fb_url: "https://www.facebook.com/DarkHillsBrewery/",
+    description: `
+    In their own words: "We're a very pleasant and scenic drive through the hills and hollers of McDonald County, Missouri. Just north of Pea Ridge, Arkansas.
+    We pride ourselves on our large selection of Gluten Free brews.
+We typically have at least 6 of our own unique brews on tap to choose from. And speaking of non-drinkers, we keep our own handmade non-alcoholic
+Root Beer on tap.
+
+Yes, we are a FAMILY & PET-FRIENDLY establishment!"
+
+    
+    `,
+    location: "USA",
+    region: "North America",
+    status: "dedicated",
+    image: "images/companies/darkhills-logo.png",
+    isFeatured: true,
+    taproom_blurb: "",
+    taproom_url: "https://www.darkhillsbrew.com/gallery.html",
+  },
+  {
+    id: "e17",
+    title: "Divine Science Brewing",
+    website_url: "https://divinesciencebrewing.com/",
+    insta_url: "https://www.instagram.com/divinesciencebrewing/?hl=en",
+    fb_url: "https://www.facebook.com/divinesciencebrewing/",
+    description: `
+  
+    In their own words: "All of our California craft beers are made from premium malted gluten-free grains like millet, buckwheat, rice, and lentils. We focus on ingredients so you don’t have to worry.
+    We are sold at Total Wine & More, BevMo across California – located in their gluten-free section! We never make anything that is less than 0ppm. Gluten-reduced is not allowed in this brewery. We have the highest standards because your safety matters! Join us for a pint at the tasting room and try the following beers along with our small batch special releases."
+    
+    `,
+    location: "USA",
+    region: "North America",
+    status: "dedicated",
+    image: "images/companies/divine-logo.png",
+    isFeatured: true,
+    taproom_blurb: "",
+    taproom_url: "https://divinesciencebrewing.com/craft-beers/",
   },
 ];
 
-  export function getCompanyById(id) {
-    return companies.find((company) => company.id == id);
-  };
+export function getCompanyById(id) {
+  return companies.find((company) => company.id == id);
+}
 
-  export function getAllCompanies() {
-    return companies;
-  }
+export function getAllCompanies() {
+  return companies;
+}
