@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 function CompanyItem(props) {
-  const { id, title, image, location } = props;
+  const { id, title, image, country } = props;
   const companyLink = `/companies/${id}`;
 
   return (
@@ -35,7 +35,7 @@ function CompanyItem(props) {
               />
             </svg>
             <span>
-              <h1>{location}</h1>
+              <h1>{country}</h1>
             </span>
           </div>
         </div>
