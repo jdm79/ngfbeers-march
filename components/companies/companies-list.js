@@ -37,7 +37,7 @@ function CompaniesList(props) {
               id={company.id}
               image={company.image}
               title={company.title}
-              location={company.location}
+              country={company.country}
               beers={company.beers}
             />
           ))}
