@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import DefaultLayout from "@/components/DefaultLayout";
 import SocialMediaShare from "@/components/SocialMediaShare";
 import BackButton from "@/components/BackButton";
+import { Icon } from '@iconify/react';
 
 function CompanyDetailPage() {
   const router = useRouter();
@@ -112,9 +113,24 @@ function CompanyDetailPage() {
                     ) : (
                       <div></div>
                     )}
+                    {/* untappd  */}
+                    {company.untappd_url ? (
+                      <li className='flex items-center  text-gray-700 mt-4'>
+                        <Icon
+                          icon='fa-brands:untappd'
+                          style={{ color: "#FACC14" }}
+                        />
+                        <a href={company.untappd_url} target='_blank' className="ml-3">
+                          {"  "}
+                          Untappd<span className=''></span>
+                        </a>
+                      </li>
+                    ) : (
+                      <div></div>
+                    )}
                   </ul>
                 </div>
-                <div class='w-1/2'>
+                <div class='w-1/2 m-auto'>
                   <img
                     className='w-auto rounded-full'
                     src={`/${company.image}`}
@@ -129,7 +145,6 @@ function CompanyDetailPage() {
               </div>
               {company.taproom_url ? (
                 <div className='mt-4'>
-        
                   <p className='flex items-center my-5 text-gray-700'>
                     <a
                       className=' text-black text-center bg-yellow-400 p-5 border rounded-lg border-black hover:bg-yellow-100 w-full'

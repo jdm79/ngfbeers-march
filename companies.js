@@ -5,6 +5,7 @@ const companies = [
     website_url: "https://altgrain.co.uk/",
     insta_url: "https://www.instagram.com/altgrainco/",
     fb_url: "https://www.facebook.com/profile.php?id=100076147206544",
+    untappd_url: "https://untappd.com/AltGrainCo",
     description:
       "AltGrainCo brew and supply alternative, NGCI craft-beer and beer brewing ingredients to customers wishing to avoid gluten altogether.",
     location: "UK",
@@ -47,6 +48,7 @@ const companies = [
     title: "Green's",
     website_url: "https://www.glutenfreebeers.co.uk/",
     insta_url: "https://www.instagram.com/greensbeers/",
+    untappd_url: "https://untappd.com/GreensGlutenFree",
     description:
       "One of the original gluten-free brewers, with a mix of gluten-reduced and gluten-free beers in their range. Although a British company, the beers themselves are brewed in Belgium, and their IPA is an award-winning favourite in the naturally gluten-free beer community here in Europe (and elsewhere).",
     location: "UK",
@@ -122,8 +124,8 @@ const companies = [
     title: "JimBrew Brewing Company",
     website_url: "https://www.jimbrew.co.uk/",
     insta_url: "https://www.instagram.com/jimbrew_brewing/",
-    untappd_url: "https://untappd.com/JimbrewBrewingCompany",
     fb_url: "https://www.facebook.com/jimbrewbrewing",
+    untappd_url: "https://untappd.com/JimbrewBrewingCompany",
     description: `JimBrew Brewing is a new brewery - and the first NGCI taproom in the UK. 
                     Based in Preston, they use only sustainable brewing methods to produce beers 
                     that are not only vegan, but naturally gluten-free as well. 
@@ -146,6 +148,7 @@ const companies = [
       "https://www.naturline.fr/boutique/Boissons/Bieres-cidres-panaches-bieres-sans-alcool/Biere-gluten-free-33cl-bio-3791.html",
     insta_url: "",
     fb_url: "https://www.facebook.com/moulindesmoines67",
+    untappd_url: "https://untappd.com/w/moulin-des-moines/8201",
     description: `
       The Moulin des Moines brand was created in 1970 on the very site of a 13th century mill founded by Cistercian monks, in the heart of the Alsatian countryside, on the banks of the Zorn river. Today, Nicolas and Pascal Meckert continue their parents' commitment by guiding the new generations towards an ever more organic world with ever more vitality!`,
     location: "France",
@@ -172,6 +175,7 @@ const companies = [
     insta_url: "https://www.instagram.com/riedenburgerbrauhaus/",
     fb_url:
       "https://www.facebook.com/people/Riedenburger-Brauerei-Biergarten/100057273797653",
+    untappd_url: "https://untappd.com/RiedenburgerBrauhaus",
     description: `Brewed exclusively from millet malt. The first "gluten-free" beer from Bavaria.
         
         Finest ecological specialty brewed only with organic millet malt and organic hops.
@@ -203,6 +207,7 @@ const companies = [
     title: "Schnitzer Bräu",
     website_url: "https://www.schnitzer.eu/",
     fb_url: "https://www.facebook.com/SchnitzerBraeu/",
+    untappd_url: "https://untappd.com/w/schnitzer-brau/8772",
     description: `Schnitzer Bräu is gluten-free. We only use naturally gluten-free raw materials.`,
     location: "Germany",
     region: "EU",
@@ -226,6 +231,7 @@ const companies = [
     website_url: "https://www.stirone.com/",
     insta_url: "https://www.instagram.com/stironebarleyfree/",
     fb_url: "https://www.facebook.com/Stironebarleyfree/",
+    untappd_url: "https://untappd.com/w/stirone-barleyfree/430197",
     description: `
       The legal definition of beer in Italy, unlike many other countries, provides that it is made exclusively from barley or wheat. With the transformation of sorghum we can produce a "fermented drink". Our choice is demanding and particularly courageous, but the qualities and advantages of our product have led us to accept the challenge. It is a drink with a great personality that is appreciated by enthusiasts, who discover a new taste to compare with those already known. It is an allergen-free drink that can be consumed by everyone (who can consume alcoholic beverages).`,
     location: "Italy",
@@ -290,6 +296,7 @@ const companies = [
     website_url: "https://suspectbrewing.co.uk/",
     insta_url: "https://www.instagram.com/suspect_brewing/",
     fb_url: "https://www.facebook.com/SUSBREWING/",
+    untappd_url: "https://untappd.com/SuspectBrewing",
     description: `A dedicated naturally gluten-free micro brewery in Edinburgh, producing Circuit Breaker, a clean and crisp lager.`,
     location: "UK",
     region: "EU",
@@ -313,6 +320,7 @@ const companies = [
     website_url: "https://www.altbrew.com/",
     insta_url: "https://www.instagram.com/altbrew/",
     fb_url: "https://www.facebook.com/altbrew",
+    untappd_url: "https://untappd.com/ALT-Brew",
     description: `ALT Brew is a craft nanobrewery and taproom located on the east side of Madison, WI (USA). They take pride in designing and brewing a wide variety of beer styles all without using barley, wheat, or rye. From fresh double dry-hopped double IPAs to delightfully drinkable blonde ales to huge bourbon barrel aged stouts and everything in between, ALT Brew offer 100% gluten-free beer that all beer drinkers can enjoy.`,
     location: "USA",
     region: "North America",
@@ -329,6 +337,7 @@ const companies = [
     website_url: "https://aurochsbrewing.com/",
     insta_url: "https://www.instagram.com/aurochsbrewing/",
     fb_url: "https://www.facebook.com/AurochsBrewing/",
+    untappd_url: "https://untappd.com/AurochsBrewing",
     description: `Naturally Gluten-Free Ingredients. Naturally Gluten-Free Beer. Dedicated Gluten-Free Facility. 
 
     Auroch's believe everyone should be able to experience the memorable moments in life with friends and family - all while enjoying great beer. They want to bring people back to the table. Beer drinkers shouldn't have to choose between exceptional taste and a safe, gluten-free craft beer.
@@ -348,6 +357,7 @@ const companies = [
     website_url: "https://www.beliveaufarm.com/brewery",
     insta_url: "https://www.instagram.com/beliveaufarmwinery/",
     fb_url: "https://www.facebook.com/BeliveauFarmWinery/",
+    untappd_url: "https://untappd.com/BeliveauFarmBrewery",
     description: `Beliveau Farm are passionate about brewing and their goal is to harness the power of ancient grains to produce beers in both classic and unique styles. Beliveau Brewery opened in September 2019 and currently stands as Virginia's only Gluten-Free brewery. Their beers are made from malted rice, millet and buckwheat, and their brewery is a completely GF facility. Come check out their seasonal rotating taps, enjoy a beer as you relax and savor their scenic property.`,
     location: "USA",
     region: "North America",
@@ -363,6 +373,7 @@ const companies = [
     website_url: "https://www.bierlybrewing.com/",
     insta_url: "https://www.instagram.com/bierlybrewing/",
     fb_url: "https://www.facebook.com/bierlybrewing",
+    untappd_url: "https://untappd.com/BierlyBrewing",
     description: `
       Bierly Brewing began brewing commercially in 2016 as Oregon’s second gluten-free brewery.
       In their own words: "At Bierly Brewing, our passion is to provide great gluten-free craft beer and delicious food in a dedicated gluten-free facility while making positive connections with our community. We are proud to be an inclusive space, and we stand with our LGBTQIA+ and BIPOC community members."
@@ -381,6 +392,7 @@ const companies = [
     website_url: "https://www.brewerynyx.com/",
     insta_url: "https://www.instagram.com/brewerynyx/",
     fb_url: "https://www.facebook.com/BreweryNyx",
+    untappd_url: "https://untappd.com/BreweryNyx",
     description: `
     Grand Rapids has no shortage of beer for enthusiasts, but for the gluten-free it can feel like wandering through a desert with nothing to drink. 
     Brewery Nyx, Michigan’s first dedicated gluten-free brewery and facility, was created to bring taste, better ingredients, joy and comradery back to the beer experience for everyone.
@@ -396,10 +408,11 @@ const companies = [
   },
   {
     id: "e14",
-    title: "Buck Wild",
+    title: "Buck Wild Brewing",
     website_url: "https://www.buckwildbrew.com/",
     insta_url: "https://www.instagram.com/buckwildbrewing/",
     fb_url: "https://www.facebook.com/buckwildbeer",
+    untappd_url: "https://untappd.com/AlpenglowBeerCompany",
     description: `
     Nested in the scenic and lively Jack London Square district of Oakland, surrounded by diverse landscapes and culture in every direction, spoiled with adventure to California’s dynamic environment. 
     In their own words: "Simply put, we believe in craft beer for all. With millions of Americans living with gluten intolerances, allergies, and gluten-free lifestyles, many are deprived from enjoying the simple pleasure of having a beer. We’re here to change that, and are uncomprimising on ingredients, flavor.
@@ -417,10 +430,11 @@ const companies = [
   },
   {
     id: "e15",
-    title: "Burning Brothers",
+    title: "Burning Brothers Brewing",
     website_url: "https://www.burnbrosbrew.com/",
     insta_url: "https://www.instagram.com/burnbrosbrew/",
     fb_url: "https://www.facebook.com/BurnBrosBrew",
+    untappd_url: "https://untappd.com/BurningBrothersBrewing",
     description: `
     In their own words: "At Burning Brothers, we believe the only way to brew great gluten-free beer is to make it in a dedicated gluten-free facility.  This means our beer is crafted using completely gluten-free grains, never containing wheat, barley or rye.  We don’t use special filters, enzymes or other gluten-free gimmicks.  Instead, we brew great-tasting beers that you KNOW are truly gluten-free.
 
@@ -442,6 +456,7 @@ const companies = [
     website_url: "https://www.darkhillsbrew.com/",
     insta_url: "",
     fb_url: "https://www.facebook.com/DarkHillsBrewery/",
+    untappd_url: "https://untappd.com/w/dark-hills-brewery/150006",
     description: `
     In their own words: "We're a very pleasant and scenic drive through the hills and hollers of McDonald County, Missouri. Just north of Pea Ridge, Arkansas.
     We pride ourselves on our large selection of Gluten Free brews.
@@ -466,6 +481,7 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
     website_url: "https://divinesciencebrewing.com/",
     insta_url: "https://www.instagram.com/divinesciencebrewing/?hl=en",
     fb_url: "https://www.facebook.com/divinesciencebrewing/",
+    untappd_url: "https://untappd.com/Divine_Science",
     description: `
   
     In their own words: "All of our California craft beers are made from premium malted gluten-free grains like millet, buckwheat, rice, and lentils. We focus on ingredients so you don’t have to worry.
@@ -486,6 +502,7 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
     website_url: "https://dosluces.com/",
     insta_url: "https://www.instagram.com/doslucesbrewery/",
     fb_url: "https://www.facebook.com/doslucesbrewery/",
+    untappd_url: "https://untappd.com/DosLucesBrewery",
     description: `
   
     In their own words: "While barley is highly regarded in the world of beer, corn is often disregarded as a brewing grain and even, at times, treated with disdain. However, the history of brewing with corn goes back at least as far as that for barley, and is rooted right here in the Western Hemisphere. At Dos Luces Brewery, we have explored the history behind some of the many styles of beer traditionally brewed with corn, and have embraced corn as our core grain. The “Dos” Luces (Two Lights) represent our two core types of beer, a corn-based Chicha and a corn and maguey-based Pulque.
@@ -506,6 +523,7 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
     website_url: "https://eckertmaltingandbrewing.com/",
     insta_url: "",
     fb_url: "",
+    untappd_url: "https://untappd.com/w/eckert-malting-brewing-co/176353",
     description: `
     In their own words: 
     "After more than four years of development and some pivotal advice along the way from a few people in the brewing and rice industry, I have created several styles of ales and lagers. The ales and beers I produce are naturally malted and brewed using California rice, hops, water and gluten-free yeast. I have established a gluten-free facility in order to eliminate any chance of cross-contamination. In contrast, many of the currently available gluten-free beers are produced in breweries that also brew traditional barley and wheat beers."
@@ -524,6 +542,7 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
     website_url: "https://evasionbrewing.com/home",
     insta_url: "https://www.instagram.com/evasionbrewing/?hl=en",
     fb_url: "https://www.facebook.com/EvasionBrewing/",
+    untappd_url: "https://untappd.com/EvasionBrewing",
     description: `
     In their own words:
     "Our brewery is a dedicated gluten free facility. That means no gluten passes through our doors. We source our ingredients from suppliers that sell certified gluten free ingredients, or (if not certified) can show us thier tests to prove their intensive cleaning and handling have resulted in no cross contamination. Even though we use all gluten free ingredients, we take our gluten free claim very seriously and test each and every batch we produce for gluten contamination, just to be triple sure. You may notice lot numbers printed on each of our cans, this is so we can track the batches tested for gluten. It is ultimately our responsibility to make sure we are producing a truly gluten free product for you to consume, that’s why we test all our beer before it leaves the brewery."
