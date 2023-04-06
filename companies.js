@@ -8,7 +8,7 @@ const companies = [
     untappd_url: "https://untappd.com/AltGrainCo",
     description:
       "AltGrainCo brew and supply alternative, NGCI craft-beer and beer brewing ingredients to customers wishing to avoid gluten altogether.",
-    location: "UK",
+    country: "UK",
     region: "EU",
     status: "dedicated",
     image: "images/companies/altgrain-logo.jpg",
@@ -51,7 +51,7 @@ const companies = [
     untappd_url: "https://untappd.com/GreensGlutenFree",
     description:
       "One of the original gluten-free brewers, with a mix of gluten-reduced and gluten-free beers in their range. Although a British company, the beers themselves are brewed in Belgium, and their IPA is an award-winning favourite in the naturally gluten-free beer community here in Europe (and elsewhere).",
-    location: "UK",
+    country: "UK",
     region: "EU",
     status: "Mixed",
     image: "images/companies/greens-logo.png",
@@ -131,7 +131,7 @@ const companies = [
                     that are not only vegan, but naturally gluten-free as well. 
                     They follow the philosophy of targeting a non-coeliac audience as well as coeliacs,
                     as gluten-free beer should indeed be good enough for anyone to drink!`,
-    location: "UK",
+    country: "UK",
     region: "EU",
     status: "dedicated",
     image: "images/companies/jimbrew-logo.jpeg",
@@ -151,7 +151,7 @@ const companies = [
     untappd_url: "https://untappd.com/w/moulin-des-moines/8201",
     description: `
       The Moulin des Moines brand was created in 1970 on the very site of a 13th century mill founded by Cistercian monks, in the heart of the Alsatian countryside, on the banks of the Zorn river. Today, Nicolas and Pascal Meckert continue their parents' commitment by guiding the new generations towards an ever more organic world with ever more vitality!`,
-    location: "France",
+    country: "France",
     region: "EU",
     status: "Mixed",
     image: "images/companies/moulin-logo.png",
@@ -182,7 +182,7 @@ const companies = [
         
         Thanks to our long brewing experience, we have succeeded in brewing a very tasty, beery drink from exclusively natural, ecological and GMO-free raw materials.
         Guaranteed gluten-free. Guaranteed organic. Guaranteed good taste.`,
-    location: "Germany",
+    country: "Germany",
     region: "EU",
     status: "Mixed",
     image: "images/companies/rieden-logo.png",
@@ -209,7 +209,7 @@ const companies = [
     fb_url: "https://www.facebook.com/SchnitzerBraeu/",
     untappd_url: "https://untappd.com/w/schnitzer-brau/8772",
     description: `Schnitzer Bräu is gluten-free. We only use naturally gluten-free raw materials.`,
-    location: "Germany",
+    country: "Germany",
     region: "EU",
     status: "Mixed",
     image: "images/companies/schnitz-logo.png",
@@ -234,7 +234,7 @@ const companies = [
     untappd_url: "https://untappd.com/w/stirone-barleyfree/430197",
     description: `
       The legal definition of beer in Italy, unlike many other countries, provides that it is made exclusively from barley or wheat. With the transformation of sorghum we can produce a "fermented drink". Our choice is demanding and particularly courageous, but the qualities and advantages of our product have led us to accept the challenge. It is a drink with a great personality that is appreciated by enthusiasts, who discover a new taste to compare with those already known. It is an allergen-free drink that can be consumed by everyone (who can consume alcoholic beverages).`,
-    location: "Italy",
+    country: "Italy",
     region: "EU",
     status: "dedicated",
     image: "images/companies/stirone-logo.png",
@@ -298,7 +298,7 @@ const companies = [
     fb_url: "https://www.facebook.com/SUSBREWING/",
     untappd_url: "https://untappd.com/SuspectBrewing",
     description: `A dedicated naturally gluten-free micro brewery in Edinburgh, producing Circuit Breaker, a clean and crisp lager.`,
-    location: "UK",
+    country: "UK",
     region: "EU",
     status: "dedicated",
     image: "images/companies/suspect-logo.png",
@@ -322,7 +322,7 @@ const companies = [
     fb_url: "https://www.facebook.com/altbrew",
     untappd_url: "https://untappd.com/ALT-Brew",
     description: `ALT Brew is a craft nanobrewery and taproom located on the east side of Madison, WI (USA). They take pride in designing and brewing a wide variety of beer styles all without using barley, wheat, or rye. From fresh double dry-hopped double IPAs to delightfully drinkable blonde ales to huge bourbon barrel aged stouts and everything in between, ALT Brew offer 100% gluten-free beer that all beer drinkers can enjoy.`,
-    location: "USA",
+    country: "USA",
     region: "North America",
     status: "dedicated",
     image: "images/companies/altbrew-logo.jpg",
@@ -343,7 +343,7 @@ const companies = [
     Auroch's believe everyone should be able to experience the memorable moments in life with friends and family - all while enjoying great beer. They want to bring people back to the table. Beer drinkers shouldn't have to choose between exceptional taste and a safe, gluten-free craft beer.
     
     Their founders are life-long friends who are both medically required to follow a gluten-free diet.  Aurochs Brewing Company was born out of necessity and is fueled by passion to drink, share and enjoy a craft beer, for any occasion, with the important people in your life. `,
-    location: "USA",
+    country: "USA",
     region: "North America",
     status: "dedicated",
     image: "images/companies/aurochs-logo.png",
@@ -359,7 +359,7 @@ const companies = [
     fb_url: "https://www.facebook.com/BeliveauFarmWinery/",
     untappd_url: "https://untappd.com/BeliveauFarmBrewery",
     description: `Beliveau Farm are passionate about brewing and their goal is to harness the power of ancient grains to produce beers in both classic and unique styles. Beliveau Brewery opened in September 2019 and currently stands as Virginia's only Gluten-Free brewery. Their beers are made from malted rice, millet and buckwheat, and their brewery is a completely GF facility. Come check out their seasonal rotating taps, enjoy a beer as you relax and savor their scenic property.`,
-    location: "USA",
+    country: "USA",
     region: "North America",
     status: "dedicated",
     image: "images/companies/beliveau-logo.png",
@@ -378,7 +378,7 @@ const companies = [
       Bierly Brewing began brewing commercially in 2016 as Oregon’s second gluten-free brewery.
       In their own words: "At Bierly Brewing, our passion is to provide great gluten-free craft beer and delicious food in a dedicated gluten-free facility while making positive connections with our community. We are proud to be an inclusive space, and we stand with our LGBTQIA+ and BIPOC community members."
       `,
-    location: "USA",
+    country: "USA",
     region: "North America",
     status: "dedicated",
     image: "images/companies/bierly-logo.png",
@@ -398,7 +398,7 @@ const companies = [
     Brewery Nyx, Michigan’s first dedicated gluten-free brewery and facility, was created to bring taste, better ingredients, joy and comradery back to the beer experience for everyone.
      From IPAs to lagers to barrel-aged stouts, Brewery Nyx brings those who love beer but can’t enjoy it, back into the fold.
       `,
-    location: "USA",
+    country: "USA",
     region: "North America",
     status: "dedicated",
     image: "images/companies/nyx-logo.png",
@@ -420,7 +420,7 @@ const companies = [
     What ingredients do you use?
     The ingredients we use have been found in beer recipes for thousands of years all around the world. Buckwheat, millet, and rice make up the majority of our malts, but we also use oats, maize, and other ingredients that do not contain any gluten."
     `,
-    location: "USA",
+    country: "USA",
     region: "North America",
     status: "dedicated",
     image: "images/companies/buckwild-logo.png",
@@ -442,7 +442,7 @@ const companies = [
     
     Don’t fear the beer."
     `,
-    location: "USA",
+    country: "USA",
     region: "North America",
     status: "dedicated",
     image: "images/companies/burning-logo.png",
@@ -467,7 +467,7 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
 
     
     `,
-    location: "USA",
+    country: "USA",
     region: "North America",
     status: "dedicated",
     image: "images/companies/darkhills-logo.png",
@@ -488,7 +488,7 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
     We are sold at Total Wine & More, BevMo across California – located in their gluten-free section! We never make anything that is less than 0ppm. Gluten-reduced is not allowed in this brewery. We have the highest standards because your safety matters! Join us for a pint at the tasting room and try the following beers along with our small batch special releases."
     
     `,
-    location: "USA",
+    country: "USA",
     region: "North America",
     status: "dedicated",
     image: "images/companies/divine-logo.png",
@@ -509,7 +509,7 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
 
     Dos Luces. The sun and the moon. Inti and Metztli. Chicha and Pulque. We chose the name Dos Luces because it represents the duality of light – While you might be tempted to imagine this as light and darkness, we prefer to consider the bright light of day in contrast to the brightest beacon of light at night. Call it divine inspiration or simply the accumulation of ideas within two swirling brains, Dos Luces represents the idea that there is always light when you look for it."
     `,
-    location: "USA",
+    country: "USA",
     region: "North America",
     status: "dedicated",
     image: "images/companies/dos-logo.png",
@@ -528,7 +528,7 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
     In their own words: 
     "After more than four years of development and some pivotal advice along the way from a few people in the brewing and rice industry, I have created several styles of ales and lagers. The ales and beers I produce are naturally malted and brewed using California rice, hops, water and gluten-free yeast. I have established a gluten-free facility in order to eliminate any chance of cross-contamination. In contrast, many of the currently available gluten-free beers are produced in breweries that also brew traditional barley and wheat beers."
     `,
-    location: "USA",
+    country: "USA",
     region: "North America",
     status: "dedicated",
     image: "images/companies/eckert-logo.png",
@@ -547,13 +547,99 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
     In their own words:
     "Our brewery is a dedicated gluten free facility. That means no gluten passes through our doors. We source our ingredients from suppliers that sell certified gluten free ingredients, or (if not certified) can show us thier tests to prove their intensive cleaning and handling have resulted in no cross contamination. Even though we use all gluten free ingredients, we take our gluten free claim very seriously and test each and every batch we produce for gluten contamination, just to be triple sure. You may notice lot numbers printed on each of our cans, this is so we can track the batches tested for gluten. It is ultimately our responsibility to make sure we are producing a truly gluten free product for you to consume, that’s why we test all our beer before it leaves the brewery."
     `,
-    location: "USA",
+    country: "USA",
     region: "North America",
     status: "dedicated",
     image: "images/companies/evasion-logo.png",
     isFeatured: true,
     taproom_blurb: "",
     taproom_url: "https://evasionbrewing.com/store",
+  },
+  {
+    id: "e21",
+    title: "Ghostfish Brewing Company",
+    website_url: "https://ghostfishbrewing.com/",
+    insta_url: "https://www.instagram.com/ghostfishbrewco/",
+    fb_url: "https://www.facebook.com/GhostfishBrewingCompany",
+    untappd_url: "https://untappd.com/GhostfishBrewingCompany",
+    description: `
+    In their own words:
+    "We are on a mission to show the world the radical flavors that are only possible by reinventing beer from the grain up. With artisan malts of unusual grains like millet, buckwheat, and heirloom rice, combined with hops from small family farms, our beers are crafted to transcend the previous limits of GF beer. "
+    `,
+    country: "USA",
+    state: "WA",
+    city: "Seattle",
+    region: "North America",
+    status: "dedicated",
+    image: "images/companies/ghostfish-logo.png",
+    isFeatured: true,
+    taproom_blurb: "",
+    taproom_url: "https://ghostfishbrewing.com/beers/",
+  },
+  {
+    id: "e22",
+    title: "Glutenberg",
+    website_url: "https://glutenberg.ca/en",
+    insta_url: "https://www.instagram.com/glutenbergbeer/",
+    fb_url: "https://www.facebook.com/GlutenbergCAN",
+    untappd_url: "https://untappd.com/BrasseursSansGlutenBSG",
+    description: `
+    In their own words:
+    "In 2010, the idea of brewing a gluten-free beer in Quebec was first discussed by two long-time friends and entrepreneurs. One of the co-founders, who had been living with gluten intolerance for several years, remained dissatisfied with the gluten-free beer on the market. He and his partner then saw a unique opportunity to meet a growing need and to realize what both of them had long dreamed of: running their own business. The microbrewery enjoyed its very first international success at the 2012 World Beer Cup, where Glutenberg beers won all three medals in the “Gluten-Free Beer” category at the world’s most prestigious brewing competition. Currently with a team of 10 brand ambassadors working in both Canada and the United States, the company plans to maintain its rapid growth rate in the coming years and continue to brew the best gluten-free beers available."
+    `,
+    country: "CA",
+    state: "QC",
+    city: "Montréal",
+    region: "North America",
+    status: "dedicated",
+    image: "images/companies/glutenberg-logo.png",
+    isFeatured: true,
+    taproom_blurb: "",
+    taproom_url: "https://glutenberg.ca/en/products",
+  },
+  {
+    id: "e23",
+    title: "Grey Fox Brewing",
+    website_url: "https://www.greyfoxbrewing.com/",
+    insta_url: "https://www.instagram.com/greyfoxbrewing",
+    fb_url: "https://www.facebook.com/greyfoxbrewing/",
+    untappd_url: "https://untappd.com/GreyFoxBrewing",
+    description: `
+    In their own words:
+    "Crafted from carefully sourced ingredients and brewed in a dedicated gluten-free facility in Kelowna, BC, Grey Fox Brewing aims to challenge the perception of gluten-free beer through uncompromised craftsmanship and modern brewing techniques. True gluten-free beer is crafted by carefully sourcing ingredients and brewing in a dedicated facility to provide the full craft beer experience without the gluten content. We choice select a combination of millet and rice along with hops and yeast, to produce excellent gluten-free beer true to the craft drinking experience."
+    `,
+    country: "CA",
+    state: "BC",
+    city: "Kelowna",
+    region: "North America",
+    status: "dedicated",
+    image: "images/companies/greyfox-logo.png",
+    isFeatured: true,
+    taproom_blurb: "",
+    taproom_url: "",
+  },
+  {
+    id: "e24",
+    title: "Ground Breaker Brewing",
+    website_url: "https://groundbreakerbrewing.com/",
+    insta_url: "https://www.instagram.com/groundbreakerbrewing/",
+    fb_url: "https://www.facebook.com/groundbreakerbrewing",
+    untappd_url: "https://untappd.com/GroundBreakerBrewing",
+    description: `
+    In their own words:
+"A dedicated gluten-free brewery & gastropub,
+making 100% gluten-free beer & food. Ground Breaker opened in 2011 as the first dedicated & certified gluten-free brewery in the United States. Our approach to making superior gluten-free craft beer is a simple one: use only premium ingredients which are naturally gluten-free."
+
+`,
+    country: "USA",
+    state: "OR",
+    city: "Portland",
+    region: "North America",
+    status: "dedicated",
+    image: "images/companies/groundbreaker-logo.png",
+    isFeatured: true,
+    taproom_blurb: "",
+    taproom_url: "https://groundbreakerbrewing.com/our-gluten-free-brewery",
   },
 ];
 
