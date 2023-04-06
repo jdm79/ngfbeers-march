@@ -13,6 +13,7 @@ const companies = [
     city: "",
     region: "EU",
     status: "dedicated",
+    company_type: "	Dedicated GF maltster and brewery",
     image: "images/companies/altgrain-logo.jpg",
     isFeatured: true,
     beers: [
@@ -54,10 +55,11 @@ const companies = [
     description:
       "One of the original gluten-free brewers, with a mix of gluten-reduced and gluten-free beers in their range. Although a British company, the beers themselves are brewed in Belgium, and their IPA is an award-winning favourite in the naturally gluten-free beer community here in Europe (and elsewhere).",
     country: "UK",
-    state: "Chesire",
+    state: "Cheshire",
     city: "Stockport",
     region: "EU",
     status: "Mixed",
+    company_type: "Contract brewery. Not dedicated GF facilities but cleaning protocols monitored closely",
     image: "images/companies/greens-logo.png",
     isFeatured: true,
     beers: [
@@ -140,6 +142,7 @@ const companies = [
     city: "Preston",
     region: "EU",
     status: "dedicated",
+    company_type: "Dedicated GF brewery with taproom",
     image: "images/companies/jimbrew-logo.jpeg",
     isFeatured: true,
     taproom_blurb:
@@ -162,6 +165,7 @@ const companies = [
     city: "Krautwiller",
     region: "EU",
     status: "Mixed",
+    company_type: "",
     image: "images/companies/moulin-logo.png",
     isFeatured: true,
     beers: [
@@ -195,6 +199,7 @@ const companies = [
     city: "Riedenburg",
     region: "EU",
     status: "Mixed",
+    company_type: "",
     image: "images/companies/rieden-logo.png",
     isFeatured: true,
     beers: [
@@ -224,6 +229,7 @@ const companies = [
     city: "Offenburg",
     region: "EU",
     status: "Mixed",
+    company_type: "",
     image: "images/companies/schnitz-logo.png",
     isFeatured: true,
     beers: [
@@ -251,6 +257,7 @@ const companies = [
     city: "Fidenza",
     region: "EU",
     status: "dedicated",
+    company_type: "Dedicated GF brewery with supermarket/convenience store",
     image: "images/companies/stirone-logo.png",
     isFeatured: true,
     beers: [
@@ -317,6 +324,7 @@ const companies = [
     city: "Edinburgh",
     region: "EU",
     status: "dedicated",
+    company_type: "Dedicated GF brewery",
     image: "images/companies/suspect-logo.png",
     isFeatured: true,
     beers: [
@@ -343,6 +351,7 @@ const companies = [
     city: "Madison",
     region: "North America",
     status: "dedicated",
+    company_type: "Dedicated GF brewery with taproom",
     image: "images/companies/altbrew-logo.jpg",
     isFeatured: true,
     taproom_blurb:
@@ -366,6 +375,7 @@ const companies = [
     city: "Emsworth",
     region: "North America",
     status: "dedicated",
+    company_type: "Dedicated GF brewery with taproom",
     image: "images/companies/aurochs-logo.png",
     isFeatured: true,
     taproom_blurb: "",
@@ -384,6 +394,7 @@ const companies = [
     city: "Blacksburg",
     region: "North America",
     status: "dedicated",
+    company_type: "Inn, winery and dedicated GF brewing facility",
     image: "images/companies/beliveau-logo.png",
     isFeatured: true,
     taproom_blurb: "",
@@ -405,6 +416,7 @@ const companies = [
     city: "McMinnville",
     region: "North America",
     status: "dedicated",
+    company_type: "Dedicated GF brewery with taproom",
     image: "images/companies/bierly-logo.png",
     isFeatured: true,
     taproom_blurb: "",
@@ -427,6 +439,7 @@ const companies = [
     city: "Grand Rapids",
     region: "North America",
     status: "dedicated",
+    company_type: "Dedicated GF brewery with taproom",
     image: "images/companies/nyx-logo.png",
     isFeatured: true,
     taproom_blurb: "",
@@ -451,6 +464,7 @@ const companies = [
     city: "Oakland",
     region: "North America",
     status: "dedicated",
+    company_type: "Dedicated GF brewery with taproom",
     image: "images/companies/buckwild-logo.png",
     isFeatured: true,
     taproom_blurb: "",
@@ -475,6 +489,7 @@ const companies = [
     city: "Saint Paul",
     region: "North America",
     status: "dedicated",
+    company_type: "Dedicated GF brewery with taproom",
     image: "images/companies/burning-logo.png",
     isFeatured: true,
     taproom_blurb: "",
@@ -490,18 +505,16 @@ const companies = [
     description: `
     In their own words: "We're a very pleasant and scenic drive through the hills and hollers of McDonald County, Missouri. Just north of Pea Ridge, Arkansas.
     We pride ourselves on our large selection of Gluten Free brews.
-We typically have at least 6 of our own unique brews on tap to choose from. And speaking of non-drinkers, we keep our own handmade non-alcoholic
-Root Beer on tap.
-
-Yes, we are a FAMILY & PET-FRIENDLY establishment!"
-
-    
+    We typically have at least 6 of our own unique brews on tap to choose from. And speaking of non-drinkers, we keep our own handmade non-alcoholic
+    Root Beer on tap.
+    Yes, we are a FAMILY & PET-FRIENDLY establishment!"
     `,
     country: "USA",
     state: "Missouri",
     city: "Seligman",
     region: "North America",
     status: "dedicated",
+    company_type: "Dedicated GF brewery with taproom connected to conventional brewery",
     image: "images/companies/darkhills-logo.png",
     isFeatured: true,
     taproom_blurb: "",
@@ -525,6 +538,7 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
     city: "Tustin",
     region: "North America",
     status: "dedicated",
+    company_type: "Contract brewery. Not dedicated GF facilities but cleaning protocols monitored closely",
     image: "images/companies/divine-logo.png",
     isFeatured: true,
     taproom_blurb: "",
@@ -548,6 +562,7 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
     city: "Denver",
     region: "North America",
     status: "dedicated",
+    company_type: "Dedicated GF brewery with taproom",
     image: "images/companies/dos-logo.png",
     isFeatured: true,
     taproom_blurb: "",
@@ -569,6 +584,7 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
     city: "Chico",
     region: "North America",
     status: "dedicated",
+    company_type: "Dedicated GF malthouse and brewery with taproom",
     image: "images/companies/eckert-logo.png",
     isFeatured: true,
     taproom_blurb: "",
@@ -590,6 +606,7 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
     city: "McMinnville",
     region: "North America",
     status: "dedicated",
+    company_type: "Dedicated GF brewery with taproom",
     image: "images/companies/evasion-logo.png",
     isFeatured: true,
     taproom_blurb: "",
@@ -613,6 +630,7 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
     city: "Seattle",
     region: "North America",
     status: "dedicated",
+    company_type: "Dedicated GF production brewery with taproom",
     image: "images/companies/ghostfish-logo.png",
     isFeatured: true,
     taproom_blurb: "",
@@ -634,6 +652,7 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
     city: "Montréal",
     region: "North America",
     status: "dedicated",
+    company_type: "Dedicated GF production brewery",
     image: "images/companies/glutenberg-logo.png",
     isFeatured: true,
     taproom_blurb: "",
@@ -655,6 +674,7 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
     city: "Kelowna",
     region: "North America",
     status: "dedicated",
+    company_type: "Dedicated GF production brewery with tasting room",
     image: "images/companies/greyfox-logo.png",
     isFeatured: true,
     taproom_blurb: "",
@@ -678,6 +698,7 @@ making 100% gluten-free beer & food. Ground Breaker opened in 2011 as the first 
     city: "Portland",
     region: "North America",
     status: "dedicated",
+    company_type: "Dedicated GF brewery with taproom",
     image: "images/companies/groundbreaker-logo.png",
     isFeatured: true,
     taproom_blurb: "",

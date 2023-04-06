@@ -26,18 +26,9 @@ function CompanyDetailPage() {
               <h1 className='tracking-wide text-gray-800 text-3xl md:text-7xl mb-4 bg-yellow-400 border p-5 border-black rounded-lg'>
                 {company.title}
               </h1>
-              <div class='flex mb-4 mt-4 border border-black bg-white p-5 rounded-lg'>
-                {/* general info section */}
-                {/* <div class='w-1/3'></div> */}
-                {/* social media section */}
-                <div class='w-1/2'>
-                  <ul className='space-y-4 md:space-y-4'>
-                    <li className='flex items-center -mx-2 text-gray-700 mt-4'>
-                      {/* put social media share here */}
-                      {/* <SocialMediaShare id={company.id} title={company.title} /> */}
-                    </li>
-                    <li className='flex items-center -mx-2  mt-4'>
-                      <svg
+              <div className='mt-4'>
+                  <p className='flex items-center text-gray-700 border border-black p-5 rounded-lg mb-4'>
+                  <svg
                         xmlns='http://www.w3.org/2000/svg'
                         fill='none'
                         viewBox='0 0 24 24'
@@ -56,8 +47,35 @@ function CompanyDetailPage() {
                           d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z'
                         />
                       </svg>
-                      <span>{company.country} ({company.city ? ( `${company.city}, ` ) : null}{company.state})</span>
+                      <span>
+                        {company.country} (
+                        {company.city ? `${company.city}, ` : null}
+                        {company.state})
+                      </span>
+                  </p>
+                </div>
+                {company.company_type ? (
+                <div className='mt-4'>
+                  <p className='flex items-center text-gray-700 border border-black p-5 rounded-lg mb-4'>
+                    <span className='mx-2'>
+                      <span className="text-black">Company type:</span> {company.company_type}
+                    </span>
+                  </p>
+                </div>
+              ) : null}
+              
+              <div class='flex mb-4 mt-4 border border-black bg-white p-5 rounded-lg'>
+                
+                {/* general info section */}
+                {/* <div class='w-1/3'></div> */}
+                {/* social media section */}
+                <div class='w-1/2'>
+                  <ul className='space-y-4 md:space-y-4'>
+                    <li className='flex items-center -mx-2 text-gray-700 '>
+                      {/* put social media share here */}
+                      {/* <SocialMediaShare id={company.id} title={company.title} /> */}
                     </li>
+                  
 
                     <li className='flex items-center -mx-2 text-gray-700 mt-4'>
                       <svg
@@ -146,6 +164,7 @@ function CompanyDetailPage() {
                   />
                 </div>
               </div>
+
               <div className='mt-4'>
                 <p className='flex items-center text-gray-700 border border-black p-5 rounded-lg mb-4'>
                   <span className='mx-2'>{company.description}</span>
