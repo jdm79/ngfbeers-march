@@ -313,6 +313,7 @@ const companies = [
     untappd_url: "https://untappd.com/SuspectBrewing",
     description: `A dedicated naturally gluten-free micro brewery in Edinburgh, producing Circuit Breaker, a clean and crisp lager.`,
     country: "UK",
+    state: "Lothian",
     city: "Edinburgh",
     region: "EU",
     status: "dedicated",
@@ -629,7 +630,7 @@ Yes, we are a FAMILY & PET-FRIENDLY establishment!"
     "In 2010, the idea of brewing a gluten-free beer in Quebec was first discussed by two long-time friends and entrepreneurs. One of the co-founders, who had been living with gluten intolerance for several years, remained dissatisfied with the gluten-free beer on the market. He and his partner then saw a unique opportunity to meet a growing need and to realize what both of them had long dreamed of: running their own business. The microbrewery enjoyed its very first international success at the 2012 World Beer Cup, where Glutenberg beers won all three medals in the “Gluten-Free Beer” category at the world’s most prestigious brewing competition. Currently with a team of 10 brand ambassadors working in both Canada and the United States, the company plans to maintain its rapid growth rate in the coming years and continue to brew the best gluten-free beers available."
     `,
     country: "Canada",
-    state: "Quebec",
+    state: "Québec",
     city: "Montréal",
     region: "North America",
     status: "dedicated",

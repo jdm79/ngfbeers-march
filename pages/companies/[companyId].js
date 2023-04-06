@@ -27,6 +27,9 @@ function CompanyDetailPage() {
                 {company.title}
               </h1>
               <div class='flex mb-4 mt-4 border border-black bg-white p-5 rounded-lg'>
+                {/* general info section */}
+                {/* <div class='w-1/3'></div> */}
+                {/* social media section */}
                 <div class='w-1/2'>
                   <ul className='space-y-4 md:space-y-4'>
                     <li className='flex items-center -mx-2 text-gray-700 mt-4'>
@@ -53,7 +56,7 @@ function CompanyDetailPage() {
                           d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z'
                         />
                       </svg>
-                      <span>{company.country}</span>
+                      <span>{company.country} ({company.city ? ( `${company.city}, ` ) : null}{company.state})</span>
                     </li>
 
                     <li className='flex items-center -mx-2 text-gray-700 mt-4'>
@@ -120,7 +123,11 @@ function CompanyDetailPage() {
                           icon='fa-brands:untappd'
                           style={{ color: "#FACC14" }}
                         />
-                        <a href={company.untappd_url} target='_blank' className="ml-3">
+                        <a
+                          href={company.untappd_url}
+                          target='_blank'
+                          className='ml-3'
+                        >
                           {"  "}
                           Untappd<span className=''></span>
                         </a>
@@ -130,6 +137,7 @@ function CompanyDetailPage() {
                     )}
                   </ul>
                 </div>
+                {/* logo section */}
                 <div class='w-1/2 m-auto'>
                   <img
                     className='w-auto rounded-full'
