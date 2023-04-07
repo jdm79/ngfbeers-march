@@ -23,59 +23,66 @@ function CompanyDetailPage() {
         <div className='container flex flex-col py-10 mx-auto sm:w-3/4 space-y-6 lg:py-16 lg:flex-row lg:items-center'>
           <div>
             <div className='border-gray-900 bg:white border p-3 bg-white rounded-lg'>
-              <h1 className='tracking-wide text-gray-800 text-3xl md:text-7xl mb-4 bg-yellow-400 border p-5 border-black rounded-lg'>
-                {company.title}
-              </h1>
+              <div className='tracking-wide text-gray-800 text-3xl md:text-7xl mb-4 bg-yellow-400 border p-5 border-black rounded-lg'>
+                <h1 className='bg-white p-3 border-black border-2 rounded-lg text-center'>
+                  {company.title}
+                </h1>
+              </div>
               <div className='mt-4'>
-                  <p className='flex items-center text-gray-700 border border-black p-5 rounded-lg mb-4'>
+                <p className='flex items-center text-gray-700 border border-black p-5 rounded-lg mb-4'>
                   <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        strokeWidth={1.5}
-                        stroke='currentColor'
-                        className='w-6 h-6 mx-2 text-yellow-400'
-                      >
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          d='M15 10.5a3 3 0 11-6 0 3 3 0 016 0z'
-                        />
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z'
-                        />
-                      </svg>
-                      <span>
-                        {company.country} (
-                        {company.city ? `${company.city}, ` : null}
-                        {company.state})
-                      </span>
-                  </p>
-                </div>
-                {company.company_type ? (
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    strokeWidth={1.5}
+                    stroke='currentColor'
+                    className='w-6 h-6 mx-2 text-yellow-400'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M15 10.5a3 3 0 11-6 0 3 3 0 016 0z'
+                    />
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z'
+                    />
+                  </svg>
+                  <span>
+                    {company.country} (
+                    {company.city ? `${company.city}, ` : null}
+                    {company.state})
+                  </span>
+                </p>
+              </div>
+              {company.company_type ? (
                 <div className='mt-4'>
-                  <p className='flex items-center text-gray-700 border border-black p-5 rounded-lg mb-4'>
-                    <span className='mx-2'>
-                      <span className="text-black">Company type:</span> {company.company_type}
-                    </span>
-                  </p>
+                  <div className=' text-gray-700 border border-black p-5 rounded-lg mb-4'>
+                    <p>
+                      <span className='text-black'>Company type:</span>{" "}
+                      {company.company_type}
+                    </p>
+                    {company.founded ? (
+                      <p className='mt-4'>
+                        <span className='text-black'>Founded in</span>{" "}
+                        {company.founded}
+                      </p>
+                    ) : null}
+                  </div>
                 </div>
               ) : null}
-              
+
               <div class='flex mb-4 mt-4 border border-black bg-white p-5 rounded-lg'>
-                
                 {/* general info section */}
                 {/* <div class='w-1/3'></div> */}
                 {/* social media section */}
-                <div class='w-1/2'>
+                <div class='w-1/2 md:w-1/4'>
                   <ul className='space-y-4 md:space-y-4'>
                     <li className='flex items-center -mx-2 text-gray-700 '>
                       {/* put social media share here */}
                       {/* <SocialMediaShare id={company.id} title={company.title} /> */}
                     </li>
-                  
 
                     <li className='flex items-center -mx-2 text-gray-700 mt-4'>
                       <svg
@@ -136,10 +143,11 @@ function CompanyDetailPage() {
                     )}
                     {/* untappd  */}
                     {company.untappd_url ? (
-                      <li className='flex items-center  text-gray-700 mt-4'>
+                      <li className='flex items-center  text-gray-700 mt-4 '>
                         <Icon
                           icon='fa-brands:untappd'
-                          style={{ color: "#FACC14" }}
+                          style={{ color: "#FACC14" }
+                        }
                         />
                         <a
                           href={company.untappd_url}
@@ -166,8 +174,26 @@ function CompanyDetailPage() {
               </div>
 
               <div className='mt-4'>
-                <p className='flex items-center text-gray-700 border border-black p-5 rounded-lg mb-4'>
-                  <span className='mx-2'>{company.description}</span>
+                <p className=' text-gray-700 border border-black p-5 rounded-lg mb-4'>
+                  <span>{company.description}</span>
+                  {company.description2 ? (
+                    <p className='mt-4'>
+                      {" "}
+                      <span>{company.description2}</span>
+                    </p>
+                  ) : null}
+
+                  {company.description3 ? (
+                    <p className='mt-4'>
+                      <span>{company.description3}</span>
+                    </p>
+                  ) : null}
+
+                  {company.description4 ? (
+                    <p className='mt-4'>
+                      <span>{company.description4}</span>
+                    </p>
+                  ) : null}
                 </p>
               </div>
               {company.taproom_url ? (
@@ -178,7 +204,7 @@ function CompanyDetailPage() {
                       href={company.taproom_url}
                       target='_blank'
                     >
-                      {`Click here to see ${company.title}'s latest taproom menu`}
+                      {`Click here to see ${company.title}'s latest beer menu`}
                       <svg
                         aria-hidden='true'
                         class='w-5 h-5 m-auto'
