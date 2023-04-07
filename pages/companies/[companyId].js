@@ -36,7 +36,7 @@ function CompanyDetailPage() {
                     viewBox='0 0 24 24'
                     strokeWidth={1.5}
                     stroke='currentColor'
-                    className='w-6 h-6 mx-2 text-yellow-400'
+                    className='w-6 h-6 text-yellow-400'
                   >
                     <path
                       strokeLinecap='round'
@@ -49,7 +49,7 @@ function CompanyDetailPage() {
                       d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z'
                     />
                   </svg>
-                  <span>
+                  <span className="pl-2">
                     {company.country} (
                     {company.city ? `${company.city}, ` : null}
                     {company.state})
@@ -146,8 +146,7 @@ function CompanyDetailPage() {
                       <li className='flex items-center  text-gray-700 mt-4 '>
                         <Icon
                           icon='fa-brands:untappd'
-                          style={{ color: "#FACC14" }
-                        }
+                          style={{ color: "#FACC14" }}
                         />
                         <a
                           href={company.untappd_url}
