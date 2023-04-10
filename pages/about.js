@@ -60,7 +60,7 @@ const aboutPage = () => {
 
           <p className="p-5"></p>
           <div>
-            <h1 className="text-center">Share this</h1>
+            <h1 className="text-center mb-2">Share this:</h1>
           </div>
           <div className="flex justify-center ">
             <SocialMediaShare title={title} />
