@@ -1,7 +1,8 @@
 import CompanyItem from "./company-item";
 import SocialMediaShare from "../../components/SocialMediaShare";
 import Link from "next/link";
-import CompanyCountry from "../company-country";
+import CompanyCountry from "../CompanyCountry";
+import FlagList from "../FlagList";
 
 function CompaniesList(props) {
   const { items } = props;
@@ -19,7 +20,7 @@ function CompaniesList(props) {
     <section className='bg-yellow-400 mb-10 pl-2 pr-2'>
       <div>
         <div className='w-full md:w-3/4 md:max-w-full mt-12 mb-20 mx-auto px-2 sm:px-0'>
-          <h1 className='bg-white text-black border-2 border-black rounded-lg p-5 mb-5 shadow-md shadow-black'>
+          <div className='bg-white text-black border-2 border-black rounded-lg p-5 mb-5 shadow-md shadow-black'>
             This list of gluten-free brewers is constantly being updated and
             draws heavily upon information from the Zero Tolerance Gluten-Free
             Brewing Wiki{" "}
@@ -38,10 +39,11 @@ function CompaniesList(props) {
               here
             </Link>
             .
-          </h1>
-          <h1 className='bg-white text-black border-2 border-black rounded-lg p-5 mb-5 shadow-md shadow-black'>
+          </div>
+          <div className='bg-white text-black border-2 border-black rounded-lg p-5 mb-5 shadow-md shadow-black'>
           Latest number of naturally gluten-free beer companies in the world: {items.length}
-          </h1>
+          <FlagList />
+          </div>
         </div>
 
         <CompanyCountry country="Australian" amount={ausCompanies.length}/>
