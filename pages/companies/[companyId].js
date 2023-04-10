@@ -60,7 +60,7 @@ function CompanyDetailPage() {
                       className='w-full'
                     />
                   ) : company.flag === "US" ? (
-                    <US title='United States' className='md:w-full' />
+                    <US title='United States' className='w-full' />
                   ) : null}
                 </div>
               </div>
