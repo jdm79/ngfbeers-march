@@ -4,6 +4,7 @@ import DefaultLayout from "@/components/DefaultLayout";
 import SocialMediaShare from "@/components/SocialMediaShare";
 import BackButton from "@/components/BackButton";
 import { Icon } from '@iconify/react';
+import { US, GB, CA, FR, IT, DE, AU } from 'country-flag-icons/react/3x2'
 
 function CompanyDetailPage() {
   const router = useRouter();
@@ -24,10 +25,32 @@ function CompanyDetailPage() {
           <div>
             <div className='border-gray-900 bg:white border p-3 bg-white rounded-lg'>
               <div className='tracking-wide text-gray-800 text-3xl md:text-7xl mb-4 bg-yellow-400 border p-5 border-black rounded-lg'>
-                <h1 className='bg-white p-3 border-black border-2 rounded-lg text-center'>
-                  {company.title}
-                </h1>
-              </div>
+                  <div className='p-3 text-center bg-white mb-4 border border-black rounded-lg'>{company.title}</div>
+                  {company.flag === "AU" ? (
+                    <AU
+                      title='Australia'
+                      className='w-auto md:w-1/4 md:m-auto border-black border-2'
+                    />
+                  ) : company.flag === "CA" ? (
+                    <CA title='Canada' className='w-auto md:w-1/4 md:m-auto border-black border-2' />
+                  ) : company.flag === "FR" ? (
+                    <FR title='France' className='w-auto md:w-1/4 md:m-auto border-black border-2' />
+                  ) : company.flag === "DE" ? (
+                    <DE title='Germany' className='w-auto md:w-1/4 md:m-auto border-black border-2' />
+                  ) : company.flag === "IT" ? (
+                    <IT title='Italy' className='w-auto md:w-1/4 md:m-auto border-black border-2' />
+                  ) : company.flag === "GB" ? (
+                    <GB
+                      title='United Kingdom'
+                      className='w-auto md:w-1/4 md:m-auto border-black border-2'
+                    />
+                  ) : company.flag === "US" ? (
+                    <US
+                      title='United States'
+                      className='w-auto md:w-1/4 md:m-auto'
+                    />
+                  ) : null}
+                </div>
               <div className='mt-4'>
                 <p className='flex items-center text-gray-700 border border-black p-5 rounded-lg mb-4'>
                   <svg
@@ -49,7 +72,7 @@ function CompanyDetailPage() {
                       d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z'
                     />
                   </svg>
-                  <span className="pl-2">
+                  <span className='pl-2'>
                     {company.country} (
                     {company.city ? `${company.city}, ` : null}
                     {company.state})
