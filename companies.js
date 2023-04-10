@@ -14,7 +14,7 @@ const companies = [
     city: "",
     region: "EU",
     status: "dedicated",
-    company_type: "	Dedicated GF maltster and brewery",
+    company_type: "Dedicated GF maltster and brewery",
     image: "images/companies/altgrain-logo.jpg",
     isFeatured: true,
     beers: [
@@ -1211,8 +1211,14 @@ const companies = [
   
 ];
 
+
+
 export function getCompanyById(id) {
   return companies.find((company) => company.id == id);
+}
+
+export function getCompanyByCountry(country) {
+  return companies.find((company) => company.country == country);
 }
 
 export function getAllCompanies() {
