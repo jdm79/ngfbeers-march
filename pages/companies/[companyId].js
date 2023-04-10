@@ -24,33 +24,46 @@ function CompanyDetailPage() {
         <div className='container flex flex-col py-10 mx-auto sm:w-3/4 space-y-6 lg:py-16 lg:flex-row lg:items-center'>
           <div>
             <div className='border-gray-900 bg:white border p-3 bg-white rounded-lg'>
-              <div className='tracking-wide text-gray-800 text-3xl md:text-7xl mb-4 bg-yellow-400 border p-5 border-black rounded-lg'>
-                  <div className='p-3 text-center bg-white mb-4 border border-black rounded-lg'>{company.title}</div>
+              <div className='flex flex-col text-gray-800 text-3xl md:text-7xl mb-4 bg-yellow-400 border p-5 border-black rounded-lg'>
+                <div className='p-3 text-center bg-white mb-4 border border-black rounded-lg h-auto'>
+                  {company.title}
+                </div>
+                <div className='p-3 text-center m-auto bg-white mb-4 border border-black rounded-lg h-auto'>
                   {company.flag === "AU" ? (
                     <AU
                       title='Australia'
-                      className='w-auto md:w-1/4 md:m-auto border-black border-2'
+                      className='w-full'
                     />
                   ) : company.flag === "CA" ? (
-                    <CA title='Canada' className='w-auto md:w-1/4 md:m-auto border-black border-2' />
+                    <CA
+                      title='Canada'
+                      className='w-full'
+                    />
                   ) : company.flag === "FR" ? (
-                    <FR title='France' className='w-auto md:w-1/4 md:m-auto border-black border-2' />
+                    <FR
+                      title='France'
+                      className='w-full'
+                    />
                   ) : company.flag === "DE" ? (
-                    <DE title='Germany' className='w-auto md:w-1/4 md:m-auto border-black border-2' />
+                    <DE
+                      title='Germany'
+                      className='w-full'
+                    />
                   ) : company.flag === "IT" ? (
-                    <IT title='Italy' className='w-auto md:w-1/4 md:m-auto border-black border-2' />
+                    <IT
+                      title='Italy'
+                      className='w-full'
+                    />
                   ) : company.flag === "GB" ? (
                     <GB
                       title='United Kingdom'
-                      className='w-auto md:w-1/4 md:m-auto border-black border-2'
+                      className='w-full'
                     />
                   ) : company.flag === "US" ? (
-                    <US
-                      title='United States'
-                      className='w-auto md:w-1/4 md:m-auto'
-                    />
+                    <US title='United States' className='md:w-full' />
                   ) : null}
                 </div>
+              </div>
               <div className='mt-4'>
                 <p className='flex items-center text-gray-700 border border-black p-5 rounded-lg mb-4'>
                   <svg
