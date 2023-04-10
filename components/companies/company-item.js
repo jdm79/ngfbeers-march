@@ -14,14 +14,14 @@ function CompanyItem(props) {
             src={`/${image}`}
             alt={title}
           />
-          <div className='flex justify-center bg-yellow-400 py-2 w-full m-auto border border-t-black'>
+          <div className='flex justify-left bg-yellow-400 h-12 py-2 w-full m-auto border border-t-black'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
               viewBox='0 0 24 24'
               strokeWidth={1.5}
               stroke='currentColor'
-              className='w-6 h-6 mx-2 text-black'
+              className='w-4 md:w-6 h-4 md:h-6 mx-1 text-black'
             >
               <path
                 strokeLinecap='round'
@@ -35,7 +35,7 @@ function CompanyItem(props) {
               />
             </svg>
             <span>
-              <h1>
+              <h1 className="text-xs md:text-base">
               {city ? `${city}, ` : null}
               {state ? `${state} ` : null}
               </h1>
