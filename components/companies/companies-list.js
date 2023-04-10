@@ -53,6 +53,7 @@ function CompaniesList(props) {
               key={company.id}
               id={company.id}
               image={company.image}
+              flag={company.flag}
               title={company.title}
               country={company.country}
               beers={company.beers}

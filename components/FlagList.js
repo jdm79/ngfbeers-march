@@ -5,14 +5,13 @@ function FlagList() {
   return (
     <div className='flex flex-row gap-2 justify-left mt-4'>
       <h1 className='text-sm md:base'>Countries:</h1>
-      <AU title='United States' className='w-6' />
-      <CA title='United States' className='w-6' />
-      <FR title='United States' className='w-6' />
-      <DE title='United States' className='w-6' />
-      <IT title='United States' className='w-6' />
-      <GB title='United States' className='w-6' />
+      <AU title='Australia' className='w-6' />
+      <CA title='Canada' className='w-6' />
+      <FR title='France' className='w-6' />
+      <DE title='Germany' className='w-6' />
+      <IT title='Italy' className='w-6' />
+      <GB title='United Kingdom' className='w-6' />
       <US title='United States' className='w-6' />
-
     </div>
   );
 }
