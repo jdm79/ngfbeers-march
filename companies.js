@@ -376,7 +376,7 @@ const companies = [
     description: `ALT Brew is a craft nanobrewery and taproom located on the east side of Madison, WI (USA). They take pride in designing and brewing a wide variety of beer styles all without using barley, wheat, or rye. From fresh double dry-hopped double IPAs to delightfully drinkable blonde ales to huge bourbon barrel aged stouts and everything in between, ALT Brew offer 100% gluten-free beer that all beer drinkers can enjoy.`,
     country: "USA",
     state: "Wisconsin",
-    state: "WI",
+    stateCode: "WI",
     city: "Madison",
     region: "North America",
     flag: "US",
