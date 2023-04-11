@@ -18,14 +18,6 @@ function CompaniesList(props) {
   return (
     <section className='bg-yellow-400 mb-10 pl-2 pr-2'>
       <div>
-        {/* <div className='w-full md:w-3/4 md:max-w-full mt-12 mb-20 mx-auto px-2 sm:px-0'>
-          <div className='bg-white text-black border-2 border-black rounded-lg p-5 mb-5 shadow-md shadow-black'>
-            Latest number of naturally gluten-free beer companies in the world:{" "}
-            {items.length}
-            <FlagList />
-          </div>
-        </div> */}
-
         <CompanyCountry country='Australian' amount={ausCompanies.length} />
         <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
           {ausCompanies.map((company) => (
