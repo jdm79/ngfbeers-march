@@ -6,6 +6,8 @@ import { useState, useEffect } from "react";
 
 function SearchCompaniesList(props) {
   const { items } = props;
+  const data = items.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0))
+
   const title = "Coeliac-safe beers";
 
     const [companies, setCompanies] = useState([]);
@@ -13,7 +15,7 @@ function SearchCompaniesList(props) {
     const [filteredCompanies, setFilteredCompanies] = useState([]);
   
     useEffect(() => {
-      setCompanies(items);
+      setCompanies(data);
     }, []);
 
     useEffect(() => {
