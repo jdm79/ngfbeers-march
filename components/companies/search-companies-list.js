@@ -14,7 +14,6 @@ function SearchCompaniesList(props) {
   
     useEffect(() => {
       setCompanies(items);
-      console.log(items)
     }, []);
 
     useEffect(() => {
@@ -23,6 +22,8 @@ function SearchCompaniesList(props) {
           company.state.toLowerCase().includes(search.toLowerCase()) ||
           company.city.toLowerCase().includes(search.toLowerCase()) ||
           company.title.toLowerCase().includes(search.toLowerCase()) ||
+          company.flag.toLowerCase().includes(search.toLowerCase()) ||
+          company.region.toLowerCase().includes(search.toLowerCase()) ||
           company.country.toLowerCase().includes(search.toLowerCase() ))
         )
     }, [search, companies]);

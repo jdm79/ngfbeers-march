@@ -108,6 +108,16 @@ const links = [
     type: "website",
     body: "",
   },
+  {
+    id: "l9",
+    link_url: "https://naturligtglutenfri.se/",
+    title:
+      "Homebrewery blog about naturally gluten-free beer",
+    blurb: `Naturally gluten-free beer is not available for purchase in Sweden. I hope to change that! It is made from products that do not contain gluten, in a gluten-free environment.`,
+    source: `https://naturligtglutenfri.se/ (This website is in Swedish but you can add a translate extension to your browser to read it)`,
+    type: "website",
+    body: "",
+  },
 ];
 
 export function getLinkById(id) {
