@@ -109,7 +109,7 @@ function CompanyDetailPage() {
                 </div>
               ) : null}
 
-              <div class='flex mb-4 mt-4 border border-black bg-white p-5 rounded-lg'>
+              <div className='flex mb-4 mt-4 border border-black bg-white p-5 rounded-lg'>
                 {/* general info section */}
                 {/* <div class='w-1/3'></div> */}
                 {/* social media section */}
@@ -199,7 +199,7 @@ function CompanyDetailPage() {
                   </ul>
                 </div>
                 {/* logo section */}
-                <div class='w-1/2 m-auto'>
+                <div className='w-1/2 m-auto'>
                   <img
                     className='w-auto rounded-full'
                     src={`/${company.image}`}
