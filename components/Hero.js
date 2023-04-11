@@ -1,21 +1,39 @@
-function Hero() {
+import FlagList from "./FlagList";
+import Link from "next/link";
+
+function Hero(props) {
+  const { items } = props;
+  const link = `/companies`;
+
+
   return (
     <div className='w-screen bg-gradient-to-r bg-yellow-400 text-black min-h-screen'>
       <div className='mt-10 relative'>
-        <div className='text-center text-5xl ml-3 mr-3 mt-10 lg:text-8xl w-auto md:ml-20 md:mr-20 md:mt-20'>
+        <div className='text-center text-3xl mt-10 lg:text-7xl m-auto md:ml-20 md:mr-20 md:mt-20'>
           <h1>Naturally </h1>
           <h1>gluten-free beers</h1>
-          <a href='/companies'>
+          <Link href='/companies'>
             <img
               src='/logo-ngfbeers.png'
-              className='m-auto mt-10 w-3/4 sm:w-1/5'
+              className='m-auto mt-10 w-1/2 sm:w-1/5'
               alt='ngfbeers logo - a circle inside of which is a black beer glass with foam spilling over. the words ngfbeers outside the circle'
             />
-          </a>
+          </Link>
+          <div className="w-auto m-auto">
+            <div className='text-base mt-10 bg-white p-4 w-fit border-2 border-black m-auto'>
+              Latest number of naturally gluten-free beer companies in the
+              world: {items.length}
+              <FlagList />{" "}
+            </div>
+          </div>
 
-          <p className='text-base mt-10 bg-white p-3 w-fit border-2 border-black m-auto rounded-full'>
-            A showcase of gluten-free beers made without barley
-          </p>
+          {/* <div className='w-full md:w-3/4 md:max-w-full mt-12 mb-20 mx-auto px-2 sm:px-0'>
+            <div className='bg-white text-black border-2 border-black rounded-lg p-5 mb-5 shadow-md shadow-black'>
+              Latest number of naturally gluten-free beer companies in the
+              world: {items.length}
+              <FlagList />
+            </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 function CompanyItem(props) {
-  const { id, title, image, city, state } = props;
+  const { id, title, image, city, stateCode } = props;
   const companyLink = `/companies/${id}`;
 
   return (
@@ -36,7 +36,7 @@ function CompanyItem(props) {
             </svg>
             <h1 className='text-xs md:text-base my-auto'>
               {city ? `${city}, ` : null}
-              {state ? `${state} ` : null}
+              {stateCode ? `${stateCode} ` : null}
             </h1>
           </div>
         </div>
