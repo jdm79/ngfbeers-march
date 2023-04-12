@@ -63,7 +63,7 @@ export default function Nav() {
                           href={item.href}
                           className={classNames(
                             isActive
-                              ? "text-black font-bold  bg-white border-solid border-black border-2 hover:bg-white"
+                              ? "text-black font-bold  bg-[color:var(--bg-eggshell)] border-solid border-black border-2 hover:bg-white"
                               : "text-gray-700 hover:bg-white hover:text-black hover:no-underline hover:border-2 hover:border-black  hover:underline-offset-2",
                             "px-3 py-2 rounded-md text-sm font-medium font-mono"
                           )}

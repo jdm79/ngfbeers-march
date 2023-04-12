@@ -23,12 +23,12 @@ function CompanyDetailPage() {
         {/* beer company section here */}
         <div className='container flex flex-col py-10 mx-auto sm:w-3/4 space-y-6 lg:py-16 lg:flex-row lg:items-center'>
           <div>
-            <div className='border-gray-900 bg:white border p-3 bg-white rounded-lg'>
+            <div className='border-gray-900 bg:white border p-3 bg-[color:var(--bg-eggshell)] rounded-lg'>
               <div className='flex flex-col text-gray-800 text-3xl md:text-7xl mb-4 bg-yellow-400 border p-5 border-black rounded-lg'>
                 <div className='p-3 text-center bg-white mb-4 border border-black rounded-lg h-auto'>
                   {company.title}
                 </div>
-                <div className='p-3 text-center m-auto bg-white mb-4 border border-black rounded-lg h-auto'>
+                <div className='p-3 text-center m-auto bg-[color:var(--bg-eggshell)] mb-4 border border-black rounded-lg h-auto'>
                   {company.flag === "AU" ? (
                     <AU
                       title='Australia'
@@ -65,7 +65,7 @@ function CompanyDetailPage() {
                 </div>
               </div>
               <div className='mt-4'>
-                <p className='flex items-center text-gray-700 border border-black p-5 rounded-lg mb-4'>
+                <p className='flex items-center text-gray-700 border bg-white border-black p-5 rounded-lg mb-4'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     fill='none'
@@ -94,7 +94,7 @@ function CompanyDetailPage() {
               </div>
               {company.company_type ? (
                 <div className='mt-4'>
-                  <div className=' text-gray-700 border border-black p-5 rounded-lg mb-4'>
+                  <div className=' text-gray-700 border border-black p-5 bg-white rounded-lg mb-4'>
                     <p>
                       <span className='text-black'>Company type:</span>{" "}
                       {company.company_type}
@@ -209,7 +209,7 @@ function CompanyDetailPage() {
               </div>
 
               <div className='mt-4'>
-                <p className=' text-gray-700 border border-black p-5 rounded-lg mb-4'>
+                <p className=' text-gray-700 border border-black p-5 bg-white rounded-lg mb-4'>
                   <span>{company.description}</span>
                   {company.description2 ? (
                     <p className='mt-4'>
@@ -258,7 +258,7 @@ function CompanyDetailPage() {
                 </div>
               ) : null}
 
-              <div className='border border-black p-5 mt-4 rounded-lg m-auto sm:m-0'>
+              <div className='border border-black p-5 bg-white mt-4 rounded-lg m-auto sm:m-0'>
                 <h1 className='mb-4'>Share this:</h1>
                 <SocialMediaShare id={company.id} title={company.title} />
               </div>
@@ -270,7 +270,7 @@ function CompanyDetailPage() {
                 {company.beers ? (
                   <div>
                     {company.beers.length > 0 ? (
-                      <h1 className='tracking-wide text-gray-800 bg-white text-md md:text-xl p-5 mt-5 border border-black rounded-lg'>
+                      <h1 className='tracking-wide text-gray-800 bg-[color:var(--bg-eggshell)] text-md md:text-xl p-5 mt-5 border border-black rounded-lg'>
                         {company.beers[0].title} have {company.beers.length}{" "}
                         naturally gluten-free beer(s)
                       </h1>
@@ -278,7 +278,7 @@ function CompanyDetailPage() {
                     <ul className='grid gap-x-3 row-auto w-200 lg:w-200 '>
                       {company.beers.map((item) => (
                         <div>
-                          <div className='px-5 py-3 mt-4 bg-white border border-gray-900 rounded-lg'>
+                          <div className='px-5 py-3 mt-4 bg-[color:var(--bg-eggshell)] border border-gray-900 rounded-lg'>
                             <h1 className='flex text-gray-700 -mx-2 text-2xl sm:text-6xl mb-4 border border-black bg-yellow-400 p-5 rounded-lg'>
                               <span className='mb-2'>{item.beer_name}</span>
                             </h1>
@@ -318,7 +318,7 @@ function CompanyDetailPage() {
                                 </svg>
                               </a>
                             </p>
-                            <p className='flex items-center -mx-2 text-gray-700 border border-black p-5 rounded-lg'>
+                            <p className='flex items-center -mx-2 text-gray-700 border bg-white border-black p-5 rounded-lg'>
                               <span className=''>{item.beer_description}</span>
                             </p>
                           </div>

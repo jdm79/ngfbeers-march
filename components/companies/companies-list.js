@@ -11,7 +11,7 @@ function CompaniesList(props) {
   const fraCompanies = items.filter(company => company.country == "France")
   const deCompanies = items.filter(company => company.country == "Germany")
   const itCompanies = items.filter(company => company.country == "Italy")
-  const ukCompanies = items.filter(company => company.country == "UK")
+  const ukCompanies = items.filter(company => company.flag == "GB")
   const usaCompanies = items.filter(company => company.country == "USA")
 
 

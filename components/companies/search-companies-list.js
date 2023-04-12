@@ -55,7 +55,7 @@ function SearchCompaniesList(props) {
             <CompanyItem key={company.id} {...company} />
           ))}
         </ul>
-        <div className='bg-white text-black border-2 border-black rounded-lg p-5 mb-5 mt-10 shadow-md shadow-black'>
+        <div className='bg-[color:var(--bg-eggshell)] text-black border-2 border-black rounded-lg p-5 mb-5 mt-10 shadow-md shadow-black'>
           This list of gluten-free brewers is constantly being updated and draws
           heavily upon information from the Zero Tolerance Gluten-Free Brewing
           Wiki{" "}
