@@ -1,7 +1,6 @@
 import CompanyItem from "./company-item";
 import SocialMediaShare from "../../components/SocialMediaShare";
 import CompanyCountry from "../CompanyCountry";
-import FlagList from "../FlagList";
 
 function CompaniesList(props) {
   const { items } = props;
