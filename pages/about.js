@@ -21,8 +21,8 @@ const aboutPage = () => {
             gluten is rarely on sale in any bar or supermarket, although on the
             west coast of the USA there's a much higher chance of finding
             something. Instead, fridges and aisles are full of beers made with
-            barley and badged as 'gluten-free'. We're am not really sure who
-            these beers are really for, but they are cheaper to make than beer
+            barley and badged as 'gluten-free'. We're not really sure who
+            those beers are really for, but they are cheaper to make than beer
             made without barley and it's an easier way to make a buck. And if
             the laws in your country allow you to do this - and you're not
             worried about possibly harming people's health, it's an easy route
