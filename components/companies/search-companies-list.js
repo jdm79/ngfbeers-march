@@ -44,7 +44,7 @@ function SearchCompaniesList(props) {
             <input
               type='text'
               className='w-full h-10 md:w-1/2 pl-2 border-2 border-black rounded-md'
-              placeholder='Search companies using city, state, country or name'
+              placeholder='Search for companies using location or company name'
               onChange={(e) => setSearch(e.target.value)}
             />
           </div>
