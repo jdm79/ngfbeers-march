@@ -1253,42 +1253,60 @@ const companies = [
     taproom_blurb: "",
     taproom_url: "https://www.portrextonbrewing.com/",
   },
-
+  {
+    id: "e39",
+    title: "Wild Polly Brewing Co.",
+    website_url: "https://wildpollybrewingco.com.au/",
+    insta_url: "https://www.instagram.com/wild_polly_brews/",
+    fb_url: "https://www.facebook.com/WildPollyBrews/",
+    untappd_url: "https://untappd.com/WildPollyBrewingCo",
+    founded: "2018",
+    description: `In their own words: "We use tried and tested brewing techniques and traditional beer ingredients of malted grain, hops, yeast and water. Wild Polly beers are crafted locally in Canberra using our own recipes and carefully selected ingredients. We select only the best Australian grown grains, bought straight from Aussie farmers and malted in the Riverina.`,
+    description2: `All Wild Polly beers are made from ancient grains. These grains that are considered “ancient” due to their long use by human society. This includes our secret mix of Australian grown malted sorghum, millet, rice and buckwheat so are naturally gluten free. Wild Polly beers are tested and certified as being gluten free and safe for people with coeliac disease by an independent laboratory."`,
+    description3: ``,
+    description4: ``,
+    country: "Australia",
+    state: "Australian Capital Territory",
+    stateCode: "ACT",
+    city: "Canberra",
+    region: "Oceania",
+    flag: "AU",
+    status: "",
+    company_type: "",
+    image: "images/companies/wildpolly-logo.png",
+    isFeatured: true,
+    taproom_blurb: "",
+    taproom_url: "https://wildpollybrewingco.com.au/our-beers/",
+  },
   // {
-  //   id: "e35",
+  //   id: "e39",
   //   title: "",
   //   website_url: "",
   //   insta_url: "",
   //   fb_url: "",
   //   untappd_url: "",
   //   founded: "",
-  //   description: `In their own words: ""`,
+  //   description: `"`,
   //   description2: ``,
   //   description3: ``,
   //   description4: ``,
   //   country: "",
   //   state: "",
+  //   stateCode: "",
   //   city: "",
   //   region: "",
+  //   flag: "",
   //   status: "",
   //   company_type: "",
   //   image: "images/companies/",
   //   isFeatured: true,
   //   taproom_blurb: "",
   //   taproom_url: "",
-  // },
-
-  
+  // },  
 ];
-
-
 
 export function getCompanyById(id) {
   return companies.find((company) => company.id == id);
-}
-
-export function getCompanyByCountry(country) {
-  return companies.find((company) => company.country == country);
 }
 
 export function getAllCompanies() {
