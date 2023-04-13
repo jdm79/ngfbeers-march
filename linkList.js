@@ -118,6 +118,16 @@ const links = [
     type: "website",
     body: "",
   },
+  {
+    id: "l10",
+    link_url: "https://bestglutenfreebeers.com/dont-drink-gluten-reduced-beers/",
+    title:
+      "The Evolution Of Gluten Free Beer",
+    blurb: `I think there is a market for gluten reduced beers, but it’s not the Celiac community. Gluten reduced beers should be reserved for those who are simply gluten sensitive, or for those who live a gluten free lifestyle out of choice–rather than necessity.`,
+    source: `Blog article from bestglutenfreebeers.com/ on the long-term effects of coeliacs consuming gluten-reduced beers`,
+    type: "article",
+    body: "",
+  },
 ];
 
 export function getLinkById(id) {
