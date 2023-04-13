@@ -1,48 +1,107 @@
 import { useState } from "react";
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [isError, setIsError] = useState(null);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const form = {
-      name,
-      email,
-      message,
-    };
-    // submit via api
-    const rawResponse = await fetch("/api/submit", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(form),
-    });
-
-    const content = await rawResponse.json();
-
-    setName("");
-    setEmail("");
-    setMessage("");
-    setIsError(false);
-  };
 
   return (
-    <div className='w-full md:w-3/4 md:max-w-full mt-12 mb-20 mx-auto px-2 sm:px-0 min-h-screen'>
-      {/* <h1 className='bg-white text-black border-2 border-black rounded-lg p-5 mb-5 shadow-md shadow-black'>
+    <div className='w-full md:w-3/4 md:max-w-full mt-12 mb-20 mx-auto px-2 sm:px-0'>
+      <h1 className='bg-white text-black border-2 border-black rounded-lg p-5 mb-5 shadow-md shadow-black'>
         If you have any feedback or queries, or have any NGCI beer-related news,
         please contact us using the form below. Any advice or help is much
         appreciated!
-      </h1> */}
-      <h1 className='bg-white text-black border-2 border-black rounded-lg p-5 mb-5 shadow-md shadow-black'>
-        Contact Form is currently under construction! Email us at:
-        ngfbeers@gmail.com
       </h1>
+      <div className='py-10 px-20 border-black border-2 rounded-lg bg-white shadow-md shadow-black'>
+        <form
+          name='contact'
+          method='POST'
+          data-netlify='true'
+          action='/success'
+        >
+          <input type='hidden' name='form-name' value='contact' />
+
+          <label className='block mb-6' htmlFor='yourname'>
+            <span className='text-black'>Your name</span>
+            <input
+              type='text'
+              name='name'
+              className='
+                block
+                w-full
+                mt-1
+                border-black
+                rounded-md
+                shadow-sm
+                focus:border-black
+                focus:ring
+                focus:ring-black
+              '
+              placeholder='Type your name here'
+              required
+            />
+          </label>
+          <label className='block mb-6' htmlFor='youremail'>
+            <span className='text-gray-700'>Email address</span>
+            <input
+              name='email'
+              type='email'
+              className='
+                block
+                w-full
+                mt-1
+                border-gray-800
+                rounded-md
+                shadow-sm
+                focus:border-black
+                focus:ring
+                focus:ring-opacity-50
+              '
+              placeholder='Type your email address here'
+              required
+            />
+          </label>
+          <label className='block mb-6' htmlFor='yourmessage'>
+            <span className='text-black'>Message</span>
+            <textarea
+              name='message'
+              className='
+                block
+                w-full
+                mt-1
+                border-black
+                rounded-md
+                shadow-sm
+                focus:border-black
+                focus:ring
+                focus:ring-black
+                focus:ring-opacity-50
+              '
+              rows='3'
+              placeholder='Type your message here'
+              required
+            ></textarea>
+          </label>
+          <div className='mb-6'>
+            <button
+              type='submit'
+              className='
+                h-10
+                px-5
+                text-black
+                bg-yellow-400
+                border-2
+                border-black
+                rounded-lg
+                transition-colors
+                duration-150
+                focus:shadow-outline
+                hover:bg-black
+                hover:text-white
+              '
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
