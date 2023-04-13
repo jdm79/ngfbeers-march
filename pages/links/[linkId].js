@@ -24,7 +24,7 @@ function LinkDetailPage() {
               </h1>
               <div className="mt-8 space-y-5">
                 <p className="flex items-center -mx-2 border border-black bg-white p-5 rounded-lg">
-                  <span>"{link.blurb}"</span>
+                  <span>TL;DR "{link.blurb}"</span>
                 </p>
 
                 <div className="flex items-center -mx-2 bg-yellow-400 w-fit border border-black p-5 rounded-lg">

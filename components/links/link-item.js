@@ -16,7 +16,7 @@ function LinkItem(props) {
             <h1 className="text-md font-semibold sm:text-xl">
               {title}
             </h1>
-            <p className="text-sm text-gray-500 flex">{source}</p>
+            <p className="text-sm text-gray-500 flex">Source: {source}</p>
             <p className="text-sm text-gray-500 flex">
               Link type: {type}
               <span className="pl-2">
