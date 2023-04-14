@@ -14,10 +14,15 @@ const ContactForm = () => {
           name='contact'
           method='POST'
           data-netlify='true'
+          data-netlify-recaptcha="true"
           action='/success'
         >
           <input type='hidden' name='form-name' value='contact' />
-
+          <p class='hidden'>
+            <label>
+              Don’t fill this out if you’re human: <input name='bot-field' />
+            </label>
+          </p>
           <label className='block mb-6' htmlFor='yourname'>
             <span className='text-black'>Your name</span>
             <input
@@ -79,6 +84,8 @@ const ContactForm = () => {
               required
             ></textarea>
           </label>
+          <div data-netlify-recaptcha="true"></div>
+
           <div className='mb-6'>
             <button
               type='submit'
