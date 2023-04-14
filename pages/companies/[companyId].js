@@ -25,11 +25,8 @@ function CompanyDetailPage() {
         <div className='container flex flex-col py-10 mx-auto sm:w-3/4 space-y-6 lg:py-16 lg:flex-row lg:items-center'>
           <div>
             <div className='border-gray-900 bg:white border p-3 bg-[color:var(--bg-eggshell)] rounded-lg'>
-              <div className='flex flex-col text-gray-800 text-3xl md:text-7xl mb-4 bg-yellow-400 border p-5 border-black rounded-lg'>
-                <div className='p-3 text-center bg-white mb-4 border border-black rounded-lg h-auto'>
-                  {company.title}
-                </div>
-                <div className='p-3 text-center m-auto bg-[color:var(--bg-eggshell)] mb-4 border border-black rounded-lg h-auto'>
+              <div className='flex flex-row p-3 text-left text-2xl md:text-7xl bg-white mb-4 border border-black rounded-lg h-auto m-auto'>
+                <span className='my-auto pr-4 w-1/4'>
                   {company.flag === "AU" ? (
                     <AU title='Australia' className='w-full' />
                   ) : company.flag === "CA" ? (
@@ -45,35 +42,38 @@ function CompanyDetailPage() {
                   ) : company.flag === "US" ? (
                     <US title='United States' className='w-full' />
                   ) : null}
-                </div>
+                </span>
+                <div className='my-auto w-3/4'>{company.title} </div>
               </div>
               <div className='mt-4'>
-                <p className='flex items-center text-gray-700 border bg-white border-black p-5 rounded-lg mb-4'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 24 24'
-                    strokeWidth={1.5}
-                    stroke='currentColor'
-                    className='w-6 h-6 text-yellow-400'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M15 10.5a3 3 0 11-6 0 3 3 0 016 0z'
-                    />
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z'
-                    />
-                  </svg>
-                  <span className='pl-2'>
-                    {company.country} (
-                    {company.city ? `${company.city}, ` : null}
-                    {company.state})
-                  </span>
-                </p>
+                <div className=' text-gray-700 border bg-white border-black p-5 rounded-lg mb-4'>
+                  <div className='w-auto flex flex-row'>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      strokeWidth={1.5}
+                      stroke='currentColor'
+                      className='w-6 h-6 text-yellow-400'
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        d='M15 10.5a3 3 0 11-6 0 3 3 0 016 0z'
+                      />
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z'
+                      />
+                    </svg>
+                    <span className='pl-2'>
+                      {company.country} (
+                      {company.city ? `${company.city}, ` : null}
+                      {company.state})
+                    </span>
+                  </div>
+                </div>
               </div>
               {company.company_type ? (
                 <div className='mt-4'>
