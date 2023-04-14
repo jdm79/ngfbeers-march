@@ -3,6 +3,7 @@ import SocialMediaShare from "../../components/SocialMediaShare";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
 import { useState, useEffect } from "react";
+import { Icon } from '@iconify/react';
 
 function SearchCompaniesList(props) {
   const { items } = props;
@@ -41,6 +42,8 @@ function SearchCompaniesList(props) {
       <div>
         <div className='w-full md:w-3/4 md:max-w-full mt-10 mb-10 mx-auto px-2 sm:px-0'>
           <div className='m-auto text-center w-auto '>
+          {/* <Icon icon="il:search" className="h-30"/> */}
+
             <input
               type='text'
               className='w-full h-10 md:w-1/2 pl-2 border-2 border-black rounded-md'
