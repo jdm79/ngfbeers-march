@@ -24,7 +24,7 @@ function CompanyDetailPage() {
         {/* beer company section here */}
         <div className='container flex flex-col py-10 mx-auto sm:w-3/4 space-y-6 lg:py-16 lg:flex-row lg:items-center'>
           <div>
-            <div className='border-gray-900 bg:white border p-3 bg-[color:var(--bg-eggshell)] rounded-lg'>
+            <div className='border-gray-900 bg:white border p-3 bg-gray-400 rounded-lg'>
               <div className='flex flex-row p-3 text-left text-base md:text-4xl lg:text-5xl xl:text-7xl bg-white mb-4 border border-black rounded-lg h-auto m-auto'>
                 <span className='my-auto pr-4 w-1/4'>
                   {company.flag === "AU" ? (
@@ -119,7 +119,9 @@ function CompanyDetailPage() {
                         />
                       </svg>
                       <Link href={company.website_url} target='_blank'>
-                        <span className='animate-pulse hover:animate-none'>Website</span>
+                        <span className='animate-pulse hover:animate-none'>
+                          Website
+                        </span>
                       </Link>
                     </li>
 
@@ -261,13 +263,13 @@ function CompanyDetailPage() {
                     <ul>
                       {company.beers.map((item) => (
                         <div className='grid'>
-                          <div className='px-5 py-3 mt-4 bg-[color:var(--bg-eggshell)] border border-gray-900 rounded-lg'>
+                          <div className='px-5 py-3 mt-4 bg-gray-400 border border-gray-900 rounded-lg'>
                             <div className=' text-gray-700 -mx-2 text-2xl sm:text-6xl mb-4 border border-black bg-white p-5 rounded-lg'>
                               {item.beer_name}
                             </div>
                             <div>
                               {item.strength ? (
-                                <h4 className='flex text-xs items-center -mx-2 mb-4 text-gray-700 border border-black p-5 rounded-lg'>
+                                <h4 className='flex items-center bg-white -mx-2 mb-4 text-gray-700 border border-black p-5 rounded-lg'>
                                   <span className='mx-2'>{item.strength}</span>
                                 </h4>
                               ) : (
@@ -281,8 +283,22 @@ function CompanyDetailPage() {
                                 alt={item.beer_name}
                               />
                             </div>
-                            <p className='flex items-center -mx-2 text-gray-700 border bg-white border-black p-5 rounded-lg'>
+                            <p className='flex flex-col -mx-2 text-gray-700 border bg-white border-black p-5 rounded-lg'>
                               <span className=''>{item.beer_description}</span>
+                              {item.beer_description2 ? (
+                                <span className='mt-4'>
+                                  {item.beer_description2}
+                                </span>
+                              ) : (
+                                <span></span>
+                              )}
+                              {item.ingredients ? (
+                                <span className='mt-4'>
+                                  {item.ingredients}
+                                </span>
+                              ) : (
+                                <span></span>
+                              )}
                             </p>
 
                             <p className='flex -mx-2 text-gray-700'>
