@@ -25,7 +25,7 @@ function CompanyDetailPage() {
         <div className='container flex flex-col py-10 mx-auto sm:w-3/4 space-y-6 lg:py-16 lg:flex-row lg:items-center'>
           <div>
             <div className='border-gray-900 bg:white border p-3 bg-[color:var(--bg-eggshell)] rounded-lg'>
-              <div className='flex flex-row p-3 text-left text-2xl md:text-7xl bg-white mb-4 border border-black rounded-lg h-auto m-auto'>
+              <div className='flex flex-row p-3 text-left text-base md:text-4xl lg:text-5xl xl:text-7xl bg-white mb-4 border border-black rounded-lg h-auto m-auto'>
                 <span className='my-auto pr-4 w-1/4'>
                   {company.flag === "AU" ? (
                     <AU title='Australia' className='w-full' />
