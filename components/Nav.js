@@ -86,16 +86,16 @@ export default function Nav() {
 
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
-                  <div>
-                    {/* <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                  {/* <div>
+                    <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src=""
+                        src="/images/moi.png"
                         alt=""
                       />
-                    </Menu.Button> */}
-                  </div>
+                    </Menu.Button>
+                  </div> */}
                   <Transition
                     as={Fragment}
                     enter="transition ease-out duration-100"
