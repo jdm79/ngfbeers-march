@@ -14,7 +14,6 @@ const ContactForm = () => {
           name='contact'
           method='POST'
           data-netlify='true'
-          data-netlify-recaptcha="true"
           action='/success'
         >
           <input type='hidden' name='form-name' value='contact' />
@@ -84,8 +83,6 @@ const ContactForm = () => {
               required
             ></textarea>
           </label>
-          <div data-netlify-recaptcha="true"></div>
-
           <div className='mb-6'>
             <button
               type='submit'

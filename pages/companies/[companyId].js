@@ -262,7 +262,7 @@ function CompanyDetailPage() {
                       {company.beers.map((item) => (
                         <div className='grid'>
                           <div className='px-5 py-3 mt-4 bg-[color:var(--bg-eggshell)] border border-gray-900 rounded-lg'>
-                            <div className=' text-gray-700 -mx-2 text-2xl sm:text-6xl mb-4 border border-black bg-yellow-400 p-5 rounded-lg'>
+                            <div className=' text-gray-700 -mx-2 text-2xl sm:text-6xl mb-4 border border-black bg-white p-5 rounded-lg'>
                               {item.beer_name}
                             </div>
                             <div>
