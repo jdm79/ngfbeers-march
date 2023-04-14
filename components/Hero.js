@@ -21,7 +21,7 @@ function Hero(props) {
           </Link>
           <div className='w-auto m-auto'>
             <div className='text-base mt-10 bg-white p-4 w-fit border-2 border-black m-auto'>
-              {items.length} companies listed here selling naturally gluten-free beer companies
+              {items.length} companies listed here selling naturally gluten-free beer
               <FlagList />{" "}
             </div>
           </div>
