@@ -5,6 +5,7 @@ import SocialMediaShare from "@/components/SocialMediaShare";
 import BackButton from "@/components/BackButton";
 import { Icon } from '@iconify/react';
 import { US, GB, CA, FR, IT, DE, AU } from 'country-flag-icons/react/3x2'
+import Link from "next/link";
 
 function CompanyDetailPage() {
   const router = useRouter();
@@ -30,35 +31,17 @@ function CompanyDetailPage() {
                 </div>
                 <div className='p-3 text-center m-auto bg-[color:var(--bg-eggshell)] mb-4 border border-black rounded-lg h-auto'>
                   {company.flag === "AU" ? (
-                    <AU
-                      title='Australia'
-                      className='w-full'
-                    />
+                    <AU title='Australia' className='w-full' />
                   ) : company.flag === "CA" ? (
-                    <CA
-                      title='Canada'
-                      className='w-full'
-                    />
+                    <CA title='Canada' className='w-full' />
                   ) : company.flag === "FR" ? (
-                    <FR
-                      title='France'
-                      className='w-full'
-                    />
+                    <FR title='France' className='w-full' />
                   ) : company.flag === "DE" ? (
-                    <DE
-                      title='Germany'
-                      className='w-full'
-                    />
+                    <DE title='Germany' className='w-full' />
                   ) : company.flag === "IT" ? (
-                    <IT
-                      title='Italy'
-                      className='w-full'
-                    />
+                    <IT title='Italy' className='w-full' />
                   ) : company.flag === "GB" ? (
-                    <GB
-                      title='United Kingdom'
-                      className='w-full'
-                    />
+                    <GB title='United Kingdom' className='w-full' />
                   ) : company.flag === "US" ? (
                     <US title='United States' className='w-full' />
                   ) : null}
@@ -135,9 +118,9 @@ function CompanyDetailPage() {
                           d='M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418'
                         />
                       </svg>
-                      <a href={company.website_url} target='_blank'>
+                      <Link href={company.website_url} target='_blank'>
                         Website<span className='mx-2'></span>
-                      </a>
+                      </Link>
                     </li>
 
                     {company.insta_url ? (
@@ -150,9 +133,9 @@ function CompanyDetailPage() {
                         >
                           <path d='M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z' />
                         </svg>
-                        <a href={company.insta_url} target='_blank'>
+                        <Link href={company.insta_url} target='_blank'>
                           Instagram<span className='mx-2'></span>
-                        </a>
+                        </Link>
                       </li>
                     ) : (
                       <div></div>
@@ -170,9 +153,9 @@ function CompanyDetailPage() {
                         >
                           <path d='M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z' />
                         </svg>
-                        <a href={company.fb_url} target='_blank'>
+                        <Link href={company.fb_url} target='_blank'>
                           Facebook<span className='mx-2'></span>
-                        </a>
+                        </Link>
                       </li>
                     ) : (
                       <div></div>
@@ -184,14 +167,14 @@ function CompanyDetailPage() {
                           icon='fa-brands:untappd'
                           style={{ color: "#FACC14" }}
                         />
-                        <a
+                        <Link
                           href={company.untappd_url}
                           target='_blank'
                           className='ml-3'
                         >
                           {"  "}
                           Untappd<span className=''></span>
-                        </a>
+                        </Link>
                       </li>
                     ) : (
                       <div></div>
@@ -234,7 +217,7 @@ function CompanyDetailPage() {
               {company.taproom_url ? (
                 <div className='mt-4'>
                   <p className='flex items-center my-5 text-gray-700'>
-                    <a
+                    <Link
                       className=' text-black text-center bg-yellow-400 p-5 border rounded-lg border-black hover:bg-yellow-100 w-full'
                       href={company.taproom_url}
                       target='_blank'
@@ -253,7 +236,7 @@ function CompanyDetailPage() {
                           clip-rule='evenodd'
                         ></path>
                       </svg>
-                    </a>
+                    </Link>
                   </p>
                 </div>
               ) : null}
@@ -266,22 +249,22 @@ function CompanyDetailPage() {
 
             {/* list of beers section below */}
             <div className='bg:white'>
-              <div className='mt-10 md:mt-20 space-y-5'>
+              <div className='mt-10 md:mt-20'>
                 {company.beers ? (
                   <div>
                     {company.beers.length > 0 ? (
-                      <h1 className='tracking-wide text-gray-800 bg-[color:var(--bg-eggshell)] text-md md:text-xl p-5 mt-5 border border-black rounded-lg'>
+                      <div className='tracking-wide text-gray-800 bg-[color:var(--bg-eggshell)] text-md md:text-xl p-5 mt-5 border border-black rounded-lg'>
                         {company.beers[0].title} have {company.beers.length}{" "}
                         naturally gluten-free beer(s)
-                      </h1>
+                      </div>
                     ) : null}
-                    <ul className='grid gap-x-3 row-auto w-200 lg:w-200 '>
+                    <ul>
                       {company.beers.map((item) => (
-                        <div>
+                        <div className='grid'>
                           <div className='px-5 py-3 mt-4 bg-[color:var(--bg-eggshell)] border border-gray-900 rounded-lg'>
-                            <h1 className='flex text-gray-700 -mx-2 text-2xl sm:text-6xl mb-4 border border-black bg-yellow-400 p-5 rounded-lg'>
-                              <span className='mb-2'>{item.beer_name}</span>
-                            </h1>
+                            <div className=' text-gray-700 -mx-2 text-2xl sm:text-6xl mb-4 border border-black bg-yellow-400 p-5 rounded-lg'>
+                              {item.beer_name}
+                            </div>
                             <div>
                               {item.strength ? (
                                 <h4 className='flex text-xs items-center -mx-2 mb-4 text-gray-700 border border-black p-5 rounded-lg'>
@@ -291,14 +274,20 @@ function CompanyDetailPage() {
                                 <div></div>
                               )}
                             </div>
-                            <img
-                              className='w-auto rounded-full border-4 mb-2 m-auto sm:m-0 border-black'
-                              src={`/images/beers/${item.image_url}`}
-                              alt={item.beer_name}
-                            />
-                            <p className='flex items-center -mx-2 my-5 text-gray-700'>
-                              <a
-                                className=' text-black bg-yellow-400 p-5 border rounded-lg border-black hover:bg-yellow-100 mt-4 sm:w-1/2'
+                            <div className='m-auto'>
+                              <img
+                                className='w-auto rounded-full border-4 mb-4 m-auto border-black'
+                                src={`/images/beers/${item.image_url}`}
+                                alt={item.beer_name}
+                              />
+                            </div>
+                            <p className='flex items-center -mx-2 text-gray-700 border bg-white border-black p-5 rounded-lg'>
+                              <span className=''>{item.beer_description}</span>
+                            </p>
+
+                            <p className='flex -mx-2 text-gray-700'>
+                              <Link
+                                className=' text-black w-full bg-yellow-400 p-5 border rounded-lg border-black hover:bg-yellow-100 mt-4'
                                 href={item.beer_url}
                                 target='_blank'
                               >
@@ -316,10 +305,7 @@ function CompanyDetailPage() {
                                     clip-rule='evenodd'
                                   ></path>
                                 </svg>
-                              </a>
-                            </p>
-                            <p className='flex items-center -mx-2 text-gray-700 border bg-white border-black p-5 rounded-lg'>
-                              <span className=''>{item.beer_description}</span>
+                              </Link>
                             </p>
                           </div>
                         </div>
