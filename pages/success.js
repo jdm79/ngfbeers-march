@@ -16,7 +16,7 @@ const contactPage = () => {
             <Link
               href='/companies'
             >
-              Go back to the beers
+              Back to beers
             </Link>{" "}
           </div>
         </div>

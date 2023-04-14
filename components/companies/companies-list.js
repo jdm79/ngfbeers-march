@@ -1,9 +1,12 @@
 import CompanyItem from "./company-item";
 import SocialMediaShare from "../../components/SocialMediaShare";
 import CompanyCountry from "../CompanyCountry";
+import Link from "next/link";
 
 function CompaniesList(props) {
   const { items } = props;
+  const data = items.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0))
+
   const title = "Coeliac-safe beers";
   const ausCompanies = items.filter(company => company.country == "Australia")
   const canCompanies = items.filter(company => company.country == "Canada")
@@ -11,7 +14,7 @@ function CompaniesList(props) {
   const deCompanies = items.filter(company => company.country == "Germany")
   const itCompanies = items.filter(company => company.country == "Italy")
   const ukCompanies = items.filter(company => company.flag == "GB")
-  const usaCompanies = items.filter(company => company.country == "USA")
+  const usaCompanies = data.filter(company => company.country == "USA")
 
 
   return (

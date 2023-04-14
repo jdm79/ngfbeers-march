@@ -119,7 +119,7 @@ function CompanyDetailPage() {
                         />
                       </svg>
                       <Link href={company.website_url} target='_blank'>
-                        Website<span className='mx-2'></span>
+                        <span className='animate-pulse hover:animate-none'>Website</span>
                       </Link>
                     </li>
 
@@ -287,7 +287,7 @@ function CompanyDetailPage() {
 
                             <p className='flex -mx-2 text-gray-700'>
                               <Link
-                                className=' text-black w-full bg-yellow-400 p-5 border rounded-lg border-black hover:bg-yellow-100 mt-4'
+                                className=' text-black w-full bg-yellow-400 p-5 border rounded-lg border-black hover:bg-yellow-100 mt-4 animate-pulse'
                                 href={item.beer_url}
                                 target='_blank'
                               >

@@ -495,6 +495,34 @@ const companies = [
     taproom_url: "https://www.bierlybrewing.com/our-beers/",
   },
   {
+    id: "e13",
+    title: "Brewery NYX",
+    website_url: "https://www.brewerynyx.com/",
+    insta_url: "https://www.instagram.com/brewerynyx/",
+    fb_url: "https://www.facebook.com/BreweryNyx",
+    untappd_url: "https://untappd.com/BreweryNyx",
+    founded: "2021",
+    description: `
+    Grand Rapids has no shortage of beer for enthusiasts, but for the gluten-free it can feel like wandering through a desert with nothing to drink. 
+    Brewery Nyx, Michigan’s first dedicated gluten-free brewery and facility, was created to bring taste, better ingredients, joy and comradery back to the beer experience for everyone.
+     
+      `,
+    description2: `From IPAs to lagers to barrel-aged stouts, Brewery Nyx brings those who love beer but can’t enjoy it, 
+    back into the fold.`,
+    country: "USA",
+    state: "Michigan",
+    stateCode: "MI",
+    city: "Grand Rapids",
+    region: "North America",
+    flag: "US",
+    status: "dedicated",
+    company_type: "Dedicated GF brewery with taproom",
+    image: "images/companies/nyx-logo.png",
+    isFeatured: true,
+    taproom_blurb: "",
+    taproom_url: "https://www.bierlybrewing.com/our-beers/",
+  },
+  {
     id: "e14",
     title: "Buck Wild Brewing",
     website_url: "https://www.buckwildbrew.com/",
@@ -1093,34 +1121,6 @@ const companies = [
     isFeatured: true,
     taproom_blurb: "",
     taproom_url: "https://www.neffbrewing.com/our-beers/",
-  },
-  {
-    id: "e13",
-    title: "Brewery NYX",
-    website_url: "https://www.brewerynyx.com/",
-    insta_url: "https://www.instagram.com/brewerynyx/",
-    fb_url: "https://www.facebook.com/BreweryNyx",
-    untappd_url: "https://untappd.com/BreweryNyx",
-    founded: "2021",
-    description: `
-    Grand Rapids has no shortage of beer for enthusiasts, but for the gluten-free it can feel like wandering through a desert with nothing to drink. 
-    Brewery Nyx, Michigan’s first dedicated gluten-free brewery and facility, was created to bring taste, better ingredients, joy and comradery back to the beer experience for everyone.
-     
-      `,
-    description2: `From IPAs to lagers to barrel-aged stouts, Brewery Nyx brings those who love beer but can’t enjoy it, 
-    back into the fold.`,
-    country: "USA",
-    state: "Michigan",
-    stateCode: "MI",
-    city: "Grand Rapids",
-    region: "North America",
-    flag: "US",
-    status: "dedicated",
-    company_type: "Dedicated GF brewery with taproom",
-    image: "images/companies/nyx-logo.png",
-    isFeatured: true,
-    taproom_blurb: "",
-    taproom_url: "https://www.bierlybrewing.com/our-beers/",
   },
   {
     id: "e32",
