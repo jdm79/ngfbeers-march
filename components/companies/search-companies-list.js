@@ -40,15 +40,30 @@ function SearchCompaniesList(props) {
   return (
     <section className='bg-yellow-400 mb-10 pl-2 pr-2'>
       <div>
-        <div className='w-full md:w-3/4 md:max-w-full mt-10 mb-10 mx-auto px-2 sm:px-0'>
-          <div className='m-auto text-center w-auto '>
-          {/* <Icon icon="il:search" className="h-30"/> */}
-
+        <div className='w-full md:w-3/4 mt-10 mb-10 mx-auto'>
+          <div className='relative w-full md:w-1/2 mx-auto'>
+            <div className='absolute inset-y-0 left-0 flex m-auto items-center pl-3 pointer-events-none'>
+              <svg
+                aria-hidden='true'
+                className='w-5 h-5 text-gray-500 dark:text-gray-400'
+                fill='currentColor'
+                viewBox='0 0 20 20'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  fill-rule='evenodd'
+                  d='M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z'
+                  clip-rule='evenodd'
+                ></path>
+              </svg>
+            </div>
             <input
               type='text'
-              className='w-full h-10 md:w-1/2 pl-2 border-2 border-black rounded-md'
+              id='simple-search'
+              className='bg-white border-2 border-black  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5'
               placeholder='Search for companies using location or company name'
               onChange={(e) => setSearch(e.target.value)}
+              required
             />
           </div>
         </div>
