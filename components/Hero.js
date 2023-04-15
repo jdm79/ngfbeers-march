@@ -10,8 +10,8 @@ function Hero(props) {
     <div className='w-screen bg-gradient-to-r bg-yellow-400 text-black min-h-screen'>
       <div className='mt-10 relative'>
         <div className='text-center text-3xl mt-10 lg:text-7xl m-auto md:ml-20 md:mr-20 md:mt-20'>
-          <h1>Naturally </h1>
-          <h1>gluten-free beers</h1>
+          <div>Naturally </div>
+          <div>gluten-free beers</div>
           <Link href='/companies'>
             <img
               src='/logo-ngfbeers.png'
