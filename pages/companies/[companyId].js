@@ -269,9 +269,9 @@ function CompanyDetailPage() {
                             </div>
                             <div>
                               {item.strength ? (
-                                <h4 className='flex items-center bg-white -mx-2 mb-4 text-gray-700 border border-black p-5 rounded-lg'>
+                                <div className='flex items-center bg-white -mx-2 mb-4 text-gray-700 border border-black p-5 rounded-lg'>
                                   <span className='mx-2'>{item.strength}</span>
-                                </h4>
+                                </div>
                               ) : (
                                 <div></div>
                               )}

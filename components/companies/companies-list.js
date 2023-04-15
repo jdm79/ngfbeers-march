@@ -140,7 +140,7 @@ function CompaniesList(props) {
       </div>
       <div className='w-fit px-5 m-auto'>
         <div className='px-5 mb-4 mt-5'>
-          <h1 className='text-center'>Share this website</h1>
+          <div className='text-center'>Share this website</div>
         </div>
         <div className='flex justify-center '>
           <SocialMediaShare title={title} />

@@ -4,7 +4,7 @@ import { US, GB, CA, FR, IT, DE, AU } from 'country-flag-icons/react/3x2'
 function FlagList() {
   return (
     <div className='flex flex-row gap-2 justify-left mt-4'>
-      <h1 className='text-base'>Countries:</h1>
+      <div className='text-base'>Countries:</div>
       <AU title='Australia' className='w-6' />
       <CA title='Canada' className='w-6' />
       <FR title='France' className='w-6' />

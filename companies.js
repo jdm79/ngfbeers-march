@@ -1322,7 +1322,7 @@ const companies = [
     city: "Gold Coast",
     region: "Oceania",
     flag: "AU",
-    status: "",
+    status: "contract",
     company_type: "Contract brewery. Not dedicated GF facilities but cleaning protocols monitored closely.",
     image: "images/companies/sobah-logo.png",
     isFeatured: true,
