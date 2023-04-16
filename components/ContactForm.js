@@ -90,8 +90,7 @@ const ContactForm = () => {
               required
             ></textarea>
           </label>
-          <div data-netlify-recaptcha="true"></div>
-
+          {/* <div data-netlify-recaptcha="true"></div> */}
           <div className='mb-6'>
             <button
               type='submit'
