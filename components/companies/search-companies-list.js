@@ -2,7 +2,7 @@ import CompanyItem from "./company-item";
 import SocialMediaShare from "../../components/SocialMediaShare";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Icon } from '@iconify/react';
 
 function SearchCompaniesList(props) {
@@ -10,32 +10,33 @@ function SearchCompaniesList(props) {
   const data = items.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0))
 
   const title = "Coeliac-safe beers";
-
-    const [companies, setCompanies] = useState([]);
-    const [search, setSearch] = useState("");
-    const [filteredCompanies, setFilteredCompanies] = useState([]);
   
-    useEffect(() => {
-      setCompanies(data);
-    }, []);
 
-    useEffect(() => {
-      setFilteredCompanies(
-        companies.filter((company) =>
-          company.state.toLowerCase().includes(search.toLowerCase()) ||
-          company.city.toLowerCase().includes(search.toLowerCase()) ||
-          company.title.toLowerCase().includes(search.toLowerCase()) ||
-          company.flag.toLowerCase().includes(search.toLowerCase()) ||
-          company.region.toLowerCase().includes(search.toLowerCase()) ||
-          company.country.toLowerCase().includes(search.toLowerCase() ))
-        )
-    }, [search, companies]);
+  const [companies, setCompanies] = useState([]);
+  const [search, setSearch] = useState("");
+  const [filteredCompanies, setFilteredCompanies] = useState([]);
 
+  useEffect(() => {
+    setCompanies(data);
+  }, []);
 
+  useEffect(() => {
+    setFilteredCompanies(
+      companies.filter((company) =>
+        company.state.toLowerCase().includes(search.toLowerCase()) ||
+        company.city.toLowerCase().includes(search.toLowerCase()) ||
+        company.title.toLowerCase().includes(search.toLowerCase()) ||
+        company.flag.toLowerCase().includes(search.toLowerCase()) ||
+        company.region.toLowerCase().includes(search.toLowerCase()) ||
+        company.country.toLowerCase().includes(search.toLowerCase() ))
+      )
+  }, [search, companies]);
 
-
+  const inputRef = useRef();
  
-  // add the search stuff here and filter down 
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
 
   return (
     <section className='bg-yellow-400 mb-10 pl-2 pr-2'>
@@ -63,8 +64,7 @@ function SearchCompaniesList(props) {
               className='bg-white border-2 border-black  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5'
               placeholder='Search for companies using location or company name'
               onChange={(e) => setSearch(e.target.value)}
-              required
-            />
+              ref={inputRef}            />
           </div>
         </div>
 

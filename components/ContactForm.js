@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const ContactForm = () => {
+  const inputRef = useRef();
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
 
   return (
-    <div className='w-full md:w-3/4 md:max-w-full mt-12 mb-20 mx-auto px-2 sm:px-0'>
+    <div className='w-full md:w-1/2 md:max-w-full mt-12 mb-20 mx-auto px-2 sm:px-0'>
       <div className='bg-white text-black border-2 border-black rounded-lg p-5 mb-5 shadow-md shadow-black'>
         If you have any feedback or queries, or have any NGCI beer-related news,
         please contact us using the form below. Any advice or help is much
@@ -39,6 +44,7 @@ const ContactForm = () => {
                 focus:ring-black
               '
               placeholder='Type your name here'
+              ref={inputRef}
               required
             />
           </label>
