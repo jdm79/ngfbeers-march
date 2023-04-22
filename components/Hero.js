@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import FlagList from "./FlagList";
 import Link from "next/link";
 
@@ -5,9 +6,8 @@ function Hero(props) {
   const { items } = props;
   const link = `/companies`;
 
-
   return (
-    <div className='w-screen bg-gradient-to-r bg-yellow-400 text-black min-h-screen'>
+    <div className='w-screen bg-gradient-to-r bg-yellow-400 text-black scroll-smooth'>
       <div className='mt-10 relative'>
         <div className='text-center text-3xl mt-10 lg:text-7xl m-auto md:ml-20 md:mr-20 md:mt-20'>
           <div>Naturally </div>
