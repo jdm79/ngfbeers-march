@@ -9,9 +9,11 @@ function Hero(props) {
   return (
     <div className='w-screen bg-gradient-to-r bg-yellow-400 text-black scroll-smooth'>
       <div className='mt-10 relative'>
-        <div className='text-center text-3xl mt-10 lg:text-7xl m-auto md:ml-20 md:mr-20 md:mt-20'>
-          <div>Naturally </div>
+        <div className='text-center text-1xl lg:text-5xl m-auto md:ml-20 md:mr-20 md:mt-10'>
+          <div>A showcase of companies</div>
+          <div>producing naturally </div>
           <div>gluten-free beers</div>
+
           <Link href='/companies'>
             <img
               src='/logo-ngfbeers.png'
@@ -20,8 +22,9 @@ function Hero(props) {
             />
           </Link>
           <div className='w-auto m-auto'>
-            <div className='text-base mt-10 bg-white p-4 w-fit border-2 border-black m-auto'>
-              {items.length} companies listed here selling naturally gluten-free beer
+            <div className='text-base text-center mt-10 bg-white p-4 border-2 border-black m-auto'>
+              {items.length} companies listed here selling naturally gluten-free
+              beer
               <FlagList />{" "}
             </div>
           </div>

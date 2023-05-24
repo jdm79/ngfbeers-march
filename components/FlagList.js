@@ -1,9 +1,8 @@
-import { US, GB, CA, FR, IT, DE, AU } from 'country-flag-icons/react/3x2'
-
+import { US, GB, CA, FR, IT, DE, AU } from "country-flag-icons/react/3x2";
 
 function FlagList() {
   return (
-    <div className='flex flex-row gap-2 justify-left mt-4'>
+    <div className='flex flex-row gap-2 justify-center mt-4'>
       <div className='text-base'>Countries:</div>
       <AU title='Australia' className='w-6' />
       <CA title='Canada' className='w-6' />
@@ -16,4 +15,4 @@ function FlagList() {
   );
 }
 
-export default FlagList
+export default FlagList;
