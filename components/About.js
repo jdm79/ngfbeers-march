@@ -24,14 +24,14 @@ export default function About() {
           <Link
             href='https://www.nhs.uk/conditions/coeliac-disease/complications/'
             target='_blank'
-            className='border-2 border-black bg-yellow-400 rounded-lg px-1'
+            className='border-2 border-black hover:bg-yellow-400 rounded-lg px-1'
           >
             harming people's health
           </Link>
           , it's an easy route to take. But this beer should not be labelled
           'gluten-free'.
         </p>
-        <p className='p-5 font-courier underline font-extrabold	'>
+        <p className='p-5 font-courier font-extrabold	'>
           Gluten-free beer is beer that is made without any gluten-containing
           ingredients (looking at you, barley).
         </p>
@@ -40,13 +40,14 @@ export default function About() {
           'remove' the gluten is - at best - gluten-reduced beer. The gluten is
           not removed, however, only made smaller. And scientists have shown
           they are still toxic to many coeliacs and those affected by gluten
-          (see research by Laura K Allred and Dr Michelle Colgrave). And the
-          current commercial test used to detect gluten in beer (R5 Competitive
-          ELISA) is not accurate or reliable enough for the FDA - see{" "}
+          (see research by Dr Laura K Allred in the USA, and Dr Michelle
+          Colgrave from CSIRO Australia). And the current commercial test used
+          to detect gluten in beer (R5 Competitive ELISA) is not accurate or
+          reliable enough for the FDA - see{" "}
           <Link
             href='https://www.federalregister.gov/documents/2020/08/13/2020-17088/food-labeling-gluten-free-labeling-of-fermented-or-hydrolyzed-foods'
             target='_blank'
-            className='border-2 border-black bg-yellow-400 rounded-lg px-1'
+            className='border-2 border-black hover:bg-yellow-400 rounded-lg px-1'
           >
             here
           </Link>
@@ -56,38 +57,15 @@ export default function About() {
           'gluten-reduced'.
         </p>
         <p className='p-5'>
-          There's a great resource of info{" "}
-          <Link
-            href='https://zerotolerance.mywikis.wiki/wiki/Gluten_Reduced_vs_Gluten_Free'
-            target='_blank'
-            className='border-2 border-black bg-yellow-400 rounded-lg px-1'
-          >
-            {" "}
-            here
-          </Link>{" "}
-          from the people at Zero Tolerance Gluten Free Brewing Wiki.
-        </p>
-        <p className='p-5'>
           For more information, check out the{" "}
           <Link
             href='/links'
-            className='border-2 border-black bg-yellow-400 rounded-lg px-1'
+            className='border-2 border-black hover:bg-yellow-400 rounded-lg px-1'
           >
             Links section
           </Link>
           .
         </p>
-        <p className='p-5'>
-          If you are an ngci beer brewer/company - or know of one, contact us{" "}
-          <Link
-            href='/contact'
-            className='border-2 border-black bg-yellow-400 rounded-lg px-1'
-          >
-            here
-          </Link>
-          .
-        </p>
-        <p className='p-5'></p>
         <div>
           <h1 className='text-center mb-2'>Share this:</h1>
         </div>
