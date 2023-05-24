@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 import DefaultLayout from "@/components/DefaultLayout";
 import SocialMediaShare from "@/components/SocialMediaShare";
 import BackButton from "@/components/BackButton";
-import { Icon } from '@iconify/react';
-import { US, GB, CA, FR, IT, DE, AU } from 'country-flag-icons/react/3x2'
+import { Icon } from "@iconify/react";
+import { US, GB, CA, FR, IT, DE, AU } from "country-flag-icons/react/3x2";
 import Link from "next/link";
 
 function CompanyDetailPage() {
@@ -24,7 +24,7 @@ function CompanyDetailPage() {
         {/* beer company section here */}
         <div className='container flex flex-col py-10 mx-auto sm:w-3/4 space-y-6 lg:py-16 lg:flex-row lg:items-center'>
           <div>
-            <div className='border-gray-900 bg:white border p-3 bg-gray-400 rounded-lg'>
+            <div className='border-gray-900 bg:white border p-3 bg-gray-900 rounded-lg'>
               <div className='flex flex-row p-3 text-left text-base md:text-4xl lg:text-5xl xl:text-7xl bg-white mb-4 border border-black rounded-lg h-auto m-auto'>
                 <span className='my-auto pr-4 w-1/4'>
                   {company.flag === "AU" ? (
@@ -263,7 +263,7 @@ function CompanyDetailPage() {
                     <ul>
                       {company.beers.map((item) => (
                         <div className='grid'>
-                          <div className='px-5 py-3 mt-4 bg-gray-400 border border-gray-900 rounded-lg'>
+                          <div className='px-5 py-3 mt-4 bg-gray-900 border border-gray-900 rounded-lg'>
                             <div className=' text-gray-700 -mx-2 text-2xl sm:text-6xl mb-4 border border-black bg-white p-5 rounded-lg'>
                               {item.beer_name}
                             </div>
@@ -293,9 +293,7 @@ function CompanyDetailPage() {
                                 <span></span>
                               )}
                               {item.ingredients ? (
-                                <span className='mt-4'>
-                                  {item.ingredients}
-                                </span>
+                                <span className='mt-4'>{item.ingredients}</span>
                               ) : (
                                 <span></span>
                               )}
@@ -303,24 +301,11 @@ function CompanyDetailPage() {
 
                             <p className='flex -mx-2 text-gray-700'>
                               <Link
-                                className=' text-black w-full bg-yellow-400 p-5 border rounded-lg border-black hover:bg-yellow-100 mt-4 animate-pulse'
+                                className='text-2xl sm:text-3xl text-white text-center font-extrabold w-full bg-green-500 p-5 border rounded-lg border-black hover:sm:text-4xl mt-4'
                                 href={item.beer_url}
                                 target='_blank'
                               >
-                                {`Click here to see this beer on the ${company.title} website`}
-                                <svg
-                                  aria-hidden='true'
-                                  class='w-5 h-5 ml-1'
-                                  fill='currentColor'
-                                  viewBox='0 0 20 20'
-                                  xmlns='http://www.w3.org/2000/svg'
-                                >
-                                  <path
-                                    fill-rule='evenodd'
-                                    d='M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z'
-                                    clip-rule='evenodd'
-                                  ></path>
-                                </svg>
+                                <span> {`Buy this beer!`}</span>
                               </Link>
                             </p>
                           </div>
