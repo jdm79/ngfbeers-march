@@ -24,7 +24,7 @@ export default function About() {
           <Link
             href='https://www.nhs.uk/conditions/coeliac-disease/complications/'
             target='_blank'
-            className='border-2 border-black hover:bg-yellow-400 rounded-lg px-1'
+            className=' hover:bg-yellow-400 underline'
           >
             harming people's health
           </Link>
@@ -47,7 +47,7 @@ export default function About() {
           <Link
             href='https://www.federalregister.gov/documents/2020/08/13/2020-17088/food-labeling-gluten-free-labeling-of-fermented-or-hydrolyzed-foods'
             target='_blank'
-            className='border-2 border-black hover:bg-yellow-400 rounded-lg px-1'
+            className='hover:bg-yellow-400 underline'
           >
             here
           </Link>
@@ -58,10 +58,7 @@ export default function About() {
         </p>
         <p className='p-5'>
           For more information, check out the{" "}
-          <Link
-            href='/links'
-            className='border-2 border-black hover:bg-yellow-400 rounded-lg px-1'
-          >
+          <Link href='/links' className='hover:bg-yellow-400 underline'>
             Links section
           </Link>
           .
