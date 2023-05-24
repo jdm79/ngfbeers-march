@@ -1354,7 +1354,7 @@ const companies = [
     title: "Liebharts Privatbrauerei",
     website_url:
       "http://www.residenz-biere.de/de/bio-biere/glutenfreie-biere.html",
-    insta_url: "",
+    insta_url: "https://www.instagram.com/liebharts_privatbrauerei/",
     fb_url: "https://www.facebook.com/LiebhartsPrivatbrauerei",
     untappd_url: "https://untappd.com/w/liebharts-privatbrauerei/46026",
     founded: "2003",
@@ -1382,7 +1382,7 @@ const companies = [
         image_url: "liebharts-reisbier.png",
         beer_url:
           "https://www.beertasting.com/de-de/seller/liebharts-privatbrauerei/liebharts-bio-reis-hell-glutenfrei~b2491109",
-        beer_description: `The beer for people with gluten allergies is brewed from rice. Conceived, brewed and bottled in the residential city of Detmold. The strictest controls guarantee the highest sort purity. The result: a unique taste and absolute organic quality. Free from millet and mung beans.
+        beer_description: `Conceived, brewed and bottled in the residential city of Detmold. The strictest controls guarantee the highest sort purity. The result: a unique taste and absolute organic quality. Free from millet and mung beans.
           `,
         ingredients: `Ingredients: Rice, organic hops, yeast, water`,
       },
@@ -1393,8 +1393,9 @@ const companies = [
         image_url: "liebharts-reisbier-dunkel.png",
         beer_url:
           "https://www.beertasting.com/de-de/seller/liebharts-privatbrauerei/liebharts-bio-reis-dunkel-glutenfrei~b2491013",
-        beer_description: `World premiere! The gluten-free rice beer is now also available as a dark country beer!
-        Mildly hopped and with a dark amber colour, the dark rice beer is not only popular with people with gluten allergies. Free from millet and mung beans.
+        beer_description: `Mildly hopped and with a dark amber colour, 
+        the dark rice beer is not only popular with people with gluten allergies. 
+        Free from millet and mung beans.
           `,
         ingredients: `Ingredients: Rice, organic hops, yeast, water`,
       },
@@ -1405,7 +1406,14 @@ const companies = [
         image_url: "liebharts-reisbier-ingwer.png",
         beer_url:
           "https://www.beertasting.com/de-de/seller/liebharts-privatbrauerei/liebharts-bio-ingwer-glutenfrei~b2491090",
-        beer_description: `The new organic ginger beer is an alcoholic, fermented specialty made from organic ginger, organic hops and brewing water from the depths of the Teutoburg Forest. Brewer's yeast and the organic ginger ingredients ensure the pleasant, finely spicy ginger taste. The raw materials are produced from ecological agriculture without agrochemicals, pesticides and artificial fertilizers and are of the highest quality and purity. Free from millet and mung beans.
+        beer_description: `The new organic ginger beer is an alcoholic, 
+        fermented specialty made from organic ginger, organic hops and brewing water 
+        from the depths of the Teutoburg Forest. 
+        Brewer's yeast and the organic ginger ingredients ensure the pleasant, 
+        finely spicy ginger taste. 
+        The raw materials are produced from ecological agriculture without agrochemicals, 
+        pesticides and artificial fertilizers and are of the highest quality and purity. 
+        Free from millet and mung beans.
           `,
         ingredients: `Ingredients: Rice, organic hops, yeast, organic ginger, water`,
       },
