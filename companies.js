@@ -397,7 +397,7 @@ const companies = [
     flag: "US",
     status: "dedicated",
     company_type: "Dedicated GF brewery with taproom",
-    image: "images/companies/altbrew-logo.jpg",
+    image: "images/companies/altbrew.png",
     isFeatured: true,
     taproom_blurb:
       "Our current tap list. These varieties are available as full pours, half pours, or served in a flight. *Updated as frequently as possible, actual taplist may differ*",
