@@ -1529,7 +1529,7 @@ const companies = [
     id: "e44",
     title: "Cerveza Straus",
     website_url: "https://listado.mercadolibre.com.ar/cerveza-strauss-tacc",
-    insta_url: "https://untappd.com/w/cerveza-straus/161964",
+    insta_url: "https://www.instagram.com/cervezastraus/",
     fb_url: "",
     untappd_url: "https://untappd.com/b/cerveza-straus-straus/839010",
     founded: "2013",
