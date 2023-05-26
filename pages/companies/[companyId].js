@@ -4,9 +4,9 @@ import DefaultLayout from "@/components/DefaultLayout";
 import SocialMediaShare from "@/components/SocialMediaShare";
 import BackButton from "@/components/BackButton";
 import { Icon } from "@iconify/react";
-import { US, GB, CA, FR, IT, DE, AU, AR } from "country-flag-icons/react/3x2";
 import Link from "next/link";
 import BuyButton from "@/components/BuyButton";
+import Flag from "@/components/Flag";
 
 function CompanyDetailPage() {
   const router = useRouter();
@@ -28,23 +28,7 @@ function CompanyDetailPage() {
             <div className='border-gray-900 bg:white border p-3 bg-gray-900 rounded-lg'>
               <div className='flex flex-row p-3 text-left text-base md:text-4xl lg:text-5xl xl:text-7xl bg-white mb-4 border border-black rounded-lg h-auto m-auto'>
                 <span className='my-auto pr-4 w-1/4'>
-                  {company.flag === "AU" ? (
-                    <AU title='Australia' className='w-full' />
-                  ) : company.flag === "AR" ? (
-                    <AR title='Argentina' className='w-full' />
-                  ) : company.flag === "CA" ? (
-                    <CA title='Canada' className='w-full' />
-                  ) : company.flag === "FR" ? (
-                    <FR title='France' className='w-full' />
-                  ) : company.flag === "DE" ? (
-                    <DE title='Germany' className='w-full' />
-                  ) : company.flag === "IT" ? (
-                    <IT title='Italy' className='w-full' />
-                  ) : company.flag === "GB" ? (
-                    <GB title='United Kingdom' className='w-full' />
-                  ) : company.flag === "US" ? (
-                    <US title='United States' className='w-full' />
-                  ) : null}
+                  <Flag flag={company.flag} />
                 </span>
                 <div className='my-auto w-3/4'>{company.title} </div>
               </div>
