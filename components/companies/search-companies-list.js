@@ -3,14 +3,15 @@ import SocialMediaShare from "../../components/SocialMediaShare";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
 import { useState, useEffect, useRef } from "react";
-import { Icon } from '@iconify/react';
+import { Icon } from "@iconify/react";
 
 function SearchCompaniesList(props) {
   const { items } = props;
-  const data = items.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0))
+  const data = items.sort((a, b) =>
+    a.title > b.title ? 1 : b.title > a.title ? -1 : 0
+  );
 
   const title = "Coeliac-safe beers";
-  
 
   const [companies, setCompanies] = useState([]);
   const [search, setSearch] = useState("");
@@ -22,18 +23,22 @@ function SearchCompaniesList(props) {
 
   useEffect(() => {
     setFilteredCompanies(
-      companies.filter((company) =>
-        company.state.toLowerCase().includes(search.toLowerCase()) ||
-        company.city.toLowerCase().includes(search.toLowerCase()) ||
-        company.title.toLowerCase().includes(search.toLowerCase()) ||
-        company.flag.toLowerCase().includes(search.toLowerCase()) ||
-        company.region.toLowerCase().includes(search.toLowerCase()) ||
-        company.country.toLowerCase().includes(search.toLowerCase() ))
+      companies.filter(
+        (company) =>
+          company.state?.toLowerCase().includes(search.toLowerCase()) ||
+          company.city?.toLowerCase().includes(search.toLowerCase()) ||
+          company.title?.toLowerCase().includes(search.toLowerCase()) ||
+          company.flag?.toLowerCase().includes(search.toLowerCase()) ||
+          company.region?.toLowerCase().includes(search.toLowerCase()) ||
+          company.country?.toLowerCase().includes(search.toLowerCase()) ||
+          company.country_code?.toLowerCase().includes(search.toLowerCase()) ||
+          company.alt?.toLowerCase().includes(search.toLowerCase())
       )
+    );
   }, [search, companies]);
 
   const inputRef = useRef();
- 
+
   useEffect(() => {
     inputRef.current.focus();
   }, []);
@@ -64,7 +69,8 @@ function SearchCompaniesList(props) {
               className='bg-white border-2 border-black  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5'
               placeholder='Search for companies using location or company name'
               onChange={(e) => setSearch(e.target.value)}
-              ref={inputRef}            />
+              ref={inputRef}
+            />
           </div>
         </div>
 
