@@ -253,7 +253,7 @@ const companies = [
     country_code: "DE",
     alt: "Deutschland",
     state: "Baden-Württemberg",
-    stateCode: "Baden-Württemberg",
+    stateCode: "BaWü",
     city: "Offenburg",
     region: "Europe",
     flag: "DE",
