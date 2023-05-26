@@ -35,11 +35,11 @@ function CompanyItem(props) {
                 d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z'
               />
             </svg>
-            <div className='text-xs md:text-base my-auto'>
+            <div className='text-xs md:text-base my-auto pr-3'>
               {city ? `${city}` : null}
               {stateCode ? `, ${stateCode} ` : null}
             </div>
-            <span className='my-auto pl-4 pr-2 w-10'>
+            <span className='my-auto w-10 pr-2'>
               {flag === "AU" ? (
                 <AU title='Australia' className='w-full' />
               ) : flag === "AR" ? (

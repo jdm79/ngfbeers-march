@@ -27,7 +27,7 @@ function CompaniesList(props) {
   return (
     <section className='bg-yellow-400 mb-10 pl-2 pr-2'>
       <div>
-        <CompanyCountry country='Argentina' amount={argCompanies.length} />
+        <CompanyCountry country='Argentine' amount={argCompanies.length} />
         <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
           {argCompanies.map((company) => (
             <CompanyItem

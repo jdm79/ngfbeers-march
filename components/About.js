@@ -31,15 +31,11 @@ export default function About() {
           , it's an easy route to take. But this beer should not be labelled
           'gluten-free'.
         </p>
-        <p className='p-5 font-courier font-extrabold	'>
-          Gluten-free beer is beer that is made without any gluten-containing
-          ingredients (looking at you, barley).
-        </p>
         <p className='p-5 font-courier'>
           Beer made with barley, and subsequently treated with enzymes to
           'remove' the gluten is - at best - gluten-reduced beer. The gluten is
           not removed, however, only made smaller. And scientists have shown
-          they are still toxic to many coeliacs and those affected by gluten
+          these are still toxic to many coeliacs and those affected by gluten
           (see research by Dr Laura K Allred in the USA, and Dr Michelle
           Colgrave from CSIRO Australia). And the current commercial test used
           to detect gluten in beer (R5 Competitive ELISA) is not accurate or
@@ -52,9 +48,12 @@ export default function About() {
             here
           </Link>
           . Yet these beers are labelled 'gluten-free' in Europe (and in most
-          other countries). In Australia, Canada and the USA (and several other
-          countries at the time of writing), they are labelled as
-          'gluten-reduced'.
+          other countries). In Argentina, Australia, Canada, New Zealand and the
+          USA, they are labelled as 'gluten-reduced'.
+        </p>
+        <p className='p-5 font-courier font-extrabold	'>
+          Gluten-free beer is beer that is made without any gluten-containing
+          ingredients.
         </p>
         <p className='p-5'>
           For more information, check out the{" "}
