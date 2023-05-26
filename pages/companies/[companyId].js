@@ -4,8 +4,9 @@ import DefaultLayout from "@/components/DefaultLayout";
 import SocialMediaShare from "@/components/SocialMediaShare";
 import BackButton from "@/components/BackButton";
 import { Icon } from "@iconify/react";
-import { US, GB, CA, FR, IT, DE, AU } from "country-flag-icons/react/3x2";
+import { US, GB, CA, FR, IT, DE, AU, AR } from "country-flag-icons/react/3x2";
 import Link from "next/link";
+import BuyButton from "@/components/BuyButton";
 
 function CompanyDetailPage() {
   const router = useRouter();
@@ -22,13 +23,15 @@ function CompanyDetailPage() {
         <BackButton href='/companies' />
 
         {/* beer company section here */}
-        <div className='container flex flex-col py-10 mx-auto sm:w-3/4 space-y-6 lg:py-16 lg:flex-row lg:items-center'>
+        <div className='container flex flex-col py-10 mx-auto sm:w-3/4 space-y-6 lg:py-16  lg:items-center'>
           <div>
             <div className='border-gray-900 bg:white border p-3 bg-gray-900 rounded-lg'>
               <div className='flex flex-row p-3 text-left text-base md:text-4xl lg:text-5xl xl:text-7xl bg-white mb-4 border border-black rounded-lg h-auto m-auto'>
                 <span className='my-auto pr-4 w-1/4'>
                   {company.flag === "AU" ? (
                     <AU title='Australia' className='w-full' />
+                  ) : company.flag === "AR" ? (
+                    <AR title='Argentina' className='w-full' />
                   ) : company.flag === "CA" ? (
                     <CA title='Canada' className='w-full' />
                   ) : company.flag === "FR" ? (
@@ -68,29 +71,13 @@ function CompanyDetailPage() {
                       />
                     </svg>
                     <span className='pl-2'>
-                      {company.country} (
-                      {company.city ? `${company.city}, ` : null}
-                      {company.state})
+                      {company.country}
+                      {company.city ? ` - ${company.city}` : null}
+                      {company.state ? `, ${company.state}` : null}
                     </span>
                   </div>
                 </div>
               </div>
-              {company.company_type ? (
-                <div className='mt-4'>
-                  <div className=' text-gray-700 border border-black p-5 bg-white rounded-lg mb-4'>
-                    <p>
-                      <span className='text-black'>Company type:</span>{" "}
-                      {company.company_type}
-                    </p>
-                    {company.founded ? (
-                      <p className='mt-4'>
-                        <span className='text-black'>Founded in</span>{" "}
-                        {company.founded}
-                      </p>
-                    ) : null}
-                  </div>
-                </div>
-              ) : null}
 
               <div className='flex mb-4 mt-4 border border-black bg-white p-5 rounded-lg'>
                 {/* general info section */}
@@ -103,27 +90,31 @@ function CompanyDetailPage() {
                       {/* <SocialMediaShare id={company.id} title={company.title} /> */}
                     </li>
 
-                    <li className='flex items-center -mx-2 text-gray-700 mt-4'>
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        strokeWidth={1.5}
-                        stroke='currentColor'
-                        className='w-6 h-6 mx-2 text-yellow-400'
-                      >
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          d='M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418'
-                        />
-                      </svg>
-                      <Link href={company.website_url} target='_blank'>
-                        <span className='animate-pulse hover:animate-none'>
-                          Website
-                        </span>
-                      </Link>
-                    </li>
+                    {company.website_url ? (
+                      <li className='flex items-center -mx-2 text-gray-700 mt-4'>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          fill='none'
+                          viewBox='0 0 24 24'
+                          strokeWidth={1.5}
+                          stroke='currentColor'
+                          className='w-6 h-6 mx-2 text-yellow-400'
+                        >
+                          <path
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            d='M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418'
+                          />
+                        </svg>
+                        <Link href={company.website_url} target='_blank'>
+                          <span className='animate-pulse hover:animate-none'>
+                            Website
+                          </span>
+                        </Link>
+                      </li>
+                    ) : (
+                      <div></div>
+                    )}
 
                     {company.insta_url ? (
                       <li className='flex items-center -mx-2 text-gray-700 mt-4'>
@@ -216,30 +207,29 @@ function CompanyDetailPage() {
                   ) : null}
                 </p>
               </div>
-              {company.taproom_url ? (
+
+              {company.company_type ? (
                 <div className='mt-4'>
-                  <p className='flex items-center my-5 text-gray-700'>
-                    <Link
-                      className=' text-black text-center bg-yellow-400 p-5 border rounded-lg border-black hover:bg-yellow-100 w-full'
-                      href={company.taproom_url}
-                      target='_blank'
-                    >
-                      {`Click here to see ${company.title}'s latest beer menu`}
-                      <svg
-                        aria-hidden='true'
-                        class='w-5 h-5 m-auto'
-                        fill='currentColor'
-                        viewBox='0 0 20 20'
-                        xmlns='http://www.w3.org/2000/svg'
-                      >
-                        <path
-                          fill-rule='evenodd'
-                          d='M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z'
-                          clip-rule='evenodd'
-                        ></path>
-                      </svg>
-                    </Link>
-                  </p>
+                  <div className=' text-gray-700 border border-black p-5 bg-white rounded-lg mb-4'>
+                    <p>
+                      <span className='text-black'>Company type:</span>{" "}
+                      {company.company_type}
+                    </p>
+                    {company.founded ? (
+                      <p className='mt-4'>
+                        <span className='text-black'>Founded in</span>{" "}
+                        {company.founded}
+                      </p>
+                    ) : null}
+                  </div>
+                </div>
+              ) : null}
+              {company.taproom_url ? (
+                <div className='mb-4'>
+                  <BuyButton
+                    url={company.taproom_url}
+                    text={`Buy some ${company.title} beer!`}
+                  />
                 </div>
               ) : null}
 
@@ -298,16 +288,13 @@ function CompanyDetailPage() {
                                 <span></span>
                               )}
                             </p>
-
-                            <p className='flex -mx-2 text-gray-700'>
-                              <Link
-                                className='text-2xl sm:text-3xl text-white text-center font-extrabold w-full bg-green-500 p-5 border rounded-lg border-black hover:sm:text-4xl mt-4'
-                                href={item.beer_url}
-                                target='_blank'
-                              >
-                                <span> {`Buy this beer!`}</span>
-                              </Link>
-                            </p>
+                            <div className='-mx-2 mt-3'>
+                              {" "}
+                              <BuyButton
+                                url={item.beer_url}
+                                text={`Buy this beer!`}
+                              />
+                            </div>
                           </div>
                         </div>
                       ))}

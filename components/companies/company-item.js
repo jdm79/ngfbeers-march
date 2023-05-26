@@ -1,7 +1,8 @@
 import Link from "next/link";
+import { US, GB, CA, FR, IT, DE, AU, AR } from "country-flag-icons/react/3x2";
 
 function CompanyItem(props) {
-  const { id, title, image, city, stateCode } = props;
+  const { id, title, image, city, stateCode, flag } = props;
   const companyLink = `/companies/${id}`;
 
   return (
@@ -35,9 +36,28 @@ function CompanyItem(props) {
               />
             </svg>
             <div className='text-xs md:text-base my-auto'>
-              {city ? `${city}, ` : null}
-              {stateCode ? `${stateCode} ` : null}
+              {city ? `${city}` : null}
+              {stateCode ? `, ${stateCode} ` : null}
             </div>
+            <span className='my-auto pl-4 pr-2 w-10'>
+              {flag === "AU" ? (
+                <AU title='Australia' className='w-full' />
+              ) : flag === "AR" ? (
+                <AR title='Argentina' className='w-full' />
+              ) : flag === "CA" ? (
+                <CA title='Canada' className='w-full' />
+              ) : flag === "FR" ? (
+                <FR title='France' className='w-full' />
+              ) : flag === "DE" ? (
+                <DE title='Germany' className='w-full' />
+              ) : flag === "IT" ? (
+                <IT title='Italy' className='w-full' />
+              ) : flag === "GB" ? (
+                <GB title='United Kingdom' className='w-full' />
+              ) : flag === "US" ? (
+                <US title='United States' className='w-full' />
+              ) : null}
+            </span>
           </div>
         </div>
       </div>

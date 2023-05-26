@@ -1,25 +1,50 @@
 import CompanyItem from "./company-item";
 import SocialMediaShare from "../../components/SocialMediaShare";
 import CompanyCountry from "../CompanyCountry";
+import { US, GB, CA, FR, IT, DE, AU, AR } from "country-flag-icons/react/3x2";
 import Link from "next/link";
 
 function CompaniesList(props) {
   const { items } = props;
-  const data = items.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0))
+  const data = items.sort((a, b) =>
+    a.title > b.title ? 1 : b.title > a.title ? -1 : 0
+  );
 
   const title = "Coeliac-safe beers";
-  const ausCompanies = items.filter(company => company.country == "Australia")
-  const canCompanies = items.filter(company => company.country == "Canada")
-  const fraCompanies = items.filter(company => company.country == "France")
-  const deCompanies = items.filter(company => company.country == "Germany")
-  const itCompanies = items.filter(company => company.country == "Italy")
-  const ukCompanies = items.filter(company => company.flag == "GB")
-  const usaCompanies = data.filter(company => company.country == "USA")
-
+  const argCompanies = items.filter(
+    (company) => company.country == "Argentina"
+  );
+  const ausCompanies = items.filter(
+    (company) => company.country == "Australia"
+  );
+  const canCompanies = items.filter((company) => company.country == "Canada");
+  const fraCompanies = items.filter((company) => company.country == "France");
+  const deCompanies = items.filter((company) => company.country == "Germany");
+  const itCompanies = items.filter((company) => company.country == "Italy");
+  const ukCompanies = items.filter((company) => company.flag == "GB");
+  const usaCompanies = data.filter((company) => company.country == "USA");
 
   return (
     <section className='bg-yellow-400 mb-10 pl-2 pr-2'>
       <div>
+        <CompanyCountry country='Argentina' amount={argCompanies.length} />
+        <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
+          {argCompanies.map((company) => (
+            <CompanyItem
+              key={company.id}
+              id={company.id}
+              image={company.image}
+              flag={company.flag}
+              title={company.title}
+              country={company.country}
+              beers={company.beers}
+              city={company.city}
+              state={company.state}
+              stateCode={company.stateCode}
+            />
+          ))}
+        </ul>
+
         <CompanyCountry country='Australian' amount={ausCompanies.length} />
         <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
           {ausCompanies.map((company) => (
