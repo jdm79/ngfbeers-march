@@ -26,54 +26,85 @@ function CompanyDetailPage() {
         <div className='container flex flex-col py-10 mx-auto sm:w-3/4 space-y-6 lg:py-16  lg:items-center'>
           <div>
             <div className='border-gray-900 bg:white border p-3 bg-gray-900 rounded-lg'>
-              <div className='flex flex-row p-3 text-left text-base md:text-4xl lg:text-5xl xl:text-7xl bg-white mb-4 border border-black rounded-lg h-auto m-auto'>
-                <span className='my-auto pr-4 w-1/4'>
+              <div className='flex flex-row p-3 text-base md:text-4xl lg:text-5xl xl:text-7xl bg-white mb-4 border border-black rounded-lg h-auto m-auto'>
+                <div className='w-1/4 p-3 md:w-1/4 m-auto'>
                   <Flag flag={company.flag} />
-                </span>
-                <div className='my-auto w-3/4'>{company.title} </div>
-              </div>
-              <div className='mt-4'>
-                <div className=' text-gray-700 border bg-white border-black p-5 rounded-lg mb-4'>
-                  <div className='w-auto flex flex-row'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      fill='none'
-                      viewBox='0 0 24 24'
-                      strokeWidth={1.5}
-                      stroke='currentColor'
-                      className='w-6 h-6 text-yellow-400'
-                    >
-                      <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        d='M15 10.5a3 3 0 11-6 0 3 3 0 016 0z'
-                      />
-                      <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z'
-                      />
-                    </svg>
-                    <span className='pl-2'>
-                      {company.country}
-                      {company.city ? ` - ${company.city}` : null}
-                      {company.state ? `, ${company.state}` : null}
-                    </span>
-                  </div>
+                </div>
+                <div className='w-3/4 p-3 md:w-1/4 m-auto'>
+                  <img
+                    className='w-auto rounded-full'
+                    src={`/${company.image}`}
+                    alt={company.title}
+                  />
+                </div>
+                <div className='w-1/4 p-3 md:w-1/4 m-auto'>
+                  <Flag flag={company.flag} />
                 </div>
               </div>
+              <div className=' p-3 text-center text-2xl md:text-4xl lg:text-5xl xl:text-7xl bg-white mb-4 border border-black rounded-lg h-auto'>
+                <div>{company.title}</div>
+                <div className='text-sm md:text-base'>
+                  {" "}
+                  {company.founded ? (
+                    <p className=''>
+                      <span className='text-black'>(Founded in</span>{" "}
+                      {company.founded})
+                    </p>
+                  ) : null}
+                </div>
+              </div>
+              <div className='mt-4'>
+                <p className=' text-black font-extrabold border border-black p-5 bg-white rounded-lg mb-4'>
+                  <span>{company.description}</span>
+                  {company.description2 ? (
+                    <p className='mt-4'>
+                      {" "}
+                      <span>{company.description2}</span>
+                    </p>
+                  ) : null}
 
-              <div className='flex mb-4 mt-4 border border-black bg-white p-5 rounded-lg'>
-                {/* general info section */}
-                {/* <div class='w-1/3'></div> */}
-                {/* social media section */}
-                <div class='w-1/2 md:w-1/4'>
-                  <ul className='space-y-4 md:space-y-4'>
-                    <li className='flex items-center -mx-2 text-gray-700 '>
-                      {/* put social media share here */}
-                      {/* <SocialMediaShare id={company.id} title={company.title} /> */}
+                  {company.description3 ? (
+                    <p className='mt-4'>
+                      <span>{company.description3}</span>
+                    </p>
+                  ) : null}
+
+                  {company.description4 ? (
+                    <p className='mt-4'>
+                      <span>{company.description4}</span>
+                    </p>
+                  ) : null}
+                </p>
+              </div>
+              <div className='mb-4 mt-4 border border-black bg-white p-5 rounded-lg'>
+                <div className='w-full'>
+                  <ul>
+                    <li className='flex items-center text-gray-700 mt-4'>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        fill='none'
+                        viewBox='0 0 24 24'
+                        strokeWidth={1.5}
+                        stroke='currentColor'
+                        className='w-5 h-5 text-yellow-400'
+                      >
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          d='M15 10.5a3 3 0 11-6 0 3 3 0 016 0z'
+                        />
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z'
+                        />
+                      </svg>
+                      <span className='pl-2'>
+                        {company.city ? `${company.city}` : null}
+                        {company.state ? `, ${company.state}` : null}
+                        {company.country ? ` - ${company.country}` : null}
+                      </span>
                     </li>
-
                     {company.website_url ? (
                       <li className='flex items-center -mx-2 text-gray-700 mt-4'>
                         <svg
@@ -82,7 +113,7 @@ function CompanyDetailPage() {
                           viewBox='0 0 24 24'
                           strokeWidth={1.5}
                           stroke='currentColor'
-                          className='w-6 h-6 mx-2 text-yellow-400'
+                          className='w-5 h-5 mx-2 text-yellow-400'
                         >
                           <path
                             strokeLinecap='round'
@@ -104,7 +135,7 @@ function CompanyDetailPage() {
                       <li className='flex items-center -mx-2 text-gray-700 mt-4'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
-                          className='w-6 h-6 mx-2 text-yellow-400'
+                          className='w-5 h-5 mx-2 text-yellow-400'
                           fill='currentColor'
                           viewBox='0 0 24 24'
                         >
@@ -123,7 +154,7 @@ function CompanyDetailPage() {
                       <li className='flex items-center -mx-2 text-gray-700 mt-4'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
-                          className='w-6 h-6 mx-2 text-yellow-400'
+                          className='w-5 h-5 mx-2 text-yellow-400'
                           // style="color: #1769ff"
                           fill='currentColor'
                           viewBox='0 0 24 24'
@@ -158,38 +189,6 @@ function CompanyDetailPage() {
                     )}
                   </ul>
                 </div>
-                {/* logo section */}
-                <div className='w-1/2 m-auto'>
-                  <img
-                    className='w-auto rounded-full'
-                    src={`/${company.image}`}
-                    alt={company.title}
-                  />
-                </div>
-              </div>
-
-              <div className='mt-4'>
-                <p className=' text-gray-700 border border-black p-5 bg-white rounded-lg mb-4'>
-                  <span>{company.description}</span>
-                  {company.description2 ? (
-                    <p className='mt-4'>
-                      {" "}
-                      <span>{company.description2}</span>
-                    </p>
-                  ) : null}
-
-                  {company.description3 ? (
-                    <p className='mt-4'>
-                      <span>{company.description3}</span>
-                    </p>
-                  ) : null}
-
-                  {company.description4 ? (
-                    <p className='mt-4'>
-                      <span>{company.description4}</span>
-                    </p>
-                  ) : null}
-                </p>
               </div>
 
               {company.company_type ? (
@@ -199,12 +198,6 @@ function CompanyDetailPage() {
                       <span className='text-black'>Company type:</span>{" "}
                       {company.company_type}
                     </p>
-                    {company.founded ? (
-                      <p className='mt-4'>
-                        <span className='text-black'>Founded in</span>{" "}
-                        {company.founded}
-                      </p>
-                    ) : null}
                   </div>
                 </div>
               ) : null}
