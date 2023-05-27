@@ -1,5 +1,15 @@
 import React from "react";
-import { US, GB, CA, FR, IT, DE, AU, AR } from "country-flag-icons/react/3x2";
+import {
+  US,
+  GB,
+  CA,
+  FR,
+  IT,
+  DE,
+  AU,
+  AR,
+  LU,
+} from "country-flag-icons/react/3x2";
 
 function Flag({ flag }) {
   return (
@@ -19,6 +29,8 @@ function Flag({ flag }) {
         <IT title='Italy' className='w-full' />
       ) : flag === "GB" ? (
         <GB title='United Kingdom' className='w-full' />
+      ) : flag === "LU" ? (
+        <LU title='Luxembourg' className='w-full' />
       ) : flag === "US" ? (
         <US title='United States' className='w-full' />
       ) : null}
