@@ -30,142 +30,54 @@ function CompaniesList(props) {
         <CompanyCountry country='Argentine' amount={argCompanies.length} />
         <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
           {argCompanies.map((company) => (
-            <CompanyItem
-              key={company.id}
-              id={company.id}
-              image={company.image}
-              flag={company.flag}
-              title={company.title}
-              country={company.country}
-              beers={company.beers}
-              city={company.city}
-              state={company.state}
-              stateCode={company.stateCode}
-            />
+            <CompanyItem key={company.id} {...company} />
           ))}
         </ul>
 
         <CompanyCountry country='Australian' amount={ausCompanies.length} />
         <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
           {ausCompanies.map((company) => (
-            <CompanyItem
-              key={company.id}
-              id={company.id}
-              image={company.image}
-              flag={company.flag}
-              title={company.title}
-              country={company.country}
-              beers={company.beers}
-              city={company.city}
-              state={company.state}
-              stateCode={company.stateCode}
-            />
+            <CompanyItem key={company.id} {...company} />
           ))}
         </ul>
 
         <CompanyCountry country='Canadian' amount={canCompanies.length} />
         <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
           {canCompanies.map((company) => (
-            <CompanyItem
-              key={company.id}
-              id={company.id}
-              image={company.image}
-              flag={company.flag}
-              title={company.title}
-              country={company.country}
-              beers={company.beers}
-              city={company.city}
-              state={company.state}
-              stateCode={company.stateCode}
-            />
+            <CompanyItem key={company.id} {...company} />
           ))}
         </ul>
         <CompanyCountry country='French' amount={fraCompanies.length} />
         <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
           {fraCompanies.map((company) => (
-            <CompanyItem
-              key={company.id}
-              id={company.id}
-              image={company.image}
-              flag={company.flag}
-              title={company.title}
-              country={company.country}
-              beers={company.beers}
-              city={company.city}
-              state={company.state}
-              stateCode={company.stateCode}
-            />
+            <CompanyItem key={company.id} {...company} />
           ))}
         </ul>
         <CompanyCountry country='German' amount={deCompanies.length} />
         <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
           {deCompanies.map((company) => (
-            <CompanyItem
-              key={company.id}
-              id={company.id}
-              image={company.image}
-              flag={company.flag}
-              title={company.title}
-              country={company.country}
-              beers={company.beers}
-              city={company.city}
-              state={company.state}
-              stateCode={company.stateCode}
-            />
+            <CompanyItem key={company.id} {...company} />
           ))}
         </ul>
 
         <CompanyCountry country='Italian' amount={itCompanies.length} />
         <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
           {itCompanies.map((company) => (
-            <CompanyItem
-              key={company.id}
-              id={company.id}
-              image={company.image}
-              flag={company.flag}
-              title={company.title}
-              country={company.country}
-              beers={company.beers}
-              city={company.city}
-              state={company.state}
-              stateCode={company.stateCode}
-            />
+            <CompanyItem key={company.id} {...company} />
           ))}
         </ul>
 
         <CompanyCountry country='UK' amount={ukCompanies.length} />
         <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
           {ukCompanies.map((company) => (
-            <CompanyItem
-              key={company.id}
-              id={company.id}
-              image={company.image}
-              flag={company.flag}
-              title={company.title}
-              country={company.country}
-              beers={company.beers}
-              city={company.city}
-              state={company.state}
-              stateCode={company.stateCode}
-            />
+            <CompanyItem key={company.id} {...company} />
           ))}
         </ul>
 
         <CompanyCountry country='USA' amount={usaCompanies.length} />
         <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
           {usaCompanies.map((company) => (
-            <CompanyItem
-              key={company.id}
-              id={company.id}
-              image={company.image}
-              flag={company.flag}
-              title={company.title}
-              country={company.country}
-              beers={company.beers}
-              city={company.city}
-              state={company.state}
-              stateCode={company.stateCode}
-            />
+            <CompanyItem key={company.id} {...company} />
           ))}
         </ul>
       </div>
