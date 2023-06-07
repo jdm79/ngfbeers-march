@@ -7,7 +7,7 @@ export default function About() {
 
   return (
     <div className='w-screen text-black bg-yellow-400 mx-auto px-2 sm:px-0'>
-      <div className='justify-center border-2 border-black rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
+      <div className='justify-center border-2 border-black font-extrabold rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
         <p className='px-5 py-2 font-courier'>
           Contrary to what you might think, gluten-free beer in Europe and many
           other countries which is safe for coeliacs/gluten intolerant is rarely

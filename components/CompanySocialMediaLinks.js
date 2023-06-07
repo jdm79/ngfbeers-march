@@ -8,7 +8,7 @@ function CompanySocialMediaLinks(props) {
     <div className='mb-4 mt-4 border border-black bg-white p-5 rounded-lg'>
       <div className='w-full'>
         <ul>
-          <li className='flex items-center text-gray-700 mt-4'>
+          <li className='flex items-center text-black font-extrabold  mt-4'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
