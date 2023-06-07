@@ -10,21 +10,14 @@ function Hero(props) {
     <div className='w-screen bg-gradient-to-r bg-yellow-400 text-black scroll-smooth'>
       <div className='mt-10 relative'>
         <div className='text-center text-1xl lg:text-5xl m-auto md:ml-20 md:mr-20 md:mt-10'>
-          <div>A showcase of companies</div>
-          <div>producing naturally </div>
-          <div>gluten-free beers</div>
-
-          <Link href='/companies'>
-            <img
-              src='/logo-ngfbeers.png'
-              className='m-auto mt-10 w-1/2 sm:w-1/5'
-              alt='ngfbeers logo - a circle inside of which is a black beer glass with foam spilling over. the words ngfbeers outside the circle'
-            />
-          </Link>
           <div className='w-auto m-auto'>
-            <div className='text-base text-center mt-10 bg-white p-4 border-2 border-black m-auto'>
-              {items.length} companies listed here selling naturally gluten-free
-              beer
+            <div className='text-base text-center mt-10 bg-white p-4 border-2 border-black mx-2 sm:m-auto'>
+              <h1 className='mb-3'>
+                We only list gluten-free beers made without barley (or any other
+                gluten-containing ingredients).
+              </h1>
+              There are now {items.length} companies listed here selling
+              naturally gluten-free beer
               <FlagList />{" "}
             </div>
           </div>
