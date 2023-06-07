@@ -21,7 +21,7 @@ function CompanyDetailPage() {
   return (
     <DefaultLayout>
       <section className=' bg-yellow-400 px-2'>
-        <BackButton href='/companies' />
+        {/* <BackButton href='/companies' /> */}
 
         {/* beer company section here */}
         <div className='container flex flex-col py-10 mx-auto sm:w-3/4 space-y-6 lg:py-16  lg:items-center'>
