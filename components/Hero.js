@@ -11,7 +11,7 @@ function Hero(props) {
       <div className='mt-10 relative'>
         <div className='text-center text-1xl lg:text-5xl m-auto md:ml-20 md:mr-20 md:mt-10'>
           <div className='w-auto m-auto'>
-            <div className='text-base text-center mt-10 bg-white p-4 border-2 border-black mx-2 sm:m-auto'>
+            <div className='text-base text-center font-extrabold mt-10 bg-white p-4 border-2 border-black mx-2 sm:m-auto'>
               <h1 className='mb-3'>
                 We only list gluten-free beers made without barley (or any other
                 gluten-containing ingredients).
