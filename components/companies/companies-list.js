@@ -22,6 +22,9 @@ function CompaniesList(props) {
   const fraCompanies = items.filter((company) => company.country == "France");
   const deCompanies = items.filter((company) => company.country == "Germany");
   const itCompanies = items.filter((company) => company.country == "Italy");
+  const nzCompanies = items.filter(
+    (company) => company.country == "New Zealand"
+  );
   const ukCompanies = items.filter((company) => company.flag == "GB");
   const usaCompanies = data.filter((company) => company.country == "USA");
 
@@ -79,6 +82,13 @@ function CompaniesList(props) {
         <CompanyCountry country='Italian' amount={itCompanies.length} />
         <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
           {itCompanies.map((company) => (
+            <CompanyItem key={company.id} {...company} />
+          ))}
+        </ul>
+
+        <CompanyCountry country='New Zealand' amount={nzCompanies.length} />
+        <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
+          {nzCompanies.map((company) => (
             <CompanyItem key={company.id} {...company} />
           ))}
         </ul>

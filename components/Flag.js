@@ -9,6 +9,7 @@ import {
   AU,
   AR,
   LU,
+  NZ,
 } from "country-flag-icons/react/3x2";
 
 function Flag({ flag }) {
@@ -31,6 +32,8 @@ function Flag({ flag }) {
         <GB title='United Kingdom' className='w-full' />
       ) : flag === "LU" ? (
         <LU title='Luxembourg' className='w-full' />
+      ) : flag === "NZ" ? (
+        <NZ title='New Zealand' className='w-full' />
       ) : flag === "US" ? (
         <US title='United States' className='w-full' />
       ) : null}

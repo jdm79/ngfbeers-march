@@ -1,4 +1,14 @@
-import { US, GB, CA, FR, IT, DE, AU, AR } from "country-flag-icons/react/3x2";
+import {
+  US,
+  GB,
+  CA,
+  FR,
+  IT,
+  DE,
+  AU,
+  AR,
+  NZ,
+} from "country-flag-icons/react/3x2";
 
 function FlagList() {
   return (
@@ -10,6 +20,7 @@ function FlagList() {
       <FR title='France' className='w-6' />
       <DE title='Germany' className='w-6' />
       <IT title='Italy' className='w-6' />
+      <NZ title='New Zealand' className='w-6' />
       <GB title='United Kingdom' className='w-6' />
       <US title='United States' className='w-6' />
     </div>
