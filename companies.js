@@ -1783,9 +1783,9 @@ const companies = [
     fb_url: "https://www.facebook.com/scottsbrewingco/",
     untappd_url: "https://untappd.com/Scotts_Brewing_Co",
     founded: "2007",
-    description: `In their own words: "Our industrious, inventive an independent craft brewery produces new zealand’s only gluten free beer
+    description: `In their own words: "Our industrious, inventive an independent craft brewery produces New Zealand’s only gluten free beer
 
-    alongside an ever changing array of craft beer made with local grain, south island hops & southern alpine
+    alongside an ever changing array of craft beer made with local grain, South Island hops & southern alpine
     
     water – the purest ingredients to make premium craft beer."`,
     description2: ``,
