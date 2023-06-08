@@ -7,7 +7,7 @@ function CompanySocialMediaLinks(props) {
   return (
     <div className='mb-4 mt-4 border border-black bg-white p-5 rounded-lg'>
       <div className='w-full'>
-        <ul>
+        <ul className='font-extrabold'>
           <li className='flex items-center text-black font-extrabold  mt-4'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
