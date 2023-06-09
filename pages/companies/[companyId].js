@@ -24,7 +24,7 @@ function CompanyDetailPage() {
         {/* <BackButton href='/companies' /> */}
 
         {/* beer company section here */}
-        <div className='container flex flex-col py-2 font-extrabold mx-auto sm:w-3/4 space-y-6 lg:py-16  lg:items-center'>
+        <div className='container flex flex-col py-2 mx-auto sm:w-3/4 space-y-6 lg:py-16  lg:items-center'>
           <div>
             <div className='border-gray-900 bg:white border p-3 bg-gray-900 rounded-lg'>
               <div className='flex flex-row p-3 text-base font-extrabold md:text-4xl lg:text-5xl xl:text-7xl bg-white mb-4 border border-black rounded-lg h-auto m-auto'>

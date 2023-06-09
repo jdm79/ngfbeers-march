@@ -15,7 +15,6 @@ function LinkDetailPage() {
   return (
     <DefaultLayout>
       <section className='bg-yellow-400 text-gray-700 px-2'>
-        <BackButton href='/links' />
         <div className='container flex flex-col px-6 py-6 mx-auto space-y-2 lg:py-4 lg:flex-row lg:items-center bg-[color:var(--bg-eggshell)] mt-10 mb-10 border border-black rounded-lg'>
           <div>
             <div>
