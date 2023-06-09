@@ -1,6 +1,6 @@
 const companies = [
   {
-    id: "e1",
+    id: "alt-grain-co",
     title: "AltgrainCo",
     website_url: "https://altgrain.co.uk/",
     insta_url: "https://www.instagram.com/altgrainco/",
@@ -52,7 +52,7 @@ const companies = [
     ],
   },
   {
-    id: "e2",
+    id: "greens-gluten-free-beer",
     title: "Green's",
     website_url: "https://www.glutenfreebeers.co.uk/",
     insta_url: "https://www.instagram.com/greensbeers/",
@@ -137,7 +137,7 @@ const companies = [
     ],
   },
   {
-    id: "e3",
+    id: "jimbrew-brewing-company",
     title: "JimBrew Brewing Company",
     website_url: "https://www.jimbrew.co.uk/",
     insta_url: "https://www.instagram.com/jimbrew_brewing/",
@@ -167,7 +167,7 @@ const companies = [
     beers: [],
   },
   {
-    id: "e4",
+    id: "moulin-des-moines",
     title: "Moulin des Moines",
     website_url:
       "https://www.naturline.fr/boutique/Boissons/Bieres-cidres-panaches-bieres-sans-alcool/Biere-gluten-free-33cl-bio-3791.html",
@@ -200,7 +200,7 @@ const companies = [
     ],
   },
   {
-    id: "e5",
+    id: "riedenburger",
     title: "Riedenburger",
     website_url: "https://shop.riedenburger.de/",
     insta_url: "https://www.instagram.com/riedenburgerbrauhaus/",
@@ -242,7 +242,7 @@ const companies = [
     ],
   },
   {
-    id: "e6",
+    id: "schitzer-braeu",
     title: "Schnitzer Bräu",
     website_url: "https://www.schnitzer.eu/",
     fb_url: "https://www.facebook.com/SchnitzerBraeu/",
@@ -273,7 +273,7 @@ const companies = [
     ],
   },
   {
-    id: "e7",
+    id: "stirone-barley-free",
     title: "Stirone Barley Free",
     website_url: "https://www.stirone.com/",
     insta_url: "https://www.instagram.com/stironebarleyfree/",
@@ -347,7 +347,7 @@ const companies = [
     ],
   },
   {
-    id: "e8",
+    id: "suspect-brewing",
     title: "Suspect Brewing",
     website_url: "https://suspectbrewing.co.uk/",
     insta_url: "https://www.instagram.com/suspect_brewing/",
@@ -379,7 +379,7 @@ const companies = [
     ],
   },
   {
-    id: "e9",
+    id: "alt-brew",
     title: "ALT Brew",
     website_url: "https://www.altbrew.com/",
     insta_url: "https://www.instagram.com/altbrew/",
@@ -404,7 +404,7 @@ const companies = [
     taproom_url: `https://www.altbrew.com/taproom`,
   },
   {
-    id: "e10",
+    id: "aurochs-brewing-co",
     title: "Auroch's Brewing Co.",
     website_url: "https://aurochsbrewing.com/",
     insta_url: "https://www.instagram.com/aurochsbrewing/",
@@ -433,7 +433,7 @@ const companies = [
     taproom_url: "https://aurochsbrewing.com/beers/gluten-free-beers",
   },
   {
-    id: "e11",
+    id: "beliveau-farm",
     title: "Beliveau Farm",
     website_url: "https://www.beliveaufarm.com/brewery",
     insta_url: "https://www.instagram.com/beliveaufarmwinery/",
@@ -464,7 +464,7 @@ const companies = [
     taproom_url: "https://www.beliveaufarm.com/brewery",
   },
   {
-    id: "e12",
+    id: "bierly-brewing",
     title: "Bierly Brewing",
     website_url: "https://www.bierlybrewing.com/",
     insta_url: "https://www.instagram.com/bierlybrewing/",
@@ -491,7 +491,7 @@ const companies = [
     taproom_url: "https://www.bierlybrewing.com/our-beers/",
   },
   {
-    id: "e13",
+    id: "brewery-nyx",
     title: "Brewery NYX",
     website_url: "https://www.brewerynyx.com/",
     insta_url: "https://www.instagram.com/brewerynyx/",
@@ -521,7 +521,7 @@ const companies = [
     taproom_url: "https://www.bierlybrewing.com/our-beers/",
   },
   {
-    id: "e14",
+    id: "buck-wild-brewing",
     title: "Buck Wild Brewing",
     website_url: "https://www.buckwildbrew.com/",
     insta_url: "https://www.instagram.com/buckwildbrewing/",
@@ -555,7 +555,7 @@ const companies = [
     taproom_url: "https://www.buckwildbrew.com/our-beer",
   },
   {
-    id: "e15",
+    id: "burning-brothers-brewing",
     title: "Burning Brothers Brewing",
     website_url: "https://www.burnbrosbrew.com/",
     insta_url: "https://www.instagram.com/burnbrosbrew/",
@@ -588,7 +588,7 @@ const companies = [
     taproom_url: "https://www.burnbrosbrew.com/beer/beer-styles/",
   },
   {
-    id: "e16",
+    id: "dark-hills-brewery",
     title: "Dark Hills Brewery",
     website_url: "https://www.darkhillsbrew.com/",
     insta_url: "",
@@ -620,7 +620,7 @@ const companies = [
     taproom_url: "https://www.darkhillsbrew.com/gallery.html",
   },
   {
-    id: "e17",
+    id: "divine-science-brewing",
     title: "Divine Science Brewing",
     website_url: "https://divinesciencebrewing.com/",
     insta_url: "https://www.instagram.com/divinesciencebrewing/?hl=en",
@@ -652,7 +652,7 @@ const companies = [
     taproom_url: "https://divinesciencebrewing.com/craft-beers/",
   },
   {
-    id: "e18",
+    id: "doc-luces",
     title: "Dos Luces",
     website_url: "https://dosluces.com/",
     insta_url: "https://www.instagram.com/doslucesbrewery/",
@@ -691,7 +691,7 @@ const companies = [
     taproom_url: "https://dosluces.com/brews/",
   },
   {
-    id: "e19",
+    id: "eckert-malting-and-brewing",
     title: "Eckert Malting & Brewing",
     website_url: "https://eckertmaltingandbrewing.com/",
     insta_url: "",
@@ -724,7 +724,7 @@ const companies = [
     taproom_url: "https://eckertmaltingandbrewing.com/brewing/",
   },
   {
-    id: "e20",
+    id: "evasion-brewing",
     title: "Evasion Brewing",
     website_url: "https://evasionbrewing.com/home",
     insta_url: "https://www.instagram.com/evasionbrewing/?hl=en",
@@ -762,7 +762,7 @@ const companies = [
     taproom_url: "https://evasionbrewing.com/store",
   },
   {
-    id: "e21",
+    id: "ghostfish-brewing-company",
     title: "Ghostfish Brewing Company",
     website_url: "https://ghostfishbrewing.com/",
     insta_url: "https://www.instagram.com/ghostfishbrewco/",
@@ -791,7 +791,7 @@ const companies = [
     taproom_url: "https://ghostfishbrewing.com/beers/",
   },
   {
-    id: "e22",
+    id: "glutenberg",
     title: "Glutenberg",
     website_url: "https://glutenberg.ca/en",
     insta_url: "https://www.instagram.com/glutenbergbeer/",
@@ -831,7 +831,7 @@ const companies = [
     taproom_url: "https://glutenberg.ca/en/products",
   },
   {
-    id: "e23",
+    id: "grey-fox-brewing",
     title: "Grey Fox Brewing",
     website_url: "https://www.greyfoxbrewing.com/",
     insta_url: "https://www.instagram.com/greyfoxbrewing",
@@ -866,7 +866,7 @@ const companies = [
     taproom_url: "",
   },
   {
-    id: "e24",
+    id: "ground-breaker-brewing",
     title: "Ground Breaker Brewing",
     website_url: "https://groundbreakerbrewing.com/",
     insta_url: "https://www.instagram.com/groundbreakerbrewing/",
@@ -900,7 +900,7 @@ const companies = [
     taproom_url: "https://groundbreakerbrewing.com/our-gluten-free-brewery",
   },
   {
-    id: "e25",
+    id: "heathens-brewing",
     title: "Heathen's Brewing",
     website_url: "https://heathensbrewingshop.square.site/",
     insta_url: "https://www.instagram.com/heathensbrewing",
@@ -927,7 +927,7 @@ const companies = [
     taproom_url: "https://heathensbrewingshop.square.site/",
   },
   {
-    id: "e26",
+    id: "holidaily-brewing",
     title: "Holidaily Brewing",
     website_url: "https://holidailybrewing.com/",
     insta_url: "https://www.instagram.com/holidailybrew/",
@@ -957,7 +957,7 @@ const companies = [
     taproom_url: "https://holidailybrewing.com/beers/",
   },
   {
-    id: "e27",
+    id: "lucky-pigeon-brewing-co",
     title: "Lucky Pigeon Brewing Co.",
     website_url: "https://www.luckypigeonbrewing.com/",
     insta_url: "https://www.instagram.com/luckypigeonbrewing/",
@@ -982,7 +982,7 @@ const companies = [
     taproom_url: "https://www.luckypigeonbrewing.com/?page_id=146",
   },
   {
-    id: "e28",
+    id: "moonshrimp-brewing",
     title: "Moonshrimp Brewing",
     website_url: "https://www.moonshrimpbrewing.com/",
     insta_url: "https://www.instagram.com/moonshrimp_brewing/",
@@ -1028,7 +1028,7 @@ const companies = [
     taproom_url: "https://www.moonshrimpbrewing.com/beers",
   },
   {
-    id: "e29",
+    id: "mutantis-brewery-and-bottle-shop",
     title: "Mutantis Brewery & Bottle Shop",
     website_url: "https://mutantis.beer/",
     insta_url: "https://www.instagram.com/mutantisbeer/",
@@ -1072,7 +1072,7 @@ const companies = [
     taproom_url: "https://mutantis.beer/beers",
   },
   {
-    id: "e30",
+    id: "necromantic-brew-co",
     title: "Necromantic Brew Co.",
     website_url: "http://www.necromanticbrewco.com/",
     insta_url: "https://www.instagram.com/necromanticbrewco/",
@@ -1103,7 +1103,7 @@ const companies = [
     taproom_url: "http://www.necromanticbrewco.com/",
   },
   {
-    id: "e31",
+    id: "neff-brewing",
     title: "NEFF Brewing",
     website_url: "https://www.neffbrewing.com/",
     insta_url: "https://www.instagram.com/neffbrewing/",
@@ -1132,7 +1132,7 @@ const companies = [
     taproom_url: "https://www.neffbrewing.com/our-beers/",
   },
   {
-    id: "e32",
+    id: "obrien-beer",
     title: "O'Brien Beer",
     website_url: "https://www.rebellionbrewing.com.au/",
     insta_url: "https://www.instagram.com/obrienbeer/",
@@ -1159,7 +1159,7 @@ const companies = [
     taproom_url: "https://www.rebellionbrewing.com.au/shop/",
   },
   {
-    id: "e33",
+    id: "otherwise-brewing",
     title: "Otherwise Brewing",
     website_url: "https://www.otherwisebrewing.com/",
     insta_url: "https://www.instagram.com/otherwisebrewing/",
@@ -1191,7 +1191,7 @@ const companies = [
     taproom_url: "https://www.otherwisebrewing.com/beers",
   },
   {
-    id: "e34",
+    id: "red-leaf-gluten-free-brewing",
     title: "Red Leaf Gluten Free Brewing",
     website_url: "https://linkin.bio/redleafgfbrewing",
     insta_url: "https://www.instagram.com/redleafgfbrewing/",
@@ -1219,7 +1219,7 @@ const companies = [
     taproom_url: "https://linkin.bio/redleafgfbrewing",
   },
   {
-    id: "e35",
+    id: "twobays-brewing-co",
     title: "TWØBAYS Brewing Co.",
     website_url: "https://www.twobays.beer/",
     insta_url: "https://www.instagram.com/twobaysbeer/",
@@ -1246,7 +1246,7 @@ const companies = [
     taproom_url: "https://www.twobays.beer/pages/gluten-free-beer",
   },
   {
-    id: "e36",
+    id: "departed-soles-brewing-company",
     title: "Departed Soles Brewing Company",
     website_url: "https://www.departedsoles.com/gluten-free-beers",
     insta_url: "https://www.instagram.com/departedsoles/",
@@ -1273,7 +1273,7 @@ const companies = [
     taproom_url: "https://www.departedsoles.com/gluten-free-beers",
   },
   {
-    id: "e37",
+    id: "port-rexton-brewing",
     title: "Port Rexton Brewing",
     website_url: "https://www.portrextonbrewing.com/",
     insta_url: "https://www.instagram.com/portrextonbrew/",
@@ -1301,7 +1301,7 @@ const companies = [
     taproom_url: "https://www.portrextonbrewing.com/",
   },
   {
-    id: "e38",
+    id: "bards-tale-beer-company",
     title: "Bard's Tale Beer Company",
     website_url: "https://bardsbeer.com/",
     insta_url: "https://www.instagram.com/bardsbeer/",
@@ -1329,7 +1329,7 @@ const companies = [
     taproom_url: "https://bardsbeer.com/find-bards/",
   },
   {
-    id: "e39",
+    id: "wild-polly-brewing-co",
     title: "Wild Polly Brewing Co.",
     website_url: "https://wildpollybrewingco.com.au/",
     insta_url: "https://www.instagram.com/wild_polly_brews/",
@@ -1356,7 +1356,7 @@ const companies = [
     taproom_url: "https://wildpollybrewingco.com.au/our-beers/",
   },
   // {
-  //   id: "e40",
+  //   id: "atk-brews",
   //   title: "ATK Brews",
   //   website_url: "https://atkbrews.com/",
   //   insta_url: "https://www.instagram.com/atkbrews/",
@@ -1381,7 +1381,7 @@ const companies = [
   //   taproom_url: "",
   // },
   {
-    id: "e41",
+    id: "sobah-beverages",
     title: "Sobah Beverages",
     website_url: "https://sobah.com.au/",
     insta_url: "https://www.instagram.com/sobahbeverages/?hl=en",
@@ -1427,7 +1427,7 @@ const companies = [
     ],
   },
   {
-    id: "e42",
+    id: "liebharts-privatbrauerei",
     title: "Liebharts Privatbrauerei",
     website_url:
       "http://www.residenz-biere.de/de/bio-biere/glutenfreie-biere.html",
@@ -1498,7 +1498,7 @@ const companies = [
     ],
   },
   {
-    id: "e43",
+    id: "gauther-cerveza-de-mijo",
     title: "Gauther - Cerveza de Mijo",
     website_url: "",
     insta_url: "https://www.instagram.com/gautherbier/?hl=en",
@@ -1526,7 +1526,7 @@ const companies = [
       "https://listado.mercadolibre.com.ar/gauther-sin-tacc#D[A:gauther%20sin%20tacc]",
   },
   {
-    id: "e44",
+    id: "cerveza-straus",
     title: "Cerveza Straus",
     website_url: "https://listado.mercadolibre.com.ar/cerveza-strauss-tacc",
     insta_url: "https://www.instagram.com/cervezastraus/",
@@ -1553,7 +1553,7 @@ const companies = [
     taproom_url: "https://listado.mercadolibre.com.ar/cerveza-strauss-tacc",
   },
   {
-    id: "e45",
+    id: "cerveza-damura",
     title: "Cerveza Damura",
     website_url:
       "https://articulo.mercadolibre.com.ar/MLA-1299077585-cerveza-de-sorgo-damura-lager-rubia-500cc-sin-tacc-pack-x12-_JM#position=17&search_layout=stack&type=item&tracking_id=762678d8-2237-44e9-af01-918c309ae84b",
@@ -1582,7 +1582,7 @@ const companies = [
       "https://articulo.mercadolibre.com.ar/MLA-1299077585-cerveza-de-sorgo-damura-lager-rubia-500cc-sin-tacc-pack-x12-_JM#position=17&search_layout=stack&type=item&tracking_id=762678d8-2237-44e9-af01-918c309ae84b",
   },
   {
-    id: "e46",
+    id: "almirante-donn",
     title: "Almirante Donn",
     website_url: "https://almirantedonn.com/",
     insta_url: "https://www.instagram.com/almirantedonn/",
@@ -1612,7 +1612,7 @@ const companies = [
       "https://mefisto.com.ar/catalogsearch/result/?q=Almirante+D%C3%B6nn",
   },
   {
-    id: "e47",
+    id: "cerveza-linz",
     title: "Cerveza Linz",
     website_url: "",
     insta_url: "https://www.instagram.com/cerveza_linz_",
@@ -1640,7 +1640,7 @@ const companies = [
     taproom_url: "https://listado.mercadolibre.com.ar/cerveza-linz-cervezas",
   },
   {
-    id: "e48",
+    id: "cerveza-lester",
     title: "Cerveza Lester",
     website_url: "https://cervezalester.com/",
     insta_url: "https://www.instagram.com/cervezalester/",
@@ -1667,7 +1667,7 @@ const companies = [
     taproom_url: "https://cervezalester.com/market/",
   },
   {
-    id: "e49",
+    id: "cerveza-loro",
     title: "Cerveza Loro",
     website_url: "https://cervezaloro.com.ar/",
     insta_url: "https://www.instagram.com/cervezaloro/",
@@ -1698,7 +1698,7 @@ const companies = [
       "https://cervezaloro.com.ar/categoria-producto/cervezas-artesanales/",
   },
   // {
-  //   id: "e50",
+  //   id: "schroedingers-beer",
   //   title: "Schrödingers Beer",
   //   website_url: "www",
   //   insta_url: "www",
@@ -1724,7 +1724,7 @@ const companies = [
   //   taproom_url: "www",
   // },
   {
-    id: "e51",
+    id: "three-sons-brewing",
     title: "Three Sons Brewing",
     website_url: "https://www.threesonsbrewing.com/",
     insta_url: "https://www.instagram.com/threesonsbrewing/",
@@ -1750,7 +1750,7 @@ const companies = [
     taproom_url: "",
   },
   // {
-  //   id: "e52",
+  //   id: "birdleg-brew",
   //   title: "Birdleg Brew",
   //   website_url: "",
   //   insta_url: "",
@@ -1776,7 +1776,7 @@ const companies = [
   //   taproom_url: "",
   // },
   {
-    id: "e53",
+    id: "scotts-brewing-co",
     title: "Scotts Brewing Co.",
     website_url: "https://scottsbrewing.co.nz/",
     insta_url: "https://www.instagram.com/scottsbrewingco/",
@@ -1806,7 +1806,7 @@ const companies = [
     taproom_url: "https://scottsbrewing.co.nz/#scotts-beers",
   },
   {
-    id: "e54",
+    id: "kereru-brewing",
     title: "Kererū Brewing",
     website_url: "https://www.kererubrewing.co.nz/",
     insta_url: "https://www.instagram.com/kererubrewing/",
