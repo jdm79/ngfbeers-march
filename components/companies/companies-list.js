@@ -4,6 +4,8 @@ import CompanyCountry from "../CompanyCountry";
 import { US, GB, CA, FR, IT, DE, AU, AR } from "country-flag-icons/react/3x2";
 import Link from "next/link";
 import FlagList from "../FlagList";
+import { Icon } from "@iconify/react";
+import NavIcon from "../NavIcon";
 
 function CompaniesList(props) {
   const { items } = props;
@@ -30,7 +32,7 @@ function CompaniesList(props) {
 
   return (
     <section className='bg-yellow-400 mb-10 pl-2 pr-2'>
-      <div className='mt-10 relative'>
+      <div className='mt-10 relative' id='top'>
         <div className='text-center text-1xl lg:text-5xl m-auto md:ml-20 md:mr-20 md:mt-10'>
           <div className='w-auto m-auto'>
             <div className='text-base text-center mt-10 bg-white p-4 border-2 border-black mx-2 sm:m-auto'>
@@ -46,66 +48,95 @@ function CompaniesList(props) {
         </div>
       </div>
       <div>
-        <CompanyCountry country='Argentine' amount={argCompanies.length} />
-        <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
-          {argCompanies.map((company) => (
-            <CompanyItem key={company.id} {...company} />
-          ))}
-        </ul>
+        <div id='argentina'>
+          <CompanyCountry country='Argentine' amount={argCompanies.length} />
+          <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
+            {argCompanies.map((company) => (
+              <CompanyItem key={company.id} {...company} />
+            ))}
+          </ul>
+        </div>
+        <NavIcon />
 
-        <CompanyCountry country='Australian' amount={ausCompanies.length} />
-        <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
-          {ausCompanies.map((company) => (
-            <CompanyItem key={company.id} {...company} />
-          ))}
-        </ul>
+        <div id='australia'>
+          <CompanyCountry country='Australian' amount={ausCompanies.length} />
+          <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
+            {ausCompanies.map((company) => (
+              <CompanyItem key={company.id} {...company} />
+            ))}
+          </ul>
+        </div>
+        <NavIcon />
 
-        <CompanyCountry country='Canadian' amount={canCompanies.length} />
-        <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
-          {canCompanies.map((company) => (
-            <CompanyItem key={company.id} {...company} />
-          ))}
-        </ul>
-        <CompanyCountry country='French' amount={fraCompanies.length} />
-        <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
-          {fraCompanies.map((company) => (
-            <CompanyItem key={company.id} {...company} />
-          ))}
-        </ul>
-        <CompanyCountry country='German' amount={deCompanies.length} />
-        <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
-          {deCompanies.map((company) => (
-            <CompanyItem key={company.id} {...company} />
-          ))}
-        </ul>
+        <div id='canada'>
+          <CompanyCountry country='Canadian' amount={canCompanies.length} />
+          <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
+            {canCompanies.map((company) => (
+              <CompanyItem key={company.id} {...company} />
+            ))}
+          </ul>
+        </div>
+        <NavIcon />
 
-        <CompanyCountry country='Italian' amount={itCompanies.length} />
-        <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
-          {itCompanies.map((company) => (
-            <CompanyItem key={company.id} {...company} />
-          ))}
-        </ul>
+        <div id='france'>
+          <CompanyCountry country='French' amount={fraCompanies.length} />
+          <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
+            {fraCompanies.map((company) => (
+              <CompanyItem key={company.id} {...company} />
+            ))}
+          </ul>
+        </div>
+        <NavIcon />
 
-        <CompanyCountry country='New Zealand' amount={nzCompanies.length} />
-        <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
-          {nzCompanies.map((company) => (
-            <CompanyItem key={company.id} {...company} />
-          ))}
-        </ul>
+        <div id='germany'>
+          <CompanyCountry country='German' amount={deCompanies.length} />
+          <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
+            {deCompanies.map((company) => (
+              <CompanyItem key={company.id} {...company} />
+            ))}
+          </ul>
+        </div>
+        <NavIcon />
 
-        <CompanyCountry country='UK' amount={ukCompanies.length} />
-        <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
-          {ukCompanies.map((company) => (
-            <CompanyItem key={company.id} {...company} />
-          ))}
-        </ul>
+        <div id='italy'>
+          <CompanyCountry country='Italian' amount={itCompanies.length} />
+          <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
+            {itCompanies.map((company) => (
+              <CompanyItem key={company.id} {...company} />
+            ))}
+          </ul>
+        </div>
+        <NavIcon />
 
-        <CompanyCountry country='USA' amount={usaCompanies.length} />
-        <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
-          {usaCompanies.map((company) => (
-            <CompanyItem key={company.id} {...company} />
-          ))}
-        </ul>
+        <div id='newzealand'>
+          <CompanyCountry country='New Zealand' amount={nzCompanies.length} />
+          <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
+            {nzCompanies.map((company) => (
+              <CompanyItem key={company.id} {...company} />
+            ))}
+          </ul>
+        </div>
+        <NavIcon />
+
+        <div id='uk'>
+          <CompanyCountry country='UK' amount={ukCompanies.length} />
+          <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
+            {ukCompanies.map((company) => (
+              <CompanyItem key={company.id} {...company} />
+            ))}
+          </ul>
+        </div>
+        <NavIcon />
+
+        <div id='usa'>
+          <CompanyCountry country='USA' amount={usaCompanies.length} />
+          <ul className='grid grid-cols-2 gap-1 mt-2 xl:gap-2 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 bg-yellow-400'>
+            {usaCompanies.map((company) => (
+              <CompanyItem key={company.id} {...company} />
+            ))}
+          </ul>
+        </div>
+        <NavIcon />
       </div>
       <div className='w-fit px-5 m-auto'>
         <div className='px-5 mb-4 mt-5'>

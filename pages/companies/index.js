@@ -1,5 +1,5 @@
 import { getAllCompanies } from "../../companies";
-import CompaniesList from "@/components/companies/companies-list";
+import SearchCompaniesList from "@/components/companies/search-companies-list";
 import DefaultLayout from "@/components/DefaultLayout";
 import PageTitle from "@/components/PageTitle";
 
@@ -9,7 +9,7 @@ const CompaniesPage = () => {
   return (
     <DefaultLayout>
       <PageTitle title='Companies Page' />
-      <CompaniesList items={companies} />
+      <SearchCompaniesList items={companies} />
     </DefaultLayout>
   );
 };

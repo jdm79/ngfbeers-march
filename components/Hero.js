@@ -8,7 +8,7 @@ function Hero(props) {
 
   return (
     <div className='w-screen bg-gradient-to-r bg-yellow-400 text-black scroll-smooth'>
-      <div className='mt-10 relative'>
+      {/* <div className='mt-10 relative'>
         <div className='text-center text-1xl lg:text-5xl m-auto md:ml-20 md:mr-20 md:mt-10'>
           <div className='w-auto m-auto'>
             <div className='text-base text-center font-extrabold mt-10 bg-white p-4 border-2 border-black mx-2 sm:m-auto'>
@@ -22,7 +22,7 @@ function Hero(props) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
