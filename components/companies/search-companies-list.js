@@ -68,7 +68,7 @@ function SearchCompaniesList(props) {
               id='simple-search'
               className='bg-white border-2 border-black  text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5'
               placeholder='Search for companies using location or company name'
-              onChange={(e) => setSearch(e.target.value)}
+              onChange={(e) => setSearch(e.target.value.trim())}
               ref={inputRef}
             />
           </div>
