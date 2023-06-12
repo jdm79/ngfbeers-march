@@ -2,7 +2,6 @@ import { getCompanyById } from "@/companies";
 import { useRouter } from "next/router";
 import DefaultLayout from "@/components/DefaultLayout";
 import SocialMediaShare from "@/components/SocialMediaShare";
-import BackButton from "@/components/BackButton";
 import BuyButton from "@/components/BuyButton";
 import Flag from "@/components/Flag";
 import CompanyDescription from "@/components/CompanyDescription";
