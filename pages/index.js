@@ -10,9 +10,9 @@ const HomePage = () => {
 
   return (
     <DefaultLayout id='top'>
-      {/* <div>
-        <Hero items={companies} />
-      </div> */}
+      <div>
+        <Hero />
+      </div>
 
       <div id='companies'>
         <CompaniesList items={companies} />
