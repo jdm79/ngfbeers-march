@@ -61,7 +61,7 @@ function CompanyDetailPage() {
 
               {company.company_type ? (
                 <div className='mt-4'>
-                  <div className=' text-gray-700 border border-black p-5 bg-white rounded-lg mb-4'>
+                  <div className=' text-gray-700 border font-extrabold border-black p-5 bg-white rounded-lg mb-4'>
                     <p>
                       <span className='text-black'>Company type:</span>{" "}
                       {company.company_type}
