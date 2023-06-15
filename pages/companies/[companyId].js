@@ -74,7 +74,7 @@ function CompanyDetailPage() {
                 <div className='mb-4'>
                   <BuyButton
                     url={company.taproom_url}
-                    text={`Buy some ${company.title} beer!`}
+                    text={`See ${company.title}'s beers!`}
                   />
                 </div>
               ) : null}
