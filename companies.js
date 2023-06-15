@@ -1867,8 +1867,7 @@ const companies = [
     fb_url: "https://www.facebook.com/microbrasserienouvellefrance/",
     untappd_url: "https://untappd.com/Nouvelle-France",
     founded: "1998",
-    description: `In their own words: "
-    Founded by Marc and Martine Lessard in 1998 after a visit to Belgium, the Microbrewer’s goal was to offer a specialized beer for consumers to discover new varieties.`,
+    description: `In their own words: "Founded by Marc and Martine Lessard in 1998 after a visit to Belgium, the Microbrewer’s goal was to offer a specialized beer for consumers to discover new varieties.`,
     description2: `The brewery stands out with Messagere gluten-free beers, the first in North America, developed to satisfy those who are intolerant or sensitive to gluten. We pride ourselves in being the pioneers of Gluten Free Beer.`,
     description3: `The Microbrewers project, replacing barley malt with Millet, Rice and Buckwheat was quite an innovation. In 2004 we launched a new project. A Malthouse Nouvelle France allowing us to produce our own malt. This way we control the transformation of our grains insuring a superior quality to our products."`,
     description4: ``,
