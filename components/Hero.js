@@ -4,7 +4,7 @@ import Ticker from "react-ticker";
 function Hero() {
   return (
     <div className='w-screen bg-gradient-to-r bg-white text-black scroll-smooth border-b-2 border-black'>
-      <Ticker speed={6} mode='smooth'>
+      <Ticker speed={7} mode='await'>
         {() => (
           <div>
             <h1 className='bg-white whitespace-pre text-xs md:text-lg py-5'>
