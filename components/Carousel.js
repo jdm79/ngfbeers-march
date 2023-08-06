@@ -1,9 +1,46 @@
-import React from 'react'
+import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import { getAllCompanies } from "@/companies";
+import Link from "next/link";
+import Flag from "./Flag";
 
-function Carousel() {
-    return (
-        <h1 className="w-screen flex p-5 justify-center bg-yellow-400 text-black">Carousel</h1>
-    )
+function CarouselSlider() {
+  const companies = getAllCompanies();
+
+  return (
+    <Carousel
+      className='w-auto xl:w-1/3 m-auto mt-10 px-2'
+      autoPlay
+      interval='4000'
+      infiniteLoop
+      showThumbs={false}
+      showIndicators={false}
+    >
+      {companies.map((company) => (
+        <Link href={`/companies/${company.id}`}>
+          <div key={company.id}>
+            <h1 className='text-xl bg-white p-2 border-black border'>
+              {company.title}
+            </h1>
+            <div className='border-black border'>
+              <img src={company.image} alt={company.title} />
+            </div>
+            <div className='text-sm bg-white p-2 border-black border flex flex-row'>
+              <h1 className='m-auto'>
+                {company.city}, {company.state ? `${company.state}, ` : null}
+                {company.country}{" "}
+              </h1>
+
+              <span className='w-10 m-auto'>
+                <Flag flag={company.flag} />
+              </span>
+            </div>
+          </div>
+        </Link>
+      ))}
+    </Carousel>
+  );
 }
 
-export default Carousel
+export default CarouselSlider;
