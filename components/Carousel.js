@@ -6,7 +6,10 @@ import Link from "next/link";
 import Flag from "./Flag";
 
 function CarouselSlider() {
-  const companies = getAllCompanies();
+  const data = getAllCompanies();
+  const companies = data.sort((a, b) =>
+    a.title > b.title ? 1 : b.title > a.title ? -1 : 0
+  );
 
   return (
     <Carousel
