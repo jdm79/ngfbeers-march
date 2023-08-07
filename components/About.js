@@ -7,19 +7,42 @@ export default function About() {
 
   return (
     <div className='w-screen text-black bg-yellow-400 mx-auto px-2 sm:px-0'>
+      <div className='justify-center border-2 text-3xl border-black font-extrabold rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
+        <p className='px-5 py-2 font-courier'>
+          Q. What is this site going about? There are gluten-free beers on sale
+          everywhere here in Europe!
+        </p>
+      </div>
+
       <div className='justify-center border-2 border-black font-extrabold rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
         <p className='px-5 py-2 font-courier'>
-          Contrary to what you might think, gluten-free beer in Europe and many
-          other countries which is safe for coeliacs/gluten intolerant is rarely
-          on sale in any bar or supermarket. Instead, fridges and aisles are
-          full of 'gluten-reduced' beers made with barley and badged as
-          'gluten-free'.
+          A. Yes, but what is labelled 'gluten-free' beer here in Europe can
+          only be labelled 'gluten-reduced' in Argentina, Australia, Canada, New
+          Zealand and the USA. In those countries, gluten-free beer cannot be
+          made with barley. Barley contains gluten. 'Gluten-free' beer that is
+          safe for coeliacs/gluten intolerant is rarely on sale in any bar or
+          supermarket in Europe. Instead, fridges and aisles are full of
+          'gluten-reduced' beers made with barley and badged as 'gluten-free',
+          and mostly made by the big companies.
         </p>
+      </div>
+
+      <div className='justify-center border-2 text-3xl border-black font-extrabold rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
         <p className='px-5 py-2 font-courier'>
-          They're cheaper and easier to make than beer made{" "}
-          <span className='italic'>without barley</span> and it's a faster way
-          to make a buck. And if the laws in your country allow you to do this -
-          and you're not worried about possibly{" "}
+          Q. How is there a difference? And why would anyone make gluten-free
+          beer with gluten?
+        </p>
+      </div>
+
+      <div className='justify-center border-2 border-black font-extrabold rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
+        <p className='px-5 py-2 font-courier'>
+          A. Because it's much cheaper and easier to make beer with barley than
+          to make beer made <span className='italic'>without barley</span> and
+          it's a faster way to make a buck. Barley has been developed to pretty
+          much want to become beer. Brewing with alternative gluten-free grains
+          such as millet, sorghum and rice is much more expensive and difficult.
+          And if the laws in your country allow you to do this - and you're not
+          worried about{" "}
           <Link
             href='https://www.nhs.uk/conditions/coeliac-disease/complications/'
             target='_blank'
@@ -27,8 +50,7 @@ export default function About() {
           >
             harming people's health
           </Link>
-          , it's an easy route to take. But this beer should not be labelled
-          'gluten-free'.
+          , it's an easy route to take.
         </p>
         <p className='px-5 py-2 font-courier'>
           Beer made with barley, and subsequently treated with enzymes to
@@ -54,10 +76,8 @@ export default function About() {
           other countries). In Argentina, Australia, Canada, New Zealand and the
           USA, they are labelled as 'gluten-reduced'.
         </p>
-        <p className='px-5 py-2 font-courier font-extrabold	'>
-          Gluten-free beer is beer that is made without any gluten-containing
-          ingredients.
-        </p>
+      </div>
+      <div className='justify-center border-2 border-black font-extrabold rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
         <p className='px-5 py-2 font-courier font-extrabold	'>
           Below are the countries whose regulations now recognise this, and
           where beer labelled 'gluten-free' can no longer be made with barley
@@ -67,7 +87,15 @@ export default function About() {
           <CountriesFlagList />
         </div>
         <p className='px-5 py-2'>
-          For more information, check out the{" "}
+          We want to be able to list all the flags of the world in this section!
+          To do this, people need to be told about the difference. A lot of
+          coeliacs and gluten intolerant beer drinkers simply do not know about
+          this in Europe because our coeliac societies feel it is better to keep
+          things as they are. These national coeliac societies charge the big
+          beer companies to have the 'gluten-free' label on their drinks,
+          despite knowing that the current testing process is flawed. It's
+          unusual for the USA to be ahead of Europe on things like this, but
+          that's the current situation. For more information, check out the{" "}
           <Link href='/links' className='hover:bg-yellow-400 underline'>
             Links section
           </Link>
