@@ -9,8 +9,8 @@ export default function About() {
     <div className='w-screen text-black bg-yellow-400 mx-auto px-2 sm:px-0'>
       <div className='justify-center border-2 text-3xl border-black font-extrabold rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
         <p className='px-5 py-2 font-courier'>
-          Q. What is this site going about? There are gluten-free beers on sale
-          everywhere here in Europe!
+          Q. What is this site going on about? There are gluten-free beers on
+          sale everywhere here in Europe!
         </p>
       </div>
 
