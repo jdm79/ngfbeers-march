@@ -14,7 +14,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className='justify-center border-2 border-black font-extrabold rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
+      <div className='justify-center border-2 border-black rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
         <p className='px-5 py-2 font-courier'>
           A. Yes, but what is labelled 'gluten-free' beer here in Europe can
           only be labelled 'gluten-reduced' in Argentina, Australia, Canada, New
@@ -34,7 +34,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className='justify-center border-2 border-black font-extrabold rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
+      <div className='justify-center border-2 border-black rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
         <p className='px-5 py-2 font-courier'>
           A. Because it's much cheaper and easier to make beer with barley than
           to make beer made <span className='italic'>without barley</span> and
@@ -77,7 +77,7 @@ export default function About() {
           USA, they are labelled as 'gluten-reduced'.
         </p>
       </div>
-      <div className='justify-center border-2 border-black font-extrabold rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
+      <div className='justify-center border-2 border-black rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
         <p className='px-5 py-2 font-courier font-extrabold	'>
           Below are the countries whose regulations now recognise this, and
           where beer labelled 'gluten-free' can no longer be made with barley
