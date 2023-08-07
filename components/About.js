@@ -7,7 +7,7 @@ export default function About() {
 
   return (
     <div className='w-screen text-black bg-yellow-400 mx-auto px-2 sm:px-0'>
-      <div className='justify-center border-2 text-3xl border-black font-extrabold rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
+      <div className='justify-center border-2 text-3xl border-black font-extrabold rounded-lg bg-gray-200 mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
         <p className='px-5 py-2 font-courier'>
           Q. What is this site going on about? There are gluten-free beers on
           sale everywhere here in Europe!
@@ -27,7 +27,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className='justify-center border-2 text-3xl border-black font-extrabold rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
+      <div className='justify-center border-2 text-3xl border-black font-extrabold rounded-lg bg-gray-200 mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
         <p className='px-5 py-2 font-courier'>
           Q. How is there a difference? And why would anyone make gluten-free
           beer with gluten?
