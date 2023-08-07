@@ -23,18 +23,17 @@ function CarouselSlider() {
       {companies.map((company) => (
         <Link href={`/companies/${company.id}`}>
           <div key={company.id}>
-            <h1 className='text-xl bg-white p-2 border-black border'>
+            <h1 className='text-md  bg-white p-2 border-black border'>
               {company.title}
             </h1>
-            <div className='border-black border'>
+            <div className='border-black border max-h-200px'>
               <img src={company.image} alt={company.title} />
             </div>
             <div className='text-sm bg-white p-2 border-black border flex flex-row'>
               <h1 className='m-auto'>
-                {company.city}, {company.state ? `${company.state}, ` : null}
-                {company.country}{" "}
+                {company.city}
+                {company.state ? `, ${company.state}` : null}
               </h1>
-
               <span className='w-10 m-auto'>
                 <Flag flag={company.flag} />
               </span>
