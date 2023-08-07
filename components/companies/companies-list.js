@@ -35,7 +35,7 @@ function CompaniesList(props) {
       <div className='mt-10 relative' id='top'>
         <div className='text-center text-1xl lg:text-5xl m-auto md:ml-20 md:mr-20 md:mt-10'>
           <div className='w-auto m-auto'>
-            <div className='text-lg text-center mt-10 bg-white p-4 border-2 border-black mx-2 sm:m-auto'>
+            <div className='text-lg text-center mt-10 bg-white p-4 border-2 border-black  sm:m-auto'>
               There are now{" "}
               <span className='font-extrabold'>{items.length}</span> companies
               listed here selling naturally gluten-free beer
