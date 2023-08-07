@@ -61,7 +61,7 @@ export default function About() {
           USA, and Dr Michelle Colgrave from CSIRO Australia).
         </p>
 
-        <p className='px-5 py-2 font-courier font-extrabold	'>
+        <p className='px-5 py-2 font-courier'>
           And the current commercial test used to detect gluten in beer (R5
           Competitive ELISA) is not accurate or reliable enough for the FDA -
           see{" "}
