@@ -37,11 +37,11 @@ export default function About() {
       <div className='justify-center border-2 border-black rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
         <p className='px-5 py-2 font-courier'>
           A. Because it's much cheaper and easier to make beer with barley than
-          to make beer made <span className='italic'>without barley</span> and
-          it's a faster way to make a buck. Barley has been developed to pretty
-          much want to become beer. Brewing with alternative gluten-free grains
-          such as millet, sorghum and rice is much more expensive and difficult.
-          And if the laws in your country allow you to do this - and you're not
+          to make beer <span className='italic'>without barley</span>, and it's
+          a faster way to make a buck. Barley has been developed to pretty much
+          want to become beer. Brewing with alternative gluten-free grains such
+          as millet, sorghum and rice is much more expensive and difficult. And
+          if the laws in your country allow you to do this - and you're not
           worried about{" "}
           <Link
             href='https://www.nhs.uk/conditions/coeliac-disease/complications/'
@@ -61,7 +61,7 @@ export default function About() {
           USA, and Dr Michelle Colgrave from CSIRO Australia).
         </p>
 
-        <p className='px-5 py-2 font-courier font-extrabold	'>
+        <p className='px-5 py-2 font-courier'>
           And the current commercial test used to detect gluten in beer (R5
           Competitive ELISA) is not accurate or reliable enough for the FDA -
           see{" "}
