@@ -1,3 +1,5 @@
+import { func } from "prop-types";
+
 const companies = [
   {
     id: "alt-grain-co",
@@ -1998,4 +2000,13 @@ export function getCompanyById(id) {
 
 export function getAllCompanies() {
   return companies;
+}
+
+export function getAllCompaniesRandom() {
+  const shuffled = companies
+    .map((value) => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value);
+
+  return shuffled;
 }
