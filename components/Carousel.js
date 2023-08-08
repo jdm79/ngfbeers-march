@@ -4,54 +4,59 @@ import { Carousel } from "react-responsive-carousel";
 import { getAllCompanies, getAllCompaniesRandom } from "@/companies";
 import Link from "next/link";
 import Flag from "./Flag";
-import dynamic from "next/dynamic";
-import NoSSR from "react-no-ssr";
-const Loading = () => <div>Loading...</div>;
+const data = getAllCompanies();
 
 function CarouselSlider() {
-  // const data = getAllCompanies();
   // const companies = data.sort((a, b) =>
   //   a.title > b.title ? 1 : b.title > a.title ? -1 : 0
   // );
 
-  const data = getAllCompaniesRandom();
+  const [randomArray, setRandomArray] = useState([]);
+
+  useEffect(() => {
+    const shuffled = data
+      .map((value) => ({ value, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(({ value }) => value);
+
+    setRandomArray(shuffled);
+  }, []);
 
   return (
-    <NoSSR onSSR={<Loading />}>
-      <Carousel
-        className='w-auto xl:w-1/3 m-auto mt-10 px-2'
-        autoPlay
-        interval='4000'
-        infiniteLoop
-        showThumbs={false}
-        showIndicators={false}
-      >
-        {data.map((company) => (
-          <Link href={`/companies/${company.id}`} key={company.id}>
-            <div>
-              <h1
-                className='text-md  bg-white p-2 border-black border'
-                key={company.id}
-              >
-                {company.title}
-              </h1>
-              <div className='border-black border max-h-200px'>
-                <img src={company.image} alt={company.title} />
-              </div>
-              <div className='text-sm bg-white p-2 border-black border flex flex-row'>
-                <h1 className='m-auto'>
-                  {company.city}
-                  {company.state ? `, ${company.state}` : null}
-                </h1>
-                <span className='w-10 m-auto'>
-                  <Flag flag={company.flag} />
-                </span>
-              </div>
+    <Carousel
+      className='w-auto xl:w-1/3 m-auto mt-10 px-2'
+      autoPlay={true}
+      interval='4000'
+      infiniteLoop
+      showThumbs={false}
+      showIndicators={false}
+      key={randomArray.length}
+    >
+      {randomArray.map((company) => (
+        <Link href={`/companies/${company.id}`} key={company.length}>
+          <div>
+            <h1
+              className='text-md  bg-white p-2 border-black border'
+              key={company.id}
+            >
+              {company.title}
+            </h1>
+            <div className='border-black border max-h-200px'>
+              <img src={company.image} alt={company.title} />
             </div>
-          </Link>
-        ))}
-      </Carousel>
-    </NoSSR>
+            <div className='text-sm bg-white p-2 border-black border flex flex-row'>
+              <h1 className='m-auto'>
+                {company.city}
+                {company.state ? `, ${company.state}` : null}
+              </h1>
+              <span className='w-10 m-auto'>
+                <Flag flag={company.flag} />
+              </span>
+            </div>
+          </div>
+        </Link>
+      ))}
+    </Carousel>
   );
 }
 
