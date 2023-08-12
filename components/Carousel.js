@@ -32,9 +32,9 @@ function CarouselSlider() {
       showIndicators={false}
       key={randomArray.length}
     >
-      {randomArray.map((company) => (
+      {randomArray.map((company, i) => (
         <Link href={`/companies/${company.id}`} key={company.length}>
-          <div>
+          <div key={i}>
             <h1
               className='text-md  bg-white p-2 border-black border'
               key={company.id}
