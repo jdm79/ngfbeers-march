@@ -91,16 +91,22 @@ export default function About() {
           To do this, people need to be told about the difference. A lot of
           coeliacs and gluten intolerant beer drinkers simply do not know about
           this in Europe because our coeliac societies feel it is better to keep
-          things as they are. These national coeliac societies charge the big
-          beer companies to have the 'gluten-free' label on their drinks,
-          despite knowing that the current testing process is flawed. It's
-          unusual for the USA to be ahead of Europe on things like this, but
-          that's the current situation. For more information, check out the{" "}
+          things as they are.{" "}
+        </p>
+        <p className='px-5 py-2 bg-red-200'>
+          These national coeliac societies charge beer companies to have the
+          'gluten-free' label on their drinks, despite knowing that the current
+          testing process is flawed.
+        </p>
+        <p className='px-5 py-2'>
+          It's unusual for the USA to be ahead of Europe on things like this,
+          but that's the current situation. For more information, check out the{" "}
           <Link href='/links' className='hover:bg-yellow-400 underline'>
             Links section
           </Link>
           .
         </p>
+
         <div>
           <h1 className='text-center mb-2'>Share this:</h1>
         </div>

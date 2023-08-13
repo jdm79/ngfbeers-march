@@ -42,22 +42,24 @@ export default function Nav() {
                 </Disclosure.Button>
               </div>
               <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
-                <div className='flex flex-shrink-0 items-center'>
+                <div className='flex flex-shrink-0 items-center '>
                   <Link href='/'>
                     <img
-                      className='block h-8 w-auto lg:hidden'
-                      src='/images/wide.svg'
-                      alt='Your Company'
+                      className='block h-10 w-auto lg:hidden'
+                      src='/images/wide-simple-ngci.svg'
+                      alt='ngci beers'
                     />
-                    <img
-                      className='hidden h-8 w-auto lg:block'
-                      src='/images/wide.svg'
-                      alt='Your Company'
-                    />
+                    <h1
+                      className='hidden text-2xl w-auto lg:block select-none'
+                      // src='/images/wide-simple-ngci.svg'
+                      alt='ngci beers'
+                    >
+                      ngci beers
+                    </h1>
                   </Link>
                 </div>
                 <div className='hidden sm:ml-6 sm:block'>
-                  <div className='flex space-x-4'>
+                  <div className='flex space-x-4 lg:ml-40'>
                     {navigation.map((item) => {
                       const isActive = router.asPath === item.href;
                       return (
