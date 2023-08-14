@@ -21,7 +21,7 @@ const Header = () => {
         <meta name='keywords' content='gluten-free, beer, ngci, barley-free' />
         <meta
           property='og:image'
-          content='https://res.cloudinary.com/dlrwbckxi/image/upload/v1678833616/social-media-logo_fahafl.jpg'
+          content='https://res.cloudinary.com/dlrwbckxi/image/upload/v1692047928/ngci-logo_gxlx8l.jpg'
         />
         <meta
           property='og:description'
