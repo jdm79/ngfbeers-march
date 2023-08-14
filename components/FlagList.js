@@ -30,7 +30,7 @@ function FlagList(props) {
     <>
       <div className='text-lg'>
         {companies.length} companies from {countriesCount} countries are listed
-        here as selling NGCI beer
+        here as producing NGCI beer
       </div>
       <div
         className='flex flex-row gap-2 justify-center mt-4 flex-wrap'
