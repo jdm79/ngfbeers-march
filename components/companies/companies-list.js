@@ -1,10 +1,7 @@
 import CompanyItem from "./company-item";
 import SocialMediaShare from "../../components/SocialMediaShare";
 import CompanyCountry from "../CompanyCountry";
-import { US, GB, CA, FR, IT, DE, AU, AR } from "country-flag-icons/react/3x2";
-import Link from "next/link";
 import FlagList from "../FlagList";
-import { Icon } from "@iconify/react";
 import NavIcon from "../NavIcon";
 
 function CompaniesList(props) {
@@ -36,9 +33,6 @@ function CompaniesList(props) {
         <div className='text-center text-1xl lg:text-5xl m-auto md:ml-20 md:mr-20 md:mt-10'>
           <div className='w-auto m-auto'>
             <div className='text-lg text-center mt-10 bg-white p-4 border-2 border-black  sm:m-auto'>
-              There are now{" "}
-              <span className='font-extrabold'>{items.length}</span> companies
-              listed here selling NGCI beer
               <FlagList />{" "}
             </div>
           </div>
