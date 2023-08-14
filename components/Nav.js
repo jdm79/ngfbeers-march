@@ -45,7 +45,7 @@ export default function Nav() {
                 <div className='flex flex-shrink-0 items-center '>
                   <Link href='/'>
                     <img
-                      className='block h-10 w-auto lg:hidden'
+                      className='block h-10 w-auto lg:hidden -ml-2'
                       src='/images/wide-simple-ngci.svg'
                       alt='ngci beers'
                     />

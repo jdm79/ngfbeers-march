@@ -80,9 +80,9 @@ function SearchCompaniesList(props) {
           ))}
         </ul>
         <div className='bg-[color:var(--bg-eggshell)] text-black border-2 border-black rounded-lg p-5 mb-5 mt-10 shadow-md shadow-black'>
-          This list of gluten-free brewers is constantly being updated and draws
-          heavily upon information from the Zero Tolerance Gluten-Free Brewing
-          Wiki{" "}
+          This list of NGCI gluten-free brewers is constantly being updated and
+          draws heavily upon information from the Zero Tolerance Gluten-Free
+          Brewing Wiki{" "}
           <Link
             target='_blank'
             href='https://zerotolerance.mywikis.wiki/wiki/List_of_GF_breweries'

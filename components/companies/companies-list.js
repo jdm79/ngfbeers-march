@@ -38,7 +38,7 @@ function CompaniesList(props) {
             <div className='text-lg text-center mt-10 bg-white p-4 border-2 border-black  sm:m-auto'>
               There are now{" "}
               <span className='font-extrabold'>{items.length}</span> companies
-              listed here selling naturally gluten-free beer
+              listed here selling NGCI beer
               <FlagList />{" "}
             </div>
           </div>
