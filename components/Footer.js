@@ -23,7 +23,7 @@ function Footer() {
           </div>
           <div className='px-2'>
             <p className='py-5 text-gray-800 text-center'>
-              Copyright © 2023 ngcibeers
+              Copyright © 2023 ngci beers
             </p>
             <p className='text-gray-800 text-center underline'>
               <Link href='/tocs'>Terms & conditions</Link>
