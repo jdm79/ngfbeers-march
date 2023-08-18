@@ -49,6 +49,12 @@ export default function Nav() {
                       src='/images/wide-simple-ngci.svg'
                       alt='ngci beers'
                     />
+                    {/* <img
+                      className='hidden h-14 w-auto lg:block select-none'
+                      src='/images/ngci-logo-no-bg.png'
+                      alt='ngci beers'
+                    /> */}
+
                     <h1
                       className='hidden text-2xl w-auto lg:block select-none'
                       // src='/images/wide-simple-ngci.svg'
