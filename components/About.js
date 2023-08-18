@@ -36,13 +36,9 @@ export default function About() {
 
       <div className='justify-center border-2 border-black rounded-lg bg-white mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
         <p className='px-5 py-2 font-courier'>
-          A. Because it's much cheaper and easier to make beer with barley than
-          to make beer <span className='italic'>without barley</span>, and it's
-          a faster way to make a buck. Barley has been developed to pretty much
-          want to become beer. Brewing with alternative gluten-free grains such
-          as millet, sorghum and rice is much more expensive and difficult. And
-          if the laws in your country allow you to do this - and you're not
-          worried about{" "}
+          A. Because it's much cheaper and easier to make beer with barley, and
+          it's a faster way to make a buck. And if the laws in your country
+          allow you to do this - and you're not worried about{" "}
           <Link
             href='https://www.nhs.uk/conditions/coeliac-disease/complications/'
             target='_blank'
@@ -72,9 +68,13 @@ export default function About() {
           >
             here
           </Link>
-          . Yet these beers are labelled 'gluten-free' in Europe (and in most
-          other countries). In Argentina, Australia, Canada, New Zealand and the
-          USA, they are labelled as 'gluten-reduced'.
+          . The truth is, we don't know how much gluten any of these beers
+          contain unless they are tested using mass spectrometry (which is
+          hugely expensive and complicated, and not commercially viable to
+          replace the current inaccurate test). Yet these beers are labelled
+          'gluten-free' in Europe (and in most other countries). In Argentina,
+          Australia, Canada, New Zealand and the USA, they are labelled as
+          'gluten-reduced'.
         </p>
       </div>
       <div className='justify-center border-2 border-black rounded-lg bg-white mt-12 mb-10 shadow-md shadow-black sm:w-3/4 mx-auto'>
