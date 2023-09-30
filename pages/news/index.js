@@ -26,7 +26,7 @@ const NewsPage = () => {
 
   return (
     <DefaultLayout>
-      <PageTitle title='Latest News' />
+      <PageTitle title='NGCI Beer Articles' />
       <NewsList items={articles} />
     </DefaultLayout>
   );
