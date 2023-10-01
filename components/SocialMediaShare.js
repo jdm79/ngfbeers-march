@@ -14,21 +14,21 @@ import {
 } from "next-share";
 
 function SocialMediaShare({ title, id }) {
-  const blurb = `${title} are on ngfbeers.com, a showcase of gluten-free beer companies who make their beer without barley or any other gluten containing ingredients. Gluten-free beer that is actually gluten-free!`;
-  const link = `https://ngfbeers.com`;
-  const beerLink = `https://ngfbeers.com/companies/${id}`
+  const blurb = `${title} are on ngcibeers.com, a showcase of gluten-free beer companies who make their beer without barley or any other gluten containing ingredients. Gluten-free beer that is actually gluten-free!`;
+  const link = `https://ngcibeers.com`;
+  const beerLink = `https://ngfbeers.com/companies/${id}`;
 
-  const hashtags = ["glutenfree", "glutenfreebeer"]; 
+  const hashtags = ["glutenfree", "glutenfreebeer"];
 
   return (
-    <div className="space-x-3">
+    <div className='space-x-3'>
       <FacebookShareButton url={link} quote={blurb} hashtag={"#glutenfreebeer"}>
         <FacebookIcon size={32} round />
       </FacebookShareButton>
       <TwitterShareButton url={link} title={blurb} hashtags={hashtags}>
         <TwitterIcon size={32} round />
       </TwitterShareButton>
-      <WhatsappShareButton url={link} title={blurb} separator="  ">
+      <WhatsappShareButton url={link} title={blurb} separator='  '>
         <WhatsappIcon size={32} round />
       </WhatsappShareButton>
       <EmailShareButton url={link} subject={blurb} body={blurb}>
