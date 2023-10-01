@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-const plugin = require('tailwindcss/plugin')
+const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   content: [
@@ -14,16 +14,17 @@ module.exports = {
         // Bounces 5 times 1s equals 5 seconds
         "bounce-short": "bounce 2s ease-in-out 1.5",
         "bounce-short-text": "bounce 1s ease-in-out 0.5",
-        "wiggle": "wiggle 1s ease-in-out 2.5"
+        wiggle: "wiggle 1s ease-in-out 2.5",
       },
       keyframes: {
-                wiggle: {
-                   '0%, 100%': { transform: 'rotate(-3deg)' },
-                   '50%': { transform: 'rotate(3deg)' },
-                 }
-                },
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        },
+      },
       fontFamily: {
         courier: ["courier", "sans-serif"],
+        sans: ["Helvetica"],
       },
     },
   },
