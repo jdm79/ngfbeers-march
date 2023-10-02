@@ -7,7 +7,7 @@ function NewsItem(props) {
   return (
     <Link href={url} target='_blank' className='m-auto w-full'>
       <div className='bg-gray-100 text-center h-full xl:h-64 w-full xl:w-11/12 p-2'>
-        <img className='w-1/3 p-1' src={image}></img>
+        <img className='h-1/4 p-1' src={image}></img>
         <div className='h-fit font-sans p-1 text-left m-auto font-bold text-2xl mt-2 bg-white hover:underline'>
           {headline}
         </div>
