@@ -2,6 +2,8 @@ import { ImFacebook, ImInstagram } from "react-icons/im";
 import Link from "next/link";
 
 function Footer() {
+  const d = new Date();
+  let year = d.getFullYear();
   return (
     <footer className='bg-yellow-400'>
       <div className='container mx-auto flex justify-center py-12'>
@@ -23,7 +25,7 @@ function Footer() {
           </div>
           <div className='px-2'>
             <p className='py-5 text-gray-800 text-center'>
-              Copyright © 2023 ngci beers
+              Copyright © {year} NGCI Beers
             </p>
             <p className='text-gray-800 text-center underline'>
               <Link href='/tocs'>Terms & conditions</Link>
