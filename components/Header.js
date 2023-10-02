@@ -5,7 +5,7 @@ const Header = () => {
     <div>
       <Head>
         <title>
-          ngci beers | naturally gluten-free beers | ngci = no barley
+          NGCI Beers | naturally gluten-free beers | NGCI = no barley
         </title>
         <meta
           property='og:title'

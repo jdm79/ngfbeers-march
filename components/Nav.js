@@ -61,7 +61,7 @@ export default function Nav() {
                       // src='/images/wide-simple-ngci.svg'
                       alt='ngci beers'
                     >
-                      ngci beers
+                      NGCI Beers
                     </h1>
                   </Link>
                 </div>
