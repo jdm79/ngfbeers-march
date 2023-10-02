@@ -65,34 +65,6 @@ const links = [
     body: "",
   },
   {
-    id: "l6",
-    link_url:
-      "https://www.forbes.com/sites/samlemonick/2017/11/01/a-new-test-to-make-sure-your-beer-is-gluten-free/",
-    title: "A New Test To Make Sure Your Beer Is Gluten Free",
-    blurb: `Some beers are now being marketed to celiac sufferers and those who try to avoid gluten. 
-              The bad news is that new research appears to show that one common method 
-              for getting gluten out of beer isn't working, 
-              and the test used to find gluten in beer is broken too. 
-              Scientists in Australia are working on a new test to ensure these beers, 
-              sometimes labelled “gluten reduced,” are safe for those with celiac disease.`,
-    source: "Forbes article by Sam Lemonick",
-    type: "article",
-    body: "",
-  },
-  {
-    id: "l7",
-    link_url:
-      "https://www.abc.net.au/news/science/2018-12-15/looking-for-a-low-gluten-beer-heres-what-you-need-to-know/10562248",
-    title: "Looking for a low-gluten beer? Here's what you need to know",
-    blurb: `[But] when we looked at beers labelled low-gluten or reduced gluten, 
-              there wasn't much difference in the level we saw in those and what we saw in just normal, 
-              off-the-shelf beer.`,
-    source:
-      "ABC article on the inaccuracy of current gluten-free beer testing",
-    type: "article",
-    body: "",
-  },
-  {
     id: "l8",
     link_url: "https://www.coeliac.org.uk/frequently-asked-questions/gfbeer/",
     title:
@@ -111,8 +83,7 @@ const links = [
   {
     id: "l9",
     link_url: "https://naturligtglutenfri.se/",
-    title:
-      "Homebrewery blog about naturally gluten-free beer",
+    title: "Homebrewery blog about naturally gluten-free beer",
     blurb: `Naturally gluten-free beer is not available for purchase in Sweden. I hope to change that! It is made from products that do not contain gluten, in a gluten-free environment.`,
     source: `https://naturligtglutenfri.se/ (This website is in Swedish but you can add a translate extension to your browser to read it)`,
     type: "website",
@@ -120,9 +91,9 @@ const links = [
   },
   {
     id: "l10",
-    link_url: "https://bestglutenfreebeers.com/dont-drink-gluten-reduced-beers/",
-    title:
-      "The Evolution Of Gluten Free Beer",
+    link_url:
+      "https://bestglutenfreebeers.com/dont-drink-gluten-reduced-beers/",
+    title: "The Evolution Of Gluten Free Beer",
     blurb: `I think there is a market for gluten reduced beers, but it’s not the Celiac community. Gluten reduced beers should be reserved for those who are simply gluten sensitive, or for those who live a gluten free lifestyle out of choice–rather than necessity.`,
     source: `Blog article from bestglutenfreebeers.com/ on the long-term effects of coeliacs consuming gluten-reduced beers`,
     type: "article",
