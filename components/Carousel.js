@@ -24,7 +24,7 @@ function CarouselSlider() {
 
   return (
     <Carousel
-      className='w-auto sm:w-2/5 xl:w-1/4 m-auto mt-10 px-2'
+      className='w-auto sm:w-2/5 xl:w-1/5 m-auto mt-10 px-2'
       autoPlay={true}
       interval='4000'
       infiniteLoop
