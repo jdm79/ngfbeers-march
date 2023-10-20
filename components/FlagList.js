@@ -36,7 +36,7 @@ function FlagList(props) {
         className='flex flex-row gap-2 justify-center mt-4 flex-wrap'
         ref={ElementRef}
       >
-        <div className='text-lg'>Click on the flags:</div>
+        <div className='text-lg'>Click on the flags to see the beers:</div>
         <a href='#argentina' className='scroll-smooth'>
           <AR title='Argentina' className='w-6 md:w-12 mt-1 md:mb-2' />
         </a>
