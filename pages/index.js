@@ -19,7 +19,6 @@ const HomePage = () => {
       </div>
 
       <SearchCompaniesList items={companies} />
-      <CarouselSlider />
     </DefaultLayout>
   );
 };
