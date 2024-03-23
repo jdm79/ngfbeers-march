@@ -6,12 +6,12 @@ import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "/", current: false },
-  { name: "News", href: "/news", current: false },
   { name: "Companies", href: "/companies", current: false },
   // { name: 'FAQ', href: '/faq', current: false },
   // { name: 'Blog', href: '/blog', current: false },
   { name: "Links", href: "/links", current: false },
-  { name: "About", href: "/about", current: false },
+  // { name: "About", href: "/about", current: false },
+  { name: "News", href: "/news", current: false },
   { name: "Contact", href: "/contact", current: false },
 ];
 
