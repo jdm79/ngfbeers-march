@@ -589,38 +589,38 @@ const companies = [
     taproom_blurb: "",
     taproom_url: "https://www.burnbrosbrew.com/beer/beer-styles/",
   },
-  {
-    id: "dark-hills-brewery",
-    title: "Dark Hills Brewery",
-    website_url: "https://www.darkhillsbrew.com/",
-    insta_url: "",
-    fb_url: "https://www.facebook.com/DarkHillsBrewery/",
-    untappd_url: "https://untappd.com/w/dark-hills-brewery/150006",
-    founded: "2017",
-    description: `
-    In their own words: "We're a very pleasant and scenic drive through the hills and hollers of McDonald County, Missouri. Just north of Pea Ridge, Arkansas.
-    We pride ourselves on our large selection of Gluten Free brews.
+  // {
+  //   id: "dark-hills-brewery",
+  //   title: "Dark Hills Brewery",
+  //   website_url: "https://www.darkhillsbrew.com/",
+  //   insta_url: "",
+  //   fb_url: "https://www.facebook.com/DarkHillsBrewery/",
+  //   untappd_url: "https://untappd.com/w/dark-hills-brewery/150006",
+  //   founded: "2017",
+  //   description: `
+  //   In their own words: "We're a very pleasant and scenic drive through the hills and hollers of McDonald County, Missouri. Just north of Pea Ridge, Arkansas.
+  //   We pride ourselves on our large selection of Gluten Free brews.
 
-    `,
-    description2: `    We typically have at least 6 of our own unique brews on tap to choose from. And speaking of non-drinkers, we keep our own handmade non-alcoholic
-    Root Beer on tap.
-    Yes, we are a FAMILY & PET-FRIENDLY establishment!"`,
-    country: "USA",
-    country_code: "",
-    alt: "United States",
-    state: "Missouri",
-    stateCode: "MO",
-    city: "Seligman",
-    region: "North America",
-    flag: "US",
-    status: "dedicated",
-    company_type:
-      "Dedicated GF brewery with taproom connected to conventional brewery",
-    image: "images/companies/darkhills-logo.png",
-    isFeatured: true,
-    taproom_blurb: "",
-    taproom_url: "https://www.darkhillsbrew.com/gallery.html",
-  },
+  //   `,
+  //   description2: `    We typically have at least 6 of our own unique brews on tap to choose from. And speaking of non-drinkers, we keep our own handmade non-alcoholic
+  //   Root Beer on tap.
+  //   Yes, we are a FAMILY & PET-FRIENDLY establishment!"`,
+  //   country: "USA",
+  //   country_code: "",
+  //   alt: "United States",
+  //   state: "Missouri",
+  //   stateCode: "MO",
+  //   city: "Seligman",
+  //   region: "North America",
+  //   flag: "US",
+  //   status: "dedicated",
+  //   company_type:
+  //     "Dedicated GF brewery with taproom connected to conventional brewery",
+  //   image: "images/companies/darkhills-logo.png",
+  //   isFeatured: true,
+  //   taproom_blurb: "",
+  //   taproom_url: "https://www.darkhillsbrew.com/gallery.html",
+  // },
   {
     id: "divine-science-brewing",
     title: "Divine Science Brewing",
@@ -901,33 +901,33 @@ const companies = [
     taproom_blurb: "",
     taproom_url: "https://groundbreakerbrewing.com/our-gluten-free-brewery",
   },
-  {
-    id: "heathens-brewing",
-    title: "Heathen's Brewing",
-    website_url: "https://heathensbrewingshop.square.site/",
-    insta_url: "https://www.instagram.com/heathensbrewing",
-    fb_url: "https://www.facebook.com/HeathensBrewing/",
-    untappd_url: "https://untappd.com/HeathensBrewing",
-    founded: "2019",
-    description: `
-    In their own words:
-    "Heathen's Brewing is a dedicated Gluten Free Brewery located in Calgary, Alberta Canada. We are Western Canada's first Gluten Free Craft Brewery, come join us for a great experience."
-`,
-    country: "Canada",
-    country_code: "",
-    alt: "United States",
-    state: "Alberta",
-    stateCode: "AB",
-    city: "Calgary",
-    region: "North America",
-    flag: "CA",
-    status: "",
-    company_type: "Dedicated GF brewery with taproom",
-    image: "images/companies/heathens-logo.png",
-    isFeatured: true,
-    taproom_blurb: "",
-    taproom_url: "https://heathensbrewingshop.square.site/",
-  },
+  //   {
+  //     id: "heathens-brewing",
+  //     title: "Heathen's Brewing",
+  //     website_url: "https://heathensbrewingshop.square.site/",
+  //     insta_url: "https://www.instagram.com/heathensbrewing",
+  //     fb_url: "https://www.facebook.com/HeathensBrewing/",
+  //     untappd_url: "https://untappd.com/HeathensBrewing",
+  //     founded: "2019",
+  //     description: `
+  //     In their own words:
+  //     "Heathen's Brewing is a dedicated Gluten Free Brewery located in Calgary, Alberta Canada. We are Western Canada's first Gluten Free Craft Brewery, come join us for a great experience."
+  // `,
+  //     country: "Canada",
+  //     country_code: "",
+  //     alt: "United States",
+  //     state: "Alberta",
+  //     stateCode: "AB",
+  //     city: "Calgary",
+  //     region: "North America",
+  //     flag: "CA",
+  //     status: "",
+  //     company_type: "Dedicated GF brewery with taproom",
+  //     image: "images/companies/heathens-logo.png",
+  //     isFeatured: true,
+  //     taproom_blurb: "",
+  //     taproom_url: "https://heathensbrewingshop.square.site/",
+  //   },
   {
     id: "holidaily-brewing",
     title: "Holidaily Brewing",
@@ -983,52 +983,52 @@ const companies = [
     taproom_blurb: "",
     taproom_url: "https://www.luckypigeonbrewing.com/?page_id=146",
   },
-  {
-    id: "moonshrimp-brewing",
-    title: "Moonshrimp Brewing",
-    website_url: "https://www.moonshrimpbrewing.com/",
-    insta_url: "https://www.instagram.com/moonshrimp_brewing/",
-    fb_url: "https://www.facebook.com/Moonshrimp.Brewing/",
-    untappd_url: "https://untappd.com/w/moonshrimp-brewing/67232",
-    founded: "2016",
-    description: `
-    In their own words: "Gluten free beer with no shortcuts. 
-    Truly Gluten Free & Vegan Beer. Always.
+  // {
+  //   id: "moonshrimp-brewing",
+  //   title: "Moonshrimp Brewing",
+  //   website_url: "https://www.moonshrimpbrewing.com/",
+  //   insta_url: "https://www.instagram.com/moonshrimp_brewing/",
+  //   fb_url: "https://www.facebook.com/Moonshrimp.Brewing/",
+  //   untappd_url: "https://untappd.com/w/moonshrimp-brewing/67232",
+  //   founded: "2016",
+  //   description: `
+  //   In their own words: "Gluten free beer with no shortcuts.
+  //   Truly Gluten Free & Vegan Beer. Always.
 
-    Locally made, sustainably and responsibly produced, small batch fermented and hand bottled."`,
+  //   Locally made, sustainably and responsibly produced, small batch fermented and hand bottled."`,
 
-    description2: `What do we mean when we say gluten free and vegan?
+  //   description2: `What do we mean when we say gluten free and vegan?
 
-    No wheat, barley, malt, or other gluten source anywhere in the brewery property, ever.
-    
-    No oats or oat products regardless of certifications or source.
-    
-    All brand new equipment to eliminate the possibility of residual gluten.
-    
-    No gelatin or isenglass used to clarify the beer, so it is vegan.`,
-    description3: `All verified beet sugar (cane sugar is objectionable to some vegans due to the way it is processed).
+  //   No wheat, barley, malt, or other gluten source anywhere in the brewery property, ever.
 
-    No food is allowed in the brewing or bottling area at any time, ever. 
-    
-    Caramel made from rice syrup to remain vegan.
-    
-   `,
-    description4: ` Note: Moonshrimp beer does not contain actual shrimp."`,
-    country: "USA",
-    country_code: "",
-    alt: "United States",
-    state: "Oregon",
-    stateCode: "OR",
-    city: "Portland",
-    region: "North America",
-    flag: "US",
-    status: "",
-    company_type: "Dedicated GF brewery	",
-    image: "images/companies/moonshrimp-logo.png",
-    isFeatured: true,
-    taproom_blurb: "",
-    taproom_url: "https://www.moonshrimpbrewing.com/beers",
-  },
+  //   No oats or oat products regardless of certifications or source.
+
+  //   All brand new equipment to eliminate the possibility of residual gluten.
+
+  //   No gelatin or isenglass used to clarify the beer, so it is vegan.`,
+  //   description3: `All verified beet sugar (cane sugar is objectionable to some vegans due to the way it is processed).
+
+  //   No food is allowed in the brewing or bottling area at any time, ever.
+
+  //   Caramel made from rice syrup to remain vegan.
+
+  //  `,
+  //   description4: ` Note: Moonshrimp beer does not contain actual shrimp."`,
+  //   country: "USA",
+  //   country_code: "",
+  //   alt: "United States",
+  //   state: "Oregon",
+  //   stateCode: "OR",
+  //   city: "Portland",
+  //   region: "North America",
+  //   flag: "US",
+  //   status: "",
+  //   company_type: "Dedicated GF brewery	",
+  //   image: "images/companies/moonshrimp-logo.png",
+  //   isFeatured: true,
+  //   taproom_blurb: "",
+  //   taproom_url: "https://www.moonshrimpbrewing.com/beers",
+  // },
   {
     id: "mutantis-brewery-and-bottle-shop",
     title: "Mutantis Brewery & Bottle Shop",
