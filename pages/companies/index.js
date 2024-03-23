@@ -12,10 +12,10 @@ const CompaniesPage = () => {
     <DefaultLayout>
       <PageTitle title='Companies Page' />
       {/* <SearchCompaniesList items={companies} /> */}
-      <CarouselSlider />
+      {/* <CarouselSlider /> */}
 
       <div id='companies'>
-        <CompaniesList items={companies} />
+        <SearchCompaniesList items={companies} />
       </div>
     </DefaultLayout>
   );

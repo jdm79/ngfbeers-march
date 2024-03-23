@@ -16,9 +16,11 @@ const HomePage = () => {
     <DefaultLayout id='top'>
       <div>
         <Hero />
+        <About />
       </div>
-
-      <SearchCompaniesList items={companies} />
+      <div id='companies'>
+        <CompaniesList items={companies} />
+      </div>
     </DefaultLayout>
   );
 };
