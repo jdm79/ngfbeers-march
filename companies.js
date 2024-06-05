@@ -522,40 +522,40 @@ const companies = [
     taproom_blurb: "",
     taproom_url: "https://www.bierlybrewing.com/our-beers/",
   },
-  {
-    id: "buck-wild-brewing",
-    title: "Buck Wild Brewing",
-    website_url: "https://www.buckwildbrew.com/",
-    insta_url: "https://www.instagram.com/buckwildbrewing/",
-    fb_url: "https://www.facebook.com/buckwildbeer",
-    untappd_url: "https://untappd.com/AlpenglowBeerCompany",
-    founded: "2020",
-    description: `
-    Nested in the scenic and lively Jack London Square district of Oakland, surrounded by diverse landscapes 
-    and culture in every direction, spoiled with adventure to California’s dynamic environment. 
-    `,
-    description2: `In their own words: "Simply put, we believe in craft beer for all. With millions of Americans 
-    living with gluten intolerances, allergies, and gluten-free lifestyles, 
-    many are deprived from enjoying the simple pleasure of having a beer. `,
-    description3: ` We’re here to change that, and are uncomprimising on ingredients, flavor.
-    The ingredients we use have been found in beer recipes for thousands of years all around the world. 
-    Buckwheat, millet, and rice make up the majority of our malts, but we also use oats, maize, 
-    and other ingredients that do not contain any gluten."`,
-    country: "USA",
-    country_code: "",
-    alt: "United States",
-    state: "California",
-    stateCode: "CA",
-    city: "Oakland",
-    region: "North America",
-    flag: "US",
-    status: "dedicated",
-    company_type: "Dedicated GF brewery with taproom",
-    image: "images/companies/buckwild-logo.png",
-    isFeatured: true,
-    taproom_blurb: "",
-    taproom_url: "https://www.buckwildbrew.com/our-beer",
-  },
+  // {
+  //   id: "buck-wild-brewing",
+  //   title: "Buck Wild Brewing",
+  //   website_url: "https://www.buckwildbrew.com/",
+  //   insta_url: "https://www.instagram.com/buckwildbrewing/",
+  //   fb_url: "https://www.facebook.com/buckwildbeer",
+  //   untappd_url: "https://untappd.com/AlpenglowBeerCompany",
+  //   founded: "2020",
+  //   description: `
+  //   Nested in the scenic and lively Jack London Square district of Oakland, surrounded by diverse landscapes
+  //   and culture in every direction, spoiled with adventure to California’s dynamic environment.
+  //   `,
+  //   description2: `In their own words: "Simply put, we believe in craft beer for all. With millions of Americans
+  //   living with gluten intolerances, allergies, and gluten-free lifestyles,
+  //   many are deprived from enjoying the simple pleasure of having a beer. `,
+  //   description3: ` We’re here to change that, and are uncomprimising on ingredients, flavor.
+  //   The ingredients we use have been found in beer recipes for thousands of years all around the world.
+  //   Buckwheat, millet, and rice make up the majority of our malts, but we also use oats, maize,
+  //   and other ingredients that do not contain any gluten."`,
+  //   country: "USA",
+  //   country_code: "",
+  //   alt: "United States",
+  //   state: "California",
+  //   stateCode: "CA",
+  //   city: "Oakland",
+  //   region: "North America",
+  //   flag: "US",
+  //   status: "dedicated",
+  //   company_type: "Dedicated GF brewery with taproom",
+  //   image: "images/companies/buckwild-logo.png",
+  //   isFeatured: true,
+  //   taproom_blurb: "",
+  //   taproom_url: "https://www.buckwildbrew.com/our-beer",
+  // },
   {
     id: "burning-brothers-brewing",
     title: "Burning Brothers Brewing",
